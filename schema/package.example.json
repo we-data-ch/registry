@@ -1,0 +1,17 @@
+{
+  "name": "example-pkg",
+  "definitions": [
+    {
+      "repository": "your-github-user/typr-example-pkg",
+      "version": "0.1.0",
+      "rev": "0000000000000000000000000000000000000000",
+      "since": "1.0.0",
+      "source": "community",
+      "tier": "T3",
+      "capabilities": {
+        "r_shims": false,
+        "extern_raw": false
+      }
+    }
+  ]
+}
