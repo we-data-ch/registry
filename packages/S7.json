@@ -1,0 +1,17 @@
+{
+  "name": "S7",
+  "definitions": [
+    {
+      "repository": "we-data-ch/registry/definitions/S7",
+      "version": "0.1.0",
+      "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "since": "0.2.2",
+      "source": "generated",
+      "tier": "T3",
+      "capabilities": {
+        "r_shims": false,
+        "extern_raw": false
+      }
+    }
+  ]
+}

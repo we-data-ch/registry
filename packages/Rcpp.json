@@ -1,0 +1,17 @@
+{
+  "name": "Rcpp",
+  "definitions": [
+    {
+      "repository": "we-data-ch/registry/definitions/Rcpp",
+      "version": "0.1.0",
+      "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "since": "1.1.1.1.1",
+      "source": "generated",
+      "tier": "T3",
+      "capabilities": {
+        "r_shims": false,
+        "extern_raw": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "bslib",
+  "definitions": [
+    {
+      "repository": "we-data-ch/registry/definitions/bslib",
+      "version": "0.1.0",
+      "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "since": "0.12.0",
+      "source": "generated",
+      "tier": "T3",
+      "capabilities": {
+        "r_shims": false,
+        "extern_raw": false
+      }
+    }
+  ]
+}
