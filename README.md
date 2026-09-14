@@ -38,7 +38,9 @@ definitions/
 1. Publish a Type Definition repository (or a `definitions/<pkg>/` directory here for the long
    tail) following the format in `typR/registry.md` §5 / `typr/rfcs/0031-external-type-definitions.md`.
 2. Open a PR against this repo adding or updating `packages/<pkg>.json`, validated against
-   `schema/package.schema.json`.
+   `schema/package.schema.json` — either by hand, or with `typr types submit <pkg>
+   [github:owner/repo[@rev]]` (needs `gh`, already run through `gh auth login`): it validates the
+   definition, forks this repo, writes the entry, and opens the PR for you.
 3. `rev` must be a real, pinned commit SHA — never a branch or tag (reproducibility by digest,
    `registry.md` §7.2, D4).
 4. `capabilities` must match what the target repository actually contains — a mismatch (e.g.
@@ -65,14 +67,21 @@ CRAN packages (per `cranlogs.r-pkg.org`, minus a handful of header-only/build-sc
 packages with no real R-level API), generated at `T3` by `typr gen-types` and verified end-to-end
 with `typr types validate` against this repo's own commits — plus `jsonlite`, `purrr`, and `R6`
 carrying a small hand-verified `T1` core (real functions, real types, actually executed against R
-via `typr run`, not just type-checked). It also covers the first half of **J6** *(optional)*: a
-static [`store/`](store/) page (search, package sheets, provenance, tier, capability flags),
-generated from `packages/*.json` and, when available, `status/validation.json` — no account, no
-backend. Not yet done:
+via `typr run`, not just type-checked). It also covers **J6** *(optional)* in full: a static
+[`store/`](store/) page (search, package sheets, provenance, tier, capability flags), generated
+from `packages/*.json` and, when available, `status/validation.json` — no account, no backend —
+plus `typr types submit <pkg> [repo]` (`we-data-ch/typr`,
+`crates/typr-cli/src/registry_submit.rs`), a CLI-scoped stand-in for "Add to Registry via
+automated PR". It shells out to the submitter's own, already-authenticated `gh`: fork this repo,
+add/update the one `packages/<pkg>.json` entry (validated with `typr types validate` first, never
+a no-op PR), push, open the PR — as them, from their own fork, no GitHub App or backend involved.
+Not yet done:
 
-- **J6, second half** *(optional)* — "Add to Registry" via automated PR (needs a GitHub App,
-  auth, and anti-spam moderation — a project of comparable size to the rest of this repo, per
-  `registry.md` §12/D6). `store/` is not yet published (GitHub Pages is not enabled on this repo).
+- `store/` is not yet published (GitHub Pages is not enabled on this repo).
+- The web-form version of "Add to Registry" that `registry.md` §12/D6 originally scoped (a GitHub
+  App, stored tokens, a backend, anti-spam moderation) remains unbuilt and may never be — `typr
+  types submit` covers the same end goal for anyone with `gh` installed, at a fraction of the
+  cost.
 
 Full design and rationale: `typR/registry.md` (in the `TypR` workspace, alongside the compiler,
 playground and docs-site repos).
