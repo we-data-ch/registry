@@ -236,6 +236,44 @@
     font-size: 12.5px;
     color: var(--fg-muted);
   }
+  .install {
+    margin: 14px 0 18px;
+  }
+  .install .label {
+    font-size: 12.5px;
+    color: var(--fg-muted);
+    margin-bottom: 5px;
+  }
+  .install-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-alt);
+    padding: 8px 8px 8px 14px;
+  }
+  .install-box code {
+    flex: 1;
+    font-family: var(--mono);
+    font-size: 13.5px;
+    overflow-x: auto;
+    white-space: pre;
+  }
+  .install-box .copy-btn {
+    flex: none;
+    font: inherit;
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--fg);
+    cursor: pointer;
+  }
+  .install-box .copy-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .install-box .copy-btn.copied { border-color: var(--ok); color: var(--ok); }
 
   .backlink {
     display: inline-block;
@@ -449,6 +487,57 @@
     return "https://" + encodeURIComponent(universe || "cran") + ".r-universe.dev/" + encodeURIComponent(name);
   }
 
+  var installCmdCounter = 0;
+
+  // A copy-pasteable `typr` command with a "Copy" button. `label` is the short caption above it
+  // (e.g. "Install" or "Pin this definition"); the command text itself is read back from the
+  // <code> element's textContent when the copy button is clicked, so it's never re-escaped by
+  // hand — see the document-level click handler below.
+  function installCommandHtml(label, cmd) {
+    var id = "install-cmd-" + (++installCmdCounter);
+    return (
+      '<div class="install">' +
+      (label ? '<div class="label">' + escapeHtml(label) + "</div>" : "") +
+      '<div class="install-box">' +
+      '<code id="' + id + '">' + escapeHtml(cmd) + "</code>" +
+      '<button type="button" class="copy-btn" data-target="' + id + '">Copy</button>' +
+      "</div>" +
+      "</div>"
+    );
+  }
+
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest ? e.target.closest(".copy-btn") : null;
+    if (!btn) return;
+    var target = document.getElementById(btn.getAttribute("data-target"));
+    if (!target) return;
+    var text = target.textContent;
+    var showCopied = function () {
+      var prev = btn.textContent;
+      btn.textContent = "Copied!";
+      btn.classList.add("copied");
+      setTimeout(function () {
+        btn.textContent = prev;
+        btn.classList.remove("copied");
+      }, 1500);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(showCopied, function () { selectText(target); });
+    } else {
+      selectText(target);
+    }
+  });
+
+  // Fallback when the Clipboard API is unavailable (e.g. a non-HTTPS context) — select the
+  // command text so the user can copy it with Ctrl/Cmd+C themselves instead of silently failing.
+  function selectText(el) {
+    var range = document.createRange();
+    range.selectNodeContents(el);
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  }
+
   function ecosystemEntry(name) {
     var eco = state.ecosystem;
     return eco && eco.packages ? eco.packages.find(function (p) { return p.name === name; }) : null;
@@ -533,6 +622,19 @@
       "<ol>" + items + "</ol>";
   }
 
+  // Lower is more relevant. Matches on the package name always outrank matches that only hit
+  // the title (searching "cli" should surface the "cli" package itself before some unrelated
+  // package whose title merely mentions "CLI"), and an exact/prefix name match outranks a name
+  // that merely contains the query somewhere in the middle.
+  function searchRank(name, title, q) {
+    var n = name.toLowerCase();
+    if (n === q) return 0;
+    if (n.indexOf(q) === 0) return 1;
+    if (n.indexOf(q) !== -1) return 2;
+    if (title && title.toLowerCase().indexOf(q) !== -1) return 3;
+    return 4;
+  }
+
   function renderList(filterText) {
     var q = (filterText || "").trim().toLowerCase();
     renderMostWanted();
@@ -549,11 +651,25 @@
       var items = eco.packages.filter(function (p) {
         return !q || p.name.toLowerCase().indexOf(q) !== -1 || (p.title && p.title.toLowerCase().indexOf(q) !== -1);
       });
-      // Annotated packages first (what a TypR user is most likely looking for), then by name.
-      items = items.slice().sort(function (a, b) {
-        if (a.annotated !== b.annotated) return a.annotated ? -1 : 1;
-        return a.name.localeCompare(b.name);
-      });
+      if (q) {
+        // How well the name/title matches the query first, annotated packages as a tie-breaker
+        // (what a TypR user is most likely looking for), then shorter names (more likely to be
+        // *the* package rather than an unrelated one that happens to contain the query), then
+        // alphabetical.
+        items = items.slice().sort(function (a, b) {
+          var ra = searchRank(a.name, a.title, q), rb = searchRank(b.name, b.title, q);
+          if (ra !== rb) return ra - rb;
+          if (a.annotated !== b.annotated) return a.annotated ? -1 : 1;
+          if (a.name.length !== b.name.length) return a.name.length - b.name.length;
+          return a.name.localeCompare(b.name);
+        });
+      } else {
+        // No query: annotated packages first, then alphabetical — the default browsing order.
+        items = items.slice().sort(function (a, b) {
+          if (a.annotated !== b.annotated) return a.annotated ? -1 : 1;
+          return a.name.localeCompare(b.name);
+        });
+      }
       var shown = q ? items : items.slice(0, 200);
       el.metaLine.textContent =
         items.length.toLocaleString() + " of " + eco.total_packages.toLocaleString() + " package" + (eco.total_packages === 1 ? "" : "s") +
@@ -570,6 +686,14 @@
     var pkgs = state.packages.filter(function (p) {
       return !q || p.name.toLowerCase().indexOf(q) !== -1;
     });
+    if (q) {
+      pkgs = pkgs.slice().sort(function (a, b) {
+        var ra = searchRank(a.name, null, q), rb = searchRank(b.name, null, q);
+        if (ra !== rb) return ra - rb;
+        if (a.name.length !== b.name.length) return a.name.length - b.name.length;
+        return a.name.localeCompare(b.name);
+      });
+    }
 
     el.metaLine.textContent = state.packages.length
       ? pkgs.length + " of " + state.packages.length + " package" + (state.packages.length === 1 ? "" : "s") +
@@ -637,6 +761,7 @@
       "<p>No TypR Type Definition is indexed for <strong>" + escapeHtml(name) + "</strong> yet " +
       "(official or community).</p>" +
       sourceLinksHtml(name, ecoEntry) +
+      installCommandHtml("Install (no types indexed — calls fall back to untyped R)", "typr add " + name) +
       '<a class="contribute-cta" href="https://github.com/we-data-ch/registry#adding-a-definition" target="_blank" rel="noopener">' +
       "Contribute type definitions for " + escapeHtml(name) + " →</a>" +
       (notes.length ? '<div class="provenance-note">' + notes.map(escapeHtml).join(" — ") + "</div>" : "") +
@@ -660,6 +785,7 @@
     var html = "<h2>" + escapeHtml(pkg.name) + "</h2>";
     html += '<div class="sub">' + pkg.definitions.length + " definition" + (pkg.definitions.length === 1 ? "" : "s") + " indexed</div>";
     html += sourceLinksHtml(pkg.name, ecosystemEntry(pkg.name));
+    html += installCommandHtml("Install", "typr add " + pkg.name);
 
     pkg.definitions.forEach(function (d) {
       var caps = [];
@@ -679,6 +805,9 @@
           "<dt>since</dt><dd>" + escapeHtml(d.since || "—") + (d.until ? " (until " + escapeHtml(d.until) + ")" : "") + "</dd>" +
           "<dt>capabilities</dt><dd>" + escapeHtml(capsText) + "</dd>" +
         "</dl>" +
+        (pkg.definitions.length > 1
+          ? installCommandHtml("Pin exactly this definition", "typr types add github:" + d.repository + (d.rev ? "@" + d.rev : ""))
+          : "") +
         renderValidation(d.validation) +
         "</div>";
     });
