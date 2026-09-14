@@ -55,15 +55,17 @@ it red forever. See §9 of `registry.md` for what each check does and does not v
 ## Status
 
 This repo currently covers `typR/registry.md` §13 **J3** ("Registre minimal", directory layout,
-schema, registry-backed resolution in `typr add`/`typr types update`, `typr search <pkg>`) and
-the first two items of **J4** ("CI de validation": `typr types validate`'s mechanical checks, and
-the periodic revalidation job above). Not yet done, tracked in the same section:
+schema, registry-backed resolution in `typr add`/`typr types update`, `typr search <pkg>`), **J4**
+in full ("CI de validation": `typr types validate`'s mechanical checks, the periodic revalidation
+job above, and nominative per-check reporting — no badge, ever), and **J5** ("amorçage de la
+couverture"): `packages/` indexes 31 definitions under `definitions/` — the 30 most-downloaded
+CRAN packages (per `cranlogs.r-pkg.org`, minus a handful of header-only/build-scaffolding
+packages with no real R-level API), generated at `T3` by `typr gen-types` and verified end-to-end
+with `typr types validate` against this repo's own commits — plus `jsonlite`, `purrr`, and `R6`
+carrying a small hand-verified `T1` core (real functions, real types, actually executed against R
+via `typr run`, not just type-checked). Not yet done:
 
-- nominative display of what has been verified beyond the raw `status/validation.json` (a Store,
-  or a rendered page, is J6 — optional)
-- **J5** — bootstrapping actual coverage: `packages/` is still empty, so today every revalidation
-  run reports "nothing to revalidate" (see the badge-free philosophy in `registry.md` §9/§16: an
-  empty registry is not a failure, just nothing indexed yet)
+- **J6** *(optional)* — a Store: search UI, package pages, "Add to Registry" via automated PR.
 
 Full design and rationale: `typR/registry.md` (in the `TypR` workspace, alongside the compiler,
 playground and docs-site repos).
