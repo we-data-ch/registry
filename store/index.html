@@ -4,40 +4,52 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>TypR Registry — Store</title>
+<link rel="icon" href="img/typr.ico" />
 <style>
+  /* Palette alignée sur typr.github.io (src/css/custom.css) : même rouge
+     d'accent tiré du logo, mêmes gris Infima pour fond/bordures/texte, même
+     pile de polices système — pour que Registry se lise comme la même
+     plateforme que la doc et le playground, pas un site à part. */
   :root {
     color-scheme: light dark;
     --bg: #ffffff;
-    --bg-alt: #f5f6f8;
-    --fg: #1a1d21;
-    --fg-muted: #5b6572;
-    --border: #dde1e6;
-    --accent: #2b5fd9;
-    --accent-bg: #eaf0ff;
+    --bg-alt: #f5f6f7;
+    --fg: #1c1e21;
+    --fg-muted: #606770;
+    --border: #dadde1;
+    --accent: #c1173a;
+    --accent-hover: #9e1130;
+    --accent-contrast: #ffffff;
+    --accent-bg: rgba(193, 23, 58, 0.08);
     --ok: #1a7f37;
     --ok-bg: #e6f6ea;
     --warn: #9a6700;
     --warn-bg: #fff6dc;
     --fail: #b3261e;
     --fail-bg: #fdeceb;
-    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --neutral-bg: #ebedf0;
+    --mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans",
+      sans-serif, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #14161a;
-      --bg-alt: #1c1f24;
-      --fg: #e6e8eb;
-      --fg-muted: #97a1ad;
-      --border: #2c3138;
-      --accent: #7ea3ff;
-      --accent-bg: #1c2740;
+      --bg: #1b1b1d;
+      --bg-alt: #242526;
+      --fg: #e3e3e3;
+      --fg-muted: #a6adb4;
+      --border: #606770;
+      --accent: #ff7a8a;
+      --accent-hover: #ff9aa6;
+      --accent-contrast: #1b1b1d;
+      --accent-bg: rgba(255, 122, 138, 0.09);
       --ok: #6fd68a;
       --ok-bg: #10281a;
       --warn: #e0b350;
       --warn-bg: #332705;
       --fail: #ff8a80;
       --fail-bg: #3a1310;
+      --neutral-bg: #2c3138;
     }
   }
   * { box-sizing: border-box; }
@@ -48,6 +60,56 @@
     font-family: var(--sans);
     font-size: 15px;
     line-height: 1.5;
+  }
+  /* Barre de navigation — même structure que le navbar Docusaurus des deux
+     autres sites (logo 2rem + titre à gauche, liens à droite), pour que la
+     navigation entre Registry / Documentation / Playground se sente continue. */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0.7rem 20px;
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--border);
+  }
+  .navbar__brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--fg);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    min-width: 0;
+  }
+  .navbar__brand img { height: 2rem; width: 2rem; flex: none; }
+  .navbar__links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+  .navbar__links a {
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+  .navbar__links a:hover { color: var(--accent); }
+  .navbar__links a.navbar__cta {
+    background: var(--accent);
+    color: var(--accent-contrast);
+    font-weight: 600;
+  }
+  .navbar__links a.navbar__cta:hover {
+    background: var(--accent-hover);
+    color: var(--accent-contrast);
   }
   .wrap {
     max-width: 960px;
@@ -109,7 +171,7 @@
   }
   .badge.tier-T1 { background: var(--ok-bg); color: var(--ok); }
   .badge.tier-T2 { background: var(--warn-bg); color: var(--warn); }
-  .badge.tier-T3 { background: var(--border); color: var(--fg-muted); }
+  .badge.tier-T3 { background: var(--neutral-bg); color: var(--fg-muted); }
   .badge.src { background: var(--accent-bg); color: var(--accent); }
   .badge.cap-warn { background: var(--warn-bg); color: var(--warn); }
   .empty { color: var(--fg-muted); padding: 40px 0; text-align: center; }
@@ -183,9 +245,27 @@
   }
   footer a { color: var(--accent); }
   [hidden] { display: none !important; }
+
+  @media (max-width: 640px) {
+    .navbar { flex-wrap: wrap; row-gap: 8px; }
+    .navbar__links { gap: 2px; }
+    .navbar__links a { padding: 6px 8px; font-size: 13px; }
+  }
 </style>
 </head>
 <body>
+<nav class="navbar">
+  <a class="navbar__brand" href="https://we-data-ch.github.io/typr.github.io/">
+    <img src="img/typr.ico" alt="TypR logo" />
+    <span>TypR Registry</span>
+  </a>
+  <div class="navbar__links">
+    <a href="https://we-data-ch.github.io/typr.github.io/">Documentation</a>
+    <a href="https://we-data-ch.github.io/typr-playground.github.io/">Playground</a>
+    <a href="https://github.com/we-data-ch/registry">GitHub</a>
+    <a class="navbar__cta" href="https://github.com/we-data-ch/typr">Download TypR</a>
+  </div>
+</nav>
 <div class="wrap">
   <header>
     <h1>TypR Registry</h1>
