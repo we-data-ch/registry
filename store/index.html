@@ -339,13 +339,13 @@
   </header>
 
   <div class="tabs">
-    <button type="button" id="tab-definitions" class="active">TypR definitions</button>
-    <button type="button" id="tab-ecosystem">Browse CRAN</button>
+    <button type="button" id="tab-ecosystem" class="active">Browse CRAN</button>
+    <button type="button" id="tab-definitions">TypR definitions</button>
   </div>
 
   <section id="view-list">
     <div id="most-wanted" class="most-wanted" hidden></div>
-    <input id="search" class="search" type="search" placeholder="Search a package… (e.g. dplyr, jsonlite)" autofocus />
+    <input id="search" class="search" type="search" placeholder="Search any CRAN package… (e.g. data.table, quarto)" autofocus />
     <div id="meta-line" class="meta-line"></div>
     <div id="grid" class="grid"></div>
     <div id="empty" class="empty" hidden>No package matches your search.</div>
@@ -375,7 +375,7 @@
   // annotation status — registry2.md §14.1 "Browsing the full R ecosystem"). Same card grid /
   // detail-view machinery renders both; only the per-item fields and the search text differ.
   var state = {
-    tab: "definitions",
+    tab: "ecosystem",
     packages: [],
     generatedAt: null,
     ecosystem: null, // { packages, most_wanted, total_cran_packages, annotated_count, ... } | null
