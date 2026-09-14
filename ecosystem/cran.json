@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T14:13:27.048Z",
+  "generated_at": "2026-09-14T14:41:48.411Z",
   "source": "https://cran.r-project.org/src/contrib/PACKAGES",
   "titles_source": "https://cran.r-project.org/web/packages/available_packages_by_name.html",
   "downloads_source": "https://cranlogs.r-pkg.org/top/last-month/100",
@@ -7,7 +7,7 @@
     "start": "2026-08-14T00:00:00.000Z",
     "end": "2026-09-12T00:00:00.000Z"
   },
-  "total_packages": 25029,
+  "total_packages": 25014,
   "packages": [
     {
       "name": "a11yShiny",
@@ -12334,12 +12334,6 @@
       "downloads_last_month": null
     },
     {
-      "name": "boot",
-      "version": "1.3-32",
-      "title": "Bootstrap Functions",
-      "downloads_last_month": null
-    },
-    {
       "name": "boot.heterogeneity",
       "version": "1.1.5",
       "title": "A Bootstrap-Based Heterogeneity Test for Meta-Analysis",
@@ -18610,12 +18604,6 @@
       "downloads_last_month": null
     },
     {
-      "name": "class",
-      "version": "7.3-24",
-      "title": "Functions for Classification",
-      "downloads_last_month": null
-    },
-    {
       "name": "ClassComparison",
       "version": "3.3.5",
       "title": "Classes and Methods for \"Class Comparison\" Problems on Microarrays",
@@ -19477,12 +19465,6 @@
       "name": "clustEff",
       "version": "0.3.1",
       "title": "Clusters of Effects Curves in Quantile Regression Models",
-      "downloads_last_month": null
-    },
-    {
-      "name": "cluster",
-      "version": "2.1.8.3",
-      "title": "\"Finding Groups in Data\": Cluster Analysis Extended Rousseeuw et al.",
       "downloads_last_month": null
     },
     {
@@ -20491,12 +20473,6 @@
       "name": "codestral",
       "version": "0.0.2",
       "title": "Chat and FIM with 'Codestral'",
-      "downloads_last_month": null
-    },
-    {
-      "name": "codetools",
-      "version": "0.2-20",
-      "title": "Code Analysis Tools for R",
       "downloads_last_month": null
     },
     {
@@ -44416,12 +44392,6 @@
       "downloads_last_month": null
     },
     {
-      "name": "foreign",
-      "version": "0.8-91",
-      "title": "Read Data Stored by 'Minitab', 'S', 'SAS', 'SPSS', 'Stata', 'Systat', 'Weka', 'dBase', ...",
-      "downloads_last_month": null
-    },
-    {
       "name": "forensicolors",
       "version": "1.0.0",
       "title": "Forensic Colors",
@@ -65554,12 +65524,6 @@
       "downloads_last_month": null
     },
     {
-      "name": "KernSmooth",
-      "version": "2.23-27",
-      "title": "Functions for Kernel Smoothing Supporting Wand & Jones (1995)",
-      "downloads_last_month": null
-    },
-    {
       "name": "KernSmoothIRT",
       "version": "6.6",
       "title": "Nonparametric Item Response Theory",
@@ -67483,12 +67447,6 @@
       "name": "latte",
       "version": "0.2.2",
       "title": "Interface to 'LattE' and '4ti2'",
-      "downloads_last_month": null
-    },
-    {
-      "name": "lattice",
-      "version": "0.23-1",
-      "title": "Trellis Graphics for R",
       "downloads_last_month": null
     },
     {
@@ -73186,12 +73144,6 @@
       "downloads_last_month": null
     },
     {
-      "name": "MASS",
-      "version": "7.3-66",
-      "title": "Support Functions and Datasets for Venables and Ripley's MASS",
-      "downloads_last_month": null
-    },
-    {
       "name": "masscor",
       "version": "0.0.7.1",
       "title": "Mass Measurement Corrections",
@@ -73465,12 +73417,6 @@
       "name": "matrisk",
       "version": "0.1.0",
       "title": "Macroeconomic-at-Risk",
-      "downloads_last_month": null
-    },
-    {
-      "name": "Matrix",
-      "version": "1.7-6",
-      "title": "Sparse and Dense Matrix Classes and Methods",
       "downloads_last_month": null
     },
     {
@@ -76447,12 +76393,6 @@
       "name": "mgc",
       "version": "2.0.2",
       "title": "Multiscale Graph Correlation",
-      "downloads_last_month": null
-    },
-    {
-      "name": "mgcv",
-      "version": "1.9-4",
-      "title": "Mixed GAM Computation Vehicle with Automatic Smoothness Estimation",
       "downloads_last_month": null
     },
     {
@@ -86098,12 +86038,6 @@
       "downloads_last_month": null
     },
     {
-      "name": "nlme",
-      "version": "3.1-171",
-      "title": "Linear and Nonlinear Mixed Effects Models",
-      "downloads_last_month": null
-    },
-    {
       "name": "nlmeU",
       "version": "0.71.7",
       "title": "Functions and Data Supporting 'Linear Mixed-Effects Models: A Step-by-Step Approach'",
@@ -86569,12 +86503,6 @@
       "name": "nndiagram",
       "version": "1.0.0",
       "title": "Generator of 'LaTeX' Code for Drawing Neural Network Diagrams with 'TikZ'",
-      "downloads_last_month": null
-    },
-    {
-      "name": "nnet",
-      "version": "7.3-21",
-      "title": "Feed-Forward Neural Networks and Multinomial Log-Linear Models",
       "downloads_last_month": null
     },
     {
@@ -115276,12 +115204,6 @@
       "downloads_last_month": null
     },
     {
-      "name": "rpart",
-      "version": "4.1.27",
-      "title": "Recursive Partitioning and Regression Trees",
-      "downloads_last_month": null
-    },
-    {
       "name": "rpart.LAD",
       "version": "0.1.3",
       "title": "Least Absolute Deviation Regression Trees",
@@ -128374,12 +128296,6 @@
       "downloads_last_month": null
     },
     {
-      "name": "spatial",
-      "version": "7.3-19",
-      "title": "Functions for Kriging and Point Pattern Analysis",
-      "downloads_last_month": null
-    },
-    {
       "name": "SpatialAcc",
       "version": "0.1-6",
       "title": "Spatial Accessibility Measures",
@@ -133867,12 +133783,6 @@
       "name": "surviv",
       "version": "0.1.3",
       "title": "Flexible Instrumental Variable Methods for Survival Analysis",
-      "downloads_last_month": null
-    },
-    {
-      "name": "survival",
-      "version": "3.8-12",
-      "title": "Survival Analysis",
       "downloads_last_month": null
     },
     {

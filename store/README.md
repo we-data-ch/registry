@@ -5,16 +5,18 @@ A static search/browse page over `packages/*.json` — `typR/registry.md` §13 J
 backend: everything runs in the visitor's browser against generated JSON files. This is
 deliberately **not** the "Add to Registry → automated PR" item (§12/D6) — that item is unstarted.
 
-The page has two tabs:
+The page has two tabs, **Browse packages** shown first/by default:
 
+- **Browse packages** — the union of the full CRAN package index and the full R-universe package
+  index (including packages that live on R-universe but never made it to CRAN), overlaid with
+  which of those packages already have a TypR annotation (official/community/generated) and which
+  don't, plus a "most wanted" list of high-download, still-untyped packages. This is the discovery
+  use case from `typR/registry2.md` §14.1 ("Browsing the full R ecosystem") / §19.1 ("Most wanted
+  packages"): a developer evaluating an R package can check, before adopting it, whether typed
+  interfaces already exist, see whether it's on CRAN and/or which R-universe universe hosts it —
+  and if it has no annotation yet, jump straight to the contribution instructions.
 - **TypR definitions** — the packages this registry already indexes a Type Definition for
   (unchanged behaviour).
-- **Browse CRAN** — the full CRAN package index, overlaid with which of those packages already
-  have a TypR annotation (official/community/generated) and which don't, plus a "most wanted"
-  list of high-download, still-untyped packages. This is the discovery use case from
-  `typR/registry2.md` §14.1 ("Browsing the full R ecosystem") / §19.1 ("Most wanted packages"):
-  a developer evaluating an R package can check, before adopting it, whether typed interfaces
-  already exist — and if not, jump straight to the contribution instructions.
 
 ## Files
 
@@ -25,16 +27,18 @@ The page has two tabs:
   `../status/validation.json` — §9's nominative per-check results, joined in so the page can show
   what was actually verified instead of a green badge).
 - `data/ecosystem.json` — **generated**, not hand-edited. Produced by the same script from
-  `../ecosystem/cran.json` (see [`../ecosystem/README.md`](../ecosystem/README.md)) joined
-  against `../packages/*.json` for annotation status. Absent until `ecosystem/cran.json` exists —
-  the "Browse CRAN" tab degrades to a "not available" message rather than erroring (D2).
+  `../ecosystem/cran.json` and `../ecosystem/r-universe.json` (see
+  [`../ecosystem/README.md`](../ecosystem/README.md)) joined against `../packages/*.json` for
+  annotation status. Degrades gracefully when one or both inputs are absent — the "Browse
+  packages" tab shows a "not available" message rather than erroring (D2) only if *neither* exists.
 
 ## Regenerating
 
-Run this after editing anything under `packages/`, or after refreshing the CRAN index:
+Run this after editing anything under `packages/`, or after refreshing the ecosystem indexes:
 
 ```bash
-node scripts/fetch-cran-index.mjs   # optional: refresh ecosystem/cran.json from CRAN first
+node scripts/fetch-cran-index.mjs        # optional: refresh ecosystem/cran.json from CRAN
+node scripts/fetch-runiverse-index.mjs   # optional: refresh ecosystem/r-universe.json
 node scripts/gen-store-data.mjs
 ```
 

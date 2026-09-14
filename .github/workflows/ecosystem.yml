@@ -1,11 +1,13 @@
-name: Refresh CRAN ecosystem index
+name: Refresh ecosystem index
 
 # Weekly refresh of ecosystem/cran.json (the full CRAN name/version/title index, plus download
-# counts for the top ~100 packages) and the derived store/data/{packages,ecosystem}.json — the
-# "Browse CRAN" tab of the store (typR/registry2.md §14.1/§15.1/§19.1). Same shape as
-# revalidate.yml: a bot commit on a schedule, never blocking on transient upstream flakiness by
-# failing silently — a failed fetch here just means next week's run tries again, the store keeps
-# serving last week's (still-committed) index in the meantime.
+# counts for the top ~100 packages), ecosystem/r-universe.json (the full R-universe package
+# index — includes packages that never made it to CRAN), and the derived
+# store/data/{packages,ecosystem}.json — the "Browse packages" tab of the store
+# (typR/registry2.md §14.1/§15.1/§19.1). Same shape as revalidate.yml: a bot commit on a
+# schedule, never blocking on transient upstream flakiness by failing silently — a failed fetch
+# here just means next week's run tries again, the store keeps serving last week's
+# (still-committed) index in the meantime.
 
 on:
   schedule:
@@ -17,7 +19,7 @@ permissions:
 
 jobs:
   refresh:
-    name: Refresh ecosystem/cran.json and store data
+    name: Refresh ecosystem/*.json and store data
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -29,6 +31,9 @@ jobs:
       - name: Fetch CRAN index
         run: node scripts/fetch-cran-index.mjs
 
+      - name: Fetch R-universe index
+        run: node scripts/fetch-runiverse-index.mjs
+
       - name: Regenerate store data
         run: node scripts/gen-store-data.mjs
 
@@ -36,10 +41,10 @@ jobs:
         run: |
           git config user.name "typr-registry-bot"
           git config user.email "actions@github.com"
-          git add ecosystem/cran.json store/data/ecosystem.json store/data/packages.json
+          git add ecosystem/cran.json ecosystem/r-universe.json store/data/ecosystem.json store/data/packages.json
           if git diff --cached --quiet; then
             echo "ecosystem index unchanged."
           else
-            git commit -m "ecosystem: refresh CRAN index"
+            git commit -m "ecosystem: refresh CRAN + R-universe index"
             git push
           fi

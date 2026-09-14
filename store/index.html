@@ -176,9 +176,10 @@
   .badge.cap-warn { background: var(--warn-bg); color: var(--warn); }
   .badge.annotated { background: var(--ok-bg); color: var(--ok); }
   .badge.untyped { background: var(--neutral-bg); color: var(--fg-muted); }
+  .badge.origin { background: none; border: 1px solid var(--border); color: var(--fg-muted); }
   .empty { color: var(--fg-muted); padding: 40px 0; text-align: center; }
 
-  /* Tabs: "TypR definitions" (packages.json, unchanged behaviour) vs. "Browse CRAN"
+  /* Tabs: "TypR definitions" (packages.json, unchanged behaviour) vs. "Browse packages"
      (ecosystem.json, registry2.md §14.1) — same dataset-agnostic card/detail rendering
      underneath, just a different source array and a couple of extra badges/links. */
   .tabs {
@@ -331,21 +332,21 @@
     <h1>TypR Registry</h1>
     <p>
       A read-only index of community <a href="https://github.com/we-data-ch/typr" style="color:var(--accent)">TypR</a>
-      Type Definitions for R packages, plus a browsable index of the wider CRAN ecosystem so you
-      can check whether a package you want to use already has annotations. This page only reads
-      generated JSON from this repository — no account, no upload, nothing runs server-side. To
-      add a definition, open a PR (see the repo <a href="../" style="color:var(--accent)">README</a>).
+      Type Definitions for R packages, plus a browsable index of the wider CRAN and R-universe
+      ecosystem so you can check whether a package you want to use already has annotations. This
+      page only reads generated JSON from this repository — no account, no upload, nothing runs
+      server-side. To add a definition, open a PR (see the repo <a href="../" style="color:var(--accent)">README</a>).
     </p>
   </header>
 
   <div class="tabs">
-    <button type="button" id="tab-ecosystem" class="active">Browse CRAN</button>
+    <button type="button" id="tab-ecosystem" class="active">Browse packages</button>
     <button type="button" id="tab-definitions">TypR definitions</button>
   </div>
 
   <section id="view-list">
     <div id="most-wanted" class="most-wanted" hidden></div>
-    <input id="search" class="search" type="search" placeholder="Search any CRAN package… (e.g. data.table, quarto)" autofocus />
+    <input id="search" class="search" type="search" placeholder="Search any package… (e.g. data.table, quarto)" autofocus />
     <div id="meta-line" class="meta-line"></div>
     <div id="grid" class="grid"></div>
     <div id="empty" class="empty" hidden>No package matches your search.</div>
@@ -378,7 +379,7 @@
     tab: "ecosystem",
     packages: [],
     generatedAt: null,
-    ecosystem: null, // { packages, most_wanted, total_cran_packages, annotated_count, ... } | null
+    ecosystem: null, // { packages, most_wanted, total_packages, total_cran_packages, total_r_universe_packages, annotated_count, ... } | null
   };
 
   var el = {
@@ -440,12 +441,31 @@
     return "https://cran.r-project.org/package=" + encodeURIComponent(name);
   }
 
-  // Every CRAN package is mirrored automatically into R-universe's own "cran" universe (this is
-  // r-universe.dev's own behaviour, not something this registry curates) — so this link is valid
-  // for any name found in ecosystem.json without a separate R-universe fetch (registry2.md
-  // §14.1's "developer wants to use X, checks the catalog" flow, one hop shorter).
-  function rUniverseUrl(name) {
-    return "https://" + encodeURIComponent(name) + ".r-universe.dev";
+  // https://<pkg>.r-universe.dev does NOT resolve (verified: 404 for every package tried,
+  // including ones on CRAN) — the real URL always goes through a universe:
+  // https://<universe>.r-universe.dev/<pkg>. Every CRAN package is mirrored automatically into
+  // the "cran" universe, so that's the fallback when a package's own dev universe isn't known.
+  function rUniverseUrl(name, universe) {
+    return "https://" + encodeURIComponent(universe || "cran") + ".r-universe.dev/" + encodeURIComponent(name);
+  }
+
+  function ecosystemEntry(name) {
+    var eco = state.ecosystem;
+    return eco && eco.packages ? eco.packages.find(function (p) { return p.name === name; }) : null;
+  }
+
+  // Shared by both detail views: a definitions-tab package (state.packages) has no on_cran/
+  // on_r_universe fields of its own, so look the name up in the ecosystem index when it's
+  // loaded; fall back to "assume CRAN" (true for every TypR definition indexed so far) when it
+  // isn't, rather than showing no links at all.
+  function sourceLinksHtml(name, ecoEntry) {
+    var onCran = ecoEntry ? ecoEntry.on_cran : true;
+    var onRUniverse = ecoEntry ? ecoEntry.on_r_universe : true;
+    var universe = ecoEntry ? ecoEntry.universe : null;
+    var links = [];
+    if (onCran) links.push('<a href="' + cranUrl(name) + '" target="_blank" rel="noopener">View on CRAN ↗</a>');
+    if (onRUniverse) links.push('<a href="' + rUniverseUrl(name, universe) + '" target="_blank" rel="noopener">View on R-universe ↗</a>');
+    return links.length ? '<div class="links" style="margin-bottom: 16px;">' + links.join("") + "</div>" : "";
   }
 
   function renderDefinitionCard(pkg) {
@@ -481,6 +501,8 @@
             (p.tier ? '<span class="badge tier-' + p.tier + '">' + p.tier + "</span>" : "") +
             (p.source ? '<span class="badge src">' + escapeHtml(p.source) + "</span>" : "")
           : '<span class="badge untyped">no annotations yet</span>') +
+        (p.on_cran ? '<span class="badge origin">CRAN</span>' : "") +
+        (p.on_r_universe ? '<span class="badge origin">R-universe</span>' : "") +
       "</div>";
     card.addEventListener("click", function () {
       location.hash = "#pkg=" + encodeURIComponent(p.name);
@@ -506,7 +528,7 @@
     }).join("");
     el.mostWanted.innerHTML =
       "<h2>Most wanted</h2>" +
-      "<p>Untyped CRAN packages, ranked by last month's downloads — a starting point if you're " +
+      "<p>Untyped packages, ranked by last month's CRAN downloads — a starting point if you're " +
       'looking for something to <a href="https://github.com/we-data-ch/registry#adding-a-definition" style="color:var(--accent)">contribute type definitions</a> for.</p>' +
       "<ol>" + items + "</ol>";
   }
@@ -521,7 +543,7 @@
         el.metaLine.textContent = "";
         el.grid.innerHTML = "";
         el.empty.hidden = false;
-        el.empty.textContent = "CRAN index not available — run scripts/fetch-cran-index.mjs and scripts/gen-store-data.mjs.";
+        el.empty.textContent = "Package index not available — run scripts/fetch-cran-index.mjs, scripts/fetch-runiverse-index.mjs and scripts/gen-store-data.mjs.";
         return;
       }
       var items = eco.packages.filter(function (p) {
@@ -534,8 +556,9 @@
       });
       var shown = q ? items : items.slice(0, 200);
       el.metaLine.textContent =
-        items.length + " of " + eco.total_cran_packages + " CRAN package" + (eco.total_cran_packages === 1 ? "" : "s") +
-        " (" + eco.annotated_count + " with TypR annotations)" +
+        items.length.toLocaleString() + " of " + eco.total_packages.toLocaleString() + " package" + (eco.total_packages === 1 ? "" : "s") +
+        " (" + eco.total_cran_packages.toLocaleString() + " on CRAN, " + eco.total_r_universe_packages.toLocaleString() + " on R-universe, " +
+        eco.annotated_count + " with TypR annotations)" +
         (!q && items.length > shown.length ? " — showing first " + shown.length + ", search to narrow" : "") +
         (eco.cran_generated_at ? " — CRAN index refreshed " + eco.cran_generated_at.slice(0, 10) : "");
       el.grid.innerHTML = "";
@@ -599,19 +622,24 @@
     if (ecoEntry && ecoEntry.title) {
       html += '<div class="sub">' + escapeHtml(ecoEntry.title) + "</div>";
     }
+    var notes = [];
+    if (ecoEntry && ecoEntry.downloads_last_month) {
+      notes.push(ecoEntry.downloads_last_month.toLocaleString() + " downloads last month (cranlogs.r-pkg.org)");
+    }
+    if (ecoEntry && ecoEntry.on_r_universe && !ecoEntry.on_cran) {
+      notes.push("not on CRAN — R-universe only" + (ecoEntry.universe ? " (" + ecoEntry.universe + " universe)" : ""));
+    }
+    if (ecoEntry && typeof ecoEntry.stars === "number") {
+      notes.push(ecoEntry.stars.toLocaleString() + " GitHub stars");
+    }
     html +=
       '<div class="def-card">' +
       "<p>No TypR Type Definition is indexed for <strong>" + escapeHtml(name) + "</strong> yet " +
       "(official or community).</p>" +
-      '<div class="links">' +
-      '<a href="' + cranUrl(name) + '" target="_blank" rel="noopener">View on CRAN ↗</a>' +
-      '<a href="' + rUniverseUrl(name) + '" target="_blank" rel="noopener">View on R-universe ↗</a>' +
-      "</div>" +
+      sourceLinksHtml(name, ecoEntry) +
       '<a class="contribute-cta" href="https://github.com/we-data-ch/registry#adding-a-definition" target="_blank" rel="noopener">' +
       "Contribute type definitions for " + escapeHtml(name) + " →</a>" +
-      (ecoEntry && ecoEntry.downloads_last_month
-        ? '<div class="provenance-note">' + ecoEntry.downloads_last_month.toLocaleString() + " downloads last month (source: cranlogs.r-pkg.org).</div>"
-        : "") +
+      (notes.length ? '<div class="provenance-note">' + notes.map(escapeHtml).join(" — ") + "</div>" : "") +
       "</div>";
     el.detail.innerHTML = html;
   }
@@ -631,11 +659,7 @@
     }
     var html = "<h2>" + escapeHtml(pkg.name) + "</h2>";
     html += '<div class="sub">' + pkg.definitions.length + " definition" + (pkg.definitions.length === 1 ? "" : "s") + " indexed</div>";
-    html +=
-      '<div class="links" style="margin-bottom: 16px;">' +
-      '<a href="' + cranUrl(pkg.name) + '" target="_blank" rel="noopener">View on CRAN ↗</a>' +
-      '<a href="' + rUniverseUrl(pkg.name) + '" target="_blank" rel="noopener">View on R-universe ↗</a>' +
-      "</div>";
+    html += sourceLinksHtml(pkg.name, ecosystemEntry(pkg.name));
 
     pkg.definitions.forEach(function (d) {
       var caps = [];
@@ -681,7 +705,7 @@
     el.tabDefinitions.classList.toggle("active", tab === "definitions");
     el.tabEcosystem.classList.toggle("active", tab === "ecosystem");
     el.search.placeholder = tab === "ecosystem"
-      ? "Search any CRAN package… (e.g. data.table, quarto)"
+      ? "Search any package… (e.g. data.table, quarto)"
       : "Search a package… (e.g. dplyr, jsonlite)";
     el.search.value = ""; // a query from one tab rarely makes sense carried into the other
     if (location.hash) location.hash = "";
@@ -718,14 +742,17 @@
         .then(function (data) {
           state.ecosystem = data;
           el.ecosystemFootnote.textContent =
-            "CRAN browsing covers " + data.total_cran_packages.toLocaleString() + " packages (" +
-            data.cran_source + "), refreshed " + (data.cran_generated_at ? data.cran_generated_at.slice(0, 10) : "unknown") +
-            " — download counts from " + data.downloads_source + ".";
+            "Package browsing covers " + data.total_packages.toLocaleString() + " packages: " +
+            data.total_cran_packages.toLocaleString() + " on CRAN (" + data.cran_source + ", refreshed " +
+            (data.cran_generated_at ? data.cran_generated_at.slice(0, 10) : "unknown") + "), " +
+            data.total_r_universe_packages.toLocaleString() + " on R-universe (" + data.r_universe_source + ", refreshed " +
+            (data.r_universe_generated_at ? data.r_universe_generated_at.slice(0, 10) : "unknown") + ") " +
+            "— download counts from " + data.downloads_source + ".";
         })
         .catch(function () {
           // Not fatal (D2-style: absence of the ecosystem index is not an error) — the
-          // "Browse CRAN" tab just reports it has nothing to show, per renderList above.
-          el.tabEcosystem.title = "ecosystem.json not available — run scripts/fetch-cran-index.mjs and scripts/gen-store-data.mjs";
+          // "Browse packages" tab just reports it has nothing to show, per renderList above.
+          el.tabEcosystem.title = "ecosystem.json not available — run scripts/fetch-cran-index.mjs, scripts/fetch-runiverse-index.mjs and scripts/gen-store-data.mjs";
         });
     })
     .then(route);

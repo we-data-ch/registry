@@ -15,7 +15,8 @@ packages/
 definitions/
 └── <pkg>/                  # long-tail monorepo: definitions with no external repo of their own
 ecosystem/
-└── cran.json                # generated: full CRAN package index (name/version/title/downloads)
+├── cran.json                # generated: full CRAN package index (name/version/title/downloads)
+└── r-universe.json          # generated: full R-universe package index (incl. non-CRAN packages)
 ```
 
 - **`schema/`** — the contract every `packages/*.json` file must satisfy. Validate with any
@@ -32,11 +33,12 @@ ecosystem/
   ```
 - **`packages/`** — see [`packages/README.md`](packages/README.md).
 - **`definitions/`** — see [`definitions/README.md`](definitions/README.md).
-- **`ecosystem/`** — see [`ecosystem/README.md`](ecosystem/README.md). The full CRAN package
-  index, independent of what this registry has annotations for — lets the store answer "does
-  package X have TypR types yet?" for *any* CRAN package, not just the ones already indexed.
+- **`ecosystem/`** — see [`ecosystem/README.md`](ecosystem/README.md). The full CRAN and
+  R-universe package indexes, independent of what this registry has annotations for — lets the
+  store answer "does package X have TypR types yet?" for *any* CRAN or R-universe package, not
+  just the ones already indexed.
 - **`store/`** — a static, read-only search/browse page over `packages/*.json` and
-  `ecosystem/cran.json`, no account or backend. See [`store/README.md`](store/README.md).
+  `ecosystem/*.json`, no account or backend. See [`store/README.md`](store/README.md).
 
 ## Adding a definition
 
@@ -82,13 +84,16 @@ add/update the one `packages/<pkg>.json` entry (validated with `typr types valid
 a no-op PR), push, open the PR — as them, from their own fork, no GitHub App or backend involved.
 
 The store also covers the discovery idea in `typR/registry2.md` §14.1/§15.1/§19.1: a "Browse
-CRAN" tab lists the full CRAN package index (`ecosystem/cran.json`,
-[`scripts/fetch-cran-index.mjs`](scripts/fetch-cran-index.mjs), refreshed weekly by
+packages" tab (shown first, and the default view) lists the union of the full CRAN package index
+and the full R-universe package index — including packages that live on R-universe but never made
+it to CRAN — (`ecosystem/cran.json` + `ecosystem/r-universe.json`,
+[`scripts/fetch-cran-index.mjs`](scripts/fetch-cran-index.mjs) +
+[`scripts/fetch-runiverse-index.mjs`](scripts/fetch-runiverse-index.mjs), both refreshed weekly by
 [`.github/workflows/ecosystem.yml`](.github/workflows/ecosystem.yml)), each entry flagged
-annotated/untyped against `packages/*.json`, with a "most wanted" ranking of high-download,
-still-untyped packages linking straight to the contribution instructions above — so a developer
-picking an R package, or a contributor picking what to type next, doesn't have to leave this
-site to check CRAN first. Not yet done:
+annotated/untyped against `packages/*.json` and CRAN/R-universe/both, with a "most wanted" ranking
+of high-download, still-untyped packages linking straight to the contribution instructions above —
+so a developer picking an R package, or a contributor picking what to type next, doesn't have to
+leave this site to check CRAN or R-universe first. Not yet done:
 
 - `store/` is not yet published (GitHub Pages is not enabled on this repo).
 - The web-form version of "Add to Registry" that `registry.md` §12/D6 originally scoped (a GitHub

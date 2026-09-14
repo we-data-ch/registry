@@ -119,14 +119,19 @@ async function main() {
   }
   console.log(`got download counts for ${downloads.size} packages (window ${top.start} .. ${top.end})`);
 
-  const packages = records
-    .map((r) => ({
+  // CRAN's own PACKAGES file lists a handful of base/recommended packages (boot, MASS, Matrix,
+  // ...) twice, with identical fields both times — a Map absorbs that instead of emitting
+  // duplicate rows.
+  const byName = new Map();
+  for (const r of records) {
+    byName.set(r.Package, {
       name: r.Package,
       version: r.Version ?? null,
       title: titles.get(r.Package) ?? "",
       downloads_last_month: downloads.has(r.Package) ? downloads.get(r.Package) : null,
-    }))
-    .sort((a, b) => a.name.localeCompare(b.name));
+    });
+  }
+  const packages = Array.from(byName.values()).sort((a, b) => a.name.localeCompare(b.name));
 
   mkdirSync(outDir, { recursive: true });
   writeFileSync(
