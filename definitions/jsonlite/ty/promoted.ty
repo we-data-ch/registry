@@ -1,0 +1,25 @@
+#! pkg: jsonlite
+#! tier: T1
+#! since: 2.0.0
+#! note: marshalling automatique via @extern — to_native() sur l'argument, from_char() sur le retour
+#! example: toJSON(42)   # -> "[42]"
+#! ret: chaîne JSON
+@extern jsonlite::toJSON: (Any) -> char;
+
+#! pkg: jsonlite
+#! tier: T1
+#! since: 2.0.0
+#! note: marshalling automatique via @extern
+#! param json: texte à valider
+#! ret: TRUE si `json` est un JSON syntaxiquement valide
+#! example: validate("{\"a\":1}")   # -> TRUE
+@extern jsonlite::validate: (json: char) -> bool;
+
+#! pkg: jsonlite
+#! tier: T1
+#! since: 2.0.0
+#! note: marshalling automatique via @extern
+#! param json: texte JSON en entrée
+#! ret: le même JSON, espaces superflus retirés
+#! example: minify("{ \"a\" : 1 }")   # -> "{\"a\":1}"
+@extern jsonlite::minify: (json: char) -> char;

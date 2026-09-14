@@ -1,0 +1,26 @@
+#! pkg: purrr
+#! tier: T1
+#! since: 1.2.2
+#! note: marshalling automatique via @extern — to_native() dépouille l'enveloppe TypR (typed_vec) avant l'appel
+#! param x: liste ou vecteur, typé ou non
+#! ret: TRUE si `x` a longueur 0
+#! example: is_empty([])   # -> TRUE
+@extern purrr::is_empty: (x: Any) -> bool;
+
+#! pkg: purrr
+#! tier: T1
+#! since: 1.2.2
+#! note: marshalling automatique via @extern
+#! param x: liste ou vecteur, éventuellement imbriqué
+#! ret: profondeur d'imbrication (1 pour un vecteur plat)
+#! example: pluck_depth([1, 2, 3])   # -> 1
+@extern purrr::pluck_depth: (x: Any) -> int;
+
+#! pkg: purrr
+#! tier: T1
+#! since: 1.2.2
+#! note: marshalling automatique via @extern
+#! param x: liste ou vecteur
+#! ret: `x` avec ses éléments vides/NULL retirés
+#! example: compact([1, 2, 3])   # -> [1, 2, 3]
+@extern purrr::compact: (x: Any) -> Any;

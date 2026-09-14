@@ -5,11 +5,11 @@ name    = "jsonlite"
 since   = "2.0.0"
 
 [definition]
-version = "0.1.0"
+version = "0.2.0"
 tier    = "T3"
 
 [provider]
-type       = "generated"
+type       = "community"
 repository = "github:we-data-ch/registry/definitions/jsonlite"
 
 [capabilities]

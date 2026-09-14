@@ -1,0 +1,1423 @@
+@importFrom purrr map2_dfc exec invoke_map_lgl list_rbind discard is_list rbernoulli is_atomic pmap prepend set_names map2_df invoke_map_df list_cbind pmap_lgl map_dbl walk2 pluck_exists flatten_dbl walk rdunif is_bare_character flatten_df discard_at array_tree detect_index lift_lv invoke_map_dbl done pmap_int in_parallel splice imodify imap_dbl list_assign lmap_at is_character is_bare_atomic transpose as_mapper reduce invoke_map pmap_df lift_ld is_null map2_raw tail_while lmap modify_if has_element map2_chr map_int is_scalar_character pmap_dfr is_scalar_atomic vec_depth map_lgl simplify map_raw modify_in flatten_dfr safely insistently lift_dv map_depth every invoke_map_chr map_vec pwalk imap_lgl imap_chr rate_sleep quietly detect flatten pmap_dfc is_integer pluck map_if lift cross flatten_dfc is_double pmap_raw imap_int cross2 list_transpose is_bare_integer cross3 is_scalar_integer lift_dl lmap_if list_along rerun cross_df is_bare_numeric imap_dfc update_list keep rep_along is_scalar_list rate_delay is_formula map_dfr list_simplify slowly flatten_chr when map2_vec none flatten_lgl head_while modify_at flatten_raw is_scalar_double rate_reset is_bare_vector imap_dfr reduce2 auto_browse attr_getter invoke_map_raw is_bare_logical modify map_dfc map map2_dbl modify2 array_branch is_function some rate_backoff imap_vec map2_lgl list_c simplify_all flatten_int pmap_chr is_bare_list invoke_map_dfc is_scalar_vector map_at map2 map_chr map2_int is_logical imap_raw list_merge pmap_vec as_vector list_modify is_bare_double invoke_map_dfr possibly invoke_map_int lift_vd compose negate partial invoke pmap_dbl modify_tree is_scalar_logical lift_vl assign_in accumulate2 map2_dfr accumulate keep_at map_df is_vector chuck modify_depth is_rate imap iwalk list_flatten;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .f:
+#! param ...:
+@map2_dfc: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .fn:
+#! param .env:
+#! param ...:
+@exec: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param .x:
+#! param .env:
+#! param ...:
+@invoke_map_lgl: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param names_to:
+#! param ptype:
+#! param ...:
+@list_rbind: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .p:
+#! param ...:
+@discard: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+@is_list: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param n:
+#! param p:
+@rbernoulli: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+@is_atomic: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .l:
+#! param .f:
+#! param .progress:
+#! param ...:
+@pmap: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param values:
+#! param before:
+@prepend: (Any, Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param nm:
+#! param ...:
+@set_names: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .f:
+#! param .id:
+#! param ...:
+@map2_df: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param .x:
+#! param .env:
+#! param ...:
+@invoke_map_df: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param name_repair:
+#! param size:
+#! param ...:
+@list_cbind: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .l:
+#! param .f:
+#! param .progress:
+#! param ...:
+@pmap_lgl: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param .progress:
+#! param ...:
+@map_dbl: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .f:
+#! param .progress:
+#! param ...:
+@walk2: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param ...:
+@pluck_exists: (Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+@flatten_dbl: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param .progress:
+#! param ...:
+@walk: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param n:
+#! param b:
+#! param a:
+@rdunif: (Any, Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_character: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .id:
+@flatten_df: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param at:
+@discard_at: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param array:
+#! param margin:
+@array_tree: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param .dir:
+#! param ...:
+@detect_index: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param ..f:
+#! param ...:
+@lift_lv: (Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param .x:
+#! param .env:
+#! param ...:
+@invoke_map_dbl: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+@done: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .l:
+#! param .f:
+#! param .progress:
+#! param ...:
+@pmap_int: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param ...:
+@in_parallel: (Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param ...:
+@splice: (...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param ...:
+@imodify: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param ...:
+@imap_dbl: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .is_node:
+#! param ...:
+@list_assign: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .at:
+#! param .f:
+#! param ...:
+@lmap_at: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+@is_character: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_atomic: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .l:
+#! param .names:
+@transpose: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param ...:
+@as_mapper: (Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param .init:
+#! param .dir:
+#! param ...:
+@reduce: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param .x:
+#! param .env:
+#! param ...:
+@invoke_map: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .l:
+#! param .f:
+#! param .id:
+#! param ...:
+@pmap_df: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param ..f:
+#! param ...:
+@lift_ld: (Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+@is_null: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .f:
+#! param ...:
+@map2_raw: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .p:
+#! param ...:
+@tail_while: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param ...:
+@lmap: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .p:
+#! param .f:
+#! param .else:
+#! param ...:
+@modify_if: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+@has_element: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .f:
+#! param .progress:
+#! param ...:
+@map2_chr: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param .progress:
+#! param ...:
+@map_int: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+@is_scalar_character: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .l:
+#! param .f:
+#! param .id:
+#! param ...:
+@pmap_dfr: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+@is_scalar_atomic: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+@vec_depth: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param .progress:
+#! param ...:
+@map_lgl: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .type:
+@simplify: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param ...:
+@map_raw: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .where:
+#! param .f:
+#! param ...:
+@modify_in: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .id:
+@flatten_dfr: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param otherwise:
+#! param quiet:
+@safely: (Any, Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param f:
+#! param rate:
+#! param quiet:
+@insistently: (Any, Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param ..f:
+#! param .unnamed:
+#! param ...:
+@lift_dv: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .depth:
+#! param .f:
+#! param .ragged:
+#! param .is_node:
+#! param ...:
+@map_depth: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .p:
+#! param ...:
+@every: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param .x:
+#! param .env:
+#! param ...:
+@invoke_map_chr: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param .ptype:
+#! param .progress:
+#! param ...:
+@map_vec: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .l:
+#! param .f:
+#! param .progress:
+#! param ...:
+@pwalk: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param ...:
+@imap_lgl: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param ...:
+@imap_chr: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param rate:
+#! param quiet:
+@rate_sleep: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+@quietly: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param .dir:
+#! param .default:
+#! param ...:
+@detect: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+@flatten: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .l:
+#! param .f:
+#! param ...:
+@pmap_dfc: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+@is_integer: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .default:
+#! param ...:
+@pluck: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .p:
+#! param .f:
+#! param .else:
+#! param ...:
+@map_if: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param ..f:
+#! param .unnamed:
+#! param ...:
+@lift: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .l:
+#! param .filter:
+@cross: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+@flatten_dfc: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+#! param finite:
+@is_double: (Any, Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .l:
+#! param .f:
+#! param ...:
+@pmap_raw: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param ...:
+@imap_int: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .filter:
+@cross2: (Any, Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param template:
+#! param simplify:
+#! param ptype:
+#! param default:
+#! param ...:
+@list_transpose: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_integer: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .z:
+#! param .filter:
+@cross3: (Any, Any, Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+@is_scalar_integer: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param ..f:
+#! param .unnamed:
+#! param ...:
+@lift_dl: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .p:
+#! param .f:
+#! param .else:
+#! param ...:
+@lmap_if: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+@list_along: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .n:
+#! param ...:
+@rerun: (Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .l:
+#! param .filter:
+@cross_df: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_numeric: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param ...:
+@imap_dfc: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param ...:
+@update_list: (Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .p:
+#! param ...:
+@keep: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param along:
+#! param x:
+@rep_along: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+@is_scalar_list: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param pause:
+#! param max_times:
+@rate_delay: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param scoped:
+#! param lhs:
+@is_formula: (Any, Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param .id:
+#! param ...:
+@map_dfr: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param strict:
+#! param ptype:
+#! param ...:
+@list_simplify: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param f:
+#! param rate:
+#! param quiet:
+@slowly: (Any, Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+@flatten_chr: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .:
+#! param ...:
+@when: (Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .f:
+#! param .ptype:
+#! param .progress:
+#! param ...:
+@map2_vec: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .p:
+#! param ...:
+@none: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+@flatten_lgl: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .p:
+#! param ...:
+@head_while: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .at:
+#! param .f:
+#! param ...:
+@modify_at: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+@flatten_raw: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+@is_scalar_double: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param rate:
+@rate_reset: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_vector: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param .id:
+#! param ...:
+@imap_dfr: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .f:
+#! param .init:
+#! param ...:
+@reduce2: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+@auto_browse: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param attr:
+@attr_getter: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param .x:
+#! param .env:
+#! param ...:
+@invoke_map_raw: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_logical: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param ...:
+@modify: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param ...:
+@map_dfc: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param .progress:
+#! param ...:
+@map: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .f:
+#! param .progress:
+#! param ...:
+@map2_dbl: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .f:
+#! param ...:
+@modify2: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param array:
+#! param margin:
+@array_branch: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+@is_function: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .p:
+#! param ...:
+@some: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param pause_base:
+#! param pause_cap:
+#! param pause_min:
+#! param max_times:
+#! param jitter:
+@rate_backoff: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param ...:
+@imap_vec: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .f:
+#! param .progress:
+#! param ...:
+@map2_lgl: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param ptype:
+#! param ...:
+@list_c: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .type:
+@simplify_all: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+@flatten_int: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .l:
+#! param .f:
+#! param .progress:
+#! param ...:
+@pmap_chr: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_list: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param .x:
+#! param .env:
+#! param ...:
+@invoke_map_dfc: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+@is_scalar_vector: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .at:
+#! param .f:
+#! param .progress:
+#! param ...:
+@map_at: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .f:
+#! param .progress:
+#! param ...:
+@map2: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param .progress:
+#! param ...:
+@map_chr: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .f:
+#! param .progress:
+#! param ...:
+@map2_int: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+@is_logical: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param ...:
+@imap_raw: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .is_node:
+#! param ...:
+@list_merge: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .l:
+#! param .f:
+#! param .ptype:
+#! param .progress:
+#! param ...:
+@pmap_vec: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .type:
+@as_vector: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .is_node:
+#! param ...:
+@list_modify: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_double: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param .x:
+#! param .env:
+#! param ...:
+@invoke_map_dfr: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param otherwise:
+#! param quiet:
+@possibly: (Any, Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param .x:
+#! param .env:
+#! param ...:
+@invoke_map_int: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param ..f:
+#! param .type:
+#! param ...:
+@lift_vd: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .dir:
+#! param ...:
+@compose: (Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .p:
+@negate: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param ...:
+@partial: (Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .f:
+#! param .x:
+#! param .env:
+#! param ...:
+@invoke: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .l:
+#! param .f:
+#! param .progress:
+#! param ...:
+@pmap_dbl: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param leaf:
+#! param is_node:
+#! param pre:
+#! param post:
+#! param ...:
+@modify_tree: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+@is_scalar_logical: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param ..f:
+#! param .type:
+#! param ...:
+@lift_vl: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param where:
+#! param value:
+@assign_in: (Any, Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .f:
+#! param .init:
+#! param .simplify:
+#! param .ptype:
+#! param ...:
+@accumulate2: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .y:
+#! param .f:
+#! param .id:
+#! param ...:
+@map2_dfr: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param .init:
+#! param .dir:
+#! param .simplify:
+#! param .ptype:
+#! param ...:
+@accumulate: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param at:
+@keep_at: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param .id:
+#! param ...:
+@map_df: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param n:
+@is_vector: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param ...:
+@chuck: (Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .depth:
+#! param .f:
+#! param .ragged:
+#! param .is_node:
+#! param ...:
+@modify_depth: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+@is_rate: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param ...:
+@imap: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .f:
+#! param ...:
+@iwalk: (Any, Any, ...Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param is_node:
+#! param name_spec:
+#! param name_repair:
+#! param ...:
+@list_flatten: (Any, Any, Any, Any, ...Any) -> Any;
+

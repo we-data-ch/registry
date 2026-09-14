@@ -1,30 +1,42 @@
-@importFrom R6 is.R6Class is.R6 R6Class;
+type R6Generator <- Foreign<Any>;
 
 #! pkg: R6
-#! tier: T3
-#! generated-from: R6 2.6.1, R 4.6.1
-#! param x:
-@`is.R6Class`: (Any) -> Any;
+#! tier: T1
+#! since: 2.6.1
+#! note: marshalling automatique via @extern
+#! param x: valeur quelconque à tester
+#! ret: TRUE si `x` est une instance R6
+#! example: `is.R6`(42)   # -> FALSE
+@extern R6::`is.R6`: (x: Any) -> bool;
 
 #! pkg: R6
-#! tier: T3
-#! generated-from: R6 2.6.1, R 4.6.1
-#! param x:
-@`is.R6`: (Any) -> Any;
+#! tier: T1
+#! since: 2.6.1
+#! note: marshalling automatique via @extern
+#! param x: valeur quelconque à tester
+#! ret: TRUE si `x` est un générateur de classe R6 (le résultat de `R6Class`)
+#! example: `is.R6Class`(gen)   # -> TRUE
+@extern R6::`is.R6Class`: (x: Any) -> bool;
 
 #! pkg: R6
-#! tier: T3
-#! generated-from: R6 2.6.1, R 4.6.1
-#! param classname:
-#! param public:
-#! param private:
-#! param active:
-#! param inherit:
-#! param lock_objects:
-#! param class:
-#! param portable:
-#! param lock_class:
-#! param cloneable:
-#! param parent_env:
-@R6Class: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
-
+#! tier: T1
+#! since: 2.6.1
+#! note: marshalling automatique via @extern — public/private/active/inherit/parent_env
+#!       restent Any (ce sont des listes R nommées ou un générateur R6 côté parent,
+#!       pas des scalaires TypR) ; le retour est un R6Generator opaque, sans wrapping
+#!       (Foreign<T> n'a pas de from_xxx — table de marshalling de
+#!       ai_context/tuto_external_packages.md)
+#! param classname: nom de la classe générée
+#! param public: liste nommée de champs/méthodes publics
+#! param private: liste nommée de champs/méthodes privés
+#! param active: liste nommée de bindings actifs (propriétés calculées)
+#! param inherit: générateur R6 parent, ou vide
+#! param lock_objects: si FALSE, autorise l'ajout dynamique de champs aux instances
+#! param class: si TRUE, les instances portent la classe S3 `classname`
+#! param portable: si TRUE (défaut), les méthodes utilisent `self`/`private` explicites
+#! param lock_class: si TRUE, empêche `$set()` d'ajouter des membres après coup
+#! param cloneable: si TRUE (défaut), les instances ont une méthode `$clone()`
+#! param parent_env: environnement où résoudre `inherit`
+#! ret: un générateur R6 (objet opaque, appeler `$new(...)` dessus pour instancier)
+#! example: `R6Class`("Counter", empty, empty, empty, empty, true, true, true, false, true, empty)
+@extern R6::`R6Class`: (classname: char, public: Any, private: Any, active: Any, inherit: Any, lock_objects: bool, class: bool, portable: bool, lock_class: bool, cloneable: bool, parent_env: Any) -> R6Generator;
