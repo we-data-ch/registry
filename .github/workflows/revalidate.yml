@@ -1,0 +1,80 @@
+name: Revalidate
+
+# Periodic revalidation of every Type Definition this registry indexes —
+# `typR/registry.md` §13 J4, "revalidation périodique des définitions déjà
+# indexées (détection de dérive)". The actual checks (manifest/capabilities,
+# `.ty` parsing/type-checking, exports and arity vs. the installed package's
+# `formals()`, the T1 promotion gate) live in `we-data-ch/typr`
+# (`crates/typr-cli/src/registry_validate.rs`,
+# `crates/typr-cli/src/registry_revalidate.rs`); this job is the "central
+# place to run it" that module's own doc comments point back to — walking
+# every entry in `packages/*.json` and diffing against the previous run's
+# `status/validation.json` to tell a package that has always been shaky
+# apart from one that just broke.
+#
+# `packages/` is still empty as of this workflow landing (§13 J3/J5 — nothing
+# indexed yet), so early runs are expected to report "nothing to revalidate"
+# and exit 0. That's fine: the job exists so coverage added later (J5) is
+# revalidated automatically from day one, not bolted on afterwards.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # weekly, Monday 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  revalidate:
+    name: Revalidate indexed definitions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout registry
+        uses: actions/checkout@v5
+
+      - name: Checkout typr
+        uses: actions/checkout@v5
+        with:
+          repository: we-data-ch/typr
+          ref: develop
+          path: typr
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: typr
+
+      - name: Build typr
+        working-directory: typr
+        run: cargo build --release -p typr-cli --bin typr
+
+      # `typr types revalidate` exits 1 only when something that was OK last
+      # run just broke (new drift) — a long-standing, already-known failure
+      # doesn't keep this job red forever. `continue-on-error` so the status
+      # file still gets committed either way, and the real pass/fail is
+      # decided by the step below, which reads this step's own outcome.
+      - name: Revalidate every indexed definition
+        id: revalidate
+        continue-on-error: true
+        run: ./typr/target/release/typr types revalidate --dir . --out status/validation.json
+
+      - name: Commit updated validation status
+        run: |
+          git config user.name "typr-registry-bot"
+          git config user.email "actions@github.com"
+          git add status/validation.json
+          if git diff --cached --quiet; then
+            echo "status/validation.json unchanged."
+          else
+            git commit -m "revalidate: update status/validation.json"
+            git push
+          fi
+
+      - name: Fail the job if new drift was detected
+        if: steps.revalidate.outcome == 'failure'
+        run: |
+          echo "::error::typr types revalidate reported new drift — see the job log above and status/validation.json."
+          exit 1

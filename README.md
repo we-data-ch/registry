@@ -42,15 +42,28 @@ definitions/
 4. `capabilities` must match what the target repository actually contains — a mismatch (e.g.
    undeclared R) is rejected at fetch time by `typr types add` (`registry.md` §5.5).
 
+## Revalidation
+
+[`.github/workflows/revalidate.yml`](.github/workflows/revalidate.yml) runs `typr types
+revalidate` (`we-data-ch/typr`, `crates/typr-cli/src/registry_revalidate.rs`) against every entry
+in `packages/*.json` on a weekly schedule (and on manual dispatch), and commits the result to
+[`status/validation.json`](status/validation.json) — `typR/registry.md` §13 J4, "revalidation
+périodique des définitions déjà indexées (détection de dérive)". The job fails only when a
+definition that was fine last run just broke; a long-standing, already-known failure doesn't keep
+it red forever. See §9 of `registry.md` for what each check does and does not verify.
+
 ## Status
 
-This repo currently covers `typR/registry.md` §13 **J3** ("Registre minimal"): the directory
-layout and schema. Not yet done, tracked in the same section:
+This repo currently covers `typR/registry.md` §13 **J3** ("Registre minimal", directory layout,
+schema, registry-backed resolution in `typr add`/`typr types update`, `typr search <pkg>`) and
+the first two items of **J4** ("CI de validation": `typr types validate`'s mechanical checks, and
+the periodic revalidation job above). Not yet done, tracked in the same section:
 
-- resolution through this registry from `typr add` / `typr types update` (today, `typr types add`
-  only resolves an explicit `github:owner/repo` — see `we-data-ch/typr`'s
-  `crates/typr-cli/src/type_registry.rs`)
-- `typr search <pkg>`
+- nominative display of what has been verified beyond the raw `status/validation.json` (a Store,
+  or a rendered page, is J6 — optional)
+- **J5** — bootstrapping actual coverage: `packages/` is still empty, so today every revalidation
+  run reports "nothing to revalidate" (see the badge-free philosophy in `registry.md` §9/§16: an
+  empty registry is not a failure, just nothing indexed yet)
 
 Full design and rationale: `typR/registry.md` (in the `TypR` workspace, alongside the compiler,
 playground and docs-site repos).
