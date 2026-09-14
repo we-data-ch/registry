@@ -26,8 +26,8 @@
       "properties": {
         "repository": {
           "type": "string",
-          "pattern": "^[^/\\s]+/[^/\\s]+$",
-          "description": "GitHub \"owner/repo\" of the Definition Repository — no scheme, no host. Prefixed with \"github:\" this is exactly what typr's RepoSpec::parse (type_registry.rs) accepts; github: is the only hosting scheme understood (registry.md §7.3/§8.2)."
+          "pattern": "^[^/\\s]+/[^/\\s]+(/[^/\\s]+)*$",
+          "description": "GitHub \"owner/repo\" of the Definition Repository, optionally followed by a subdirectory path — no scheme, no host. Prefixed with \"github:\" this is exactly what typr's RepoSpec::parse (type_registry.rs) accepts; github: is the only hosting scheme understood (registry.md §7.3/§8.2). The subdirectory form (e.g. \"we-data-ch/registry/definitions/dplyr\") is how a monorepo long-tail entry (§8.2) points at its own typr-def.toml instead of the repository root."
         },
         "version": {
           "type": "string",
