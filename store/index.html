@@ -174,7 +174,67 @@
   .badge.tier-T3 { background: var(--neutral-bg); color: var(--fg-muted); }
   .badge.src { background: var(--accent-bg); color: var(--accent); }
   .badge.cap-warn { background: var(--warn-bg); color: var(--warn); }
+  .badge.annotated { background: var(--ok-bg); color: var(--ok); }
+  .badge.untyped { background: var(--neutral-bg); color: var(--fg-muted); }
   .empty { color: var(--fg-muted); padding: 40px 0; text-align: center; }
+
+  /* Tabs: "TypR definitions" (packages.json, unchanged behaviour) vs. "Browse CRAN"
+     (ecosystem.json, registry2.md §14.1) — same dataset-agnostic card/detail rendering
+     underneath, just a different source array and a couple of extra badges/links. */
+  .tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .tabs button {
+    appearance: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--fg-muted);
+    font: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 4px 10px;
+    margin-right: 18px;
+    cursor: pointer;
+  }
+  .tabs button:hover { color: var(--fg); }
+  .tabs button.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .card .title { color: var(--fg-muted); font-size: 12.5px; margin-top: 4px; }
+  .links { display: flex; gap: 14px; flex-wrap: wrap; }
+  .links a { font-size: 13px; color: var(--accent); text-decoration: none; }
+  .links a:hover { text-decoration: underline; }
+  .most-wanted {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    background: var(--bg-alt);
+  }
+  .most-wanted h2 { font-size: 15px; margin: 0 0 4px; }
+  .most-wanted p { margin: 0 0 10px; color: var(--fg-muted); font-size: 13px; }
+  .most-wanted ol { margin: 0; padding-left: 20px; }
+  .most-wanted li { font-size: 13.5px; padding: 3px 0; }
+  .most-wanted li .dl { color: var(--fg-muted); font-size: 12px; }
+  .most-wanted a { color: var(--fg); text-decoration: none; font-weight: 600; }
+  .most-wanted a:hover { color: var(--accent); }
+  .contribute-cta {
+    display: inline-block;
+    margin-top: 14px;
+    color: var(--accent);
+    font-size: 13.5px;
+    text-decoration: none;
+  }
+  .contribute-cta:hover { text-decoration: underline; }
+  .provenance-note {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border);
+    font-size: 12.5px;
+    color: var(--fg-muted);
+  }
 
   .backlink {
     display: inline-block;
@@ -271,13 +331,20 @@
     <h1>TypR Registry</h1>
     <p>
       A read-only index of community <a href="https://github.com/we-data-ch/typr" style="color:var(--accent)">TypR</a>
-      Type Definitions for R packages. This page only reads <code>packages/*.json</code> from this
-      repository — no account, no upload, nothing runs server-side. To add a definition, open a PR
-      (see the repo <a href="../" style="color:var(--accent)">README</a>).
+      Type Definitions for R packages, plus a browsable index of the wider CRAN ecosystem so you
+      can check whether a package you want to use already has annotations. This page only reads
+      generated JSON from this repository — no account, no upload, nothing runs server-side. To
+      add a definition, open a PR (see the repo <a href="../" style="color:var(--accent)">README</a>).
     </p>
   </header>
 
+  <div class="tabs">
+    <button type="button" id="tab-definitions" class="active">TypR definitions</button>
+    <button type="button" id="tab-ecosystem">Browse CRAN</button>
+  </div>
+
   <section id="view-list">
+    <div id="most-wanted" class="most-wanted" hidden></div>
     <input id="search" class="search" type="search" placeholder="Search a package… (e.g. dplyr, jsonlite)" autofocus />
     <div id="meta-line" class="meta-line"></div>
     <div id="grid" class="grid"></div>
@@ -290,9 +357,12 @@
   </section>
 
   <footer>
-    Generated from <code>packages/*.json</code> by <code>scripts/gen-store-data.mjs</code>. Tier:
-    <strong>T1</strong> verified, <strong>T2</strong> declared, <strong>T3</strong> generated — see
-    <code>registry.md</code> §5.4/§9 for what each verification check does and does not prove.
+    <div>
+      Definitions generated from <code>packages/*.json</code> by <code>scripts/gen-store-data.mjs</code>.
+      Tier: <strong>T1</strong> verified, <strong>T2</strong> declared, <strong>T3</strong> generated —
+      see <code>registry.md</code> §5.4/§9 for what each verification check does and does not prove.
+    </div>
+    <div id="ecosystem-footnote" style="margin-top: 6px;"></div>
   </footer>
 </div>
 
@@ -300,7 +370,16 @@
 (function () {
   "use strict";
 
-  var state = { packages: [], generatedAt: null };
+  // "definitions" = packages.json (packages this registry already has Type Definitions for,
+  // unchanged behaviour). "ecosystem" = ecosystem.json (the full CRAN index overlaid with
+  // annotation status — registry2.md §14.1 "Browsing the full R ecosystem"). Same card grid /
+  // detail-view machinery renders both; only the per-item fields and the search text differ.
+  var state = {
+    tab: "definitions",
+    packages: [],
+    generatedAt: null,
+    ecosystem: null, // { packages, most_wanted, total_cran_packages, annotated_count, ... } | null
+  };
 
   var el = {
     search: document.getElementById("search"),
@@ -311,6 +390,10 @@
     viewDetail: document.getElementById("view-detail"),
     detail: document.getElementById("detail"),
     backLink: document.getElementById("back-link"),
+    tabDefinitions: document.getElementById("tab-definitions"),
+    tabEcosystem: document.getElementById("tab-ecosystem"),
+    mostWanted: document.getElementById("most-wanted"),
+    ecosystemFootnote: document.getElementById("ecosystem-footnote"),
   };
 
   function escapeHtml(s) {
@@ -353,8 +436,114 @@
     return base + "/tree/" + rev;
   }
 
+  function cranUrl(name) {
+    return "https://cran.r-project.org/package=" + encodeURIComponent(name);
+  }
+
+  // Every CRAN package is mirrored automatically into R-universe's own "cran" universe (this is
+  // r-universe.dev's own behaviour, not something this registry curates) — so this link is valid
+  // for any name found in ecosystem.json without a separate R-universe fetch (registry2.md
+  // §14.1's "developer wants to use X, checks the catalog" flow, one hop shorter).
+  function rUniverseUrl(name) {
+    return "https://" + encodeURIComponent(name) + ".r-universe.dev";
+  }
+
+  function renderDefinitionCard(pkg) {
+    var tier = bestTier(pkg);
+    var source = bestSource(pkg);
+    var card = document.createElement("button");
+    card.className = "card";
+    card.type = "button";
+    card.innerHTML =
+      '<div class="name">' + escapeHtml(pkg.name) + "</div>" +
+      '<div class="badges">' +
+        (tier ? '<span class="badge tier-' + tier + '">' + tier + "</span>" : "") +
+        (source ? '<span class="badge src">' + escapeHtml(source) + "</span>" : "") +
+        (pkg.definitions.length > 1 ? '<span class="badge src">' + pkg.definitions.length + " definitions</span>" : "") +
+        (anyRExecutable(pkg) ? '<span class="badge cap-warn">ships R</span>' : "") +
+      "</div>";
+    card.addEventListener("click", function () {
+      location.hash = "#pkg=" + encodeURIComponent(pkg.name);
+    });
+    return card;
+  }
+
+  function renderEcosystemCard(p) {
+    var card = document.createElement("button");
+    card.className = "card";
+    card.type = "button";
+    card.innerHTML =
+      '<div class="name">' + escapeHtml(p.name) + "</div>" +
+      (p.title ? '<div class="title">' + escapeHtml(p.title) + "</div>" : "") +
+      '<div class="badges">' +
+        (p.annotated
+          ? '<span class="badge annotated">typed</span>' +
+            (p.tier ? '<span class="badge tier-' + p.tier + '">' + p.tier + "</span>" : "") +
+            (p.source ? '<span class="badge src">' + escapeHtml(p.source) + "</span>" : "")
+          : '<span class="badge untyped">no annotations yet</span>') +
+      "</div>";
+    card.addEventListener("click", function () {
+      location.hash = "#pkg=" + encodeURIComponent(p.name);
+    });
+    return card;
+  }
+
+  function renderMostWanted() {
+    var eco = state.ecosystem;
+    if (!eco || state.tab !== "ecosystem" || !eco.most_wanted || !eco.most_wanted.length) {
+      el.mostWanted.hidden = true;
+      return;
+    }
+    el.mostWanted.hidden = false;
+    var items = eco.most_wanted.slice(0, 10).map(function (p) {
+      return (
+        "<li><a href=\"#pkg=" + encodeURIComponent(p.name) + "\">" + escapeHtml(p.name) + "</a>" +
+        (p.downloads_last_month
+          ? ' <span class="dl">— ' + p.downloads_last_month.toLocaleString() + " downloads/month</span>"
+          : "") +
+        "</li>"
+      );
+    }).join("");
+    el.mostWanted.innerHTML =
+      "<h2>Most wanted</h2>" +
+      "<p>Untyped CRAN packages, ranked by last month's downloads — a starting point if you're " +
+      'looking for something to <a href="https://github.com/we-data-ch/registry#adding-a-definition" style="color:var(--accent)">contribute type definitions</a> for.</p>' +
+      "<ol>" + items + "</ol>";
+  }
+
   function renderList(filterText) {
     var q = (filterText || "").trim().toLowerCase();
+    renderMostWanted();
+
+    if (state.tab === "ecosystem") {
+      var eco = state.ecosystem;
+      if (!eco) {
+        el.metaLine.textContent = "";
+        el.grid.innerHTML = "";
+        el.empty.hidden = false;
+        el.empty.textContent = "CRAN index not available — run scripts/fetch-cran-index.mjs and scripts/gen-store-data.mjs.";
+        return;
+      }
+      var items = eco.packages.filter(function (p) {
+        return !q || p.name.toLowerCase().indexOf(q) !== -1 || (p.title && p.title.toLowerCase().indexOf(q) !== -1);
+      });
+      // Annotated packages first (what a TypR user is most likely looking for), then by name.
+      items = items.slice().sort(function (a, b) {
+        if (a.annotated !== b.annotated) return a.annotated ? -1 : 1;
+        return a.name.localeCompare(b.name);
+      });
+      var shown = q ? items : items.slice(0, 200);
+      el.metaLine.textContent =
+        items.length + " of " + eco.total_cran_packages + " CRAN package" + (eco.total_cran_packages === 1 ? "" : "s") +
+        " (" + eco.annotated_count + " with TypR annotations)" +
+        (!q && items.length > shown.length ? " — showing first " + shown.length + ", search to narrow" : "") +
+        (eco.cran_generated_at ? " — CRAN index refreshed " + eco.cran_generated_at.slice(0, 10) : "");
+      el.grid.innerHTML = "";
+      el.empty.hidden = shown.length !== 0;
+      shown.forEach(function (p) { el.grid.appendChild(renderEcosystemCard(p)); });
+      return;
+    }
+
     var pkgs = state.packages.filter(function (p) {
       return !q || p.name.toLowerCase().indexOf(q) !== -1;
     });
@@ -367,25 +556,7 @@
     el.grid.innerHTML = "";
     el.empty.hidden = pkgs.length !== 0 || state.packages.length === 0;
 
-    pkgs.forEach(function (pkg) {
-      var tier = bestTier(pkg);
-      var source = bestSource(pkg);
-      var card = document.createElement("button");
-      card.className = "card";
-      card.type = "button";
-      card.innerHTML =
-        '<div class="name">' + escapeHtml(pkg.name) + "</div>" +
-        '<div class="badges">' +
-          (tier ? '<span class="badge tier-' + tier + '">' + tier + "</span>" : "") +
-          (source ? '<span class="badge src">' + escapeHtml(source) + "</span>" : "") +
-          (pkg.definitions.length > 1 ? '<span class="badge src">' + pkg.definitions.length + " definitions</span>" : "") +
-          (anyRExecutable(pkg) ? '<span class="badge cap-warn">ships R</span>' : "") +
-        "</div>";
-      card.addEventListener("click", function () {
-        location.hash = "#pkg=" + encodeURIComponent(pkg.name);
-      });
-      el.grid.appendChild(card);
-    });
+    pkgs.forEach(function (pkg) { el.grid.appendChild(renderDefinitionCard(pkg)); });
   }
 
   function checkStatusClass(status) {
@@ -423,14 +594,48 @@
     );
   }
 
+  function renderEcosystemDetail(name, ecoEntry) {
+    var html = "<h2>" + escapeHtml(name) + "</h2>";
+    if (ecoEntry && ecoEntry.title) {
+      html += '<div class="sub">' + escapeHtml(ecoEntry.title) + "</div>";
+    }
+    html +=
+      '<div class="def-card">' +
+      "<p>No TypR Type Definition is indexed for <strong>" + escapeHtml(name) + "</strong> yet " +
+      "(official or community).</p>" +
+      '<div class="links">' +
+      '<a href="' + cranUrl(name) + '" target="_blank" rel="noopener">View on CRAN ↗</a>' +
+      '<a href="' + rUniverseUrl(name) + '" target="_blank" rel="noopener">View on R-universe ↗</a>' +
+      "</div>" +
+      '<a class="contribute-cta" href="https://github.com/we-data-ch/registry#adding-a-definition" target="_blank" rel="noopener">' +
+      "Contribute type definitions for " + escapeHtml(name) + " →</a>" +
+      (ecoEntry && ecoEntry.downloads_last_month
+        ? '<div class="provenance-note">' + ecoEntry.downloads_last_month.toLocaleString() + " downloads last month (source: cranlogs.r-pkg.org).</div>"
+        : "") +
+      "</div>";
+    el.detail.innerHTML = html;
+  }
+
   function renderDetail(name) {
     var pkg = state.packages.find(function (p) { return p.name === name; });
     if (!pkg) {
-      el.detail.innerHTML = '<p class="empty">No definitions indexed for “' + escapeHtml(name) + '”.</p>';
+      var ecoEntry = state.ecosystem && state.ecosystem.packages
+        ? state.ecosystem.packages.find(function (p) { return p.name === name; })
+        : null;
+      if (ecoEntry) {
+        renderEcosystemDetail(name, ecoEntry);
+      } else {
+        el.detail.innerHTML = '<p class="empty">No definitions indexed for “' + escapeHtml(name) + '”.</p>';
+      }
       return;
     }
     var html = "<h2>" + escapeHtml(pkg.name) + "</h2>";
     html += '<div class="sub">' + pkg.definitions.length + " definition" + (pkg.definitions.length === 1 ? "" : "s") + " indexed</div>";
+    html +=
+      '<div class="links" style="margin-bottom: 16px;">' +
+      '<a href="' + cranUrl(pkg.name) + '" target="_blank" rel="noopener">View on CRAN ↗</a>' +
+      '<a href="' + rUniverseUrl(pkg.name) + '" target="_blank" rel="noopener">View on R-universe ↗</a>' +
+      "</div>";
 
     pkg.definitions.forEach(function (d) {
       var caps = [];
@@ -471,11 +676,25 @@
     }
   }
 
+  function setTab(tab) {
+    state.tab = tab;
+    el.tabDefinitions.classList.toggle("active", tab === "definitions");
+    el.tabEcosystem.classList.toggle("active", tab === "ecosystem");
+    el.search.placeholder = tab === "ecosystem"
+      ? "Search any CRAN package… (e.g. data.table, quarto)"
+      : "Search a package… (e.g. dplyr, jsonlite)";
+    el.search.value = ""; // a query from one tab rarely makes sense carried into the other
+    if (location.hash) location.hash = "";
+    else renderList(el.search.value);
+  }
+
   el.search.addEventListener("input", function () { renderList(el.search.value); });
   el.backLink.addEventListener("click", function (e) {
     e.preventDefault();
     location.hash = "";
   });
+  el.tabDefinitions.addEventListener("click", function () { setTab("definitions"); });
+  el.tabEcosystem.addEventListener("click", function () { setTab("ecosystem"); });
   window.addEventListener("hashchange", route);
 
   fetch("data/packages.json")
@@ -486,11 +705,30 @@
     .then(function (data) {
       state.packages = data.packages || [];
       state.generatedAt = data.generated_at || null;
-      route();
     })
     .catch(function (err) {
       el.metaLine.textContent = "Could not load data/packages.json (" + err.message + "). Run scripts/gen-store-data.mjs.";
-    });
+    })
+    .then(function () {
+      return fetch("data/ecosystem.json")
+        .then(function (r) {
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          return r.json();
+        })
+        .then(function (data) {
+          state.ecosystem = data;
+          el.ecosystemFootnote.textContent =
+            "CRAN browsing covers " + data.total_cran_packages.toLocaleString() + " packages (" +
+            data.cran_source + "), refreshed " + (data.cran_generated_at ? data.cran_generated_at.slice(0, 10) : "unknown") +
+            " — download counts from " + data.downloads_source + ".";
+        })
+        .catch(function () {
+          // Not fatal (D2-style: absence of the ecosystem index is not an error) — the
+          // "Browse CRAN" tab just reports it has nothing to show, per renderList above.
+          el.tabEcosystem.title = "ecosystem.json not available — run scripts/fetch-cran-index.mjs and scripts/gen-store-data.mjs";
+        });
+    })
+    .then(route);
 })();
 </script>
 </body>

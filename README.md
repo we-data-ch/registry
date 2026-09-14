@@ -14,6 +14,8 @@ packages/
 └── <pkg>.json               # one file per R package, e.g. shiny.json, dplyr.json
 definitions/
 └── <pkg>/                  # long-tail monorepo: definitions with no external repo of their own
+ecosystem/
+└── cran.json                # generated: full CRAN package index (name/version/title/downloads)
 ```
 
 - **`schema/`** — the contract every `packages/*.json` file must satisfy. Validate with any
@@ -30,8 +32,11 @@ definitions/
   ```
 - **`packages/`** — see [`packages/README.md`](packages/README.md).
 - **`definitions/`** — see [`definitions/README.md`](definitions/README.md).
-- **`store/`** — a static, read-only search/browse page over `packages/*.json`, no account or
-  backend. See [`store/README.md`](store/README.md).
+- **`ecosystem/`** — see [`ecosystem/README.md`](ecosystem/README.md). The full CRAN package
+  index, independent of what this registry has annotations for — lets the store answer "does
+  package X have TypR types yet?" for *any* CRAN package, not just the ones already indexed.
+- **`store/`** — a static, read-only search/browse page over `packages/*.json` and
+  `ecosystem/cran.json`, no account or backend. See [`store/README.md`](store/README.md).
 
 ## Adding a definition
 
@@ -75,7 +80,15 @@ plus `typr types submit <pkg> [repo]` (`we-data-ch/typr`,
 automated PR". It shells out to the submitter's own, already-authenticated `gh`: fork this repo,
 add/update the one `packages/<pkg>.json` entry (validated with `typr types validate` first, never
 a no-op PR), push, open the PR — as them, from their own fork, no GitHub App or backend involved.
-Not yet done:
+
+The store also covers the discovery idea in `typR/registry2.md` §14.1/§15.1/§19.1: a "Browse
+CRAN" tab lists the full CRAN package index (`ecosystem/cran.json`,
+[`scripts/fetch-cran-index.mjs`](scripts/fetch-cran-index.mjs), refreshed weekly by
+[`.github/workflows/ecosystem.yml`](.github/workflows/ecosystem.yml)), each entry flagged
+annotated/untyped against `packages/*.json`, with a "most wanted" ranking of high-download,
+still-untyped packages linking straight to the contribution instructions above — so a developer
+picking an R package, or a contributor picking what to type next, doesn't have to leave this
+site to check CRAN first. Not yet done:
 
 - `store/` is not yet published (GitHub Pages is not enabled on this repo).
 - The web-form version of "Add to Registry" that `registry.md` §12/D6 originally scoped (a GitHub

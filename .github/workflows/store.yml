@@ -1,8 +1,10 @@
 name: Store data freshness
 
-# store/data/packages.json is generated from packages/*.json (typR/registry.md §13 J6, item 1) —
-# this job fails if someone edits packages/*.json without regenerating it, or hand-edits the
-# generated file directly. Same contract as `typr syntax --check` in the compiler repo.
+# store/data/packages.json is generated from packages/*.json, and store/data/ecosystem.json from
+# ecosystem/cran.json + packages/*.json (typR/registry.md §13 J6, item 1;
+# typR/registry2.md §14.1/§15.1 for the ecosystem overlay) — this job fails if someone edits
+# either input without regenerating the derived file, or hand-edits a generated file directly.
+# Same contract as `typr syntax --check` in the compiler repo.
 
 on:
   push:
@@ -10,19 +12,23 @@ on:
     paths:
       - "packages/**"
       - "status/validation.json"
+      - "ecosystem/cran.json"
       - "scripts/gen-store-data.mjs"
       - "store/data/packages.json"
+      - "store/data/ecosystem.json"
   pull_request:
     paths:
       - "packages/**"
       - "status/validation.json"
+      - "ecosystem/cran.json"
       - "scripts/gen-store-data.mjs"
       - "store/data/packages.json"
+      - "store/data/ecosystem.json"
   workflow_dispatch: {}
 
 jobs:
   check:
-    name: store/data/packages.json is up to date
+    name: store/data/*.json is up to date
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -33,11 +39,24 @@ jobs:
 
       - name: Regenerate and diff
         run: |
-          git show HEAD:store/data/packages.json | jq 'del(.generated_at)' > /tmp/old.json
+          git show HEAD:store/data/packages.json | jq 'del(.generated_at)' > /tmp/old-packages.json
+          if [ -f store/data/ecosystem.json ]; then
+            git show HEAD:store/data/ecosystem.json | jq 'del(.generated_at)' > /tmp/old-ecosystem.json
+          fi
+
           node scripts/gen-store-data.mjs
-          jq 'del(.generated_at)' store/data/packages.json > /tmp/new.json
+
+          jq 'del(.generated_at)' store/data/packages.json > /tmp/new-packages.json
           # generated_at always changes; ignore it for the drift check and diff the rest.
-          if ! diff -u /tmp/old.json /tmp/new.json; then
+          if ! diff -u /tmp/old-packages.json /tmp/new-packages.json; then
             echo "::error::store/data/packages.json is stale — run 'node scripts/gen-store-data.mjs' and commit the result."
             exit 1
+          fi
+
+          if [ -f /tmp/old-ecosystem.json ]; then
+            jq 'del(.generated_at)' store/data/ecosystem.json > /tmp/new-ecosystem.json
+            if ! diff -u /tmp/old-ecosystem.json /tmp/new-ecosystem.json; then
+              echo "::error::store/data/ecosystem.json is stale — run 'node scripts/fetch-cran-index.mjs && node scripts/gen-store-data.mjs' and commit the result."
+              exit 1
+            fi
           fi
