@@ -1,13 +1,13 @@
 {
-  "name": "R6",
+  "name": "purrr",
   "definitions": [
     {
-      "repository": "we-data-ch/registry/definitions/R6",
+      "repository": "we-data-ch/registry/definitions/purrr",
       "version": "0.2.0",
       "rev": "5f9f5e8435cb0b71c36810290fb8f44481e8a3d7",
-      "since": "2.6.1",
+      "since": "1.2.2",
       "source": "community",
-      "tier": "T1",
+      "tier": "T3",
       "capabilities": {
         "r_shims": false,
         "extern_raw": false

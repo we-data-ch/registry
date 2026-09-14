@@ -3,10 +3,10 @@
   "definitions": [
     {
       "repository": "we-data-ch/registry/definitions/jsonlite",
-      "version": "0.1.0",
-      "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "version": "0.2.0",
+      "rev": "5f9f5e8435cb0b71c36810290fb8f44481e8a3d7",
       "since": "2.0.0",
-      "source": "generated",
+      "source": "community",
       "tier": "T3",
       "capabilities": {
         "r_shims": false,
