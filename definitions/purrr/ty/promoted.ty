@@ -11,16 +11,7 @@
 #! tier: T1
 #! since: 1.2.2
 #! note: marshalling automatique via @extern
-#! param x: liste ou vecteur, éventuellement imbriqué
-#! ret: profondeur d'imbrication (1 pour un vecteur plat)
-#! example: pluck_depth([1, 2, 3])   # -> 1
-@extern purrr::pluck_depth: (x: Any) -> int;
-
-#! pkg: purrr
-#! tier: T1
-#! since: 1.2.2
-#! note: marshalling automatique via @extern
-#! param x: liste ou vecteur
-#! ret: `x` avec ses éléments vides/NULL retirés
-#! example: compact([1, 2, 3])   # -> [1, 2, 3]
-@extern purrr::compact: (x: Any) -> Any;
+#! param x: valeur quelconque à tester
+#! ret: TRUE si `x` est une fonction
+#! example: is_function([1, 2, 3])   # -> FALSE
+@extern purrr::is_function: (x: Any) -> bool;

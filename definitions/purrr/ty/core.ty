@@ -1,4 +1,4 @@
-@importFrom purrr map2_dfc exec invoke_map_lgl list_rbind discard is_list rbernoulli is_atomic pmap prepend set_names map2_df invoke_map_df list_cbind pmap_lgl map_dbl walk2 pluck_exists flatten_dbl walk rdunif is_bare_character flatten_df discard_at array_tree detect_index lift_lv invoke_map_dbl done pmap_int in_parallel splice imodify imap_dbl list_assign lmap_at is_character is_bare_atomic transpose as_mapper reduce invoke_map pmap_df lift_ld is_null map2_raw tail_while lmap modify_if has_element map2_chr map_int is_scalar_character pmap_dfr is_scalar_atomic vec_depth map_lgl simplify map_raw modify_in flatten_dfr safely insistently lift_dv map_depth every invoke_map_chr map_vec pwalk imap_lgl imap_chr rate_sleep quietly detect flatten pmap_dfc is_integer pluck map_if lift cross flatten_dfc is_double pmap_raw imap_int cross2 list_transpose is_bare_integer cross3 is_scalar_integer lift_dl lmap_if list_along rerun cross_df is_bare_numeric imap_dfc update_list keep rep_along is_scalar_list rate_delay is_formula map_dfr list_simplify slowly flatten_chr when map2_vec none flatten_lgl head_while modify_at flatten_raw is_scalar_double rate_reset is_bare_vector imap_dfr reduce2 auto_browse attr_getter invoke_map_raw is_bare_logical modify map_dfc map map2_dbl modify2 array_branch is_function some rate_backoff imap_vec map2_lgl list_c simplify_all flatten_int pmap_chr is_bare_list invoke_map_dfc is_scalar_vector map_at map2 map_chr map2_int is_logical imap_raw list_merge pmap_vec as_vector list_modify is_bare_double invoke_map_dfr possibly invoke_map_int lift_vd compose negate partial invoke pmap_dbl modify_tree is_scalar_logical lift_vl assign_in accumulate2 map2_dfr accumulate keep_at map_df is_vector chuck modify_depth is_rate imap iwalk list_flatten;
+@importFrom purrr map2_dfc exec invoke_map_lgl list_rbind discard is_list rbernoulli is_atomic pmap prepend set_names map2_df invoke_map_df list_cbind pmap_lgl map_dbl walk2 pluck_exists flatten_dbl walk rdunif is_bare_character flatten_df discard_at array_tree detect_index lift_lv invoke_map_dbl done pmap_int in_parallel splice imodify imap_dbl list_assign lmap_at is_character is_bare_atomic transpose as_mapper reduce invoke_map pmap_df lift_ld is_null map2_raw tail_while lmap modify_if has_element map2_chr map_int is_scalar_character pmap_dfr is_scalar_atomic vec_depth map_lgl simplify map_raw modify_in flatten_dfr safely insistently lift_dv map_depth every invoke_map_chr map_vec pwalk imap_lgl imap_chr rate_sleep quietly detect flatten pmap_dfc is_integer pluck map_if lift cross flatten_dfc is_double pmap_raw imap_int cross2 list_transpose is_bare_integer cross3 is_scalar_integer lift_dl lmap_if list_along rerun cross_df is_bare_numeric imap_dfc update_list keep rep_along is_scalar_list rate_delay is_formula map_dfr list_simplify slowly flatten_chr when map2_vec none flatten_lgl head_while modify_at pluck_depth flatten_raw is_scalar_double rate_reset is_bare_vector imap_dfr reduce2 auto_browse attr_getter invoke_map_raw is_bare_logical modify map_dfc map map2_dbl modify2 array_branch some rate_backoff imap_vec map2_lgl list_c simplify_all flatten_int compact pmap_chr is_bare_list invoke_map_dfc is_scalar_vector map_at map2 map_chr map2_int is_logical imap_raw list_merge pmap_vec as_vector list_modify is_bare_double invoke_map_dfr possibly invoke_map_int lift_vd compose negate partial invoke pmap_dbl modify_tree is_scalar_logical lift_vl assign_in accumulate2 map2_dfr accumulate keep_at map_df is_vector chuck modify_depth is_rate imap iwalk list_flatten;
 
 #! pkg: purrr
 #! tier: T3
@@ -901,6 +901,13 @@
 #! pkg: purrr
 #! tier: T3
 #! generated-from: purrr 1.2.2, R 4.6.1
+#! param x:
+#! param is_node:
+@pluck_depth: (Any, Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
 #! param .x:
 @flatten_raw: (Any) -> Any;
 
@@ -1024,12 +1031,6 @@
 #! pkg: purrr
 #! tier: T3
 #! generated-from: purrr 1.2.2, R 4.6.1
-#! param x:
-@is_function: (Any) -> Any;
-
-#! pkg: purrr
-#! tier: T3
-#! generated-from: purrr 1.2.2, R 4.6.1
 #! param .x:
 #! param .p:
 #! param ...:
@@ -1083,6 +1084,13 @@
 #! generated-from: purrr 1.2.2, R 4.6.1
 #! param .x:
 @flatten_int: (Any) -> Any;
+
+#! pkg: purrr
+#! tier: T3
+#! generated-from: purrr 1.2.2, R 4.6.1
+#! param .x:
+#! param .p:
+@compact: (Any, Any) -> Any;
 
 #! pkg: purrr
 #! tier: T3

@@ -1,4 +1,4 @@
-@importFrom jsonlite base64_enc stream_out base64url_enc serializeJSON rbind_pages parse_gzjson_b64 base64_dec as_gzjson_b64 stream_in fromJSON flatten as_gzjson_raw write_json unbox parse_gzjson_raw prettify base64url_dec read_json parse_json unserializeJSON;
+@importFrom jsonlite base64_enc stream_out base64url_enc serializeJSON rbind_pages parse_gzjson_b64 base64_dec as_gzjson_b64 stream_in fromJSON flatten as_gzjson_raw write_json parse_gzjson_raw prettify base64url_dec read_json toJSON parse_json unserializeJSON;
 
 #! pkg: jsonlite
 #! tier: T3
@@ -103,12 +103,6 @@
 #! pkg: jsonlite
 #! tier: T3
 #! generated-from: jsonlite 2.0.0, R 4.6.1
-#! param x:
-@unbox: (Any) -> Any;
-
-#! pkg: jsonlite
-#! tier: T3
-#! generated-from: jsonlite 2.0.0, R 4.6.1
 #! param buf:
 #! param ...:
 @parse_gzjson_raw: (Any, ...Any) -> Any;
@@ -133,6 +127,26 @@
 #! param simplifyVector:
 #! param ...:
 @read_json: (Any, Any, ...Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param x:
+#! param dataframe:
+#! param matrix:
+#! param Date:
+#! param POSIXt:
+#! param factor:
+#! param complex:
+#! param raw:
+#! param null:
+#! param na:
+#! param auto_unbox:
+#! param digits:
+#! param pretty:
+#! param force:
+#! param ...:
+@toJSON: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
 
 #! pkg: jsonlite
 #! tier: T3
