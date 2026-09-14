@@ -35,7 +35,9 @@ cd store && python3 -m http.server 8000
 
 ## Publishing
 
-Not wired up yet. To publish this as a real page, enable GitHub Pages on this repository (Settings
-→ Pages → Deploy from a branch, folder `/store`, or via a `actions/deploy-pages` job) — a repo
-setting change, left for whoever picks this up to decide deliberately rather than flipped as a
-side effect of adding the page.
+Wired up via `.github/workflows/deploy-pages.yml` (`actions/upload-pages-artifact` +
+`actions/deploy-pages`, `store/` as the artifact root — a folder-scoped branch deploy can't serve
+`/store` directly, only repo root or `/docs`, so this repo uses the Actions build type instead).
+Pages is enabled on the repo with `build_type: workflow`. The job runs on every push to `master`
+that touches `store/**`, or on demand via `workflow_dispatch`. Live at
+<https://we-data-ch.github.io/registry/>.
