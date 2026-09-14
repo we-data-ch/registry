@@ -1,0 +1,1142 @@
+@importFrom xfun tabset rev_check relative_path broken_packages find_locals Rcmd mark_dirs loadable numbers_to_words msg_cat proc_kill fenced_block pkg_load2 fenced_div strict_list is_abs_path prose_index read_bin tree cache_exec pkg_attach read_all base64_encode in_dir base64_uri as_strict_list str_wrap embed_files news2md raw_string rstudio_type json_vector taml_save rest_api_raw try_silent system3 optipng html_escape embed_file append_unique dir_create js lazy_load file_string is_web_path gsub_file tojson new_record parse_only exit_call upload_ftp from_root pkg_attach2 check_old_package del_empty_dir set_envvar make_fence url_destination taml_load same_path normalize_path shrink_images env_option valid_syntax url_filename download_file browser_print github_api yaml_load retry is_rel_path file_exists session_info find_globals is_ascii html_view pkg_bib proj_root process_file with_ext split_lines install_dir magic_path is_sub_path md5 Rscript write_utf8 split_source n2w gsub_ext yaml_body csv_options new_app Rscript_call bg_process embed_dir compare_Rcheck pkg_available github_releases attr2 lazy_save submit_cran html_tag gsub_dir join_words md_table base64_decode is_blank record protect_math taml_file cache_rds read_utf8 file_ext rest_api tab_content rand_unit do_once html_value url_accessible decimal_dot sans_ext upload_win_builder grep_sub divide_chunk pkg_load upload_imgur install_github append_utf8 mime_type gsub_files existing_files try_error crandalf_check sort_file format_bytes dir_exists rename_seq native_encode bump_version alnum_id file_rename tinify_dir strip_html crandalf_results record_print tinify;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param value:
+@tabset: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param pkg:
+#! param which:
+#! param recheck:
+#! param ignore:
+#! param update:
+#! param timeout:
+#! param src:
+#! param src_dir:
+@rev_check: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param dir:
+#! param use..:
+#! param error:
+@relative_path: (Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param reinstall:
+@broken_packages: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param code:
+@find_locals: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param args:
+#! param ...:
+@Rcmd: (Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@mark_dirs: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param pkg:
+#! param strict:
+#! param new_session:
+@loadable: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param cap:
+#! param hyphen:
+#! param and:
+@numbers_to_words: (Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param ...:
+@msg_cat: (...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param pid:
+#! param recursive:
+#! param ...:
+@proc_kill: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param attrs:
+#! param fence:
+#! param char:
+@fenced_block: (Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param ...:
+@pkg_load2: (...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param ...:
+@fenced_div: (...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param ...:
+@strict_list: (...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@is_abs_path: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param warn:
+@prose_index: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param file:
+#! param what:
+#! param n:
+#! param ...:
+@read_bin: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param ...:
+@tree: (...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param expr:
+#! param path:
+#! param id:
+#! param ...:
+@cache_exec: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param install:
+#! param message:
+#! param ...:
+@pkg_attach: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param files:
+#! param before:
+#! param after:
+@read_all: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@base64_encode: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param dir:
+#! param expr:
+@in_dir: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param type:
+@base64_uri: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@as_strict_list: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param ...:
+@str_wrap: (...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param path:
+#! param name:
+#! param ...:
+@embed_files: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param package:
+#! param output:
+#! param category:
+#! param ...:
+@news2md: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param ...:
+@raw_string: (Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param pause:
+#! param mistake:
+#! param save:
+@rstudio_type: (Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param to_array:
+#! param quote:
+@json_vector: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param path:
+#! param indent:
+@taml_save: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param root:
+#! param endpoint:
+#! param token:
+#! param params:
+#! param headers:
+@rest_api_raw: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param expr:
+@try_silent: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param ...:
+@system3: (...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param dir:
+#! param files:
+#! param ...:
+@optipng: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param attr:
+@html_escape: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param path:
+#! param name:
+#! param text:
+#! param ...:
+@embed_file: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param text:
+#! param con:
+#! param sort:
+@append_unique: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param recursive:
+#! param ...:
+@dir_create: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@js: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param path:
+#! param method:
+#! param envir:
+@lazy_load: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param file:
+@file_string: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@is_web_path: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param file:
+#! param rw_error:
+#! param ...:
+@gsub_file: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@tojson: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param class:
+@new_record: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param code:
+@parse_only: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param fun:
+#! param n:
+#! param ...:
+@exit_call: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param file:
+#! param server:
+#! param dir:
+@upload_ftp: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param root:
+#! param error:
+#! param ...:
+@from_root: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param ...:
+@pkg_attach2: (...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param name:
+#! param version:
+@check_old_package: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param dir:
+@del_empty_dir: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param vars:
+@set_envvar: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param char:
+#! param start:
+@make_fence: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param force:
+@url_destination: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param envir:
+@taml_load: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param p1:
+#! param p2:
+#! param ...:
+@same_path: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param winslash:
+#! param must_work:
+#! param resolve_symlink:
+@normalize_path: (Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param width:
+#! param dir:
+#! param files:
+#! param tinify:
+@shrink_images: (Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param name:
+#! param default:
+@env_option: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param code:
+#! param silent:
+@valid_syntax: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param default:
+@url_filename: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param url:
+#! param output:
+#! param .error:
+#! param ...:
+@download_file: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param input:
+#! param output:
+#! param args:
+#! param window_size:
+#! param browser:
+@browser_print: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param endpoint:
+#! param token:
+#! param params:
+#! param headers:
+#! param raw:
+@github_api: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param handlers:
+#! param envir:
+#! param use_yaml:
+#! param ...:
+@yaml_load: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param fun:
+#! param .times:
+#! param .pause:
+#! param ...:
+@retry: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@is_rel_path: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@file_exists: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param packages:
+#! param dependencies:
+@session_info: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param code:
+#! param envir:
+@find_globals: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@is_ascii: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param ...:
+@html_view: (Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param file:
+#! param tweak:
+#! param width:
+#! param prefix:
+#! param lib.loc:
+#! param packageURL:
+#! param date:
+@pkg_bib: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param path:
+#! param rules:
+@proj_root: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param file:
+#! param fun:
+#! param x:
+@process_file: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param ext:
+#! param extra:
+@with_ext: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@split_lines: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param pkg:
+#! param build:
+#! param build_opts:
+#! param install_opts:
+@install_dir: (Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param root:
+#! param relative:
+#! param error:
+#! param message:
+#! param n_dirs:
+#! param ...:
+@magic_path: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param dir:
+#! param n:
+@is_sub_path: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param ...:
+@md5: (...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param args:
+#! param ...:
+@Rscript: (Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param text:
+#! param con:
+#! param ...:
+@write_utf8: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param merge_comments:
+#! param line_number:
+@split_source: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param cap:
+#! param hyphen:
+#! param and:
+@n2w: (Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param ext:
+#! param dir:
+#! param recursive:
+#! param ...:
+@gsub_ext: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param parse:
+#! param ...:
+@yaml_body: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@csv_options: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param name:
+#! param handler:
+#! param open:
+#! param ports:
+@new_app: (Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param fun:
+#! param args:
+#! param options:
+#! param wait:
+#! param fail:
+#! param ...:
+@Rscript_call: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param command:
+#! param args:
+#! param verbose:
+@bg_process: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param path:
+#! param name:
+#! param ...:
+@embed_dir: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param status_only:
+#! param output:
+@compare_Rcheck: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param pkg:
+#! param version:
+@pkg_available: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param repo:
+#! param tag:
+#! param pattern:
+#! param use_jsonlite:
+@github_releases: (Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param ...:
+@attr2: (...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param list:
+#! param path:
+#! param method:
+#! param envir:
+@lazy_save: (Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param file:
+#! param comment:
+#! param sync:
+@submit_cran: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param .name:
+#! param .content:
+#! param .attrs:
+#! param ...:
+@html_tag: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param dir:
+#! param recursive:
+#! param ext:
+#! param mimetype:
+#! param ...:
+@gsub_dir: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param words:
+#! param sep:
+#! param and:
+#! param before:
+#! param after:
+#! param oxford_comma:
+@join_words: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param digits:
+#! param na:
+#! param newline:
+#! param limit:
+@md_table: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param from:
+@base64_decode: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@is_blank: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param code:
+#! param dev:
+#! param dev.path:
+#! param dev.ext:
+#! param dev.args:
+#! param dev.keep:
+#! param message:
+#! param warning:
+#! param error:
+#! param cache:
+#! param print:
+#! param print.args:
+#! param verbose:
+#! param envir:
+@record: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param token:
+#! param use_block:
+@protect_math: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param path:
+@taml_file: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param expr:
+#! param rerun:
+#! param file:
+#! param dir:
+#! param hash:
+#! param clean:
+#! param ...:
+@cache_rds: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param con:
+#! param error:
+@read_utf8: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param extra:
+@file_ext: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param ...:
+@rest_api: (...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@tab_content: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param n:
+#! param a:
+#! param c:
+#! param m:
+#! param seed:
+@rand_unit: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param task:
+#! param option:
+#! param hint:
+@do_once: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@html_value: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param use_curl:
+#! param ...:
+@url_accessible: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@decimal_dot: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param extra:
+@sans_ext: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param file:
+#! param version:
+#! param server:
+@upload_win_builder: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param pattern:
+#! param replacement:
+#! param x:
+#! param ...:
+@grep_sub: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param engine:
+#! param code:
+#! param strict:
+#! param ...:
+@divide_chunk: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param error:
+#! param install:
+#! param ...:
+@pkg_load: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param file:
+#! param key:
+#! param use_curl:
+#! param include_xml:
+@upload_imgur: (Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param ...:
+@install_github: (...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param text:
+#! param con:
+#! param sort:
+@append_utf8: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param use_mime:
+#! param empty:
+@mime_type: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param files:
+#! param ...:
+@gsub_files: (Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param first:
+#! param error:
+@existing_files: (Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param expr:
+@try_error: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param pkg:
+#! param size:
+#! param jobs:
+#! param which:
+@crandalf_check: (Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param fun:
+#! param ...:
+@sort_file: (Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param units:
+#! param ...:
+@format_bytes: (Any, Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@dir_exists: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param pattern:
+#! param format:
+#! param replace:
+#! param start:
+#! param dry_run:
+@rename_seq: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@native_encode: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@bump_version: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param exclude:
+@alnum_id: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param from:
+#! param to:
+@file_rename: (Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param dir:
+#! param ...:
+@tinify_dir: (Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+@strip_html: (Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param pkg:
+#! param repo:
+#! param limit:
+#! param wait:
+@crandalf_results: (Any, Any, Any, Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param x:
+#! param ...:
+@record_print: (Any, ...Any) -> Any;
+
+#! pkg: xfun
+#! tier: T3
+#! generated-from: xfun 0.57, R 4.6.1
+#! param input:
+#! param output:
+#! param quiet:
+#! param force:
+#! param key:
+#! param history:
+@tinify: (Any, Any, Any, Any, Any, Any) -> Any;
+

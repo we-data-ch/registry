@@ -1,0 +1,2269 @@
+@importFrom dplyr db_drop_table group_split mutate_at db_commit tally_ dense_rank summarise_all any_vars as.tbl db_insert_into collect full_join dplyr_col_modify all_equal sql_subquery lst first mutate_ nest_join quo_name src_sqlite db_query_rows group_by_drop_default ends_with validate_grouped_df glimpse filter recode db_create_index group_walk sym when_all quos cummean db_query_fields db_create_indexes as_data_frame last_dplyr_warnings order_by sql_translate_env tally summarize_each as_label mutate_all summarize_each_ ntile filter_if db_desc ensym with_order summarize_ group_by_prepare rows_insert group_indices filter_all sql_set_op summarize_at sql_join copy_to between summarize db_list_tables type_sum desc enexpr ensyms group_trim replace_values db_rollback semi_join add_tally dim_desc bind_cols sql_select vars slice nth symdiff src_local rows_append ungroup is.grouped_df dplyr_row_slice db_has_table src_tbls db_data_type compute pull count_ if_all wrap_dbplyr_obj combine summarise_if add_rownames matches do sample_frac group_by_if arrange_ all_vars ident group_by_all db_save_query transmute_at mutate sample_n group_keys slice_tail src_df show_query left_join group_by_at db_begin slice_sample src_mysql distinct_at db_create_table percent_rank inner_join cross_join arrange_if mutate_each_ group_by groups mutate_each top_frac new_rowwise_df rows_patch db_write_table group_indices_ transmute_all new_grouped_df distinct_if filter_out dplyr_reconstruct consecutive_id case_when pick data_frame c_across group_map if_any distinct summarize_all validate_rowwise_df progress_estimated case_match tibble funs_ starts_with cumall slice_max same_src num_range expr last arrange_all cume_dist syms summarize_if everything distinct_prepare reframe sql transmute_if tbl_df rows_upsert is.src enexprs src replace_when make_tbl as_tibble with_groups transmute_ sql_escape_ident last_col distinct_all rename_ lead summarise is.tbl group_size add_count_ group_data when_any tbl setdiff db_analyze db_explain arrange select where slice_ quo group_cols transmute filter_at group_rows sql_escape_string count funs rename_all summarise_each min_rank enquo row_number tbl_nongroup_vars distinct_ rename top_n group_modify cumany rows_update contains rename_with summarise_each_ right_join lag grouped_df filter_ slice_min nest_by intersect anti_join collapse group_nest rowwise across select_ relocate add_tally_ enquos group_by_ union common_by auto_copy select_if if_else add_count near all_of sql_semi_join tbl_ptype recode_values slice_head n_groups group_vars rows_delete add_row tbl_vars select_at do_ summarise_ bind_rows coalesce one_of is_grouped_df union_all n_distinct select_all rename_if any_of explain mutate_if tribble setequal src_postgres arrange_at na_if summarise_at rename_at join_by recode_factor;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param table:
+#! param force:
+#! param ...:
+@db_drop_table: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .keep:
+#! param ...:
+@group_split: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .vars:
+#! param .funs:
+#! param .cols:
+#! param ...:
+@mutate_at: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param ...:
+@db_commit: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param wt:
+#! param sort:
+@tally_: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@dense_rank: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .funs:
+#! param ...:
+@summarise_all: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param expr:
+@any_vars: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param ...:
+@`as.tbl`: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param table:
+#! param values:
+#! param ...:
+@db_insert_into: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param ...:
+@collect: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param by:
+#! param copy:
+#! param suffix:
+#! param keep:
+#! param ...:
+@full_join: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param data:
+#! param cols:
+@dplyr_col_modify: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param target:
+#! param current:
+#! param ignore_col_order:
+#! param ignore_row_order:
+#! param convert:
+#! param ...:
+@all_equal: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param from:
+#! param name:
+#! param ...:
+@sql_subquery: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param ...:
+@lst: (...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param order_by:
+#! param default:
+#! param na_rm:
+@first: (Any, Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .dots:
+#! param ...:
+@mutate_: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param by:
+#! param copy:
+#! param keep:
+#! param name:
+#! param ...:
+@nest_join: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param quo:
+@quo_name: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param path:
+#! param create:
+@src_sqlite: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param sql:
+#! param ...:
+@db_query_rows: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+@group_by_drop_default: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param match:
+#! param ignore.case:
+#! param vars:
+@ends_with: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param check_bounds:
+@validate_grouped_df: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param width:
+#! param ...:
+@glimpse: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .by:
+#! param .preserve:
+#! param ...:
+@filter: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .x:
+#! param .default:
+#! param .missing:
+#! param ...:
+@recode: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param table:
+#! param columns:
+#! param name:
+#! param unique:
+#! param ...:
+@db_create_index: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .f:
+#! param .keep:
+#! param ...:
+@group_walk: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@sym: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param na_rm:
+#! param size:
+#! param ...:
+@when_all: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .named:
+#! param .ignore_empty:
+#! param .unquote_names:
+#! param ...:
+@quos: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@cummean: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param sql:
+#! param ...:
+@db_query_fields: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param table:
+#! param indexes:
+#! param unique:
+#! param ...:
+@db_create_indexes: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param ...:
+@as_data_frame: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param n:
+@last_dplyr_warnings: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param order_by:
+#! param call:
+@order_by: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+@sql_translate_env: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param wt:
+#! param sort:
+#! param name:
+@tally: (Any, Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param tbl:
+#! param funs:
+#! param ...:
+@summarize_each: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@as_label: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .funs:
+#! param ...:
+@mutate_all: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param tbl:
+#! param funs:
+#! param vars:
+@summarize_each_: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param n:
+@ntile: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .predicate:
+#! param .vars_predicate:
+#! param .preserve:
+@filter_if: (Any, Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@db_desc: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param arg:
+@ensym: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param order_by:
+#! param fun:
+#! param x:
+#! param ...:
+@with_order: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .dots:
+#! param ...:
+@summarize_: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .add:
+#! param .dots:
+#! param add:
+#! param error_call:
+#! param ...:
+@group_by_prepare: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param by:
+#! param conflict:
+#! param copy:
+#! param in_place:
+#! param ...:
+@rows_insert: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param ...:
+@group_indices: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .vars_predicate:
+#! param .preserve:
+@filter_all: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param x:
+#! param y:
+#! param method:
+@sql_set_op: (Any, Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .vars:
+#! param .funs:
+#! param .cols:
+#! param ...:
+@summarize_at: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param x:
+#! param y:
+#! param vars:
+#! param type:
+#! param by:
+#! param ...:
+@sql_join: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param dest:
+#! param df:
+#! param name:
+#! param overwrite:
+#! param ...:
+@copy_to: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param left:
+#! param right:
+#! param ptype:
+#! param ...:
+@between: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .by:
+#! param .groups:
+#! param ...:
+@summarize: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+@db_list_tables: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@type_sum: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@desc: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param arg:
+@enexpr: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .named:
+#! param .ignore_empty:
+#! param .ignore_null:
+#! param .unquote_names:
+#! param .homonyms:
+#! param .check_assign:
+#! param ...:
+@ensyms: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .drop:
+@group_trim: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param from:
+#! param to:
+#! param ...:
+@replace_values: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param ...:
+@db_rollback: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param by:
+#! param copy:
+#! param ...:
+@semi_join: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param wt:
+#! param sort:
+#! param name:
+@add_tally: (Any, Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@dim_desc: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .name_repair:
+#! param ...:
+@bind_cols: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param select:
+#! param from:
+#! param where:
+#! param group_by:
+#! param having:
+#! param order_by:
+#! param limit:
+#! param distinct:
+#! param ...:
+@sql_select: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param ...:
+@vars: (...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .by:
+#! param .preserve:
+#! param ...:
+@slice: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param n:
+#! param order_by:
+#! param default:
+#! param na_rm:
+@nth: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@symdiff: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param tbl:
+#! param pkg:
+#! param env:
+@src_local: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param copy:
+#! param in_place:
+#! param ...:
+@rows_append: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param ...:
+@ungroup: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@`is.grouped_df`: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param data:
+#! param i:
+#! param ...:
+@dplyr_row_slice: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param table:
+@db_has_table: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param ...:
+@src_tbls: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param fields:
+@db_data_type: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param ...:
+@compute: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param var:
+#! param name:
+#! param ...:
+@pull: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param vars:
+#! param wt:
+#! param sort:
+#! param .drop:
+@count_: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .cols:
+#! param .fns:
+#! param .names:
+#! param ...:
+@if_all: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param obj_name:
+@wrap_dbplyr_obj: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param ...:
+@combine: (...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .predicate:
+#! param .funs:
+#! param ...:
+@summarise_if: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param df:
+#! param var:
+@add_rownames: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param match:
+#! param ignore.case:
+#! param perl:
+#! param vars:
+@matches: (Any, Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param ...:
+@do: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param tbl:
+#! param size:
+#! param replace:
+#! param weight:
+#! param .env:
+#! param ...:
+@sample_frac: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .predicate:
+#! param .funs:
+#! param .add:
+#! param .drop:
+#! param ...:
+@group_by_if: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .dots:
+#! param ...:
+@arrange_: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param expr:
+@all_vars: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param ...:
+@ident: (...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .funs:
+#! param .add:
+#! param .drop:
+#! param ...:
+@group_by_all: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param sql:
+#! param name:
+#! param temporary:
+#! param ...:
+@db_save_query: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .vars:
+#! param .funs:
+#! param .cols:
+#! param ...:
+@transmute_at: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param ...:
+@mutate: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param tbl:
+#! param size:
+#! param replace:
+#! param weight:
+#! param .env:
+#! param ...:
+@sample_n: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param ...:
+@group_keys: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param n:
+#! param prop:
+#! param by:
+#! param ...:
+@slice_tail: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param pkg:
+#! param env:
+@src_df: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param ...:
+@show_query: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param by:
+#! param copy:
+#! param suffix:
+#! param keep:
+#! param ...:
+@left_join: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .vars:
+#! param .funs:
+#! param .add:
+#! param .drop:
+#! param ...:
+@group_by_at: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param ...:
+@db_begin: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param n:
+#! param prop:
+#! param by:
+#! param weight_by:
+#! param replace:
+#! param ...:
+@slice_sample: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param dbname:
+#! param host:
+#! param port:
+#! param username:
+#! param password:
+#! param ...:
+@src_mysql: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .vars:
+#! param .funs:
+#! param .keep_all:
+#! param ...:
+@distinct_at: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param table:
+#! param types:
+#! param temporary:
+#! param ...:
+@db_create_table: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@percent_rank: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param by:
+#! param copy:
+#! param suffix:
+#! param keep:
+#! param ...:
+@inner_join: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param copy:
+#! param suffix:
+#! param ...:
+@cross_join: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .predicate:
+#! param .funs:
+#! param .by_group:
+#! param .locale:
+#! param ...:
+@arrange_if: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param tbl:
+#! param funs:
+#! param vars:
+@mutate_each_: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .add:
+#! param .drop:
+#! param ...:
+@group_by: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@groups: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param tbl:
+#! param funs:
+#! param ...:
+@mutate_each: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param n:
+#! param wt:
+@top_frac: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param data:
+#! param group_data:
+#! param class:
+#! param ...:
+@new_rowwise_df: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param by:
+#! param unmatched:
+#! param copy:
+#! param in_place:
+#! param ...:
+@rows_patch: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param table:
+#! param types:
+#! param values:
+#! param temporary:
+#! param ...:
+@db_write_table: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .dots:
+#! param ...:
+@group_indices_: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .funs:
+#! param ...:
+@transmute_all: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param groups:
+#! param class:
+#! param ...:
+@new_grouped_df: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .predicate:
+#! param .funs:
+#! param .keep_all:
+#! param ...:
+@distinct_if: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .by:
+#! param .preserve:
+#! param ...:
+@filter_out: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param data:
+#! param template:
+@dplyr_reconstruct: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param ...:
+@consecutive_id: (...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .default:
+#! param .unmatched:
+#! param .ptype:
+#! param .size:
+#! param ...:
+@case_when: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param ...:
+@pick: (...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param ...:
+@data_frame: (...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param cols:
+@c_across: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .f:
+#! param .keep:
+#! param ...:
+@group_map: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .cols:
+#! param .fns:
+#! param .names:
+#! param ...:
+@if_any: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .keep_all:
+#! param ...:
+@distinct: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .funs:
+#! param ...:
+@summarize_all: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@validate_rowwise_df: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param n:
+#! param min_time:
+@progress_estimated: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .x:
+#! param .default:
+#! param .ptype:
+#! param ...:
+@case_match: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .rows:
+#! param .name_repair:
+#! param ...:
+@tibble: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param dots:
+#! param args:
+#! param env:
+@funs_: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param match:
+#! param ignore.case:
+#! param vars:
+@starts_with: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@cumall: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param order_by:
+#! param n:
+#! param prop:
+#! param by:
+#! param with_ties:
+#! param na_rm:
+#! param ...:
+@slice_max: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+@same_src: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param prefix:
+#! param range:
+#! param suffix:
+#! param width:
+#! param vars:
+@num_range: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param expr:
+@expr: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param order_by:
+#! param default:
+#! param na_rm:
+@last: (Any, Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .funs:
+#! param .by_group:
+#! param .locale:
+#! param ...:
+@arrange_all: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@cume_dist: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@syms: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .predicate:
+#! param .funs:
+#! param ...:
+@summarize_if: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param vars:
+@everything: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param vars:
+#! param group_vars:
+#! param .keep_all:
+#! param caller_env:
+#! param error_call:
+@distinct_prepare: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .by:
+#! param ...:
+@reframe: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param ...:
+@sql: (...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .predicate:
+#! param .funs:
+#! param ...:
+@transmute_if: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param data:
+@tbl_df: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param by:
+#! param copy:
+#! param in_place:
+#! param ...:
+@rows_upsert: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@`is.src`: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .named:
+#! param .ignore_empty:
+#! param .ignore_null:
+#! param .unquote_names:
+#! param .homonyms:
+#! param .check_assign:
+#! param ...:
+@enexprs: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param subclass:
+#! param ...:
+@src: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param ...:
+@replace_when: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param subclass:
+#! param ...:
+@make_tbl: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param .rows:
+#! param .name_repair:
+#! param rownames:
+#! param ...:
+@as_tibble: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .groups:
+#! param .f:
+#! param ...:
+@with_groups: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .dots:
+#! param ...:
+@transmute_: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param x:
+@sql_escape_ident: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param offset:
+#! param vars:
+@last_col: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .funs:
+#! param .keep_all:
+#! param ...:
+@distinct_all: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .dots:
+#! param ...:
+@rename_: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param n:
+#! param default:
+#! param order_by:
+#! param ...:
+@lead: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .by:
+#! param .groups:
+#! param ...:
+@summarise: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@`is.tbl`: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@group_size: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param vars:
+#! param wt:
+#! param sort:
+@add_count_: (Any, Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+@group_data: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param na_rm:
+#! param size:
+#! param ...:
+@when_any: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param src:
+#! param ...:
+@tbl: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@setdiff: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param table:
+#! param ...:
+@db_analyze: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param sql:
+#! param ...:
+@db_explain: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .by_group:
+#! param ...:
+@arrange: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param ...:
+@select: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param fn:
+@where: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .dots:
+#! param ...:
+@slice_: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param expr:
+@quo: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param vars:
+#! param data:
+@group_cols: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param ...:
+@transmute: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .vars:
+#! param .vars_predicate:
+#! param .preserve:
+@filter_at: (Any, Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+@group_rows: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param x:
+@sql_escape_string: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param wt:
+#! param sort:
+#! param name:
+#! param ...:
+@count: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .args:
+#! param ...:
+@funs: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .funs:
+#! param ...:
+@rename_all: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param tbl:
+#! param funs:
+#! param ...:
+@summarise_each: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@min_rank: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param arg:
+@enquo: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@row_number: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@tbl_nongroup_vars: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .dots:
+#! param .keep_all:
+#! param ...:
+@distinct_: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param ...:
+@rename: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param n:
+#! param wt:
+@top_n: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .f:
+#! param .keep:
+#! param ...:
+@group_modify: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@cumany: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param by:
+#! param unmatched:
+#! param copy:
+#! param in_place:
+#! param ...:
+@rows_update: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param match:
+#! param ignore.case:
+#! param vars:
+@contains: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .fn:
+#! param .cols:
+#! param ...:
+@rename_with: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param tbl:
+#! param funs:
+#! param vars:
+@summarise_each_: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param by:
+#! param copy:
+#! param suffix:
+#! param keep:
+#! param ...:
+@right_join: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param n:
+#! param default:
+#! param order_by:
+#! param ...:
+@lag: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param data:
+#! param vars:
+#! param drop:
+@grouped_df: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .dots:
+#! param ...:
+@filter_: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param order_by:
+#! param n:
+#! param prop:
+#! param by:
+#! param with_ties:
+#! param na_rm:
+#! param ...:
+@slice_min: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .key:
+#! param .keep:
+#! param ...:
+@nest_by: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@intersect: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param by:
+#! param copy:
+#! param ...:
+@anti_join: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param ...:
+@collapse: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .key:
+#! param keep:
+#! param ...:
+@group_nest: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param data:
+#! param ...:
+@rowwise: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .cols:
+#! param .fns:
+#! param .names:
+#! param .unpack:
+#! param ...:
+@across: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .dots:
+#! param ...:
+@select_: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .before:
+#! param .after:
+#! param ...:
+@relocate: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param wt:
+#! param sort:
+@add_tally_: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .named:
+#! param .ignore_empty:
+#! param .ignore_null:
+#! param .unquote_names:
+#! param .homonyms:
+#! param .check_assign:
+#! param ...:
+@enquos: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .dots:
+#! param add:
+#! param ...:
+@group_by_: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@union: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param by:
+#! param x:
+#! param y:
+@common_by: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param copy:
+#! param ...:
+@auto_copy: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .predicate:
+#! param .funs:
+#! param ...:
+@select_if: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param condition:
+#! param true:
+#! param false:
+#! param missing:
+#! param ptype:
+#! param size:
+#! param ...:
+@if_else: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param wt:
+#! param sort:
+#! param name:
+#! param .drop:
+#! param ...:
+@add_count: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param tol:
+@near: (Any, Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@all_of: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param con:
+#! param x:
+#! param y:
+#! param anti:
+#! param by:
+#! param ...:
+@sql_semi_join: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+@tbl_ptype: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param from:
+#! param to:
+#! param default:
+#! param unmatched:
+#! param ptype:
+#! param ...:
+@recode_values: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param n:
+#! param prop:
+#! param by:
+#! param ...:
+@slice_head: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@n_groups: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@group_vars: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param by:
+#! param unmatched:
+#! param copy:
+#! param in_place:
+#! param ...:
+@rows_delete: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .before:
+#! param .after:
+#! param ...:
+@add_row: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@tbl_vars: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .vars:
+#! param .funs:
+#! param ...:
+@select_at: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .dots:
+#! param ...:
+@do_: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .data:
+#! param .dots:
+#! param ...:
+@summarise_: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .id:
+#! param ...:
+@bind_rows: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .ptype:
+#! param .size:
+#! param ...:
+@coalesce: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .vars:
+#! param ...:
+@one_of: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+@is_grouped_df: (Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@union_all: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param na.rm:
+#! param ...:
+@n_distinct: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .funs:
+#! param ...:
+@select_all: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .predicate:
+#! param .funs:
+#! param ...:
+@rename_if: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param vars:
+#! param ...:
+@any_of: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param ...:
+@explain: (Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .predicate:
+#! param .funs:
+#! param ...:
+@mutate_if: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param ...:
+@tribble: (...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@setequal: (Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param dbname:
+#! param host:
+#! param port:
+#! param user:
+#! param password:
+#! param ...:
+@src_postgres: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .vars:
+#! param .funs:
+#! param .by_group:
+#! param .locale:
+#! param ...:
+@arrange_at: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param x:
+#! param y:
+@na_if: (Any, Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .vars:
+#! param .funs:
+#! param .cols:
+#! param ...:
+@summarise_at: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .tbl:
+#! param .vars:
+#! param .funs:
+#! param ...:
+@rename_at: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param ...:
+@join_by: (...Any) -> Any;
+
+#! pkg: dplyr
+#! tier: T3
+#! generated-from: dplyr 1.2.1, R 4.6.1
+#! param .x:
+#! param .default:
+#! param .missing:
+#! param .ordered:
+#! param ...:
+@recode_factor: (Any, Any, Any, Any, ...Any) -> Any;
+

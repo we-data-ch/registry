@@ -1,0 +1,466 @@
+@importFrom fs as_fs_perms as_fs_path file_info path_filter path_home_r is_file_empty link_path dir_map path fs_bytes is_link fs_path path_ext_remove dir_ls dir_copy dir_tree dir_info file_move path_package is_dir path_select_components path_split path_ext_set as_fs_bytes path_tidy file_create path_abs file_exists path_wd dir_create file_show is_file path_ext file_chmod file_size path_has_parent file_access fs_perms path_sanitize file_temp_push link_create path_home path_real file_touch link_delete path_temp dir_exists path_file is_absolute_path dir_delete path_expand file_chown is_dir_empty dir_walk path_norm path_dir path_rel file_delete link_exists file_copy path_join link_copy path_common path_expand_r file_temp;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param x:
+#! param ...:
+@as_fs_perms: (Any, ...Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param x:
+@as_fs_path: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param fail:
+#! param follow:
+@file_info: (Any, Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param glob:
+#! param regexp:
+#! param invert:
+#! param ...:
+@path_filter: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param ...:
+@path_home_r: (...Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param follow:
+@is_file_empty: (Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@link_path: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param fun:
+#! param all:
+#! param recurse:
+#! param type:
+#! param fail:
+@dir_map: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param ext:
+#! param ...:
+@path: (Any, ...Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param x:
+@fs_bytes: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@is_link: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param x:
+@fs_path: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@path_ext_remove: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param all:
+#! param recurse:
+#! param type:
+#! param glob:
+#! param regexp:
+#! param invert:
+#! param fail:
+#! param recursive:
+#! param ...:
+@dir_ls: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param new_path:
+#! param overwrite:
+@dir_copy: (Any, Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param recurse:
+#! param ...:
+@dir_tree: (Any, Any, ...Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param all:
+#! param recurse:
+#! param type:
+#! param regexp:
+#! param glob:
+#! param fail:
+#! param ...:
+@dir_info: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param new_path:
+@file_move: (Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param package:
+#! param ...:
+@path_package: (Any, ...Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param follow:
+@is_dir: (Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param index:
+#! param from:
+@path_select_components: (Any, Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@path_split: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param ext:
+@path_ext_set: (Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param x:
+@as_fs_bytes: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@path_tidy: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param mode:
+#! param ...:
+@file_create: (Any, Any, ...Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param start:
+@path_abs: (Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@file_exists: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param ext:
+#! param ...:
+@path_wd: (Any, ...Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param mode:
+#! param recurse:
+#! param recursive:
+#! param ...:
+@dir_create: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param browser:
+@file_show: (Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param follow:
+@is_file: (Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@path_ext: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param mode:
+@file_chmod: (Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param fail:
+@file_size: (Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param parent:
+@path_has_parent: (Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param mode:
+@file_access: (Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param x:
+#! param ...:
+@fs_perms: (Any, ...Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param filename:
+#! param replacement:
+@path_sanitize: (Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@file_temp_push: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param new_path:
+#! param symbolic:
+@link_create: (Any, Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param ...:
+@path_home: (...Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@path_real: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param access_time:
+#! param modification_time:
+@file_touch: (Any, Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@link_delete: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param ...:
+@path_temp: (...Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@dir_exists: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@path_file: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@is_absolute_path: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@dir_delete: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@path_expand: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param user_id:
+#! param group_id:
+@file_chown: (Any, Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@is_dir_empty: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param fun:
+#! param all:
+#! param recurse:
+#! param type:
+#! param fail:
+@dir_walk: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@path_norm: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@path_dir: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param start:
+@path_rel: (Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@file_delete: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@link_exists: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param new_path:
+#! param overwrite:
+@file_copy: (Any, Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param parts:
+@path_join: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+#! param new_path:
+#! param overwrite:
+@link_copy: (Any, Any, Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@path_common: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param path:
+@path_expand_r: (Any) -> Any;
+
+#! pkg: fs
+#! tier: T3
+#! generated-from: fs 2.1.0, R 4.6.1
+#! param pattern:
+#! param tmp_dir:
+#! param ext:
+@file_temp: (Any, Any, Any) -> Any;
+

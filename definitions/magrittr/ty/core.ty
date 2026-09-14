@@ -1,0 +1,216 @@
+@importFrom magrittr add set_class multiply_by multiply_by_matrix equals pipe_eager_lexical is_weakly_greater_than debug_fseq divide_by set_rownames set_names is_less_than set_attr raise_to_power is_in divide_by_int pipe_nested subtract freduce mod is_greater_than functions set_colnames and pipe_lazy_masking debug_pipe set_attributes is_weakly_less_than not undebug_fseq or;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param e1:
+#! param e2:
+@add: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param x:
+#! param value:
+@set_class: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param e1:
+#! param e2:
+@multiply_by: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param x:
+#! param y:
+@multiply_by_matrix: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param e1:
+#! param e2:
+@equals: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param lhs:
+#! param rhs:
+@pipe_eager_lexical: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param e1:
+#! param e2:
+@is_weakly_greater_than: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param fseq:
+#! param ...:
+@debug_fseq: (Any, ...Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param e1:
+#! param e2:
+@divide_by: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param x:
+#! param value:
+@set_rownames: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param x:
+#! param value:
+@set_names: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param e1:
+#! param e2:
+@is_less_than: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param x:
+#! param which:
+#! param value:
+@set_attr: (Any, Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param e1:
+#! param e2:
+@raise_to_power: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param x:
+#! param table:
+@is_in: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param e1:
+#! param e2:
+@divide_by_int: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param lhs:
+#! param rhs:
+@pipe_nested: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param e1:
+#! param e2:
+@subtract: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param value:
+#! param function_list:
+@freduce: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param e1:
+#! param e2:
+@mod: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param e1:
+#! param e2:
+@is_greater_than: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param fseq:
+@functions: (Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param x:
+#! param value:
+@set_colnames: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param e1:
+#! param e2:
+@and: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param lhs:
+#! param rhs:
+@pipe_lazy_masking: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param x:
+@debug_pipe: (Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param x:
+#! param value:
+@set_attributes: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param e1:
+#! param e2:
+@is_weakly_less_than: (Any, Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param x:
+@not: (Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param fseq:
+@undebug_fseq: (Any) -> Any;
+
+#! pkg: magrittr
+#! tier: T3
+#! generated-from: magrittr 2.0.5, R 4.6.1
+#! param e1:
+#! param e2:
+@or: (Any, Any) -> Any;
+

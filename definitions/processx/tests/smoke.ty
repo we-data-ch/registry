@@ -1,0 +1,1 @@
+let x <- conn_create_proc_pipepair(1);

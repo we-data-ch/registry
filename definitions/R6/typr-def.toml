@@ -1,0 +1,17 @@
+format_version = 1
+
+[package]
+name    = "R6"
+since   = "2.6.1"
+
+[definition]
+version = "0.1.0"
+tier    = "T3"
+
+[provider]
+type       = "generated"
+repository = "github:we-data-ch/registry/definitions/R6"
+
+[capabilities]
+r_shims    = false
+extern_raw = false

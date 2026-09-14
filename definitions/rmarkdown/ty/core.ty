@@ -1,0 +1,894 @@
+@importFrom rmarkdown latex_dependency publish_site pkg_file_lua render word_document pandoc_toc_args pandoc_lua_filter_args default_output_format latex_document render_supporting_files relative_to output_format_dependency shiny_prerendered_chunk draft context_document shiny_prerendered_server_start_code shiny_prerendered_clean pandoc_latex_engine_args html_notebook render_delayed html_notebook_output_code default_site_generator pandoc_path_arg html_dependency_highlightjs html_document render_site latex_dependency_tikz html_notebook_output_png html_notebook_output_html html_fragment resolve_output_format html_document_base yaml_front_matter includes_to_pandoc_args find_external_resources html_notebook_output_img site_resources knitr_options latex_fragment navbar_html navbar_links_html html_notebook_metadata pandoc_convert html_dependency_bootstrap html_vignette clean_site paged_table rmarkdown_format rtf_document find_pandoc knitr_options_html output_format ioslides_presentation all_output_formats pdf_document github_document md_document slidy_presentation beamer_presentation pandoc_highlight_args pandoc_include_args pandoc_self_contained_html powerpoint_presentation knitr_options_pdf from_rmarkdown pandoc_template run available_templates pandoc_options pandoc_available site_config pandoc_variable_arg pandoc_citeproc_convert odt_document parse_html_notebook pandoc_metadata_arg site_generator pandoc_metadata_file_arg includes knit_params_ask convert_ipynb;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param name:
+#! param options:
+#! param extra_lines:
+@latex_dependency: (Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param site_dir:
+#! param site_name:
+#! param method:
+#! param server:
+#! param account:
+#! param render:
+#! param launch_browser:
+@publish_site: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param filters:
+#! param package:
+@pkg_file_lua: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input:
+#! param output_format:
+#! param output_file:
+#! param output_dir:
+#! param output_options:
+#! param output_yaml:
+#! param intermediates_dir:
+#! param knit_root_dir:
+#! param runtime:
+#! param clean:
+#! param params:
+#! param knit_meta:
+#! param envir:
+#! param run_pandoc:
+#! param quiet:
+#! param encoding:
+@render: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param toc:
+#! param toc_depth:
+#! param number_sections:
+#! param fig_width:
+#! param fig_height:
+#! param fig_caption:
+#! param df_print:
+#! param highlight:
+#! param reference_docx:
+#! param keep_md:
+#! param md_extensions:
+#! param pandoc_args:
+@word_document: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param toc:
+#! param toc_depth:
+@pandoc_toc_args: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param lua_files:
+@pandoc_lua_filter_args: (Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input:
+#! param output_yaml:
+@default_output_format: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param ...:
+@latex_document: (...Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param from:
+#! param files_dir:
+#! param rename_to:
+@render_supporting_files: (Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param dir:
+#! param file:
+@relative_to: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param name:
+#! param pandoc:
+#! param pre_processor:
+#! param post_processor:
+#! param file_scope:
+#! param on_exit:
+@output_format_dependency: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param context:
+#! param code:
+#! param singleton:
+@shiny_prerendered_chunk: (Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param file:
+#! param template:
+#! param package:
+#! param create_dir:
+#! param edit:
+@draft: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param toc:
+#! param toc_depth:
+#! param number_sections:
+#! param fig_width:
+#! param fig_height:
+#! param fig_crop:
+#! param fig_caption:
+#! param dev:
+#! param df_print:
+#! param template:
+#! param keep_tex:
+#! param keep_md:
+#! param citation_package:
+#! param includes:
+#! param md_extensions:
+#! param output_extensions:
+#! param pandoc_args:
+#! param context_path:
+#! param context_args:
+#! param ext:
+@context_document: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param server_envir:
+@shiny_prerendered_server_start_code: (Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input:
+@shiny_prerendered_clean: (Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param latex_engine:
+@pandoc_latex_engine_args: (Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param toc:
+#! param toc_depth:
+#! param toc_float:
+#! param number_sections:
+#! param fig_width:
+#! param fig_height:
+#! param fig_retina:
+#! param fig_caption:
+#! param code_folding:
+#! param theme:
+#! param highlight:
+#! param highlight_downlit:
+#! param math_method:
+#! param mathjax:
+#! param extra_dependencies:
+#! param css:
+#! param includes:
+#! param md_extensions:
+#! param pandoc_args:
+#! param output_source:
+#! param self_contained:
+#! param ...:
+@html_notebook: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param expr:
+@render_delayed: (Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param code:
+#! param attributes:
+#! param meta:
+@html_notebook_output_code: (Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input:
+#! param output_format_filter:
+#! param ...:
+@default_site_generator: (Any, Any, ...Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param path:
+#! param backslash:
+@pandoc_path_arg: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param highlight:
+@html_dependency_highlightjs: (Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param toc:
+#! param toc_depth:
+#! param toc_float:
+#! param number_sections:
+#! param anchor_sections:
+#! param section_divs:
+#! param fig_width:
+#! param fig_height:
+#! param fig_retina:
+#! param fig_caption:
+#! param dev:
+#! param df_print:
+#! param code_folding:
+#! param code_download:
+#! param self_contained:
+#! param theme:
+#! param highlight:
+#! param highlight_downlit:
+#! param math_method:
+#! param mathjax:
+#! param template:
+#! param extra_dependencies:
+#! param css:
+#! param includes:
+#! param keep_md:
+#! param lib_dir:
+#! param md_extensions:
+#! param pandoc_args:
+#! param ...:
+@html_document: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input:
+#! param output_format:
+#! param envir:
+#! param quiet:
+#! param encoding:
+@render_site: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param libraries:
+#! param options:
+#! param extra_lines:
+@latex_dependency_tikz: (Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param path:
+#! param bytes:
+#! param attributes:
+#! param meta:
+#! param format:
+@html_notebook_output_png: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param html:
+#! param meta:
+@html_notebook_output_html: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param number_sections:
+#! param section_divs:
+#! param fig_width:
+#! param fig_height:
+#! param fig_retina:
+#! param fig_caption:
+#! param dev:
+#! param df_print:
+#! param mathjax:
+#! param includes:
+#! param keep_md:
+#! param md_extensions:
+#! param pandoc_args:
+#! param ...:
+@html_fragment: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input:
+#! param output_format:
+#! param output_options:
+#! param output_yaml:
+@resolve_output_format: (Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param theme:
+#! param self_contained:
+#! param lib_dir:
+#! param math_method:
+#! param mathjax:
+#! param pandoc_args:
+#! param template:
+#! param dependency_resolver:
+#! param copy_resources:
+#! param extra_dependencies:
+#! param css:
+#! param bootstrap_compatible:
+#! param ...:
+@html_document_base: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input:
+#! param encoding:
+@yaml_front_matter: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param includes:
+#! param filter:
+@includes_to_pandoc_args: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input_file:
+#! param encoding:
+@find_external_resources: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param path:
+#! param bytes:
+#! param attributes:
+#! param meta:
+#! param format:
+@html_notebook_output_img: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param site_dir:
+#! param include:
+#! param exclude:
+#! param recursive:
+@site_resources: (Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param opts_knit:
+#! param opts_chunk:
+#! param knit_hooks:
+#! param opts_hooks:
+#! param opts_template:
+@knitr_options: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param ...:
+@latex_fragment: (...Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param navbar:
+@navbar_html: (Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param links:
+@navbar_links_html: (Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param iframe:
+@html_notebook_metadata: (Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input:
+#! param to:
+#! param from:
+#! param output:
+#! param citeproc:
+#! param options:
+#! param verbose:
+#! param wd:
+@pandoc_convert: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param theme:
+@html_dependency_bootstrap: (Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param fig_width:
+#! param fig_height:
+#! param dev:
+#! param df_print:
+#! param css:
+#! param highlight:
+#! param keep_md:
+#! param readme:
+#! param self_contained:
+#! param tabset:
+#! param code_folding:
+#! param extra_dependencies:
+#! param pandoc_args:
+#! param ...:
+@html_vignette: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input:
+#! param preview:
+#! param quiet:
+#! param encoding:
+@clean_site: (Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param x:
+#! param options:
+@paged_table: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param extensions:
+@rmarkdown_format: (Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param toc:
+#! param toc_depth:
+#! param number_sections:
+#! param fig_width:
+#! param fig_height:
+#! param keep_md:
+#! param md_extensions:
+#! param pandoc_args:
+@rtf_document: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param cache:
+#! param dir:
+#! param version:
+@find_pandoc: (Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param fig_width:
+#! param fig_height:
+#! param fig_retina:
+#! param keep_md:
+#! param dev:
+@knitr_options_html: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param knitr:
+#! param pandoc:
+#! param keep_md:
+#! param clean_supporting:
+#! param df_print:
+#! param pre_knit:
+#! param post_knit:
+#! param pre_processor:
+#! param intermediates_generator:
+#! param post_processor:
+#! param on_exit:
+#! param file_scope:
+#! param base_format:
+@output_format: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param number_sections:
+#! param logo:
+#! param slide_level:
+#! param incremental:
+#! param fig_width:
+#! param fig_height:
+#! param fig_retina:
+#! param fig_caption:
+#! param dev:
+#! param df_print:
+#! param smart:
+#! param self_contained:
+#! param widescreen:
+#! param smaller:
+#! param transition:
+#! param math_method:
+#! param mathjax:
+#! param analytics:
+#! param template:
+#! param css:
+#! param includes:
+#! param keep_md:
+#! param lib_dir:
+#! param md_extensions:
+#! param pandoc_args:
+#! param extra_dependencies:
+#! param ...:
+@ioslides_presentation: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input:
+#! param output_yaml:
+@all_output_formats: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param toc:
+#! param toc_depth:
+#! param number_sections:
+#! param fig_width:
+#! param fig_height:
+#! param fig_crop:
+#! param fig_caption:
+#! param dev:
+#! param df_print:
+#! param highlight:
+#! param template:
+#! param keep_tex:
+#! param keep_md:
+#! param latex_engine:
+#! param citation_package:
+#! param includes:
+#! param md_extensions:
+#! param output_extensions:
+#! param pandoc_args:
+#! param extra_dependencies:
+@pdf_document: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param toc:
+#! param toc_depth:
+#! param number_sections:
+#! param math_method:
+#! param preserve_yaml:
+#! param fig_width:
+#! param fig_height:
+#! param dev:
+#! param df_print:
+#! param includes:
+#! param md_extensions:
+#! param hard_line_breaks:
+#! param pandoc_args:
+#! param html_preview:
+#! param keep_html:
+@github_document: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param variant:
+#! param preserve_yaml:
+#! param toc:
+#! param toc_depth:
+#! param number_sections:
+#! param standalone:
+#! param fig_width:
+#! param fig_height:
+#! param fig_retina:
+#! param dev:
+#! param df_print:
+#! param includes:
+#! param md_extensions:
+#! param pandoc_args:
+#! param ext:
+@md_document: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param number_sections:
+#! param incremental:
+#! param slide_level:
+#! param duration:
+#! param footer:
+#! param font_adjustment:
+#! param fig_width:
+#! param fig_height:
+#! param fig_retina:
+#! param fig_caption:
+#! param dev:
+#! param df_print:
+#! param self_contained:
+#! param highlight:
+#! param math_method:
+#! param mathjax:
+#! param template:
+#! param css:
+#! param includes:
+#! param keep_md:
+#! param lib_dir:
+#! param md_extensions:
+#! param pandoc_args:
+#! param extra_dependencies:
+#! param ...:
+@slidy_presentation: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param toc:
+#! param slide_level:
+#! param number_sections:
+#! param incremental:
+#! param fig_width:
+#! param fig_height:
+#! param fig_crop:
+#! param fig_caption:
+#! param dev:
+#! param df_print:
+#! param theme:
+#! param colortheme:
+#! param fonttheme:
+#! param highlight:
+#! param template:
+#! param keep_tex:
+#! param keep_md:
+#! param latex_engine:
+#! param citation_package:
+#! param self_contained:
+#! param includes:
+#! param md_extensions:
+#! param pandoc_args:
+#! param extra_dependencies:
+@beamer_presentation: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param highlight:
+#! param default:
+@pandoc_highlight_args: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param in_header:
+#! param before_body:
+#! param after_body:
+@pandoc_include_args: (Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input:
+#! param output:
+@pandoc_self_contained_html: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param toc:
+#! param toc_depth:
+#! param number_sections:
+#! param incremental:
+#! param fig_width:
+#! param fig_height:
+#! param fig_caption:
+#! param df_print:
+#! param keep_md:
+#! param md_extensions:
+#! param slide_level:
+#! param reference_doc:
+#! param pandoc_args:
+@powerpoint_presentation: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param fig_width:
+#! param fig_height:
+#! param fig_crop:
+#! param dev:
+@knitr_options_pdf: (Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param implicit_figures:
+#! param extensions:
+@from_rmarkdown: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param metadata:
+#! param template:
+#! param output:
+#! param verbose:
+@pandoc_template: (Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param file:
+#! param dir:
+#! param default_file:
+#! param auto_reload:
+#! param shiny_args:
+#! param render_args:
+@run: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param package:
+#! param full_path:
+@available_templates: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param to:
+#! param from:
+#! param args:
+#! param keep_tex:
+#! param latex_engine:
+#! param ext:
+#! param lua_filters:
+#! param convert_fun:
+@pandoc_options: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param version:
+#! param error:
+@pandoc_available: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input:
+#! param encoding:
+@site_config: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param name:
+#! param value:
+@pandoc_variable_arg: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param file:
+#! param type:
+@pandoc_citeproc_convert: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param number_sections:
+#! param fig_width:
+#! param fig_height:
+#! param fig_caption:
+#! param template:
+#! param reference_odt:
+#! param includes:
+#! param keep_md:
+#! param md_extensions:
+#! param pandoc_args:
+@odt_document: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param path:
+@parse_html_notebook: (Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param name:
+#! param value:
+@pandoc_metadata_arg: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input:
+#! param output_format:
+@site_generator: (Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param file:
+@pandoc_metadata_file_arg: (Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param in_header:
+#! param before_body:
+#! param after_body:
+@includes: (Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param file:
+#! param input_lines:
+#! param params:
+#! param shiny_args:
+#! param save_caption:
+#! param encoding:
+@knit_params_ask: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rmarkdown
+#! tier: T3
+#! generated-from: rmarkdown 2.31, R 4.6.1
+#! param input:
+#! param output:
+@convert_ipynb: (Any, Any) -> Any;
+

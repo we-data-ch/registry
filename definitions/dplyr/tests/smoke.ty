@@ -1,0 +1,1 @@
+let x <- db_drop_table(1, 1, 1);

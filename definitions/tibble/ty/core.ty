@@ -1,0 +1,333 @@
+@importFrom tibble new_tibble set_char_opts tidy_names as_tibble_row char glimpse as_data_frame as_tibble_col rownames_to_column obj_sum has_name deframe is.tibble data_frame trunc_mat size_sum add_case lst tibble as.tibble data_frame_ rowid_to_column tbl_sum enframe frame_matrix tibble_ has_rownames remove_rownames view lst_ frame_data tibble_row set_num_opts validate_tibble type_sum is_tibble set_tidy_names add_row tribble as_tibble column_to_rownames add_column repair_names num;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param nrow:
+#! param class:
+#! param subclass:
+#! param ...:
+@new_tibble: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param min_chars:
+#! param shorten:
+#! param ...:
+@set_char_opts: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param name:
+#! param syntactic:
+#! param quiet:
+@tidy_names: (Any, Any, Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param .name_repair:
+@as_tibble_row: (Any, Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param min_chars:
+#! param shorten:
+#! param ...:
+@char: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param width:
+#! param ...:
+@glimpse: (Any, Any, ...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param ...:
+@as_data_frame: (Any, ...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param column_name:
+@as_tibble_col: (Any, Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param .data:
+#! param var:
+@rownames_to_column: (Any, Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+@obj_sum: (Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param name:
+@has_name: (Any, Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+@deframe: (Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+@`is.tibble`: (Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param ...:
+@data_frame: (...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param n:
+#! param width:
+#! param n_extra:
+@trunc_mat: (Any, Any, Any, Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+@size_sum: (Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param .data:
+#! param .before:
+#! param .after:
+#! param ...:
+@add_case: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param ...:
+@lst: (...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param .rows:
+#! param .name_repair:
+#! param ...:
+@tibble: (Any, Any, ...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param ...:
+@`as.tibble`: (Any, ...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param xs:
+@data_frame_: (Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param .data:
+#! param var:
+@rowid_to_column: (Any, Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+@tbl_sum: (Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param name:
+#! param value:
+@enframe: (Any, Any, Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param ...:
+@frame_matrix: (...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param xs:
+@tibble_: (Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param .data:
+@has_rownames: (Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param .data:
+@remove_rownames: (Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param title:
+#! param n:
+#! param ...:
+@view: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param xs:
+@lst_: (Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param ...:
+@frame_data: (...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param .name_repair:
+#! param ...:
+@tibble_row: (Any, ...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param sigfig:
+#! param digits:
+#! param label:
+#! param scale:
+#! param notation:
+#! param fixed_exponent:
+#! param extra_sigfig:
+#! param ...:
+@set_num_opts: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+@validate_tibble: (Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+@type_sum: (Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+@is_tibble: (Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param syntactic:
+#! param quiet:
+@set_tidy_names: (Any, Any, Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param .data:
+#! param .before:
+#! param .after:
+#! param ...:
+@add_row: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param ...:
+@tribble: (...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param .rows:
+#! param .name_repair:
+#! param rownames:
+#! param ...:
+@as_tibble: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param .data:
+#! param var:
+@column_to_rownames: (Any, Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param .data:
+#! param .before:
+#! param .after:
+#! param .name_repair:
+#! param ...:
+@add_column: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param prefix:
+#! param sep:
+@repair_names: (Any, Any, Any) -> Any;
+
+#! pkg: tibble
+#! tier: T3
+#! generated-from: tibble 3.3.1, R 4.6.1
+#! param x:
+#! param sigfig:
+#! param digits:
+#! param label:
+#! param scale:
+#! param notation:
+#! param fixed_exponent:
+#! param extra_sigfig:
+#! param ...:
+@num: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+

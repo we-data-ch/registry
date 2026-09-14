@@ -1,0 +1,215 @@
+@importFrom sass font_face sass_file_cache sass_options sass_cache_set_dir as_sass sass_bundle_remove as_sass_layer sass_import sass_options_set font_link sass_layer is_sass_bundle sass_partial output_template sass_options_get sass_file sass sass_cache_get_dir sass_layer_file sass_layer_merge write_file_attachments font_google sass_bundle is_font_collection font_collection sass_cache_options;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param family:
+#! param src:
+#! param weight:
+#! param style:
+#! param display:
+#! param stretch:
+#! param variant:
+#! param unicode_range:
+@font_face: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param dir:
+#! param max_size:
+#! param max_age:
+@sass_file_cache: (Any, Any, Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param precision:
+#! param output_style:
+#! param indented_syntax:
+#! param include_path:
+#! param source_comments:
+#! param indent_type:
+#! param indent_width:
+#! param linefeed:
+#! param output_path:
+#! param source_map_file:
+#! param source_map_root:
+#! param source_map_embed:
+#! param source_map_contents:
+#! param omit_source_map_url:
+@sass_options: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param dir:
+#! param cache:
+@sass_cache_set_dir: (Any, Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param input:
+@as_sass: (Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param bundle:
+#! param name:
+@sass_bundle_remove: (Any, Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param x:
+@as_sass_layer: (Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param input:
+#! param quote:
+@sass_import: (Any, Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param ...:
+@sass_options_set: (...Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param family:
+#! param href:
+@font_link: (Any, Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param functions:
+#! param defaults:
+#! param mixins:
+#! param rules:
+#! param html_deps:
+#! param file_attachments:
+#! param declarations:
+#! param tags:
+@sass_layer: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param x:
+@is_sass_bundle: (Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param rules:
+#! param bundle:
+#! param options:
+#! param output:
+#! param write_attachments:
+#! param cache:
+#! param cache_key_extra:
+@sass_partial: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param basename:
+#! param dirname:
+#! param fileext:
+#! param path:
+@output_template: (Any, Any, Any, Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param ...:
+@sass_options_get: (...Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param input:
+@sass_file: (Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param input:
+#! param options:
+#! param output:
+#! param write_attachments:
+#! param cache:
+#! param cache_key_extra:
+@sass: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param dir:
+#! param create:
+@sass_cache_get_dir: (Any, Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param file:
+@sass_layer_file: (Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param ...:
+@sass_layer_merge: (...Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param file_attachments:
+#! param output_path:
+@write_file_attachments: (Any, Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param family:
+#! param local:
+#! param cache:
+#! param wght:
+#! param ital:
+#! param display:
+@font_google: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param ...:
+@sass_bundle: (...Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param x:
+@is_font_collection: (Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param default_flag:
+#! param quote:
+#! param ...:
+@font_collection: (Any, Any, ...Any) -> Any;
+
+#! pkg: sass
+#! tier: T3
+#! generated-from: sass 0.4.10, R 4.6.1
+#! param cache:
+#! param cache_dir:
+@sass_cache_options: (Any, Any) -> Any;
+

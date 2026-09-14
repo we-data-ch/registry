@@ -1,0 +1,158 @@
+@importFrom glue glue_safe trim glue_sql single_quote as_glue glue_data_safe glue_col glue backtick glue_collapse glue_sql_collapse glue_data_sql glue_data double_quote identity_transformer glue_data_col;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param .envir:
+#! param ...:
+@glue_safe: (Any, ...Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param x:
+@trim: (Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param .con:
+#! param .sep:
+#! param .envir:
+#! param .open:
+#! param .close:
+#! param .na:
+#! param .null:
+#! param .comment:
+#! param .literal:
+#! param .trim:
+#! param ...:
+@glue_sql: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param x:
+@single_quote: (Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param x:
+#! param ...:
+@as_glue: (Any, ...Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param .x:
+#! param .envir:
+#! param ...:
+@glue_data_safe: (Any, Any, ...Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param .envir:
+#! param .na:
+#! param .literal:
+#! param ...:
+@glue_col: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param .sep:
+#! param .envir:
+#! param .open:
+#! param .close:
+#! param .na:
+#! param .null:
+#! param .comment:
+#! param .literal:
+#! param .transformer:
+#! param .trim:
+#! param ...:
+@glue: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param x:
+@backtick: (Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param x:
+#! param sep:
+#! param width:
+#! param last:
+@glue_collapse: (Any, Any, Any, Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param x:
+#! param sep:
+#! param width:
+#! param last:
+@glue_sql_collapse: (Any, Any, Any, Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param .x:
+#! param .con:
+#! param .sep:
+#! param .envir:
+#! param .open:
+#! param .close:
+#! param .na:
+#! param .null:
+#! param .comment:
+#! param .literal:
+#! param .trim:
+#! param ...:
+@glue_data_sql: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param .x:
+#! param .sep:
+#! param .envir:
+#! param .open:
+#! param .close:
+#! param .na:
+#! param .null:
+#! param .comment:
+#! param .literal:
+#! param .transformer:
+#! param .trim:
+#! param ...:
+@glue_data: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param x:
+@double_quote: (Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param text:
+#! param envir:
+@identity_transformer: (Any, Any) -> Any;
+
+#! pkg: glue
+#! tier: T3
+#! generated-from: glue 1.8.1, R 4.6.1
+#! param .x:
+#! param .envir:
+#! param .na:
+#! param .literal:
+#! param ...:
+@glue_data_col: (Any, Any, Any, Any, ...Any) -> Any;
+

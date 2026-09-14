@@ -1,0 +1,1437 @@
+@importFrom scales col2hcl oob_censor rescale_max grey_pal is_pal palette_nlevels breaks_pretty is_colour_pal breaks_width percent_format transform_time log_breaks number_options pretty_breaks transform_timespan alpha colour_ramp date_breaks label_date_short breaks_timespan transform_log col_factor wrap_format demo_datetime pal_shape abs_area oob_squish_infinite breaks_exp is.transform pal_hue label_dictionary new_discrete_palette pal_viridis label_number_si label_comma label_timespan pvalue col_mix trans_range col_quantile label_dollar transform_exp trans_breaks label_bytes number_bytes_format number censor fullseq as_discrete_pal palette_type demo_continuous col_numeric oob_discard pal_grey demo_log10 compose_label cscale number_bytes exp_trans col_lighter oob_keep is_continuous_pal cbreaks minor_breaks_n rescale_mid format_log dscale boxcox_trans trim_to_domain breaks_log cut_short_scale viridis_pal math_format squish label_percent comma_format demo_discrete hue_pal rescale_none zero_range pal_gradient_n transform_modulus pal_div_gradient new_continuous_palette cut_long_scale ordinal label_date discard label_time transform_boxcox comma label_math new_transform demo_time brewer_pal transform_probability yj_trans breaks_extended pal_dichromat dichromat_pal show_col demo_timespan div_gradient_pal pal_manual train_discrete manual_pal regular_minor_breaks pseudo_log_trans seq_gradient_pal ordinal_french rescale train_continuous rescale_pal col_bin ordinal_format scientific_format as.trans unit_format time_format oob_censor_any minor_breaks_log is.trans palette_na_safe is_discrete_pal modulus_trans format_format expand_range pal_seq_gradient trans_format number_format probability_trans cut_time_scale oob_squish transform_pseudo_log oob_squish_any time_trans shape_pal label_log squish_infinite label_ordinal dollar date_format pvalue_format gradient_n_pal pal_brewer pal_area minor_breaks_width extended_breaks compose_trans log_trans cut_si percent pal_rescale label_scientific transform_yj is_numeric_pal as_continuous_pal col_darker col_shift trans_new dollar_format muted transform_compose as.transform label_wrap timespan_trans scientific area_pal label_number col_saturate label_pvalue label_currency label_glue;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param colour:
+#! param h:
+#! param c:
+#! param l:
+#! param alpha:
+@col2hcl: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param range:
+#! param only.finite:
+@oob_censor: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param to:
+#! param from:
+@rescale_max: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param start:
+#! param end:
+@grey_pal: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+@is_pal: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param pal:
+@palette_nlevels: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param n:
+#! param ...:
+@breaks_pretty: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+@is_colour_pal: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param width:
+#! param offset:
+@breaks_width: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param accuracy:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param decimal.mark:
+#! param trim:
+#! param ...:
+@percent_format: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param tz:
+@transform_time: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param n:
+#! param base:
+@log_breaks: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param decimal.mark:
+#! param big.mark:
+#! param style_positive:
+#! param style_negative:
+#! param currency.prefix:
+#! param currency.suffix:
+#! param currency.decimal.mark:
+#! param currency.big.mark:
+#! param ordinal.rules:
+@number_options: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param n:
+#! param ...:
+@pretty_breaks: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param unit:
+@transform_timespan: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param colour:
+#! param alpha:
+@alpha: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param colors:
+#! param na.color:
+#! param alpha:
+@colour_ramp: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param width:
+@date_breaks: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param format:
+#! param sep:
+#! param leading:
+#! param tz:
+#! param locale:
+@label_date_short: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param unit:
+#! param n:
+@breaks_timespan: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param base:
+@transform_log: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param palette:
+#! param domain:
+#! param levels:
+#! param ordered:
+#! param na.color:
+#! param alpha:
+#! param reverse:
+@col_factor: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param width:
+@wrap_format: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param ...:
+@demo_datetime: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param solid:
+@pal_shape: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param max:
+@abs_area: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param range:
+@oob_squish_infinite: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param n:
+#! param ...:
+@breaks_exp: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+@`is.transform`: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param h:
+#! param c:
+#! param l:
+#! param h.start:
+#! param direction:
+@pal_hue: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param dictionary:
+#! param nomatch:
+@label_dictionary: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param fun:
+#! param type:
+#! param nlevels:
+@new_discrete_palette: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+#! param option:
+@pal_viridis: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param unit:
+#! param accuracy:
+#! param scale:
+#! param suffix:
+#! param ...:
+@label_number_si: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param accuracy:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param decimal.mark:
+#! param trim:
+#! param digits:
+#! param ...:
+@label_comma: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param unit:
+#! param space:
+#! param ...:
+@label_timespan: (Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param accuracy:
+#! param decimal.mark:
+#! param prefix:
+#! param add_p:
+@pvalue: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param a:
+#! param b:
+#! param amount:
+#! param space:
+@col_mix: (Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param transform:
+#! param x:
+@trans_range: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param palette:
+#! param domain:
+#! param n:
+#! param probs:
+#! param na.color:
+#! param alpha:
+#! param reverse:
+#! param right:
+@col_quantile: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param accuracy:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param decimal.mark:
+#! param trim:
+#! param largest_with_cents:
+#! param negative_parens:
+#! param ...:
+@label_dollar: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param base:
+@transform_exp: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param trans:
+#! param inv:
+#! param n:
+#! param ...:
+@trans_breaks: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param units:
+#! param accuracy:
+#! param scale:
+#! param ...:
+@label_bytes: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param symbol:
+#! param units:
+#! param ...:
+@number_bytes_format: (Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param accuracy:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param decimal.mark:
+#! param style_positive:
+#! param style_negative:
+#! param scale_cut:
+#! param trim:
+#! param ...:
+@number: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param range:
+#! param only.finite:
+@censor: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param range:
+#! param size:
+#! param ...:
+@fullseq: (Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param ...:
+@as_discrete_pal: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param pal:
+@palette_type: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param ...:
+@demo_continuous: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param palette:
+#! param domain:
+#! param na.color:
+#! param alpha:
+#! param reverse:
+@col_numeric: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param range:
+@oob_discard: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param start:
+#! param end:
+@pal_grey: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param ...:
+@demo_log10: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param call:
+#! param ...:
+@compose_label: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param palette:
+#! param na.value:
+#! param trans:
+@cscale: (Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param symbol:
+#! param units:
+#! param accuracy:
+#! param ...:
+@number_bytes: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param base:
+@exp_trans: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param col:
+#! param amount:
+@col_lighter: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param range:
+@oob_keep: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+@is_continuous_pal: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param range:
+#! param breaks:
+#! param labels:
+@cbreaks: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param n:
+@minor_breaks_n: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param to:
+#! param from:
+#! param mid:
+#! param ...:
+@rescale_mid: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param base:
+#! param signed:
+#! param ...:
+@format_log: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param palette:
+#! param na.value:
+@dscale: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param p:
+#! param offset:
+@boxcox_trans: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param transform:
+#! param x:
+@trim_to_domain: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param n:
+#! param base:
+@breaks_log: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param space:
+@cut_short_scale: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+#! param option:
+@viridis_pal: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param expr:
+#! param format:
+@math_format: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param range:
+#! param only.finite:
+@squish: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param accuracy:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param decimal.mark:
+#! param trim:
+#! param ...:
+@label_percent: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param accuracy:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param decimal.mark:
+#! param trim:
+#! param digits:
+#! param ...:
+@comma_format: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param ...:
+@demo_discrete: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param h:
+#! param c:
+#! param l:
+#! param h.start:
+#! param direction:
+@hue_pal: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param ...:
+@rescale_none: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param tol:
+@zero_range: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param colours:
+#! param values:
+#! param space:
+@pal_gradient_n: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param p:
+#! param offset:
+@transform_modulus: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param low:
+#! param mid:
+#! param high:
+#! param space:
+@pal_div_gradient: (Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param fun:
+#! param type:
+#! param na_safe:
+@new_continuous_palette: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param space:
+@cut_long_scale: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param rules:
+#! param ...:
+@ordinal: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param format:
+#! param tz:
+#! param locale:
+@label_date: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param range:
+@discard: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param format:
+#! param tz:
+#! param locale:
+@label_time: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param p:
+#! param offset:
+@transform_boxcox: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param accuracy:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param decimal.mark:
+#! param trim:
+#! param digits:
+#! param ...:
+@comma: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param expr:
+#! param format:
+@label_math: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param name:
+#! param transform:
+#! param inverse:
+#! param d_transform:
+#! param d_inverse:
+#! param breaks:
+#! param minor_breaks:
+#! param format:
+#! param domain:
+@new_transform: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param ...:
+@demo_time: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param type:
+#! param palette:
+#! param direction:
+@brewer_pal: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param distribution:
+#! param ...:
+@transform_probability: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param p:
+@yj_trans: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param n:
+#! param ...:
+@breaks_extended: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param name:
+@pal_dichromat: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param name:
+@dichromat_pal: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param colours:
+#! param labels:
+#! param borders:
+#! param cex_label:
+#! param ncol:
+@show_col: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param ...:
+@demo_timespan: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param low:
+#! param mid:
+#! param high:
+#! param space:
+@div_gradient_pal: (Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param values:
+#! param type:
+@pal_manual: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param new:
+#! param existing:
+#! param drop:
+#! param na.rm:
+#! param fct:
+#! param call:
+@train_discrete: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param values:
+#! param type:
+@manual_pal: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param reverse:
+@regular_minor_breaks: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param sigma:
+#! param base:
+@pseudo_log_trans: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param low:
+#! param high:
+#! param space:
+@seq_gradient_pal: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param gender:
+#! param plural:
+@ordinal_french: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param to:
+#! param from:
+#! param ...:
+@rescale: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param new:
+#! param existing:
+#! param call:
+@train_continuous: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param range:
+@rescale_pal: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param palette:
+#! param domain:
+#! param bins:
+#! param pretty:
+#! param na.color:
+#! param alpha:
+#! param reverse:
+#! param right:
+@col_bin: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param rules:
+#! param ...:
+@ordinal_format: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param digits:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param decimal.mark:
+#! param trim:
+#! param ...:
+@scientific_format: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param arg:
+@`as.trans`: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param accuracy:
+#! param scale:
+#! param prefix:
+#! param unit:
+#! param sep:
+#! param suffix:
+#! param big.mark:
+#! param decimal.mark:
+#! param trim:
+#! param ...:
+@unit_format: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param format:
+#! param tz:
+#! param locale:
+@time_format: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param range:
+@oob_censor_any: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param detail:
+#! param smallest:
+@minor_breaks_log: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+@`is.trans`: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param pal:
+@palette_na_safe: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+@is_discrete_pal: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param p:
+#! param offset:
+@modulus_trans: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param ...:
+@format_format: (...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param range:
+#! param mul:
+#! param add:
+#! param zero_width:
+@expand_range: (Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param low:
+#! param high:
+#! param space:
+@pal_seq_gradient: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param trans:
+#! param format:
+@trans_format: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param accuracy:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param decimal.mark:
+#! param style_positive:
+#! param style_negative:
+#! param scale_cut:
+#! param trim:
+#! param ...:
+@number_format: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param distribution:
+#! param ...:
+@probability_trans: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param space:
+@cut_time_scale: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param range:
+#! param only.finite:
+@oob_squish: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param sigma:
+#! param base:
+@transform_pseudo_log: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param range:
+@oob_squish_any: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param tz:
+@time_trans: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param solid:
+@shape_pal: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param base:
+#! param digits:
+#! param signed:
+@label_log: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param range:
+@squish_infinite: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param rules:
+#! param ...:
+@label_ordinal: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param accuracy:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param decimal.mark:
+#! param trim:
+#! param largest_with_cents:
+#! param negative_parens:
+#! param style_negative:
+#! param scale_cut:
+#! param ...:
+@dollar: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param format:
+#! param tz:
+#! param locale:
+@date_format: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param accuracy:
+#! param decimal.mark:
+#! param prefix:
+#! param add_p:
+@pvalue_format: (Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param colours:
+#! param values:
+#! param space:
+@gradient_n_pal: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param type:
+#! param palette:
+#! param direction:
+@pal_brewer: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param range:
+@pal_area: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param width:
+#! param offset:
+@minor_breaks_width: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param n:
+#! param ...:
+@extended_breaks: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param ...:
+@compose_trans: (...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param base:
+@log_trans: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param unit:
+@cut_si: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param accuracy:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param decimal.mark:
+#! param trim:
+#! param ...:
+@percent: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param range:
+@pal_rescale: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param digits:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param decimal.mark:
+#! param trim:
+#! param ...:
+@label_scientific: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param p:
+@transform_yj: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+@is_numeric_pal: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param ...:
+@as_continuous_pal: (Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param col:
+#! param amount:
+@col_darker: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param col:
+#! param amount:
+@col_shift: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param name:
+#! param transform:
+#! param inverse:
+#! param d_transform:
+#! param d_inverse:
+#! param breaks:
+#! param minor_breaks:
+#! param format:
+#! param domain:
+@trans_new: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param accuracy:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param decimal.mark:
+#! param trim:
+#! param largest_with_cents:
+#! param negative_parens:
+#! param ...:
+@dollar_format: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param colour:
+#! param l:
+#! param c:
+@muted: (Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param ...:
+@transform_compose: (...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param arg:
+@`as.transform`: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param width:
+@label_wrap: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param unit:
+@timespan_trans: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param x:
+#! param digits:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param decimal.mark:
+#! param trim:
+#! param ...:
+@scientific: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param range:
+@area_pal: (Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param accuracy:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param decimal.mark:
+#! param style_positive:
+#! param style_negative:
+#! param scale_cut:
+#! param trim:
+#! param ...:
+@label_number: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param col:
+#! param amount:
+@col_saturate: (Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param accuracy:
+#! param decimal.mark:
+#! param prefix:
+#! param add_p:
+@label_pvalue: (Any, Any, Any, Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param accuracy:
+#! param scale:
+#! param prefix:
+#! param suffix:
+#! param big.mark:
+#! param decimal.mark:
+#! param trim:
+#! param largest_with_fractional:
+#! param ...:
+@label_currency: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: scales
+#! tier: T3
+#! generated-from: scales 1.4.0, R 4.6.1
+#! param pattern:
+#! param parse:
+#! param .envir:
+#! param ...:
+@label_glue: (Any, Any, Any, ...Any) -> Any;
+

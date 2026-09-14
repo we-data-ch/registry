@@ -1,0 +1,281 @@
+@importFrom generics union rank_results fit estfun var_imp train forecast hypothesize setdiff glance visualize fit_xy learn accuracy equation prune evaluate refit calculate min_grid is.element tunable as.difftime varying_args explore as.ordered intersect augment tune_args explain specify setequal as.factor tidy components compile required_pkgs interpolate generate;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@union: (Any, Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@rank_results: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param object:
+#! param ...:
+@fit: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@estfun: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param object:
+#! param ...:
+@var_imp: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@train: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param object:
+#! param ...:
+@forecast: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@hypothesize: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@setdiff: (Any, Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@glance: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@visualize: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param object:
+#! param ...:
+@fit_xy: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@learn: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param object:
+#! param ...:
+@accuracy: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param object:
+#! param ...:
+@equation: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param tree:
+#! param ...:
+@prune: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@evaluate: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param object:
+#! param ...:
+@refit: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@calculate: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param grid:
+#! param ...:
+@min_grid: (Any, Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param el:
+#! param set:
+#! param ...:
+@`is.element`: (Any, Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@tunable: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param tim:
+#! param ...:
+@`as.difftime`: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param object:
+#! param ...:
+@varying_args: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@explore: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@`as.ordered`: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@intersect: (Any, Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@augment: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param object:
+#! param ...:
+@tune_args: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@explain: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@specify: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@setequal: (Any, Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@`as.factor`: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@tidy: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param object:
+#! param ...:
+@components: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param object:
+#! param ...:
+@compile: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@required_pkgs: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param object:
+#! param ...:
+@interpolate: (Any, ...Any) -> Any;
+
+#! pkg: generics
+#! tier: T3
+#! generated-from: generics 0.1.4, R 4.6.1
+#! param x:
+#! param ...:
+@generate: (Any, ...Any) -> Any;
+

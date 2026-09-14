@@ -1,0 +1,1757 @@
+@importFrom vctrs vec_cast.list vec_cast.logical vec_ptype_abbr unspecified vec_set_names vec_locate_sorted_groups vec_ptype_common vec_recycle_common vec_type vec_proxy_order vec_run_sizes vec_cast.ordered vec_as_index vec_interleave list_all_vectors vec_seq_along vec_names2 vec_ptype2.list vec_ptype2.raw vec_unique vec_ptype2.POSIXlt obj_print obj_str_footer vec_arith.logical vec_cast vec_assert list_drop_empty obj_check_vector vec_ptype2.AsIs vec_check_size vec_init_along vec_cbind_frame_ptype vec_as_subscript vec_cbind s3_register vec_duplicate_detect vec_data vec_equal_na stop_incompatible_op vec_locate_matches vec_unique_loc n_fields vec_math vec_empty vec_ptype_show vec_ptype2.logical vec_case_when new_rcrd obj_is_vector list_all_size vec_set_intersect vec_size list_sizes vec_ptype2.integer list_combine vec_fill_missing vec_ptype2.Date vec_check_recyclable vec_cast.integer64 vec_recycle vec_equal vec_ptype2.POSIXct vec_ptype2 vec_as_subscript2 vec_restore vec_rbind vec_pany vec_names new_data_frame vec_cast.double vec_repeat vec_cast.integer obj_str_data vec_detect_complete vec_identify_runs vec_ptype2.data.frame vec_cast.difftime vec_compare vec_cast.vctrs_list_of vec_ptype2.vctrs_list_of vec_set_symmetric_difference vec_if_else fields maybe_lossy_cast vec_as_location obj_print_data vec_unrep vec_sort vec_slice vec_unchop vec_set_union vec_cast.factor vec_replace_when vec_group_id vec_ptype2.ordered list_check_all_recyclable new_date new_ordered allow_lossy_cast vec_ptype2.factor vec_c vec_rank df_list vec_assign list_check_all_size vec_any_missing vec_as_names tib_cast vec_math_base vec_size_common vec_ptype_full new_factor vec_as_names_legacy stop_incompatible_type obj_str_header vec_count vec_arith.difftime new_duration vec_ptype2.complex obj_str vec_ptype_finalise is_list_of vec_cast.raw list_of_size vec_type2 vec_is_list vec_arith.POSIXlt vec_ptype2.character vec_duplicate_id vec_expand_grid list_unchop field obj_is_list data_frame vec_recode_values obj_print_footer vec_unique_count vec_default_cast vec_in vec_proxy list_of_ptype vec_split vec_order vec_arith.Date vec_proxy_compare vec_ptype vec_is vec_rep vec_is_empty vec_arith_base vec_group_loc list_all_recyclable tib_ptype2 obj_print_header df_ptype2 vec_ptype2.integer64 vec_cast.Date vec_ptype2.difftime vec_rep_each vec_pall vec_cast.data.frame vec_chop vec_default_ptype2 vec_cast.POSIXct vec_group_rle vec_proxy_equal stop_incompatible_size vec_set_difference vec_cast.character vec_ptype2.double vec_cast.complex vec_replace_values list_of vec_cast_common vec_cast.POSIXlt vec_init vec_arith vec_match num_as_location2 stop_incompatible_cast as_list_of vec_arith.POSIXct vec_detect_missing vec_arith.numeric obj_check_list list_of_transpose new_datetime vec_duplicate_any vec_check_list new_list_of list_check_all_vectors num_as_location df_cast vec_type_common vec_as_location2 new_vctr;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.list`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.logical`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param prefix_named:
+#! param suffix_shape:
+#! param ...:
+@vec_ptype_abbr: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param n:
+@unspecified: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param names:
+@vec_set_names: (Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param direction:
+#! param na_value:
+#! param nan_distinct:
+#! param chr_proxy_collate:
+#! param ...:
+@vec_locate_sorted_groups: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .ptype:
+#! param .finalise:
+#! param .arg:
+#! param .call:
+#! param ...:
+@vec_ptype_common: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .size:
+#! param .arg:
+#! param .call:
+#! param ...:
+@vec_recycle_common: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_type: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@vec_proxy_order: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_run_sizes: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.ordered`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param i:
+#! param n:
+#! param names:
+@vec_as_index: (Any, Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .size:
+#! param .ptype:
+#! param .name_spec:
+#! param .name_repair:
+#! param .error_call:
+#! param ...:
+@vec_interleave: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param allow_null:
+#! param ...:
+@list_all_vectors: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_seq_along: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param repair:
+#! param quiet:
+#! param ...:
+@vec_names2: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_arg:
+#! param y_arg:
+#! param ...:
+@`vec_ptype2.list`: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_arg:
+#! param y_arg:
+#! param ...:
+@`vec_ptype2.raw`: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_unique: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@`vec_ptype2.POSIXlt`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@obj_print: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@obj_str_footer: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param op:
+#! param x:
+#! param y:
+#! param ...:
+@`vec_arith.logical`: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param x_arg:
+#! param to_arg:
+#! param call:
+#! param ...:
+@vec_cast: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ptype:
+#! param size:
+#! param arg:
+#! param call:
+@vec_assert: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@list_drop_empty: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param arg:
+#! param call:
+#! param ...:
+@obj_check_vector: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_arg:
+#! param y_arg:
+#! param ...:
+@`vec_ptype2.AsIs`: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param size:
+#! param arg:
+#! param call:
+#! param ...:
+@vec_check_size: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+@vec_init_along: (Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@vec_cbind_frame_ptype: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param i:
+#! param logical:
+#! param numeric:
+#! param character:
+#! param arg:
+#! param call:
+#! param ...:
+@vec_as_subscript: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .ptype:
+#! param .size:
+#! param .name_repair:
+#! param .error_call:
+#! param ...:
+@vec_cbind: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param generic:
+#! param class:
+#! param method:
+@s3_register: (Any, Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_duplicate_detect: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_data: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_equal_na: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param op:
+#! param x:
+#! param y:
+#! param details:
+#! param message:
+#! param class:
+#! param call:
+#! param ...:
+@stop_incompatible_op: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param needles:
+#! param haystack:
+#! param condition:
+#! param filter:
+#! param incomplete:
+#! param no_match:
+#! param remaining:
+#! param multiple:
+#! param relationship:
+#! param nan_distinct:
+#! param chr_proxy_collate:
+#! param needles_arg:
+#! param haystack_arg:
+#! param error_call:
+#! param ...:
+@vec_locate_matches: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_unique_loc: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@n_fields: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .fn:
+#! param .x:
+#! param ...:
+@vec_math: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_empty: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param ...:
+@vec_ptype_show: (...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_arg:
+#! param y_arg:
+#! param ...:
+@`vec_ptype2.logical`: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param conditions:
+#! param values:
+#! param default:
+#! param unmatched:
+#! param ptype:
+#! param size:
+#! param conditions_arg:
+#! param values_arg:
+#! param default_arg:
+#! param error_call:
+#! param ...:
+@vec_case_when: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param fields:
+#! param class:
+#! param ...:
+@new_rcrd: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@obj_is_vector: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param size:
+#! param allow_null:
+#! param ...:
+@list_all_size: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ptype:
+#! param x_arg:
+#! param y_arg:
+#! param error_call:
+#! param ...:
+@vec_set_intersect: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_size: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@list_sizes: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_arg:
+#! param y_arg:
+#! param ...:
+@`vec_ptype2.integer`: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param indices:
+#! param size:
+#! param default:
+#! param unmatched:
+#! param multiple:
+#! param slice_x:
+#! param ptype:
+#! param name_spec:
+#! param name_repair:
+#! param x_arg:
+#! param indices_arg:
+#! param default_arg:
+#! param error_call:
+#! param ...:
+@list_combine: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param direction:
+#! param max_fill:
+@vec_fill_missing: (Any, Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@`vec_ptype2.Date`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param size:
+#! param arg:
+#! param call:
+#! param ...:
+@vec_check_recyclable: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.integer64`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param size:
+#! param x_arg:
+#! param call:
+#! param ...:
+@vec_recycle: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param na_equal:
+#! param .ptype:
+@vec_equal: (Any, Any, Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@`vec_ptype2.POSIXct`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_arg:
+#! param y_arg:
+#! param call:
+#! param ...:
+@vec_ptype2: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param i:
+#! param numeric:
+#! param character:
+#! param arg:
+#! param call:
+#! param ...:
+@vec_as_subscript2: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@vec_restore: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .ptype:
+#! param .names_to:
+#! param .name_repair:
+#! param .name_spec:
+#! param .error_call:
+#! param ...:
+@vec_rbind: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .missing:
+#! param .size:
+#! param .arg:
+#! param .error_call:
+#! param ...:
+@vec_pany: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_names: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param n:
+#! param class:
+#! param ...:
+@new_data_frame: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.double`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param each:
+#! param times:
+@vec_repeat: (Any, Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.integer`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@obj_str_data: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_detect_complete: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_identify_runs: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@`vec_ptype2.data.frame`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.difftime`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param na_equal:
+#! param .ptype:
+@vec_compare: (Any, Any, Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.vctrs_list_of`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_arg:
+#! param y_arg:
+#! param ...:
+@`vec_ptype2.vctrs_list_of`: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ptype:
+#! param x_arg:
+#! param y_arg:
+#! param error_call:
+#! param ...:
+@vec_set_symmetric_difference: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param condition:
+#! param true:
+#! param false:
+#! param missing:
+#! param ptype:
+#! param condition_arg:
+#! param true_arg:
+#! param false_arg:
+#! param missing_arg:
+#! param error_call:
+#! param ...:
+@vec_if_else: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@fields: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param result:
+#! param x:
+#! param to:
+#! param lossy:
+#! param locations:
+#! param loss_type:
+#! param x_arg:
+#! param to_arg:
+#! param call:
+#! param details:
+#! param message:
+#! param class:
+#! param .deprecation:
+#! param ...:
+@maybe_lossy_cast: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param i:
+#! param n:
+#! param names:
+#! param missing:
+#! param arg:
+#! param call:
+#! param ...:
+@vec_as_location: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@obj_print_data: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_unrep: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param direction:
+#! param na_value:
+#! param ...:
+@vec_sort: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param i:
+#! param error_call:
+#! param ...:
+@vec_slice: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param indices:
+#! param ptype:
+#! param name_spec:
+#! param name_repair:
+@vec_unchop: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ptype:
+#! param x_arg:
+#! param y_arg:
+#! param error_call:
+#! param ...:
+@vec_set_union: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.factor`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param conditions:
+#! param values:
+#! param x_arg:
+#! param conditions_arg:
+#! param values_arg:
+#! param error_call:
+#! param ...:
+@vec_replace_when: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_group_id: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@`vec_ptype2.ordered`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param size:
+#! param allow_null:
+#! param arg:
+#! param call:
+#! param ...:
+@list_check_all_recyclable: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@new_date: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param levels:
+@new_ordered: (Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param expr:
+#! param x_ptype:
+#! param to_ptype:
+@allow_lossy_cast: (Any, Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@`vec_ptype2.factor`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .ptype:
+#! param .name_spec:
+#! param .name_repair:
+#! param .error_arg:
+#! param .error_call:
+#! param ...:
+@vec_c: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ties:
+#! param incomplete:
+#! param direction:
+#! param na_value:
+#! param nan_distinct:
+#! param chr_proxy_collate:
+#! param ...:
+@vec_rank: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .size:
+#! param .unpack:
+#! param .name_repair:
+#! param .error_call:
+#! param ...:
+@df_list: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param i:
+#! param value:
+#! param slice_value:
+#! param x_arg:
+#! param value_arg:
+#! param ...:
+@vec_assign: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param size:
+#! param allow_null:
+#! param arg:
+#! param call:
+#! param ...:
+@list_check_all_size: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_any_missing: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param names:
+#! param repair:
+#! param repair_arg:
+#! param quiet:
+#! param call:
+#! param ...:
+@vec_as_names: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param x_arg:
+#! param to_arg:
+#! param call:
+#! param ...:
+@tib_cast: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .fn:
+#! param .x:
+#! param ...:
+@vec_math_base: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .size:
+#! param .absent:
+#! param .arg:
+#! param .call:
+#! param ...:
+@vec_size_common: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@vec_ptype_full: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param levels:
+#! param class:
+#! param ...:
+@new_factor: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param names:
+#! param prefix:
+#! param sep:
+@vec_as_names_legacy: (Any, Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_arg:
+#! param y_arg:
+#! param action:
+#! param details:
+#! param message:
+#! param class:
+#! param call:
+#! param ...:
+@stop_incompatible_type: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@obj_str_header: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param sort:
+@vec_count: (Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param op:
+#! param x:
+#! param y:
+#! param ...:
+@`vec_arith.difftime`: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param units:
+@new_duration: (Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_arg:
+#! param y_arg:
+#! param ...:
+@`vec_ptype2.complex`: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@obj_str: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@vec_ptype_finalise: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@is_list_of: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.raw`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@list_of_size: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@vec_type2: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_is_list: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param op:
+#! param x:
+#! param y:
+#! param ...:
+@`vec_arith.POSIXlt`: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_arg:
+#! param y_arg:
+#! param ...:
+@`vec_ptype2.character`: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_duplicate_id: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .vary:
+#! param .name_repair:
+#! param .error_call:
+#! param ...:
+@vec_expand_grid: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param indices:
+#! param ptype:
+#! param name_spec:
+#! param name_repair:
+#! param error_arg:
+#! param error_call:
+#! param ...:
+@list_unchop: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param i:
+@field: (Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@obj_is_list: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .size:
+#! param .name_repair:
+#! param .error_call:
+#! param ...:
+@data_frame: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param from:
+#! param to:
+#! param default:
+#! param unmatched:
+#! param from_as_list_of_vectors:
+#! param to_as_list_of_vectors:
+#! param ptype:
+#! param x_arg:
+#! param from_arg:
+#! param to_arg:
+#! param default_arg:
+#! param error_call:
+#! param ...:
+@vec_recode_values: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@obj_print_footer: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_unique_count: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param x_arg:
+#! param to_arg:
+#! param call:
+#! param ...:
+@vec_default_cast: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param needles:
+#! param haystack:
+#! param na_equal:
+#! param needles_arg:
+#! param haystack_arg:
+#! param ...:
+@vec_in: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@vec_proxy: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@list_of_ptype: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param by:
+@vec_split: (Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param direction:
+#! param na_value:
+#! param ...:
+@vec_order: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param op:
+#! param x:
+#! param y:
+#! param ...:
+@`vec_arith.Date`: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@vec_proxy_compare: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param x_arg:
+#! param call:
+#! param ...:
+@vec_ptype: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ptype:
+#! param size:
+@vec_is: (Any, Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param times:
+#! param error_call:
+#! param x_arg:
+#! param times_arg:
+#! param ...:
+@vec_rep: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_is_empty: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param op:
+#! param x:
+#! param y:
+@vec_arith_base: (Any, Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_group_loc: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param size:
+#! param allow_null:
+#! param ...:
+@list_all_recyclable: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_arg:
+#! param y_arg:
+#! param call:
+#! param ...:
+@tib_ptype2: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@obj_print_header: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_arg:
+#! param y_arg:
+#! param call:
+#! param ...:
+@df_ptype2: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@`vec_ptype2.integer64`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.Date`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@`vec_ptype2.difftime`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param times:
+#! param error_call:
+#! param x_arg:
+#! param times_arg:
+#! param ...:
+@vec_rep_each: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .missing:
+#! param .size:
+#! param .arg:
+#! param .error_call:
+#! param ...:
+@vec_pall: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.data.frame`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param indices:
+#! param sizes:
+#! param ...:
+@vec_chop: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_arg:
+#! param y_arg:
+#! param call:
+#! param ...:
+@vec_default_ptype2: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.POSIXct`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_group_rle: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@vec_proxy_equal: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_size:
+#! param y_size:
+#! param x_arg:
+#! param y_arg:
+#! param details:
+#! param message:
+#! param class:
+#! param call:
+#! param ...:
+@stop_incompatible_size: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ptype:
+#! param x_arg:
+#! param y_arg:
+#! param error_call:
+#! param ...:
+@vec_set_difference: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.character`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param y:
+#! param x_arg:
+#! param y_arg:
+#! param ...:
+@`vec_ptype2.double`: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.complex`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param from:
+#! param to:
+#! param from_as_list_of_vectors:
+#! param to_as_list_of_vectors:
+#! param x_arg:
+#! param from_arg:
+#! param to_arg:
+#! param error_call:
+#! param ...:
+@vec_replace_values: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .ptype:
+#! param .size:
+#! param ...:
+@list_of: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .to:
+#! param .arg:
+#! param .call:
+#! param ...:
+@vec_cast_common: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param ...:
+@`vec_cast.POSIXlt`: (Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param n:
+@vec_init: (Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param op:
+#! param x:
+#! param y:
+#! param ...:
+@vec_arith: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param needles:
+#! param haystack:
+#! param na_equal:
+#! param needles_arg:
+#! param haystack_arg:
+#! param ...:
+@vec_match: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param i:
+#! param n:
+#! param negative:
+#! param missing:
+#! param arg:
+#! param call:
+#! param ...:
+@num_as_location2: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param x_arg:
+#! param to_arg:
+#! param details:
+#! param message:
+#! param class:
+#! param call:
+#! param ...:
+@stop_incompatible_cast: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ...:
+@as_list_of: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param op:
+#! param x:
+#! param y:
+#! param ...:
+@`vec_arith.POSIXct`: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_detect_missing: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param op:
+#! param x:
+#! param y:
+#! param ...:
+@`vec_arith.numeric`: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param arg:
+#! param call:
+#! param ...:
+@obj_check_list: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param x_arg:
+#! param error_call:
+#! param ...:
+@list_of_transpose: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param tzone:
+@new_datetime: (Any, Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+@vec_duplicate_any: (Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param arg:
+#! param call:
+#! param ...:
+@vec_check_list: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param ptype:
+#! param size:
+#! param class:
+#! param ...:
+@new_list_of: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param allow_null:
+#! param arg:
+#! param call:
+#! param ...:
+@list_check_all_vectors: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param i:
+#! param n:
+#! param missing:
+#! param negative:
+#! param oob:
+#! param zero:
+#! param arg:
+#! param call:
+#! param ...:
+@num_as_location: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param x:
+#! param to:
+#! param x_arg:
+#! param to_arg:
+#! param call:
+#! param ...:
+@df_cast: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .ptype:
+#! param ...:
+@vec_type_common: (Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param i:
+#! param n:
+#! param names:
+#! param missing:
+#! param arg:
+#! param call:
+#! param ...:
+@vec_as_location2: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: vctrs
+#! tier: T3
+#! generated-from: vctrs 0.7.3, R 4.6.1
+#! param .data:
+#! param class:
+#! param inherit_base_type:
+#! param ...:
+@new_vctr: (Any, Any, Any, ...Any) -> Any;
+

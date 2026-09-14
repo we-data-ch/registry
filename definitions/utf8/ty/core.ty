@@ -1,0 +1,84 @@
+@importFrom utf8 utf8_format utf8_print utf8_width as_utf8 utf8_normalize utf8_valid utf8_encode;
+
+#! pkg: utf8
+#! tier: T3
+#! generated-from: utf8 1.2.6, R 4.6.1
+#! param x:
+#! param trim:
+#! param chars:
+#! param justify:
+#! param width:
+#! param na.encode:
+#! param quote:
+#! param na.print:
+#! param print.gap:
+#! param utf8:
+#! param ...:
+@utf8_format: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: utf8
+#! tier: T3
+#! generated-from: utf8 1.2.6, R 4.6.1
+#! param x:
+#! param chars:
+#! param quote:
+#! param na.print:
+#! param print.gap:
+#! param right:
+#! param max:
+#! param names:
+#! param rownames:
+#! param escapes:
+#! param display:
+#! param style:
+#! param utf8:
+#! param ...:
+@utf8_print: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: utf8
+#! tier: T3
+#! generated-from: utf8 1.2.6, R 4.6.1
+#! param x:
+#! param encode:
+#! param quote:
+#! param utf8:
+#! param ...:
+@utf8_width: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: utf8
+#! tier: T3
+#! generated-from: utf8 1.2.6, R 4.6.1
+#! param x:
+#! param normalize:
+@as_utf8: (Any, Any) -> Any;
+
+#! pkg: utf8
+#! tier: T3
+#! generated-from: utf8 1.2.6, R 4.6.1
+#! param x:
+#! param map_case:
+#! param map_compat:
+#! param map_quote:
+#! param remove_ignorable:
+#! param ...:
+@utf8_normalize: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: utf8
+#! tier: T3
+#! generated-from: utf8 1.2.6, R 4.6.1
+#! param x:
+@utf8_valid: (Any) -> Any;
+
+#! pkg: utf8
+#! tier: T3
+#! generated-from: utf8 1.2.6, R 4.6.1
+#! param x:
+#! param width:
+#! param quote:
+#! param justify:
+#! param escapes:
+#! param display:
+#! param utf8:
+#! param ...:
+@utf8_encode: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+

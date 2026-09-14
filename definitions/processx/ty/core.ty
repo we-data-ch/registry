@@ -1,0 +1,242 @@
+@importFrom processx conn_create_proc_pipepair processx_conn_read_bytes base64_encode conn_set_stdout conn_connect_fifo conn_read_chars conn_create_pipepair conn_is_incomplete conn_create_unix_socket conn_get_fileno processx_conn_read_lines conn_connect_unix_socket processx_conn_write processx_conn_close base64_decode run conn_create_fifo conn_read_lines processx_conn_read_chars poll conn_write conn_create_fd conn_accept_unix_socket conn_set_stderr is_valid_fd conn_unix_socket_state conn_create_file conn_read_bytes conn_file_name curl_fds processx_conn_is_incomplete;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param encoding:
+@conn_create_proc_pipepair: (Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+#! param n:
+@processx_conn_read_bytes: (Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param x:
+@base64_encode: (Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+#! param drop:
+@conn_set_stdout: (Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param filename:
+#! param read:
+#! param write:
+#! param encoding:
+#! param nonblocking:
+@conn_connect_fifo: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+#! param n:
+@conn_read_chars: (Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param encoding:
+#! param nonblocking:
+@conn_create_pipepair: (Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+@conn_is_incomplete: (Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param filename:
+#! param encoding:
+@conn_create_unix_socket: (Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+@conn_get_fileno: (Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+#! param n:
+@processx_conn_read_lines: (Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param filename:
+#! param encoding:
+@conn_connect_unix_socket: (Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+#! param str:
+#! param sep:
+#! param encoding:
+@processx_conn_write: (Any, Any, Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+#! param ...:
+@processx_conn_close: (Any, ...Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param x:
+@base64_decode: (Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param command:
+#! param args:
+#! param error_on_status:
+#! param wd:
+#! param echo_cmd:
+#! param echo:
+#! param spinner:
+#! param timeout:
+#! param stdout:
+#! param stderr:
+#! param stdout_line_callback:
+#! param stdout_callback:
+#! param stderr_line_callback:
+#! param stderr_callback:
+#! param stderr_to_stdout:
+#! param stdin:
+#! param env:
+#! param windows_verbatim_args:
+#! param windows_hide_window:
+#! param encoding:
+#! param cleanup_tree:
+#! param pty:
+#! param pty_options:
+#! param ...:
+@run: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param filename:
+#! param read:
+#! param write:
+#! param encoding:
+#! param nonblocking:
+@conn_create_fifo: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+#! param n:
+@conn_read_lines: (Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+#! param n:
+@processx_conn_read_chars: (Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param processes:
+#! param ms:
+@poll: (Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+#! param str:
+#! param sep:
+#! param encoding:
+@conn_write: (Any, Any, Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param fd:
+#! param encoding:
+#! param close:
+@conn_create_fd: (Any, Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+@conn_accept_unix_socket: (Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+#! param drop:
+@conn_set_stderr: (Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param fd:
+@is_valid_fd: (Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+@conn_unix_socket_state: (Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param filename:
+#! param read:
+#! param write:
+@conn_create_file: (Any, Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+#! param n:
+@conn_read_bytes: (Any, Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+@conn_file_name: (Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param fds:
+@curl_fds: (Any) -> Any;
+
+#! pkg: processx
+#! tier: T3
+#! generated-from: processx 3.9.0, R 4.6.1
+#! param con:
+@processx_conn_is_incomplete: (Any) -> Any;
+

@@ -1,0 +1,2863 @@
+@importFrom rlang get_expr is_raw check_dots_used set_attrs search_env is_logical int env_print is_syntactic_literal env_binding_are_locked entrace has_length is_lang env_label is_true inject is_call_simple is_false wref_key warning_cnd as_data_pronoun chr_unserialise_unicode env_coalesce expr fn_body env_bind_active ns_imports_env is_scalar_integer is_zap call_modify is_lgl_na global_entrace is_bare_vector pkg_env_name return_from env_length is_missing dots_list on_load flatten_lgl env_get peek_option is_scalar_double raw_deparse_str frame_fn is_call is_formula is_spliced_bare enquos is_spliced flatten_if format_error_bullets new_quosures is_character as_name check_number_whole arg_match0 done is_closure pairlist2 new_logical is_empty is_bare_double as_function UQS rep_along syms quo_set_env splice is_primitive_lazy caller_env is_scalar_character stop_input_type new_environment env_cache is_named2 flatten_chr flatten_raw cnd check_bool exprs_auto_name lang flatten_cpl quo_expr is_integer f_label exiting env_clone as_utf8_character is_scoped is_atomic cnd_type scoped_env is_bare_string as_list is_namespace is_bare_character is_scalar_logical call_ns new_formula wref_value quo_set_expr expr_print new_double last_trace check_number_decimal dots_n cpl env_name is_attached as_character is_scalar_atomic check_dots_empty check_data_frame is_bytes is_complex as_string is_vector check_dots_unnamed get_env new_quosure obj_address is_integerish is_done_box is_bare_bytes quo data_syms is_scalar_list eval_bare is_pairlist as_bytes reset_message_verbosity inherits_all is_installed check_installed dbl is_dbl_na is_bare_integer fn_fmls_names quo_text quo_is_null set_env abort enquo is_double env_browse inherits_any as_complex is_copyable call_args new_weakref cnd_header is_primitive_eager expr_name scoped_interactive as_closure is_dictionaryish is_quosure locally parse_quos env_lock call_standardise coerce_class eval_tidy set_names scoped_options as_double with_handlers rep_named bytes have_name inherits_only is_scalar_complex with_env is_box is_int_na parse_exprs is_string trace_length is_list quos as_integer inform try_fetch squash_if expr_text englue is_reference with_options env as_data_mask is_bare_atomic is_bare_integerish seq2 maybe_missing is_chr_na f_text env_names quo_is_call last_messages is_na dots_values prim_name quo_name quos_auto_name is_condition pkg_env fn_fmls quo_label calling string set_expr is_quosures ll is_message node_poke_cdar enexprs as_box_if node_caar ctxt_frame env_is_browsed env_parent new_data_mask exec UQ squash is_bare_logical is_bare_formula node_poke_cddr cnd_message new_complex is_scalar_vector vec_poke_n message_cnd is_warning global_handle names2 call2 format_error_call node_cadr vec_poke_range list2 is_error squash_dbl env_parents lgl warn f_rhs parse_expr is_bare_numeric local_error_call node_poke_tag is_named f_env env_binding_unlock env_unbind has_name push_options names_inform_repair caller_fn node_poke_caar is_bare_complex env_unlock quo_is_symbolic call_inspect with_bindings enexpr check_string quo_is_missing as_quosure is_lambda env_get_list error_cnd ns_env coerce_type node_poke_cadr env_bind local_bindings env_bury is_bool seq2_along new_call are_na global_prompt_install expr_label dots_splice parse_bytes quo_is_symbol is_cpl_na is_node_list as_environment env_binding_are_lazy quo_get_expr cnd_body flatten type_of quo_squash sym run_on_load unbox is_function arg_match is_primitive new_box exprs local_use_cli env_inherits node_cdar ensyms enquos0 switch_class zap_srcref is_callable data_sym ensym node_poke_cdr flatten_dbl call_match new_raw new_integer env_binding_lock env_is_user_facing env_poke qq_show squash_int is_scalar_integerish expr_interp node_cddr cnd_entrace f_name f_lhs node_car caller_arg parse_quo node_poke_car fn_fmls_syms local_interactive is_environment as_box env_is_locked is_symbolic catch_cnd duplicate check_dots_empty0 is_symbol switch_type cnd_footer cnd_signal is_node env_bind_lazy reset_warning_verbosity node_cdr peek_options env_tail env_has env_poke_parent scoped_bindings cnd_inherits is_scalar_raw is_expression node_tag expr_deparse is_bare_raw last_warnings is_scalar_bytes squash_lgl check_exclusive call_name check_required is_bare_list trace_back call_fn with_interactive as_label as_logical as_quosures ns_env_name quo_get_env friendly_type new_function new_list enquo0 hash error_call call_args_names local_options on_package_load env_binding_are_active signal is_bare_environment env_depth caller_call frame_call is_weakref chr child_env is_null squash_raw squash_chr new_character fn_env cnd_muffle invoke squash_cpl hash_file new_node flatten_int;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param default:
+@get_expr: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_raw: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param call:
+#! param error:
+#! param action:
+@check_dots_used: (Any, Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .x:
+#! param ...:
+@set_attrs: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param name:
+@search_env: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_logical: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@int: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+@env_print: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_syntactic_literal: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param nms:
+@env_binding_are_locked: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param cnd:
+#! param top:
+#! param bottom:
+#! param ...:
+@entrace: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@has_length: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param name:
+#! param n:
+#! param ns:
+@is_lang: (Any, Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+@env_label: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_true: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+#! param env:
+@inject: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param ns:
+@is_call_simple: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_false: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@wref_key: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param class:
+#! param message:
+#! param call:
+#! param use_cli_format:
+#! param ...:
+@warning_cnd: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param data:
+@as_data_pronoun: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param chr:
+@chr_unserialise_unicode: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param from:
+@env_coalesce: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+@expr: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param fn:
+@fn_body: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .env:
+#! param ...:
+@env_bind_active: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@ns_imports_env: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_scalar_integer: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_zap: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .call:
+#! param .homonyms:
+#! param .standardise:
+#! param .env:
+#! param ...:
+@call_modify: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_lgl_na: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param enable:
+#! param class:
+@global_entrace: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_vector: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param pkg:
+@pkg_env_name: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param frame:
+#! param value:
+@return_from: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+@env_length: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_missing: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .named:
+#! param .ignore_empty:
+#! param .preserve_empty:
+#! param .homonyms:
+#! param .check_assign:
+#! param ...:
+@dots_list: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+#! param env:
+#! param ns:
+@on_load: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@flatten_lgl: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param nm:
+#! param default:
+#! param inherit:
+#! param last:
+@env_get: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param name:
+@peek_option: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_scalar_double: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param prefix:
+#! param suffix:
+@raw_deparse_str: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param frame:
+@frame_fn: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param name:
+#! param n:
+#! param ns:
+@is_call: (Any, Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param scoped:
+#! param lhs:
+@is_formula: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_spliced_bare: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .named:
+#! param .ignore_empty:
+#! param .ignore_null:
+#! param .unquote_names:
+#! param .homonyms:
+#! param .check_assign:
+#! param ...:
+@enquos: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_spliced: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param predicate:
+@flatten_if: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@format_error_bullets: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@new_quosures: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_character: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@as_name: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param min:
+#! param max:
+#! param allow_infinite:
+#! param allow_na:
+#! param allow_null:
+#! param arg:
+#! param call:
+#! param ...:
+@check_number_whole: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param arg:
+#! param values:
+#! param arg_nm:
+#! param error_call:
+@arg_match0: (Any, Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@done: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_closure: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@pairlist2: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param n:
+#! param names:
+@new_logical: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_empty: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_double: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param env:
+#! param arg:
+#! param call:
+#! param ...:
+@as_function: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@UQS: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param along:
+#! param x:
+@rep_along: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@syms: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quo:
+#! param env:
+@quo_set_env: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@splice: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_primitive_lazy: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param n:
+@caller_env: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_scalar_character: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param what:
+#! param allow_na:
+#! param allow_null:
+#! param show_value:
+#! param arg:
+#! param call:
+#! param ...:
+@stop_input_type: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param data:
+#! param parent:
+@new_environment: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param nm:
+#! param default:
+@env_cache: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_named2: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@flatten_chr: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@flatten_raw: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param class:
+#! param message:
+#! param call:
+#! param use_cli_format:
+#! param ...:
+@cnd: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param allow_na:
+#! param allow_null:
+#! param arg:
+#! param call:
+#! param ...:
+@check_bool: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param exprs:
+#! param repair_auto:
+#! param repair_quiet:
+#! param ...:
+@exprs_auto_name: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .fn:
+#! param .ns:
+#! param ...:
+@lang: (Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@flatten_cpl: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quo:
+#! param warn:
+@quo_expr: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_integer: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@f_label: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param handler:
+@exiting: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param parent:
+@env_clone: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@as_utf8_character: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param nm:
+@is_scoped: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_atomic: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param cnd:
+@cnd_type: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param nm:
+@scoped_env: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_string: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@as_list: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_namespace: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_character: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_scalar_logical: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param call:
+@call_ns: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param lhs:
+#! param rhs:
+#! param env:
+@new_formula: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@wref_value: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quo:
+#! param expr:
+@quo_set_expr: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param ...:
+@expr_print: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param n:
+#! param names:
+@new_double: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param drop:
+@last_trace: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param min:
+#! param max:
+#! param allow_infinite:
+#! param allow_na:
+#! param allow_null:
+#! param arg:
+#! param call:
+#! param ...:
+@check_number_decimal: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@dots_n: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@cpl: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+@env_name: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_attached: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param encoding:
+@as_character: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_scalar_atomic: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param error:
+#! param call:
+#! param action:
+@check_dots_empty: (Any, Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param allow_null:
+#! param arg:
+#! param call:
+#! param ...:
+@check_data_frame: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_bytes: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+#! param finite:
+@is_complex: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@as_string: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_vector: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param error:
+#! param call:
+#! param action:
+@check_dots_unnamed: (Any, Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param default:
+@get_env: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+#! param env:
+@new_quosure: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@obj_address: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+#! param finite:
+@is_integerish: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param empty:
+@is_done_box: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_bytes: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+@quo: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@data_syms: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_scalar_list: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+#! param env:
+@eval_bare: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_pairlist: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@as_bytes: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param id:
+@reset_message_verbosity: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param class:
+@inherits_all: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param pkg:
+#! param version:
+#! param compare:
+#! param ...:
+@is_installed: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param pkg:
+#! param reason:
+#! param version:
+#! param compare:
+#! param action:
+#! param call:
+#! param ...:
+@check_installed: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@dbl: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_dbl_na: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_integer: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param fn:
+@fn_fmls_names: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quo:
+#! param width:
+#! param nlines:
+@quo_text: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quo:
+@quo_is_null: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param new_env:
+@set_env: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param message:
+#! param class:
+#! param call:
+#! param body:
+#! param footer:
+#! param trace:
+#! param parent:
+#! param use_cli_format:
+#! param .inherit:
+#! param .internal:
+#! param .file:
+#! param .frame:
+#! param .trace_bottom:
+#! param .subclass:
+#! param ...:
+@abort: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param arg:
+@enquo: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+#! param finite:
+@is_double: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param value:
+@env_browse: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param class:
+@inherits_any: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@as_complex: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_copyable: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param call:
+@call_args: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param key:
+#! param value:
+#! param finalizer:
+#! param on_quit:
+@new_weakref: (Any, Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param cnd:
+#! param ...:
+@cnd_header: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_primitive_eager: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+@expr_name: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param value:
+#! param frame:
+@scoped_interactive: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param env:
+@as_closure: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_dictionaryish: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_quosure: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+@locally: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param env:
+@parse_quos: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+@env_lock: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param call:
+#! param env:
+@call_standardise: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .x:
+#! param .to:
+#! param ...:
+@coerce_class: (Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+#! param data:
+#! param env:
+@eval_tidy: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param nm:
+#! param ...:
+@set_names: (Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .frame:
+#! param ...:
+@scoped_options: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@as_double: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .expr:
+#! param ...:
+@with_handlers: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param names:
+#! param x:
+@rep_named: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@bytes: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@have_name: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param class:
+@inherits_only: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_scalar_complex: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param expr:
+@with_env: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param class:
+@is_box: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_int_na: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@parse_exprs: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param string:
+@is_string: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param trace:
+@trace_length: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_list: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .named:
+#! param .ignore_empty:
+#! param .unquote_names:
+#! param ...:
+@quos: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@as_integer: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param message:
+#! param class:
+#! param body:
+#! param footer:
+#! param parent:
+#! param use_cli_format:
+#! param .inherit:
+#! param .file:
+#! param .frequency:
+#! param .frequency_id:
+#! param .subclass:
+#! param ...:
+@inform: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+#! param ...:
+@try_fetch: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param predicate:
+@squash_if: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+#! param width:
+#! param nlines:
+@expr_text: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param env:
+#! param error_call:
+#! param error_arg:
+@englue: (Any, Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param y:
+@is_reference: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .expr:
+#! param ...:
+@with_options: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@env: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param data:
+@as_data_mask: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_atomic: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+#! param finite:
+@is_bare_integerish: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param from:
+#! param to:
+@seq2: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param default:
+@maybe_missing: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_chr_na: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param width:
+#! param nlines:
+@f_text: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+@env_names: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quo:
+#! param name:
+#! param n:
+#! param ns:
+@quo_is_call: (Any, Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param n:
+@last_messages: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_na: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .ignore_empty:
+#! param .preserve_empty:
+#! param .homonyms:
+#! param .check_assign:
+#! param ...:
+@dots_values: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param prim:
+@prim_name: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quo:
+@quo_name: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quos:
+@quos_auto_name: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_condition: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param pkg:
+@pkg_env: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param fn:
+@fn_fmls: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quo:
+@quo_label: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param handler:
+@calling: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param encoding:
+@string: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param value:
+@set_expr: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_quosures: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@ll: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_message: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param newcdr:
+@node_poke_cdar: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .named:
+#! param .ignore_empty:
+#! param .ignore_null:
+#! param .unquote_names:
+#! param .homonyms:
+#! param .check_assign:
+#! param ...:
+@enexprs: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .x:
+#! param .p:
+#! param .class:
+#! param ...:
+@as_box_if: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@node_caar: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param n:
+@ctxt_frame: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+@env_is_browsed: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param n:
+@env_parent: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param bottom:
+#! param top:
+@new_data_mask: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .fn:
+#! param .env:
+#! param ...:
+@exec: (Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@UQ: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@squash: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_logical: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param scoped:
+#! param lhs:
+@is_bare_formula: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param newcdr:
+@node_poke_cddr: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param cnd:
+#! param inherit:
+#! param prefix:
+#! param ...:
+@cnd_message: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param n:
+#! param names:
+@new_complex: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_scalar_vector: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param start:
+#! param y:
+#! param from:
+#! param n:
+@vec_poke_n: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param class:
+#! param message:
+#! param call:
+#! param use_cli_format:
+#! param ...:
+@message_cnd: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_warning: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param entrace:
+#! param prompt_install:
+@global_handle: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@names2: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .fn:
+#! param .ns:
+#! param ...:
+@call2: (Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param call:
+@format_error_call: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@node_cadr: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param start:
+#! param y:
+#! param from:
+#! param to:
+@vec_poke_range: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@list2: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_error: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@squash_dbl: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param last:
+@env_parents: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@lgl: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param message:
+#! param class:
+#! param body:
+#! param footer:
+#! param parent:
+#! param use_cli_format:
+#! param .inherit:
+#! param .frequency:
+#! param .frequency_id:
+#! param .subclass:
+#! param ...:
+@warn: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param f:
+@f_rhs: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@parse_expr: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_numeric: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param call:
+#! param frame:
+@local_error_call: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param newtag:
+@node_poke_tag: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_named: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param f:
+@f_env: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param nms:
+@env_binding_unlock: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param nms:
+#! param inherit:
+@env_unbind: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param name:
+@has_name: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@push_options: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param old:
+#! param new:
+@names_inform_repair: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param n:
+@caller_fn: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param newcar:
+@node_poke_caar: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_complex: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+@env_unlock: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quo:
+@quo_is_symbolic: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@call_inspect: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .expr:
+#! param .env:
+#! param ...:
+@with_bindings: (Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param arg:
+@enexpr: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param allow_empty:
+#! param allow_na:
+#! param allow_null:
+#! param arg:
+#! param call:
+#! param ...:
+@check_string: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quo:
+@quo_is_missing: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param env:
+@as_quosure: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_lambda: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param nms:
+#! param default:
+#! param inherit:
+#! param last:
+@env_get_list: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param class:
+#! param message:
+#! param call:
+#! param trace:
+#! param parent:
+#! param use_cli_format:
+#! param ...:
+@error_cnd: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@ns_env: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .x:
+#! param .to:
+#! param ...:
+@coerce_type: (Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param newcar:
+@node_poke_cadr: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .env:
+#! param ...:
+@env_bind: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .env:
+#! param .frame:
+#! param ...:
+@local_bindings: (Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .env:
+#! param ...:
+@env_bury: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_bool: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param from:
+#! param x:
+@seq2_along: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param car:
+#! param cdr:
+@new_call: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@are_na: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param enable:
+@global_prompt_install: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+@expr_label: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .ignore_empty:
+#! param .preserve_empty:
+#! param .homonyms:
+#! param .check_assign:
+#! param ...:
+@dots_splice: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@parse_bytes: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quo:
+#! param name:
+@quo_is_symbol: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_cpl_na: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_node_list: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param parent:
+@as_environment: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param nms:
+@env_binding_are_lazy: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quo:
+@quo_get_expr: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param cnd:
+#! param ...:
+@cnd_body: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@flatten: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@type_of: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quo:
+#! param warn:
+@quo_squash: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@sym: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ns:
+@run_on_load: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param box:
+@unbox: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_function: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param arg:
+#! param values:
+#! param multiple:
+#! param error_arg:
+#! param error_call:
+#! param ...:
+@arg_match: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_primitive: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .x:
+#! param class:
+#! param ...:
+@new_box: (Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .named:
+#! param .ignore_empty:
+#! param .unquote_names:
+#! param ...:
+@exprs: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param format:
+#! param inline:
+#! param frame:
+#! param ...:
+@local_use_cli: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param ancestor:
+@env_inherits: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@node_cdar: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .named:
+#! param .ignore_empty:
+#! param .ignore_null:
+#! param .unquote_names:
+#! param .homonyms:
+#! param .check_assign:
+#! param ...:
+@ensyms: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@enquos0: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .x:
+#! param ...:
+@switch_class: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@zap_srcref: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_callable: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@data_sym: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param arg:
+@ensym: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param newcdr:
+@node_poke_cdr: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@flatten_dbl: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param call:
+#! param fn:
+#! param defaults:
+#! param dots_env:
+#! param dots_expand:
+#! param ...:
+@call_match: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param n:
+#! param names:
+@new_raw: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param n:
+#! param names:
+@new_integer: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param nms:
+@env_binding_lock: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+@env_is_user_facing: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param nm:
+#! param value:
+#! param inherit:
+#! param create:
+@env_poke: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+@qq_show: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@squash_int: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param finite:
+@is_scalar_integerish: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param env:
+@expr_interp: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@node_cddr: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param cnd:
+#! param top:
+#! param bottom:
+#! param ...:
+@cnd_entrace: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@f_name: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param f:
+@f_lhs: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@node_car: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param arg:
+@caller_arg: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param env:
+@parse_quo: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param newcar:
+@node_poke_car: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param fn:
+@fn_fmls_syms: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param value:
+#! param frame:
+@local_interactive: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_environment: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param class:
+@as_box: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+@env_is_locked: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_symbolic: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+#! param classes:
+@catch_cnd: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param shallow:
+@duplicate: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param call:
+#! param ...:
+@check_dots_empty0: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param name:
+@is_symbol: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .x:
+#! param ...:
+@switch_type: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param cnd:
+#! param ...:
+@cnd_footer: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param cnd:
+#! param ...:
+@cnd_signal: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_node: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .env:
+#! param .eval_env:
+#! param ...:
+@env_bind_lazy: (Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param id:
+@reset_warning_verbosity: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@node_cdr: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@peek_options: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param last:
+@env_tail: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param nms:
+#! param inherit:
+@env_has: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param new_env:
+@env_poke_parent: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .env:
+#! param .frame:
+#! param ...:
+@scoped_bindings: (Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param cnd:
+#! param class:
+@cnd_inherits: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_scalar_raw: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_expression: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@node_tag: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param width:
+#! param ...:
+@expr_deparse: (Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_raw: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param n:
+@last_warnings: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_scalar_bytes: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@squash_lgl: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .require:
+#! param .frame:
+#! param .call:
+#! param ...:
+@check_exclusive: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param call:
+@call_name: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param arg:
+#! param call:
+@check_required: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param n:
+@is_bare_list: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param top:
+#! param bottom:
+@trace_back: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param call:
+#! param env:
+@call_fn: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param expr:
+#! param value:
+@with_interactive: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@as_label: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@as_logical: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param env:
+#! param named:
+@as_quosures: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@ns_env_name: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param quo:
+@quo_get_env: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param type:
+@friendly_type: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param args:
+#! param body:
+#! param env:
+@new_function: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param n:
+#! param names:
+@new_list: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param arg:
+@enquo0: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+#! param zap_srcref:
+@hash: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param call:
+@error_call: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param call:
+@call_args_names: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .frame:
+#! param ...:
+@local_options: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param pkg:
+#! param expr:
+#! param env:
+@on_package_load: (Any, Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+#! param nms:
+@env_binding_are_active: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param message:
+#! param class:
+#! param .subclass:
+#! param ...:
+@signal: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_bare_environment: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param env:
+@env_depth: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param n:
+@caller_call: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param frame:
+@frame_call: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_weakref: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param ...:
+@chr: (...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .parent:
+#! param ...:
+@child_env: (Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@is_null: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@squash_raw: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@squash_chr: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param n:
+#! param names:
+@new_character: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param fn:
+@fn_env: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param cnd:
+@cnd_muffle: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param .fn:
+#! param .args:
+#! param .env:
+#! param .bury:
+#! param ...:
+@invoke: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@squash_cpl: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param path:
+@hash_file: (Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param car:
+#! param cdr:
+@new_node: (Any, Any) -> Any;
+
+#! pkg: rlang
+#! tier: T3
+#! generated-from: rlang 1.3.0, R 4.6.1
+#! param x:
+@flatten_int: (Any) -> Any;
+

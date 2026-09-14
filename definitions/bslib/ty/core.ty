@@ -1,0 +1,1479 @@
+@importFrom bslib page_sidebar card_body bs_theme_new bs_theme_get_variables navset_card_tab input_dark_mode nav_panel_hidden page_fluid bs_theme_get accordion_panel_close as_fill_item show_offcanvas popover toggle_dark_mode as_fillable_container nav_show toggle_sidebar card_footer navs_pill_list accordion_panel_update bs_add_mixins builtin_themes nav_content input_submit_textarea navset_card_underline navset_hidden bind_task_button bs_theme_accent_colors theme_version showcase_left_center navset_pill_list show_toast value_box_theme toolbar_divider nav_select layout_column_wrap precompiled_css_path bs_global_add_rules font_link card_title update_submit_textarea is.card_item theme_bootswatch bs_themer layout_columns card_header bs_bundle nav_menu tooltip navs_pill showcase_bottom sidebar_toggle nav_item accordion update_tooltip page_fixed bootswatch_themes navs_tab_card navset_pill update_switch font_google accordion_panel_set page_navbar nav_insert offcanvas navset_underline bs_global_add_variables toggle_tooltip hide_offcanvas font_face toggle_popover showcase_top_right toggle_switch toast_header bootstrap nav_remove nav_hide bs_theme_fonts bs_get_variables navset_card_pill input_task_button accordion_panel_insert toolbar_input_button toast accordion_panel toolbar_input_select navset_tab bs_add_functions bs_theme_update bs_theme_base_colors input_switch card_body_fill navset_bar bs_theme_dependencies bs_theme_preview bs_theme_add_variables remove_all_fill layout_sidebar run_with_themer bs_global_theme_update is_fill_item as.card_item bs_global_theme nav bs_get_contrast bs_dependency navs_tab update_toolbar_input_button value_box is_fill_carrier is_fillable_container navbar_options bs_theme_set update_code_editor css card_image nav_prepend is_bs_theme bs_theme_add bs_remove bs_theme navs_pill_card toggle_offcanvas bootstrap_sass update_task_button input_code_editor card bs_add_declarations bs_add_rules bs_current_theme nav_append as_fill_carrier accordion_panel_remove bs_global_set bs_dependency_defer bs_retrieve nav_panel page page_fill update_popover bs_theme_clear bs_add_variables update_toolbar_input_select sidebar hide_toast bs_global_bundle navs_hidden breakpoints accordion_panel_open font_collection navs_bar toolbar page_fillable;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param sidebar:
+#! param title:
+#! param fillable:
+#! param fillable_mobile:
+#! param theme:
+#! param window_title:
+#! param lang:
+#! param ...:
+@page_sidebar: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param fillable:
+#! param min_height:
+#! param max_height:
+#! param max_height_full_screen:
+#! param height:
+#! param padding:
+#! param gap:
+#! param fill:
+#! param class:
+#! param ...:
+@card_body: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@bs_theme_new: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@bs_theme_get_variables: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param selected:
+#! param title:
+#! param sidebar:
+#! param header:
+#! param footer:
+#! param height:
+#! param full_screen:
+#! param wrapper:
+#! param ...:
+@navset_card_tab: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param mode:
+#! param ...:
+@input_dark_mode: (Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param value:
+#! param icon:
+#! param ...:
+@nav_panel_hidden: (Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param title:
+#! param theme:
+#! param lang:
+#! param ...:
+@page_fluid: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@bs_theme_get: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param values:
+#! param session:
+@accordion_panel_close: (Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param x:
+#! param min_height:
+#! param max_height:
+#! param class:
+#! param style:
+#! param css_selector:
+#! param ...:
+@as_fill_item: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param offcanvas:
+#! param session:
+#! param ...:
+@show_offcanvas: (Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param trigger:
+#! param title:
+#! param id:
+#! param placement:
+#! param options:
+#! param ...:
+@popover: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param mode:
+#! param session:
+#! param ...:
+@toggle_dark_mode: (Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param x:
+#! param min_height:
+#! param max_height:
+#! param gap:
+#! param class:
+#! param style:
+#! param css_selector:
+#! param ...:
+@as_fillable_container: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param target:
+#! param select:
+#! param session:
+@nav_show: (Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param open:
+#! param session:
+@toggle_sidebar: (Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param class:
+#! param ...:
+@card_footer: (Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@navs_pill_list: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param target:
+#! param title:
+#! param value:
+#! param icon:
+#! param session:
+#! param ...:
+@accordion_panel_update: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+#! param mixins:
+@bs_add_mixins: (Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param version:
+#! param full_path:
+@builtin_themes: (Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@nav_content: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param label:
+#! param placeholder:
+#! param value:
+#! param width:
+#! param rows:
+#! param button:
+#! param toolbar:
+#! param submit_key:
+#! param ...:
+@input_submit_textarea: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param selected:
+#! param title:
+#! param sidebar:
+#! param header:
+#! param footer:
+#! param height:
+#! param full_screen:
+#! param wrapper:
+#! param ...:
+@navset_card_underline: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param selected:
+#! param header:
+#! param footer:
+#! param ...:
+@navset_hidden: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param target:
+#! param task_button_id:
+#! param ...:
+@bind_task_button: (Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@bs_theme_accent_colors: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+@theme_version: (Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param width:
+#! param width_full_screen:
+#! param max_height:
+#! param max_height_full_screen:
+@showcase_left_center: (Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param selected:
+#! param header:
+#! param footer:
+#! param well:
+#! param fluid:
+#! param widths:
+#! param ...:
+@navset_pill_list: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param toast:
+#! param session:
+#! param ...:
+@show_toast: (Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param name:
+#! param bg:
+#! param fg:
+@value_box_theme: (Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param width:
+#! param gap:
+#! param ...:
+@toolbar_divider: (Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param selected:
+#! param session:
+@nav_select: (Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param width:
+#! param fixed_width:
+#! param heights_equal:
+#! param fill:
+#! param fillable:
+#! param height:
+#! param height_mobile:
+#! param min_height:
+#! param max_height:
+#! param gap:
+#! param class:
+#! param ...:
+@layout_column_wrap: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+@precompiled_css_path: (Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@bs_global_add_rules: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param family:
+#! param href:
+@font_link: (Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param container:
+#! param ...:
+@card_title: (Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param value:
+#! param placeholder:
+#! param label:
+#! param submit:
+#! param focus:
+#! param session:
+#! param ...:
+@update_submit_textarea: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param x:
+@`is.card_item`: (Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+@theme_bootswatch: (Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param gfonts:
+#! param gfonts_update:
+@bs_themer: (Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param col_widths:
+#! param row_heights:
+#! param fill:
+#! param fillable:
+#! param gap:
+#! param class:
+#! param height:
+#! param min_height:
+#! param max_height:
+#! param ...:
+@layout_columns: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param gap:
+#! param class:
+#! param container:
+#! param ...:
+@card_header: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+#! param ...:
+@bs_bundle: (Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param title:
+#! param value:
+#! param icon:
+#! param align:
+#! param ...:
+@nav_menu: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param trigger:
+#! param id:
+#! param placement:
+#! param options:
+#! param ...:
+@tooltip: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@navs_pill: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param width:
+#! param width_full_screen:
+#! param height:
+#! param height_full_screen:
+#! param max_height:
+#! param max_height_full_screen:
+@showcase_bottom: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param open:
+#! param session:
+@sidebar_toggle: (Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@nav_item: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param open:
+#! param multiple:
+#! param class:
+#! param width:
+#! param height:
+#! param ...:
+@accordion: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param session:
+#! param ...:
+@update_tooltip: (Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param title:
+#! param theme:
+#! param lang:
+#! param ...:
+@page_fixed: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param version:
+#! param full_path:
+@bootswatch_themes: (Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@navs_tab_card: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param selected:
+#! param header:
+#! param footer:
+#! param ...:
+@navset_pill: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param label:
+#! param value:
+#! param session:
+@update_switch: (Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param family:
+#! param local:
+#! param cache:
+#! param wght:
+#! param ital:
+#! param display:
+@font_google: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param values:
+#! param session:
+@accordion_panel_set: (Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param title:
+#! param id:
+#! param selected:
+#! param sidebar:
+#! param fillable:
+#! param fillable_mobile:
+#! param gap:
+#! param padding:
+#! param header:
+#! param footer:
+#! param navbar_options:
+#! param fluid:
+#! param theme:
+#! param window_title:
+#! param lang:
+#! param position:
+#! param bg:
+#! param inverse:
+#! param underline:
+#! param collapsible:
+#! param ...:
+@page_navbar: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param nav:
+#! param target:
+#! param position:
+#! param select:
+#! param session:
+@nav_insert: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param title:
+#! param footer:
+#! param id:
+#! param trigger:
+#! param placement:
+#! param width:
+#! param height:
+#! param close_button:
+#! param backdrop:
+#! param scroll:
+#! param keyboard:
+#! param ...:
+@offcanvas: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param selected:
+#! param header:
+#! param footer:
+#! param ...:
+@navset_underline: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param .where:
+#! param .default_flag:
+#! param ...:
+@bs_global_add_variables: (Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param show:
+#! param session:
+@toggle_tooltip: (Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param session:
+#! param ...:
+@hide_offcanvas: (Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param family:
+#! param src:
+#! param weight:
+#! param style:
+#! param display:
+#! param stretch:
+#! param variant:
+#! param unicode_range:
+@font_face: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param show:
+#! param session:
+@toggle_popover: (Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param width:
+#! param width_full_screen:
+#! param max_height:
+#! param max_height_full_screen:
+@showcase_top_right: (Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param value:
+#! param session:
+@toggle_switch: (Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param title:
+#! param icon:
+#! param status:
+#! param ...:
+@toast_header: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+#! param ...:
+@bootstrap: (Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param target:
+#! param session:
+@nav_remove: (Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param target:
+#! param session:
+@nav_hide: (Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@bs_theme_fonts: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+#! param varnames:
+@bs_get_variables: (Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param selected:
+#! param title:
+#! param sidebar:
+#! param header:
+#! param footer:
+#! param height:
+#! param placement:
+#! param full_screen:
+#! param wrapper:
+#! param ...:
+@navset_card_pill: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param label:
+#! param icon:
+#! param label_busy:
+#! param icon_busy:
+#! param type:
+#! param auto_reset:
+#! param ...:
+@input_task_button: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param panel:
+#! param target:
+#! param position:
+#! param session:
+@accordion_panel_insert: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param label:
+#! param icon:
+#! param show_label:
+#! param tooltip:
+#! param disabled:
+#! param border:
+#! param ...:
+@toolbar_input_button: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param header:
+#! param icon:
+#! param id:
+#! param type:
+#! param duration_s:
+#! param position:
+#! param closable:
+#! param ...:
+@toast: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param title:
+#! param value:
+#! param icon:
+#! param ...:
+@accordion_panel: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param label:
+#! param choices:
+#! param selected:
+#! param icon:
+#! param show_label:
+#! param tooltip:
+#! param ...:
+@toolbar_input_select: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param selected:
+#! param header:
+#! param footer:
+#! param ...:
+@navset_tab: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+#! param functions:
+@bs_add_functions: (Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+#! param preset:
+#! param bg:
+#! param fg:
+#! param primary:
+#! param secondary:
+#! param success:
+#! param info:
+#! param warning:
+#! param danger:
+#! param base_font:
+#! param code_font:
+#! param heading_font:
+#! param font_scale:
+#! param bootswatch:
+#! param ...:
+@bs_theme_update: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@bs_theme_base_colors: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param label:
+#! param value:
+#! param width:
+@input_switch: (Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@card_body_fill: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param title:
+#! param id:
+#! param selected:
+#! param sidebar:
+#! param fillable:
+#! param gap:
+#! param padding:
+#! param header:
+#! param footer:
+#! param fluid:
+#! param navbar_options:
+#! param position:
+#! param bg:
+#! param inverse:
+#! param collapsible:
+#! param ...:
+@navset_bar: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+#! param sass_options:
+#! param cache:
+#! param jquery:
+#! param precompiled:
+@bs_theme_dependencies: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+#! param with_themer:
+#! param ...:
+@bs_theme_preview: (Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@bs_theme_add_variables: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param x:
+@remove_all_fill: (Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param sidebar:
+#! param fillable:
+#! param fill:
+#! param bg:
+#! param fg:
+#! param border:
+#! param border_radius:
+#! param border_color:
+#! param padding:
+#! param gap:
+#! param height:
+#! param ...:
+@layout_sidebar: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param appDir:
+#! param gfonts:
+#! param gfonts_update:
+#! param ...:
+@run_with_themer: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param preset:
+#! param bg:
+#! param fg:
+#! param primary:
+#! param secondary:
+#! param success:
+#! param info:
+#! param warning:
+#! param danger:
+#! param base_font:
+#! param code_font:
+#! param heading_font:
+#! param bootswatch:
+#! param ...:
+@bs_global_theme_update: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param x:
+@is_fill_item: (Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param x:
+@`as.card_item`: (Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param version:
+#! param preset:
+#! param bg:
+#! param fg:
+#! param primary:
+#! param secondary:
+#! param success:
+#! param info:
+#! param warning:
+#! param danger:
+#! param base_font:
+#! param code_font:
+#! param heading_font:
+#! param bootswatch:
+#! param ...:
+@bs_global_theme: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@nav: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+#! param varnames:
+@bs_get_contrast: (Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param input:
+#! param theme:
+#! param name:
+#! param version:
+#! param cache_key_extra:
+#! param .dep_args:
+#! param .sass_args:
+@bs_dependency: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@navs_tab: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param label:
+#! param show_label:
+#! param icon:
+#! param disabled:
+#! param session:
+@update_toolbar_input_button: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param title:
+#! param value:
+#! param showcase:
+#! param showcase_layout:
+#! param full_screen:
+#! param theme:
+#! param height:
+#! param max_height:
+#! param min_height:
+#! param fill:
+#! param class:
+#! param id:
+#! param theme_color:
+#! param ...:
+@value_box: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param x:
+@is_fill_carrier: (Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param x:
+@is_fillable_container: (Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param position:
+#! param bg:
+#! param theme:
+#! param collapsible:
+#! param underline:
+#! param ...:
+@navbar_options: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@bs_theme_set: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param value:
+#! param label:
+#! param language:
+#! param theme_light:
+#! param theme_dark:
+#! param read_only:
+#! param line_numbers:
+#! param word_wrap:
+#! param tab_size:
+#! param indentation:
+#! param session:
+#! param ...:
+@update_code_editor: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param collapse_:
+#! param ...:
+@css: (Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param file:
+#! param alt:
+#! param src:
+#! param href:
+#! param border_radius:
+#! param mime_type:
+#! param class:
+#! param height:
+#! param fill:
+#! param width:
+#! param container:
+#! param ...:
+@card_image: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param nav:
+#! param menu_title:
+#! param select:
+#! param session:
+@nav_prepend: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param x:
+@is_bs_theme: (Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@bs_theme_add: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+#! param ids:
+@bs_remove: (Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param version:
+#! param preset:
+#! param brand:
+#! param bg:
+#! param fg:
+#! param primary:
+#! param secondary:
+#! param success:
+#! param info:
+#! param warning:
+#! param danger:
+#! param base_font:
+#! param code_font:
+#! param heading_font:
+#! param font_scale:
+#! param bootswatch:
+#! param ...:
+@bs_theme: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@navs_pill_card: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param show:
+#! param session:
+#! param ...:
+@toggle_offcanvas: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param rules:
+#! param theme:
+#! param ...:
+@bootstrap_sass: (Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param state:
+#! param session:
+#! param ...:
+@update_task_button: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param label:
+#! param value:
+#! param language:
+#! param height:
+#! param width:
+#! param theme_light:
+#! param theme_dark:
+#! param read_only:
+#! param line_numbers:
+#! param word_wrap:
+#! param tab_size:
+#! param indentation:
+#! param fill:
+#! param ...:
+@input_code_editor: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param full_screen:
+#! param height:
+#! param max_height:
+#! param min_height:
+#! param fill:
+#! param class:
+#! param wrapper:
+#! param id:
+#! param ...:
+@card: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+#! param declarations:
+@bs_add_declarations: (Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+#! param rules:
+@bs_add_rules: (Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param session:
+@bs_current_theme: (Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param nav:
+#! param menu_title:
+#! param select:
+#! param session:
+@nav_append: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param x:
+#! param min_height:
+#! param max_height:
+#! param gap:
+#! param class:
+#! param style:
+#! param css_selector:
+#! param ...:
+@as_fill_carrier: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param target:
+#! param session:
+@accordion_panel_remove: (Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+@bs_global_set: (Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param func:
+#! param memoise:
+@bs_dependency_defer: (Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+#! param ids:
+#! param include_unnamed:
+@bs_retrieve: (Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param title:
+#! param value:
+#! param icon:
+#! param ...:
+@nav_panel: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param title:
+#! param theme:
+#! param lang:
+#! param ...:
+@page: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@page_fill: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param title:
+#! param session:
+#! param ...:
+@update_popover: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@bs_theme_clear: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param theme:
+#! param .where:
+#! param .default_flag:
+#! param ...:
+@bs_add_variables: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param label:
+#! param show_label:
+#! param choices:
+#! param selected:
+#! param icon:
+#! param session:
+@update_toolbar_input_select: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param width:
+#! param position:
+#! param open:
+#! param id:
+#! param title:
+#! param bg:
+#! param fg:
+#! param class:
+#! param max_height_mobile:
+#! param gap:
+#! param padding:
+#! param fillable:
+#! param resizable:
+#! param ...:
+@sidebar: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param session:
+#! param ...:
+@hide_toast: (Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@bs_global_bundle: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@navs_hidden: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param xs:
+#! param sm:
+#! param md:
+#! param lg:
+#! param ...:
+@breakpoints: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param id:
+#! param values:
+#! param session:
+@accordion_panel_open: (Any, Any, Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param default_flag:
+#! param quote:
+#! param ...:
+@font_collection: (Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param ...:
+@navs_bar: (...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param align:
+#! param gap:
+#! param width:
+#! param ...:
+@toolbar: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: bslib
+#! tier: T3
+#! generated-from: bslib 0.12.0, R 4.6.1
+#! param padding:
+#! param gap:
+#! param fillable_mobile:
+#! param title:
+#! param theme:
+#! param lang:
+#! param ...:
+@page_fillable: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+

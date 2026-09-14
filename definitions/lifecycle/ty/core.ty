@@ -1,0 +1,122 @@
+@importFrom lifecycle is_present signal_superseded lint_lifecycle pkg_lifecycle_statuses expect_defunct signal_experimental signal_stage deprecate_warn lifecycle_linter deprecate_stop deprecate_soft lint_tidyverse_lifecycle expect_deprecated badge;
+
+#! pkg: lifecycle
+#! tier: T3
+#! generated-from: lifecycle 1.0.5, R 4.6.1
+#! param arg:
+@is_present: (Any) -> Any;
+
+#! pkg: lifecycle
+#! tier: T3
+#! generated-from: lifecycle 1.0.5, R 4.6.1
+#! param when:
+#! param what:
+#! param env:
+@signal_superseded: (Any, Any, Any) -> Any;
+
+#! pkg: lifecycle
+#! tier: T3
+#! generated-from: lifecycle 1.0.5, R 4.6.1
+#! param packages:
+#! param path:
+#! param pattern:
+#! param which:
+#! param symbol_is_undesirable:
+@lint_lifecycle: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: lifecycle
+#! tier: T3
+#! generated-from: lifecycle 1.0.5, R 4.6.1
+#! param package:
+#! param which:
+@pkg_lifecycle_statuses: (Any, Any) -> Any;
+
+#! pkg: lifecycle
+#! tier: T3
+#! generated-from: lifecycle 1.0.5, R 4.6.1
+#! param expr:
+@expect_defunct: (Any) -> Any;
+
+#! pkg: lifecycle
+#! tier: T3
+#! generated-from: lifecycle 1.0.5, R 4.6.1
+#! param when:
+#! param what:
+#! param env:
+@signal_experimental: (Any, Any, Any) -> Any;
+
+#! pkg: lifecycle
+#! tier: T3
+#! generated-from: lifecycle 1.0.5, R 4.6.1
+#! param stage:
+#! param what:
+#! param with:
+#! param env:
+@signal_stage: (Any, Any, Any, Any) -> Any;
+
+#! pkg: lifecycle
+#! tier: T3
+#! generated-from: lifecycle 1.0.5, R 4.6.1
+#! param when:
+#! param what:
+#! param with:
+#! param details:
+#! param id:
+#! param always:
+#! param env:
+#! param user_env:
+@deprecate_warn: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: lifecycle
+#! tier: T3
+#! generated-from: lifecycle 1.0.5, R 4.6.1
+#! param packages:
+#! param which:
+#! param symbol_is_undesirable:
+@lifecycle_linter: (Any, Any, Any) -> Any;
+
+#! pkg: lifecycle
+#! tier: T3
+#! generated-from: lifecycle 1.0.5, R 4.6.1
+#! param when:
+#! param what:
+#! param with:
+#! param details:
+#! param env:
+@deprecate_stop: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: lifecycle
+#! tier: T3
+#! generated-from: lifecycle 1.0.5, R 4.6.1
+#! param when:
+#! param what:
+#! param with:
+#! param details:
+#! param id:
+#! param env:
+#! param user_env:
+@deprecate_soft: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: lifecycle
+#! tier: T3
+#! generated-from: lifecycle 1.0.5, R 4.6.1
+#! param path:
+#! param pattern:
+#! param which:
+#! param symbol_is_undesirable:
+@lint_tidyverse_lifecycle: (Any, Any, Any, Any) -> Any;
+
+#! pkg: lifecycle
+#! tier: T3
+#! generated-from: lifecycle 1.0.5, R 4.6.1
+#! param expr:
+#! param regexp:
+#! param ...:
+@expect_deprecated: (Any, Any, ...Any) -> Any;
+
+#! pkg: lifecycle
+#! tier: T3
+#! generated-from: lifecycle 1.0.5, R 4.6.1
+#! param stage:
+@badge: (Any) -> Any;
+

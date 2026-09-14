@@ -1,0 +1,17 @@
+format_version = 1
+
+[package]
+name    = "sass"
+since   = "0.4.10"
+
+[definition]
+version = "0.1.0"
+tier    = "T3"
+
+[provider]
+type       = "generated"
+repository = "github:we-data-ch/registry/definitions/sass"
+
+[capabilities]
+r_shims    = false
+extern_raw = false

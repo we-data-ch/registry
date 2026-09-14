@@ -1,0 +1,1466 @@
+@importFrom cli style_no_dim ansi_simplify col_yellow cli_process_done cat_rule hash_raw_xxhash col_green cat_boxx no is_ansi_tty cli_dl ansi_with_hidden_cursor style_dim ansi_string ansi_grepl cli_verbatim cli_progress_step cli_h1 cli_warn cli_h2 cli_h3 cli_alert_info cli_bullets_raw hash_md5 cli_status cli_text make_ansi_style style_blurred cli_progress_message hash_obj_sha256 ansi_hide_cursor col_br_cyan col_blue ansi_show_cursor cli_rule col_silver demo_spinners cli_end bg_br_white style_reset format_message format_warning cli_alert_warning ansi_tolower hash_file_xxhash diff_chr style_no_underline col_black diff_str ticking cat_bullet ansi_html style_hidden cli_process_failed utf8_nchar cli_ul bg_yellow ansi_strip keypress cli_fmt hash_file_md5 cli_bullets cli_process_start cli_alert_danger stop_app bg_none col_grey cli_alert_success style_no_inverse hash_raw_animal hash_raw_md5 style_no_strikethrough bg_black spark_bar ansi_trimws get_spinner make_spinner hash_obj_sha1 is_dynamic_tty cli_div hash_obj_xxhash64 bg_br_blue hash_xxhash style_no_color format_inline ansi_strtrim hash_file_xxhash64 col_br_yellow ansi_has_any hash_file_sha1 ansi_chartr ansi_columns ansi_collapse style_bold bg_green col_br_blue rule hash_raw_xxhash64 cli_abort style_italic cli_vec ansi_grep bg_red cli_progress_done boxx cli_progress_output col_magenta style_no_bold ansi_strsplit ansi_nchar hash_raw_sha1 format_error hash_obj_animal col_br_red ansi_toupper style_hyperlink hash_file_sha256 ansi_strwrap ansi_align ansi_substr utf8_graphemes cli_li spark_line col_br_white style_inverse hash_xxhash64 cli_progress_demo test_that_cli num_ansi_colors bg_br_red ansi_palette_show style_no_blurred col_br_black hash_emoji start_app qty cli cli_format hash_sha1 hash_obj_md5 cat_line ruler ansi_substring hash_raw_sha256 combine_ansi_styles hash_raw_emoji builtin_theme hash_animal bg_cyan cat_print style_no_bg_color cli_alert cli_status_clear bg_white ansi_html_style bg_blue cli_blockquote hash_sha256 hash_obj_xxhash cli_code cli_ol style_underline code_highlight bg_br_magenta cli_progress_bar bg_br_green utf8_substr tree style_strikethrough cli_inform style_no_italic simple_theme bg_magenta col_none col_red col_br_green vt_output format_bullets_raw pluralize cli_progress_update cli_status_update hash_obj_emoji col_br_magenta ansi_nzchar cli_format_method cli_par bg_br_black bg_br_cyan col_cyan col_white cli_progress_along bg_br_yellow style_no_hidden;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_no_dim: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param csi:
+@ansi_simplify: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_yellow: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param id:
+#! param msg_done:
+#! param .envir:
+#! param done_class:
+@cli_process_done: (Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param file:
+#! param ...:
+@cat_rule: (Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@hash_raw_xxhash: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_green: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param file:
+#! param ...:
+@cat_boxx: (Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param expr:
+@no: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param stream:
+@is_ansi_tty: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param items:
+#! param labels:
+#! param id:
+#! param class:
+#! param .close:
+#! param .auto_close:
+#! param .envir:
+@cli_dl: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param expr:
+#! param stream:
+@ansi_with_hidden_cursor: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_dim: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@ansi_string: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param pattern:
+#! param x:
+#! param ...:
+@ansi_grepl: (Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param .envir:
+#! param ...:
+@cli_verbatim: (Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param msg:
+#! param msg_done:
+#! param msg_failed:
+#! param spinner:
+#! param class:
+#! param current:
+#! param .auto_close:
+#! param .envir:
+#! param ...:
+@cli_progress_step: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param id:
+#! param class:
+#! param .envir:
+@cli_h1: (Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param message:
+#! param .envir:
+#! param ...:
+@cli_warn: (Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param id:
+#! param class:
+#! param .envir:
+@cli_h2: (Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param id:
+#! param class:
+#! param .envir:
+@cli_h3: (Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param id:
+#! param class:
+#! param wrap:
+#! param .envir:
+@cli_alert_info: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param id:
+#! param class:
+@cli_bullets_raw: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@hash_md5: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param msg:
+#! param msg_done:
+#! param msg_failed:
+#! param .keep:
+#! param .auto_close:
+#! param .envir:
+#! param .auto_result:
+@cli_status: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param .envir:
+#! param ...:
+@cli_text: (Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param bg:
+#! param grey:
+#! param colors:
+#! param ...:
+@make_ansi_style: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_blurred: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param msg:
+#! param current:
+#! param .auto_close:
+#! param .envir:
+#! param ...:
+@cli_progress_message: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param serialize_version:
+@hash_obj_sha256: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param stream:
+@ansi_hide_cursor: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_br_cyan: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_blue: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param stream:
+@ansi_show_cursor: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param left:
+#! param center:
+#! param right:
+#! param id:
+#! param .envir:
+@cli_rule: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_silver: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param which:
+@demo_spinners: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param id:
+@cli_end: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_br_white: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_reset: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param message:
+#! param .envir:
+@format_message: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param message:
+#! param .envir:
+@format_warning: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param id:
+#! param class:
+#! param wrap:
+#! param .envir:
+@cli_alert_warning: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@ansi_tolower: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param paths:
+@hash_file_xxhash: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param old:
+#! param new:
+#! param max_dist:
+@diff_chr: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_no_underline: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_black: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param old:
+#! param new:
+#! param max_dist:
+@diff_str: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param cond:
+#! param name:
+#! param .envir:
+#! param ...:
+@ticking: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param col:
+#! param background_col:
+#! param bullet:
+#! param bullet_col:
+#! param file:
+#! param ...:
+@cat_bullet: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param escape_reserved:
+#! param csi:
+@ansi_html: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_hidden: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param id:
+#! param msg:
+#! param msg_failed:
+#! param .envir:
+#! param failed_class:
+@cli_process_failed: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param type:
+@utf8_nchar: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param items:
+#! param id:
+#! param class:
+#! param .close:
+#! param .auto_close:
+#! param .envir:
+@cli_ul: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_yellow: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param string:
+#! param sgr:
+#! param csi:
+#! param link:
+@ansi_strip: (Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param block:
+@keypress: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param expr:
+#! param collapse:
+#! param strip_newline:
+@cli_fmt: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param paths:
+@hash_file_md5: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param id:
+#! param class:
+#! param .envir:
+@cli_bullets: (Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param msg:
+#! param msg_done:
+#! param msg_failed:
+#! param on_exit:
+#! param msg_class:
+#! param done_class:
+#! param failed_class:
+#! param .auto_close:
+#! param .envir:
+@cli_process_start: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param id:
+#! param class:
+#! param wrap:
+#! param .envir:
+@cli_alert_danger: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param app:
+@stop_app: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_none: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_grey: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param id:
+#! param class:
+#! param wrap:
+#! param .envir:
+@cli_alert_success: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_no_inverse: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param n_adj:
+@hash_raw_animal: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@hash_raw_md5: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_no_strikethrough: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_black: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@spark_bar: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param which:
+@ansi_trimws: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param which:
+@get_spinner: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param which:
+#! param stream:
+#! param template:
+#! param static:
+@make_spinner: (Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param serialize_version:
+@hash_obj_sha1: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param stream:
+@is_dynamic_tty: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param id:
+#! param class:
+#! param theme:
+#! param .auto_close:
+#! param .envir:
+@cli_div: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param serialize_version:
+@hash_obj_xxhash64: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_br_blue: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@hash_xxhash: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_no_color: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param .envir:
+#! param collapse:
+#! param keep_whitespace:
+#! param ...:
+@format_inline: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param width:
+#! param ellipsis:
+@ansi_strtrim: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param paths:
+@hash_file_xxhash64: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_br_yellow: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param string:
+#! param sgr:
+#! param csi:
+#! param link:
+@ansi_has_any: (Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param paths:
+@hash_file_sha1: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param old:
+#! param new:
+#! param x:
+@ansi_chartr: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param width:
+#! param sep:
+#! param fill:
+#! param max_cols:
+#! param align:
+#! param type:
+#! param ellipsis:
+@ansi_columns: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param sep:
+#! param sep2:
+#! param last:
+#! param trunc:
+#! param width:
+#! param ellipsis:
+#! param style:
+@ansi_collapse: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_bold: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_green: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_br_blue: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param left:
+#! param center:
+#! param right:
+#! param line:
+#! param col:
+#! param line_col:
+#! param background_col:
+#! param width:
+@rule: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@hash_raw_xxhash64: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param message:
+#! param call:
+#! param .envir:
+#! param .frame:
+#! param ...:
+@cli_abort: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_italic: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param style:
+@cli_vec: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param pattern:
+#! param x:
+#! param ignore.case:
+#! param perl:
+#! param value:
+#! param ...:
+@ansi_grep: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_red: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param id:
+#! param .envir:
+#! param result:
+@cli_progress_done: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param label:
+#! param header:
+#! param footer:
+#! param border_style:
+#! param padding:
+#! param margin:
+#! param float:
+#! param col:
+#! param background_col:
+#! param border_col:
+#! param align:
+#! param width:
+@boxx: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param id:
+#! param .envir:
+@cli_progress_output: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_magenta: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_no_bold: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param split:
+#! param ...:
+@ansi_strsplit: (Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param type:
+@ansi_nchar: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@hash_raw_sha1: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param message:
+#! param .envir:
+@format_error: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param n_adj:
+#! param serialize_version:
+@hash_obj_animal: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_br_red: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@ansi_toupper: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param url:
+#! param params:
+@style_hyperlink: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param paths:
+@hash_file_sha256: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param width:
+#! param indent:
+#! param exdent:
+#! param simplify:
+@ansi_strwrap: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param width:
+#! param align:
+#! param type:
+@ansi_align: (Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param start:
+#! param stop:
+@ansi_substr: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@utf8_graphemes: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param items:
+#! param labels:
+#! param id:
+#! param class:
+#! param .auto_close:
+#! param .envir:
+@cli_li: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@spark_line: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_br_white: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_inverse: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@hash_xxhash64: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param name:
+#! param status:
+#! param type:
+#! param total:
+#! param .envir:
+#! param at:
+#! param show_after:
+#! param live:
+#! param delay:
+#! param start:
+#! param ...:
+@cli_progress_demo: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param desc:
+#! param code:
+#! param configs:
+#! param links:
+@test_that_cli: (Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param stream:
+@num_ansi_colors: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_br_red: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param palette:
+#! param colors:
+#! param rows:
+@ansi_palette_show: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_no_blurred: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_br_black: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param size:
+@hash_emoji: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param theme:
+#! param output:
+#! param .auto_close:
+#! param .envir:
+@start_app: (Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param expr:
+@qty: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param expr:
+@cli: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param style:
+#! param ...:
+@cli_format: (Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@hash_sha1: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param serialize_version:
+@hash_obj_md5: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param col:
+#! param background_col:
+#! param file:
+#! param ...:
+@cat_line: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param width:
+@ruler: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param first:
+#! param last:
+@ansi_substring: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@hash_raw_sha256: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@combine_ansi_styles: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param size:
+@hash_raw_emoji: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param dark:
+@builtin_theme: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param n_adj:
+@hash_animal: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_cyan: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param file:
+@cat_print: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_no_bg_color: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param id:
+#! param class:
+#! param wrap:
+#! param .envir:
+@cli_alert: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param id:
+#! param result:
+#! param msg_done:
+#! param msg_failed:
+#! param .envir:
+@cli_status_clear: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_white: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param colors:
+#! param palette:
+@ansi_html_style: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_blue: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param quote:
+#! param citation:
+#! param id:
+#! param class:
+#! param .envir:
+@cli_blockquote: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+@hash_sha256: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param serialize_version:
+@hash_obj_xxhash: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param lines:
+#! param language:
+#! param .auto_close:
+#! param .envir:
+#! param ...:
+@cli_code: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param items:
+#! param id:
+#! param class:
+#! param .close:
+#! param .auto_close:
+#! param .envir:
+@cli_ol: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_underline: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param code:
+#! param code_theme:
+#! param envir:
+@code_highlight: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_br_magenta: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param name:
+#! param status:
+#! param type:
+#! param total:
+#! param format:
+#! param format_done:
+#! param format_failed:
+#! param clear:
+#! param current:
+#! param auto_terminate:
+#! param extra:
+#! param .auto_close:
+#! param .envir:
+@cli_progress_bar: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_br_green: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param start:
+#! param stop:
+@utf8_substr: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param data:
+#! param root:
+#! param style:
+#! param width:
+#! param trim:
+@tree: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_strikethrough: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param message:
+#! param .envir:
+#! param ...:
+@cli_inform: (Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_no_italic: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param dark:
+@simple_theme: (Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_magenta: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_none: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_red: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_br_green: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param output:
+#! param width:
+#! param height:
+@vt_output: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param text:
+#! param id:
+#! param class:
+@format_bullets_raw: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param .envir:
+#! param .transformer:
+#! param ...:
+@pluralize: (Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param inc:
+#! param set:
+#! param total:
+#! param status:
+#! param extra:
+#! param id:
+#! param force:
+#! param .envir:
+@cli_progress_update: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param id:
+#! param msg:
+#! param msg_done:
+#! param msg_failed:
+#! param .envir:
+@cli_status_update: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param size:
+#! param serialize_version:
+@hash_obj_emoji: (Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_br_magenta: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param ...:
+@ansi_nzchar: (Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param expr:
+#! param theme:
+@cli_format_method: (Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param id:
+#! param class:
+#! param .auto_close:
+#! param .envir:
+@cli_par: (Any, Any, Any, Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_br_black: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_br_cyan: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_cyan: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@col_white: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param x:
+#! param name:
+#! param total:
+#! param .envir:
+#! param ...:
+@cli_progress_along: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@bg_br_yellow: (...Any) -> Any;
+
+#! pkg: cli
+#! tier: T3
+#! generated-from: cli 3.6.6, R 4.6.1
+#! param ...:
+@style_no_hidden: (...Any) -> Any;
+

@@ -1,0 +1,182 @@
+@importFrom jsonlite base64_enc stream_out base64url_enc serializeJSON rbind_pages parse_gzjson_b64 base64_dec as_gzjson_b64 stream_in fromJSON flatten as_gzjson_raw minify write_json unbox validate parse_gzjson_raw prettify base64url_dec read_json toJSON parse_json unserializeJSON;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param input:
+@base64_enc: (Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param x:
+#! param con:
+#! param pagesize:
+#! param verbose:
+#! param prefix:
+#! param ...:
+@stream_out: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param input:
+@base64url_enc: (Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param x:
+#! param digits:
+#! param pretty:
+@serializeJSON: (Any, Any, Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param pages:
+@rbind_pages: (Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param b64:
+#! param ...:
+@parse_gzjson_b64: (Any, ...Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param input:
+@base64_dec: (Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param x:
+#! param ...:
+@as_gzjson_b64: (Any, ...Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param con:
+#! param handler:
+#! param pagesize:
+#! param verbose:
+#! param ...:
+@stream_in: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param txt:
+#! param simplifyVector:
+#! param simplifyDataFrame:
+#! param simplifyMatrix:
+#! param flatten:
+#! param ...:
+@fromJSON: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param x:
+#! param recursive:
+@flatten: (Any, Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param x:
+#! param ...:
+@as_gzjson_raw: (Any, ...Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param txt:
+@minify: (Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param x:
+#! param path:
+#! param ...:
+@write_json: (Any, Any, ...Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param x:
+@unbox: (Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param txt:
+@validate: (Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param buf:
+#! param ...:
+@parse_gzjson_raw: (Any, ...Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param txt:
+#! param indent:
+@prettify: (Any, Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param input:
+@base64url_dec: (Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param path:
+#! param simplifyVector:
+#! param ...:
+@read_json: (Any, Any, ...Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param x:
+#! param dataframe:
+#! param matrix:
+#! param Date:
+#! param POSIXt:
+#! param factor:
+#! param complex:
+#! param raw:
+#! param null:
+#! param na:
+#! param auto_unbox:
+#! param digits:
+#! param pretty:
+#! param force:
+#! param ...:
+@toJSON: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param json:
+#! param simplifyVector:
+#! param ...:
+@parse_json: (Any, Any, ...Any) -> Any;
+
+#! pkg: jsonlite
+#! tier: T3
+#! generated-from: jsonlite 2.0.0, R 4.6.1
+#! param txt:
+@unserializeJSON: (Any) -> Any;
+

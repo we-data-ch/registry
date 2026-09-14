@@ -1,0 +1,1 @@
+let x <- `is.R6Class`(1);

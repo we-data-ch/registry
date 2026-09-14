@@ -1,0 +1,192 @@
+@importFrom S7 method super validate prop_exists prop_names props check_is_S7 new_S3_class method_explain new_class new_external_generic new_property new_union prop new_generic as_class convert valid_implicitly S7_data S7_inherits new_object valid_eventually S4_register set_props S7_class;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param generic:
+#! param class:
+#! param object:
+@method: (Any, Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param from:
+#! param to:
+@super: (Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param object:
+#! param recursive:
+#! param properties:
+@validate: (Any, Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param object:
+#! param name:
+@prop_exists: (Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param object:
+@prop_names: (Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param object:
+#! param names:
+@props: (Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param x:
+#! param class:
+#! param arg:
+@check_is_S7: (Any, Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param class:
+#! param constructor:
+#! param validator:
+@new_S3_class: (Any, Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param generic:
+#! param class:
+#! param object:
+@method_explain: (Any, Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param name:
+#! param parent:
+#! param package:
+#! param properties:
+#! param abstract:
+#! param constructor:
+#! param validator:
+@new_class: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param package:
+#! param name:
+#! param dispatch_args:
+#! param version:
+@new_external_generic: (Any, Any, Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param class:
+#! param getter:
+#! param setter:
+#! param validator:
+#! param default:
+#! param name:
+@new_property: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param ...:
+@new_union: (...Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param object:
+#! param name:
+@prop: (Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param name:
+#! param dispatch_args:
+#! param fun:
+@new_generic: (Any, Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param x:
+#! param arg:
+@as_class: (Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param from:
+#! param to:
+#! param ...:
+@convert: (Any, Any, ...Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param object:
+#! param fun:
+@valid_implicitly: (Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param object:
+@S7_data: (Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param x:
+#! param class:
+@S7_inherits: (Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param .parent:
+#! param ...:
+@new_object: (Any, ...Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param object:
+#! param fun:
+@valid_eventually: (Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param class:
+#! param env:
+@S4_register: (Any, Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param object:
+#! param .check:
+#! param ...:
+@set_props: (Any, Any, ...Any) -> Any;
+
+#! pkg: S7
+#! tier: T3
+#! generated-from: S7 0.2.2, R 4.6.1
+#! param object:
+@S7_class: (Any) -> Any;
+

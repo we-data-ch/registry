@@ -1,0 +1,324 @@
+@importFrom curl curl_echo curl_escape curl_download curl_symbols parse_date multi_download parse_headers_list curl_upload curl_options_table form_file curl_fetch_memory multi_run curl_parse_url handle_cookies handle_data new_handle curl_modify_url multi_add multi_list curl_fetch_multi handle_setform send_mail multi_set multi_cancel curl_options form_data multi_fdset ie_get_proxy_for_url file_writer curl_fetch_disk curl_unescape curl_fetch_stream curl_fetch_echo handle_reset handle_setheaders nslookup curl parse_headers find_port handle_setopt new_pool;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param handle:
+#! param port:
+#! param progress:
+#! param file:
+@curl_echo: (Any, Any, Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param url:
+@curl_escape: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param url:
+#! param destfile:
+#! param quiet:
+#! param mode:
+#! param handle:
+@curl_download: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param filter:
+@curl_symbols: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param datestring:
+@parse_date: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param urls:
+#! param destfiles:
+#! param resume:
+#! param progress:
+#! param multi_timeout:
+#! param multiplex:
+#! param ...:
+@multi_download: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param txt:
+@parse_headers_list: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param file:
+#! param url:
+#! param verbose:
+#! param reuse:
+#! param ...:
+@curl_upload: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param filter:
+@curl_options_table: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param path:
+#! param type:
+#! param name:
+@form_file: (Any, Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param url:
+#! param handle:
+@curl_fetch_memory: (Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param timeout:
+#! param poll:
+#! param pool:
+@multi_run: (Any, Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param url:
+#! param baseurl:
+#! param decode:
+#! param params:
+#! param default_scheme:
+@curl_parse_url: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param handle:
+@handle_cookies: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param handle:
+@handle_data: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param ...:
+@new_handle: (...Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param url:
+#! param scheme:
+#! param host:
+#! param port:
+#! param path:
+#! param query:
+#! param fragment:
+#! param user:
+#! param password:
+#! param params:
+@curl_modify_url: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param handle:
+#! param done:
+#! param fail:
+#! param data:
+#! param pool:
+@multi_add: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param pool:
+@multi_list: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param url:
+#! param done:
+#! param fail:
+#! param pool:
+#! param data:
+#! param handle:
+@curl_fetch_multi: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param handle:
+#! param .list:
+#! param ...:
+@handle_setform: (Any, Any, ...Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param mail_from:
+#! param mail_rcpt:
+#! param message:
+#! param smtp_server:
+#! param use_ssl:
+#! param verbose:
+#! param ...:
+@send_mail: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param total_con:
+#! param host_con:
+#! param max_streams:
+#! param multiplex:
+#! param pool:
+@multi_set: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param handle:
+@multi_cancel: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param filter:
+@curl_options: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param value:
+#! param type:
+@form_data: (Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param pool:
+@multi_fdset: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param target_url:
+@ie_get_proxy_for_url: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param path:
+#! param append:
+@file_writer: (Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param url:
+#! param path:
+#! param handle:
+@curl_fetch_disk: (Any, Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param url:
+@curl_unescape: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param url:
+#! param fun:
+#! param handle:
+@curl_fetch_stream: (Any, Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param url:
+#! param handle:
+@curl_fetch_echo: (Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param handle:
+@handle_reset: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param handle:
+#! param .list:
+#! param ...:
+@handle_setheaders: (Any, Any, ...Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param host:
+#! param ipv4_only:
+#! param multiple:
+#! param error:
+@nslookup: (Any, Any, Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param url:
+#! param open:
+#! param handle:
+@curl: (Any, Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param txt:
+#! param multiple:
+@parse_headers: (Any, Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param range:
+@find_port: (Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param handle:
+#! param .list:
+#! param ...:
+@handle_setopt: (Any, Any, ...Any) -> Any;
+
+#! pkg: curl
+#! tier: T3
+#! generated-from: curl 7.1.0, R 4.6.1
+#! param total_con:
+#! param host_con:
+#! param max_streams:
+#! param multiplex:
+@new_pool: (Any, Any, Any, Any) -> Any;
+

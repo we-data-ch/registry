@@ -1,0 +1,641 @@
+@importFrom httr init_oauth2.0 content_type RETRY httr_options has_content handle_find parse_media http_error http_status set_cookies init_oauth1.0 build_url headers modify_url use_proxy guess_media cookies parsed_content write_function oauth2.0_token add_headers progress POST handle_reset accept parse_url parse_http_date sha1_hash http_type status_code url_success content DELETE http_condition rerequest PATCH sign_oauth2.0 HEAD handle oauth_service_token write_disk set_config PUT BROWSE oauth_signature VERB oauth_header sign_oauth1.0 timeout verbose hmac_sha1 oauth_exchanger url_ok set_callback get_callback upload_file insensitive message_for_status curl_docs config oauth_endpoint text_content with_verbose http_date oauth_endpoints stop_for_status GET oauth_app authenticate oauth2.0_access_token warn_for_status oauth2.0_authorize_url oauth1.0_token oauth_listener with_config revoke_all write_stream cache_info user_agent;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param endpoint:
+#! param app:
+#! param scope:
+#! param user_params:
+#! param type:
+#! param use_oob:
+#! param oob_value:
+#! param is_interactive:
+#! param use_basic_auth:
+#! param config_init:
+#! param client_credentials:
+#! param query_authorize_extra:
+@`init_oauth2.0`: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param type:
+@content_type: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param verb:
+#! param url:
+#! param config:
+#! param body:
+#! param encode:
+#! param times:
+#! param pause_base:
+#! param pause_cap:
+#! param pause_min:
+#! param handle:
+#! param quiet:
+#! param terminate_on:
+#! param terminate_on_success:
+#! param ...:
+@RETRY: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param matches:
+@httr_options: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+@has_content: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+@handle_find: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+@parse_media: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+#! param ...:
+@http_error: (Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+@http_status: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param .cookies:
+#! param ...:
+@set_cookies: (Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param endpoint:
+#! param app:
+#! param permission:
+#! param is_interactive:
+#! param private_key:
+@`init_oauth1.0`: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+@build_url: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+@headers: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+#! param scheme:
+#! param hostname:
+#! param port:
+#! param path:
+#! param query:
+#! param params:
+#! param fragment:
+#! param username:
+#! param password:
+@modify_url: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+#! param port:
+#! param username:
+#! param password:
+#! param auth:
+@use_proxy: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+@guess_media: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+@cookies: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+#! param ...:
+@parsed_content: (Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param subclass:
+#! param ...:
+@write_function: (Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param endpoint:
+#! param app:
+#! param scope:
+#! param user_params:
+#! param type:
+#! param use_oob:
+#! param oob_value:
+#! param as_header:
+#! param use_basic_auth:
+#! param cache:
+#! param config_init:
+#! param client_credentials:
+#! param credentials:
+#! param query_authorize_extra:
+@`oauth2.0_token`: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param .headers:
+#! param ...:
+@add_headers: (Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param type:
+#! param con:
+@progress: (Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+#! param config:
+#! param body:
+#! param encode:
+#! param handle:
+#! param ...:
+@POST: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+@handle_reset: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param type:
+@accept: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+@parse_url: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+#! param failure:
+@parse_http_date: (Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param key:
+#! param string:
+#! param method:
+@sha1_hash: (Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+@http_type: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+@status_code: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+#! param ...:
+@url_success: (Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+#! param as:
+#! param type:
+#! param encoding:
+#! param ...:
+@content: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+#! param config:
+#! param body:
+#! param encode:
+#! param handle:
+#! param ...:
+@DELETE: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+#! param type:
+#! param task:
+#! param call:
+@http_condition: (Any, Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param r:
+@rerequest: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+#! param config:
+#! param body:
+#! param encode:
+#! param handle:
+#! param ...:
+@PATCH: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param access_token:
+#! param as_header:
+@`sign_oauth2.0`: (Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+#! param config:
+#! param handle:
+#! param ...:
+@HEAD: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+#! param cookies:
+@handle: (Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param endpoint:
+#! param secrets:
+#! param scope:
+#! param sub:
+@oauth_service_token: (Any, Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param path:
+#! param overwrite:
+@write_disk: (Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param config:
+#! param override:
+@set_config: (Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+#! param config:
+#! param body:
+#! param encode:
+#! param handle:
+#! param ...:
+@PUT: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+#! param config:
+#! param handle:
+#! param ...:
+@BROWSE: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+#! param method:
+#! param app:
+#! param token:
+#! param token_secret:
+#! param private_key:
+#! param other_params:
+@oauth_signature: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param verb:
+#! param url:
+#! param config:
+#! param body:
+#! param encode:
+#! param handle:
+#! param ...:
+@VERB: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param info:
+@oauth_header: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param app:
+#! param token:
+#! param token_secret:
+#! param as_header:
+#! param ...:
+@`sign_oauth1.0`: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param seconds:
+@timeout: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param data_out:
+#! param data_in:
+#! param info:
+#! param ssl:
+@verbose: (Any, Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param key:
+#! param string:
+@hmac_sha1: (Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param request_url:
+@oauth_exchanger: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+#! param ...:
+@url_ok: (Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param name:
+#! param new_callback:
+@set_callback: (Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param name:
+@get_callback: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param path:
+#! param type:
+@upload_file: (Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+@insensitive: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+#! param task:
+@message_for_status: (Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+@curl_docs: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param token:
+#! param ...:
+@config: (Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param request:
+#! param authorize:
+#! param access:
+#! param base_url:
+#! param ...:
+@oauth_endpoint: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+@text_content: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param expr:
+#! param ...:
+@with_verbose: (Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+@http_date: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param name:
+@oauth_endpoints: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+#! param task:
+@stop_for_status: (Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param url:
+#! param config:
+#! param handle:
+#! param ...:
+@GET: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param appname:
+#! param key:
+#! param secret:
+#! param redirect_uri:
+@oauth_app: (Any, Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param user:
+#! param password:
+#! param type:
+@authenticate: (Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param endpoint:
+#! param app:
+#! param code:
+#! param user_params:
+#! param type:
+#! param use_basic_auth:
+#! param redirect_uri:
+#! param client_credentials:
+#! param config:
+@`oauth2.0_access_token`: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param x:
+#! param task:
+@warn_for_status: (Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param endpoint:
+#! param app:
+#! param scope:
+#! param redirect_uri:
+#! param state:
+#! param query_extra:
+@`oauth2.0_authorize_url`: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param endpoint:
+#! param app:
+#! param permission:
+#! param as_header:
+#! param private_key:
+#! param cache:
+@`oauth1.0_token`: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param request_url:
+#! param is_interactive:
+@oauth_listener: (Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param config:
+#! param expr:
+#! param override:
+@with_config: (Any, Any, Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param cache_path:
+@revoke_all: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param f:
+@write_stream: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param r:
+@cache_info: (Any) -> Any;
+
+#! pkg: httr
+#! tier: T3
+#! generated-from: httr 1.4.9, R 4.6.1
+#! param agent:
+@user_agent: (Any) -> Any;
+

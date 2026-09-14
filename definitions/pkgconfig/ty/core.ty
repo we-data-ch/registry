@@ -1,0 +1,22 @@
+@importFrom pkgconfig get_config set_config set_config_in;
+
+#! pkg: pkgconfig
+#! tier: T3
+#! generated-from: pkgconfig 2.0.3, R 4.6.1
+#! param key:
+#! param fallback:
+@get_config: (Any, Any) -> Any;
+
+#! pkg: pkgconfig
+#! tier: T3
+#! generated-from: pkgconfig 2.0.3, R 4.6.1
+#! param ...:
+@set_config: (...Any) -> Any;
+
+#! pkg: pkgconfig
+#! tier: T3
+#! generated-from: pkgconfig 2.0.3, R 4.6.1
+#! param .in:
+#! param ...:
+@set_config_in: (Any, ...Any) -> Any;
+

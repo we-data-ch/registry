@@ -1,0 +1,30 @@
+@importFrom R6 is.R6Class is.R6 R6Class;
+
+#! pkg: R6
+#! tier: T3
+#! generated-from: R6 2.6.1, R 4.6.1
+#! param x:
+@`is.R6Class`: (Any) -> Any;
+
+#! pkg: R6
+#! tier: T3
+#! generated-from: R6 2.6.1, R 4.6.1
+#! param x:
+@`is.R6`: (Any) -> Any;
+
+#! pkg: R6
+#! tier: T3
+#! generated-from: R6 2.6.1, R 4.6.1
+#! param classname:
+#! param public:
+#! param private:
+#! param active:
+#! param inherit:
+#! param lock_objects:
+#! param class:
+#! param portable:
+#! param lock_class:
+#! param cloneable:
+#! param parent_env:
+@R6Class: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+

@@ -1,0 +1,229 @@
+@importFrom Rcpp prompt Rcpp.package.skeleton sizeof registerPlugin compileAttributes initialize cpp_object_initializer populate evalCpp exposeClass sourceCpp demangle .DollarNames Module loadRcppClass show cpp_object_dummy getRcppVersion loadModule setRcppClass Rcpp.plugin.maker cppFunction;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param object:
+#! param filename:
+#! param name:
+#! param ...:
+@prompt: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param name:
+#! param list:
+#! param environment:
+#! param path:
+#! param force:
+#! param code_files:
+#! param cpp_files:
+#! param example_code:
+#! param attributes:
+#! param module:
+#! param author:
+#! param maintainer:
+#! param email:
+#! param githubuser:
+#! param license:
+@`Rcpp.package.skeleton`: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param type:
+#! param ...:
+@sizeof: (Any, ...Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param name:
+#! param plugin:
+@registerPlugin: (Any, Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param pkgdir:
+#! param verbose:
+@compileAttributes: (Any, Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param .Object:
+#! param ...:
+@initialize: (Any, ...Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param .self:
+#! param .refClassDef:
+#! param .object_pointer:
+#! param ...:
+@cpp_object_initializer: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param module:
+#! param env:
+@populate: (Any, Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param code:
+#! param depends:
+#! param plugins:
+#! param includes:
+#! param rebuild:
+#! param cacheDir:
+#! param showOutput:
+#! param verbose:
+@evalCpp: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param class:
+#! param constructors:
+#! param fields:
+#! param methods:
+#! param file:
+#! param header:
+#! param module:
+#! param CppClass:
+#! param readOnly:
+#! param rename:
+#! param Rfile:
+@exposeClass: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param file:
+#! param code:
+#! param env:
+#! param embeddedR:
+#! param rebuild:
+#! param cacheDir:
+#! param cleanupCacheDir:
+#! param showOutput:
+#! param verbose:
+#! param dryRun:
+#! param windowsDebugDLL:
+#! param echo:
+@sourceCpp: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param type:
+#! param ...:
+@demangle: (Any, ...Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param x:
+#! param pattern:
+@`.DollarNames`: (Any, Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param module:
+#! param PACKAGE:
+#! param where:
+#! param mustStart:
+@Module: (Any, Any, Any, Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param Class:
+#! param CppClass:
+#! param module:
+#! param fields:
+#! param contains:
+#! param methods:
+#! param saveAs:
+#! param where:
+#! param ...:
+@loadRcppClass: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param object:
+@show: (Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param .self:
+#! param .refClassDef:
+@cpp_object_dummy: (Any, Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param devel:
+@getRcppVersion: (Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param module:
+#! param what:
+#! param loadNow:
+#! param env:
+@loadModule: (Any, Any, Any, Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param Class:
+#! param CppClass:
+#! param module:
+#! param fields:
+#! param contains:
+#! param methods:
+#! param saveAs:
+#! param where:
+#! param ...:
+@setRcppClass: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param include.before:
+#! param include.after:
+#! param LinkingTo:
+#! param Depends:
+#! param Imports:
+#! param libs:
+#! param Makevars:
+#! param Makevars.win:
+#! param package:
+@`Rcpp.plugin.maker`: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: Rcpp
+#! tier: T3
+#! generated-from: Rcpp 1.1.1.1.1, R 4.6.1
+#! param code:
+#! param depends:
+#! param plugins:
+#! param includes:
+#! param env:
+#! param rebuild:
+#! param cacheDir:
+#! param showOutput:
+#! param verbose:
+#! param echo:
+@cppFunction: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+

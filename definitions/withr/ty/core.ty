@@ -1,0 +1,644 @@
+@importFrom withr with_makevars local_postscript local_libpaths local_package with_png with_jpeg with_libpaths with_temp_libpaths set_makevars local_rng_version local_seed local_dir local_svg local_namespace with_collate with_environment with_ local_options local_collate local_cairo_pdf local_bmp with_file deferred_run local_message_sink local_locale local_path with_preserve_seed local_pdf with_locale with_pdf defer_parent local_tempdir local_envvar with_db_connection with_message_sink with_namespace local_environment local_output_sink with_postscript local_file local_temp_libpaths local_cairo_ps local_db_connection with_cairo_ps with_cairo_pdf global_defer with_path local_tiff with_tempdir local_tempfile local_preserve_seed with_language local_ with_svg with_dir with_package with_xfig with_rng_version with_output_sink local_connection with_options local_makevars local_par local_timezone with_bmp with_envvar with_timezone local_jpeg with_par with_connection local_png local_xfig local_language defer with_tempfile deferred_clear with_seed with_tiff;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param path:
+#! param assignment:
+@with_makevars: (Any, Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param .local_envir:
+#! param ...:
+@local_postscript: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param action:
+#! param .local_envir:
+@local_libpaths: (Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param package:
+#! param pos:
+#! param lib.loc:
+#! param character.only:
+#! param logical.return:
+#! param warn.conflicts:
+#! param quietly:
+#! param verbose:
+#! param .local_envir:
+@local_package: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param ...:
+@with_png: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param ...:
+@with_jpeg: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param action:
+@with_libpaths: (Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param code:
+#! param action:
+@with_temp_libpaths: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param variables:
+#! param old_path:
+#! param new_path:
+#! param assignment:
+@set_makevars: (Any, Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param version:
+#! param .local_envir:
+@local_rng_version: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param seed:
+#! param .local_envir:
+#! param .rng_kind:
+#! param .rng_normal_kind:
+#! param .rng_sample_kind:
+@local_seed: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param .local_envir:
+@local_dir: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param .local_envir:
+#! param ...:
+@local_svg: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param package:
+#! param .local_envir:
+#! param warn.conflicts:
+@local_namespace: (Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+@with_collate: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param env:
+#! param code:
+#! param pos:
+#! param name:
+#! param warn.conflicts:
+@with_environment: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param set:
+#! param reset:
+#! param get:
+#! param envir:
+#! param new:
+#! param ...:
+@with_: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param .new:
+#! param .local_envir:
+#! param ...:
+@local_options: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param .local_envir:
+@local_collate: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param .local_envir:
+#! param ...:
+@local_cairo_pdf: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param .local_envir:
+#! param ...:
+@local_bmp: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param file:
+#! param code:
+@with_file: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param envir:
+@deferred_run: (Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param append:
+#! param .local_envir:
+@local_message_sink: (Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param .new:
+#! param .local_envir:
+#! param ...:
+@local_locale: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param action:
+#! param .local_envir:
+@local_path: (Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param code:
+@with_preserve_seed: (Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param .local_envir:
+#! param ...:
+@local_pdf: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+@with_locale: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param ...:
+@with_pdf: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param expr:
+#! param priority:
+@defer_parent: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param pattern:
+#! param tmpdir:
+#! param fileext:
+#! param .local_envir:
+#! param clean:
+@local_tempdir: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param .new:
+#! param action:
+#! param .local_envir:
+#! param ...:
+@local_envvar: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param con:
+#! param code:
+@with_db_connection: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param append:
+@with_message_sink: (Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param package:
+#! param code:
+#! param warn.conflicts:
+@with_namespace: (Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param env:
+#! param pos:
+#! param name:
+#! param warn.conflicts:
+#! param .local_envir:
+@local_environment: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param append:
+#! param split:
+#! param .local_envir:
+@local_output_sink: (Any, Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param ...:
+@with_postscript: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param .file:
+#! param .local_envir:
+#! param ...:
+@local_file: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param action:
+#! param .local_envir:
+@local_temp_libpaths: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param .local_envir:
+#! param ...:
+@local_cairo_ps: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param con:
+#! param .local_envir:
+@local_db_connection: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param ...:
+@with_cairo_ps: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param ...:
+@with_cairo_pdf: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param expr:
+#! param priority:
+@global_defer: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param action:
+@with_path: (Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param .local_envir:
+#! param ...:
+@local_tiff: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param code:
+#! param clean:
+#! param pattern:
+#! param tmpdir:
+#! param fileext:
+@with_tempdir: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param lines:
+#! param envir:
+#! param .local_envir:
+#! param pattern:
+#! param tmpdir:
+#! param fileext:
+@local_tempfile: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param .local_envir:
+@local_preserve_seed: (Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param lang:
+#! param code:
+@with_language: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param set:
+#! param reset:
+#! param get:
+#! param envir:
+#! param new:
+#! param dots:
+#! param ...:
+@local_: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param ...:
+@with_svg: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+@with_dir: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param package:
+#! param code:
+#! param pos:
+#! param lib.loc:
+#! param character.only:
+#! param logical.return:
+#! param warn.conflicts:
+#! param quietly:
+#! param verbose:
+@with_package: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param ...:
+@with_xfig: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param version:
+#! param code:
+@with_rng_version: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param append:
+#! param split:
+@with_output_sink: (Any, Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param con:
+#! param .local_envir:
+@local_connection: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+@with_options: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param .new:
+#! param .path:
+#! param .assignment:
+#! param .local_envir:
+#! param ...:
+@local_makevars: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param .new:
+#! param no.readonly:
+#! param .local_envir:
+#! param ...:
+@local_par: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param tz:
+#! param .local_envir:
+@local_timezone: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param ...:
+@with_bmp: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param action:
+@with_envvar: (Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param tz:
+#! param code:
+@with_timezone: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param .local_envir:
+#! param ...:
+@local_jpeg: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param no.readonly:
+@with_par: (Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param con:
+#! param code:
+@with_connection: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param .local_envir:
+#! param ...:
+@local_png: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param .local_envir:
+#! param ...:
+@local_xfig: (Any, Any, ...Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param lang:
+#! param .local_envir:
+@local_language: (Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param expr:
+#! param envir:
+#! param priority:
+@defer: (Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param envir:
+#! param .local_envir:
+#! param pattern:
+#! param tmpdir:
+#! param fileext:
+@with_tempfile: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param envir:
+@deferred_clear: (Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param seed:
+#! param code:
+#! param .rng_kind:
+#! param .rng_normal_kind:
+#! param .rng_sample_kind:
+@with_seed: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: withr
+#! tier: T3
+#! generated-from: withr 3.0.2, R 4.6.1
+#! param new:
+#! param code:
+#! param ...:
+@with_tiff: (Any, Any, ...Any) -> Any;
+

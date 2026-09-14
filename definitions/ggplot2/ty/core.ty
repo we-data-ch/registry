@@ -1,0 +1,5644 @@
+@importFrom ggplot2 geom_bar is_facet wrap_dims scale_colour_binned scale_x_binned position_fill theme_set annotation_raster el_def stat_smooth scale_shape_binned scale_fill_continuous update_geom_defaults scale_color_continuous layer scale_linewidth_datetime element_geom mean_sdl draw_key_polygon scale_color_gradientn is_position geom_text geom_line theme_sub_legend geom_polygon scale_fill_hue dup_axis class_theme scale_x_sqrt coord_transform scale_fill_brewer scale_discrete_identity mean_se geom_map geom_density get_layer_data scale_color_manual geom_quantile draw_key_text draw_key_vpath geom_freqpoly geom_function scale_shape_manual geom_linerange stat_density scale_fill_steps scale_colour_viridis_b coord_munch scale_colour_viridis_c scale_colour_viridis_d scale_colour_identity layer_scales scale_size_binned_area geom_jitter scale_fill_datetime coord_map get_labs scale_colour_steps2 coord_fixed scale_colour_hue quo_name update_ggplot scale_color_date coord_polar ggplotGrob reset_theme_settings theme_sub_axis_top scale_linetype_binned scale_fill_discrete aes_all is_coord enexpr combine_vars summarise_layers stat_unique is_ggproto draw_key_boxplot guides theme_sub_axis_x mean_cl_normal theme_sub_axis_y scale_fill_grey scale_type scale_linetype_discrete label_context draw_key_smooth scale_shape_identity stat_bin_2d geom_sf_text stat_connect geom_abline geom_tile facet_grid scale_fill_date flip_data stat_quantile draw_key_vline scale_color_binned element_render scale_size_datetime scale_color_steps margin_auto complete_theme geom_count make_constructor stat_ellipse scale_y_date scale_linewidth_date fill_alpha draw_key_linerange scale_alpha_identity scale_fill_steps2 pattern_alpha calc_element scale_discrete_manual scale_y_time get_panel_scales is.theme remove_missing scale_colour_fermenter scale_color_discrete stat_spoke geom_hline geom_hex draw_key_dotplot scale_x_continuous xlab get_geom_defaults ylab geom_density_2d_filled stat_contour_filled guide_transform scale_colour_grey scale_fill_ordinal scale_size_date panel_cols guide_colorbar median_hilow summarise_coord geom_bin_2d coord_trans annotation_logticks geom_qq_line geom_rect scale_color_grey layer_grob lims stat_sf_coordinates has_flipped_aes update_stat_defaults scale_size_area is_waiver scale_linetype theme_light syms element_grob theme_sub_strip scale_linewidth_manual scale_color_viridis_b scale_color_viridis_c theme_sub_axis_left scale_color_viridis_d ggproto scale_alpha_date theme_sub_plot theme_bw scale_y_sqrt panel_rows update_labels stat_boxplot coord_radial render_axes stat_summary_2d scale_color_distiller scale_linewidth_identity ggtitle ggplot_add is_guide guide_bins guide_merge is.ggplot flipped_names element_text is_scale as_labeller scale_alpha_discrete unit geom_pointrange aes sf_transform_xy annotation_borders draw_key_blank scale_linetype_identity element_rect scale_size_discrete labeller from_theme is_geom scale_fill_identity scale_linewidth_discrete stat_function scale_y_discrete scale_color_hue theme_sub_axis class_ggplot_built ggplot_gtable draw_key_crossbar is_margin stat_bin2d scale_size benchplot geom_qq scale_linewidth_binned scale_x_discrete summarise_layout scale_colour_date draw_key_label guide_axis_theta scale_color_stepsn draw_key_point label_both geom_rug render_strips get_layer_grob geom_sf stat_summary position_jitterdodge expand_limits scale_colour_brewer labs geom_point cut_number annotation_custom stat_identity draw_key_rect theme_grey xlim stat_bin ylim ensyms facet_null geom_crossbar scale_size_identity stat_density2d_filled stat_sum geom_density2d is_layer borders ggplot_build margin_part geom_errorbarh theme_linedraw scale_colour_stepsn guide_legend geom_spoke is.facet stat_binhex register_theme_elements annotate scale_colour_distiller scale_shape_ordinal geom_step is.ggproto ggplot guide_axis_stack scale_fill_stepsn scale_x_log10 scale_shape max_width geom_violin autoplot scale_y_log10 stat_align translate_shape_string cut_interval scale_y_datetime new_guide coord_cartesian enexprs label_parsed position_dodge map_data get_alt_text annotation_map geom_histogram scale_color_gradient scale_color_ordinal theme_classic is_theme_element stat_density_2d_filled scale_shape_continuous draw_key_pointrange coord_quickmap scale_x_datetime quos theme_dark stat_summary2d cut_width theme_gray scale_color_brewer guide_coloursteps quickplot draw_key_timeseries coord_equal scale_color_steps2 stat_summary_hex transform_position is_mapping stat_sf scale_fill_manual scale_colour_discrete guide_geom set_last_plot scale_color_gradient2 theme_replace geom_bin2d set_theme scale_continuous_identity stat_qq after_stat guide_gengrob layer_sf aes_ geom_contour scale_colour_ordinal margin guide_colourbar mean_cl_boot scale_color_fermenter scale_fill_binned stat_summary_bin geom_smooth scale_linewidth theme theme_update max_height scale_color_identity scale_colour_gradient2 scale_y_binned guide_colorsteps scale_size_binned scale_fill_viridis_b scale_fill_viridis_c scale_fill_viridis_d is_theme expansion layer_data theme_sub_panel .expose_data guide_axis_logticks sec_axis continuous_scale geom_density2d_filled update_theme geom_segment scale_colour_continuous standardise_aes_names theme_void geom_sf_label theme_minimal scale_x_reverse gg_dep expand_scale position_dodge2 scale_alpha_continuous geom_vline ensym scale_size_continuous scale_colour_steps old_guide class_ggplot label_wrap_gen scale_alpha qplot stage autolayer element_line enquo theme_sub_axis_bottom scale_colour_manual fortify class_labels guide_custom check_device scale_linetype_manual stat replace_theme resolution scale_linetype_continuous is_ggplot scale_alpha_ordinal element_polygon sym guide_train scale_colour_datetime guide_none enquos is.Coord datetime_scale scale_size_manual rel coord_flip label_bquote label_value quo find_panel scale_color_datetime draw_key_abline geom_path position_nudge stat_manual stat_qq_line alpha scale_colour_gradient get_guide_data scale_colour_gradientn geom_area aes_auto stat_ecdf scale_alpha_datetime scale_fill_distiller stat_count scale_fill_fermenter .ignore_data geom_label discrete_scale aes_string geom_boxplot scale_shape_discrete theme_test scale_size_ordinal geom_contour_filled class_mapping scale_radius scale_fill_gradientn scale_alpha_binned scale_linewidth_continuous theme_sub_axis_right merge_element gg_par is_stat stat_density2d add_gg after_scale scale_x_date ggsave as_label aes_q expr stat_contour scale_fill_gradient geom_raster should_stop scale_y_reverse geom_ribbon geom_density_2d position_stack geom_blank get_strip_labels scale_x_time position_jitter stat_bin_hex geom_errorbar stat_ydensity vars scale_fill_gradient2 guide_axis coord_sf is_guides stat_density_2d scale_y_continuous binned_scale draw_key_path arrow scale_linewidth_ordinal geom_col ggproto_parent facet_wrap geom_dotplot element_point geom_curve scale_alpha_manual;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param just:
+#! param lineend:
+#! param linejoin:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_bar: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_facet: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param n:
+#! param nrow:
+#! param ncol:
+@wrap_dims: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param palette:
+#! param aesthetics:
+#! param guide:
+#! param na.value:
+#! param type:
+#! param ...:
+@scale_colour_binned: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param n.breaks:
+#! param nice.breaks:
+#! param breaks:
+#! param labels:
+#! param limits:
+#! param expand:
+#! param oob:
+#! param na.value:
+#! param right:
+#! param show.limits:
+#! param transform:
+#! param trans:
+#! param guide:
+#! param position:
+@scale_x_binned: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param vjust:
+#! param reverse:
+@position_fill: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param new:
+@theme_set: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param raster:
+#! param xmin:
+#! param xmax:
+#! param ymin:
+#! param ymax:
+#! param interpolate:
+@annotation_raster: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param class:
+#! param inherit:
+#! param description:
+@el_def: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param orientation:
+#! param method:
+#! param formula:
+#! param se:
+#! param n:
+#! param span:
+#! param fullrange:
+#! param xseq:
+#! param level:
+#! param method.args:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_smooth: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param solid:
+#! param aesthetics:
+#! param ...:
+@scale_shape_binned: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param palette:
+#! param aesthetics:
+#! param guide:
+#! param na.value:
+#! param type:
+#! param ...:
+@scale_fill_continuous: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param geom:
+#! param new:
+@update_geom_defaults: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param palette:
+#! param aesthetics:
+#! param guide:
+#! param na.value:
+#! param type:
+#! param ...:
+@scale_color_continuous: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param geom:
+#! param stat:
+#! param data:
+#! param mapping:
+#! param position:
+#! param params:
+#! param inherit.aes:
+#! param check.aes:
+#! param check.param:
+#! param show.legend:
+#! param key_glyph:
+#! param layout:
+#! param layer_class:
+@layer: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param range:
+#! param aesthetics:
+#! param ...:
+@scale_linewidth_datetime: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ink:
+#! param paper:
+#! param accent:
+#! param linewidth:
+#! param borderwidth:
+#! param linetype:
+#! param bordertype:
+#! param family:
+#! param fontsize:
+#! param pointsize:
+#! param pointshape:
+#! param colour:
+#! param color:
+#! param fill:
+#! param ...:
+@element_geom: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param ...:
+@mean_sdl: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_polygon: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param colours:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param colors:
+#! param ...:
+@scale_color_gradientn: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_position: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param parse:
+#! param check_overlap:
+#! param size.unit:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_text: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param orientation:
+#! param arrow:
+#! param arrow.fill:
+#! param lineend:
+#! param linejoin:
+#! param linemitre:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_line: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param text:
+#! param text.position:
+#! param title:
+#! param title.position:
+#! param background:
+#! param frame:
+#! param ticks:
+#! param ticks.length:
+#! param axis.line:
+#! param spacing:
+#! param spacing.x:
+#! param spacing.y:
+#! param margin:
+#! param key:
+#! param key.size:
+#! param key.height:
+#! param key.width:
+#! param key.spacing:
+#! param key.spacing.x:
+#! param key.spacing.y:
+#! param key.justification:
+#! param byrow:
+#! param position:
+#! param direction:
+#! param location:
+#! param position.inside:
+#! param justification:
+#! param justification.top:
+#! param justification.bottom:
+#! param justification.left:
+#! param justification.right:
+#! param justification.inside:
+#! param box:
+#! param box.just:
+#! param box.margin:
+#! param box.background:
+#! param box.spacing:
+#! param ...:
+@theme_sub_legend: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param rule:
+#! param lineend:
+#! param linejoin:
+#! param linemitre:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_polygon: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param h:
+#! param c:
+#! param l:
+#! param h.start:
+#! param direction:
+#! param na.value:
+#! param aesthetics:
+#! param ...:
+@scale_fill_hue: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param transform:
+#! param name:
+#! param breaks:
+#! param labels:
+#! param guide:
+#! param trans:
+@dup_axis: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param elements:
+#! param complete:
+#! param validate:
+#! param ...:
+@class_theme: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@scale_x_sqrt: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param y:
+#! param xlim:
+#! param ylim:
+#! param limx:
+#! param limy:
+#! param clip:
+#! param expand:
+#! param reverse:
+@coord_transform: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param type:
+#! param palette:
+#! param direction:
+#! param aesthetics:
+#! param ...:
+@scale_fill_brewer: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param aesthetics:
+#! param name:
+#! param guide:
+#! param ...:
+@scale_discrete_identity: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param mult:
+@mean_se: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param map:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_map: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param outline.type:
+#! param lineend:
+#! param linejoin:
+#! param linemitre:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_density: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param plot:
+#! param i:
+@get_layer_data: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param values:
+#! param aesthetics:
+#! param breaks:
+#! param na.value:
+#! param ...:
+@scale_color_manual: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param arrow:
+#! param arrow.fill:
+#! param lineend:
+#! param linejoin:
+#! param linemitre:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_quantile: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_text: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_vpath: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_freqpoly: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param arrow:
+#! param arrow.fill:
+#! param lineend:
+#! param linejoin:
+#! param linemitre:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_function: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param values:
+#! param breaks:
+#! param na.value:
+#! param aesthetics:
+#! param ...:
+@scale_shape_manual: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param orientation:
+#! param lineend:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_linerange: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param orientation:
+#! param bw:
+#! param adjust:
+#! param kernel:
+#! param n:
+#! param trim:
+#! param bounds:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_density: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param high:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_fill_steps: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+#! param option:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_colour_viridis_b: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param coord:
+#! param data:
+#! param range:
+#! param segment_length:
+#! param is_closed:
+@coord_munch: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+#! param option:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_colour_viridis_c: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+#! param option:
+#! param aesthetics:
+#! param ...:
+@scale_colour_viridis_d: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_colour_identity: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param plot:
+#! param i:
+#! param j:
+@layer_scales: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param max_size:
+#! param aesthetics:
+#! param ...:
+@scale_size_binned_area: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param width:
+#! param height:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_jitter: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param high:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_fill_datetime: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param projection:
+#! param parameters:
+#! param orientation:
+#! param xlim:
+#! param ylim:
+#! param clip:
+#! param ...:
+@coord_map: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param plot:
+@get_labs: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param mid:
+#! param high:
+#! param midpoint:
+#! param space:
+#! param na.value:
+#! param transform:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_colour_steps2: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ratio:
+#! param ...:
+@coord_fixed: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param h:
+#! param c:
+#! param l:
+#! param h.start:
+#! param direction:
+#! param na.value:
+#! param aesthetics:
+#! param ...:
+@scale_colour_hue: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param quo:
+@quo_name: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param object:
+#! param plot:
+#! param ...:
+@update_ggplot: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param high:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_color_date: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param theta:
+#! param start:
+#! param direction:
+#! param clip:
+@coord_polar: (Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@ggplotGrob: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param reset_current:
+@reset_theme_settings: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param text:
+#! param ticks:
+#! param ticks.length:
+#! param line:
+#! param minor.ticks:
+#! param minor.ticks.length:
+#! param ...:
+@theme_sub_axis_top: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param aesthetics:
+#! param ...:
+@scale_linetype_binned: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param palette:
+#! param aesthetics:
+#! param na.value:
+#! param type:
+#! param ...:
+@scale_fill_discrete: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param vars:
+@aes_all: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_coord: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param arg:
+@enexpr: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param env:
+#! param vars:
+#! param drop:
+@combine_vars: (Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param p:
+@summarise_layers: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_unique: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_ggproto: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_boxplot: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@guides: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param text:
+#! param ticks:
+#! param ticks.length:
+#! param line:
+#! param minor.ticks.length:
+#! param ...:
+@theme_sub_axis_x: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param ...:
+@mean_cl_normal: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param text:
+#! param ticks:
+#! param ticks.length:
+#! param line:
+#! param minor.ticks.length:
+#! param ...:
+@theme_sub_axis_y: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param start:
+#! param end:
+#! param na.value:
+#! param aesthetics:
+#! param ...:
+@scale_fill_grey: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@scale_type: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param aesthetics:
+#! param ...:
+@scale_linetype_discrete: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param labels:
+#! param multi_line:
+#! param sep:
+@label_context: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_smooth: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_shape_identity: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param binwidth:
+#! param bins:
+#! param breaks:
+#! param drop:
+#! param boundary:
+#! param closed:
+#! param center:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_bin_2d: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param parse:
+#! param check_overlap:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param fun.geometry:
+#! param ...:
+@geom_sf_text: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param connection:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_connect: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param slope:
+#! param intercept:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_abline: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param lineend:
+#! param linejoin:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_tile: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param rows:
+#! param cols:
+#! param scales:
+#! param space:
+#! param shrink:
+#! param labeller:
+#! param as.table:
+#! param switch:
+#! param drop:
+#! param margins:
+#! param axes:
+#! param axis.labels:
+#! param facets:
+@facet_grid: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param high:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_fill_date: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param flip:
+@flip_data: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param quantiles:
+#! param formula:
+#! param method:
+#! param method.args:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_quantile: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_vline: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param palette:
+#! param aesthetics:
+#! param guide:
+#! param na.value:
+#! param type:
+#! param ...:
+@scale_color_binned: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param theme:
+#! param element:
+#! param name:
+#! param ...:
+@element_render: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param range:
+#! param aesthetics:
+#! param ...:
+@scale_size_datetime: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param high:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_color_steps: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param t:
+#! param r:
+#! param b:
+#! param l:
+#! param unit:
+@margin_auto: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param theme:
+#! param default:
+@complete_theme: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_count: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param ...:
+@make_constructor: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param type:
+#! param level:
+#! param segments:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_ellipse: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param date_breaks:
+#! param labels:
+#! param date_labels:
+#! param minor_breaks:
+#! param date_minor_breaks:
+#! param limits:
+#! param expand:
+#! param oob:
+#! param guide:
+#! param position:
+#! param sec.axis:
+@scale_y_date: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param range:
+#! param aesthetics:
+#! param ...:
+@scale_linewidth_date: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param fill:
+#! param alpha:
+@fill_alpha: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_linerange: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_alpha_identity: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param mid:
+#! param high:
+#! param midpoint:
+#! param space:
+#! param na.value:
+#! param transform:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_fill_steps2: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param alpha:
+@pattern_alpha: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param element:
+#! param theme:
+#! param verbose:
+#! param skip_blank:
+#! param call:
+@calc_element: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param aesthetics:
+#! param values:
+#! param breaks:
+#! param ...:
+@scale_discrete_manual: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param date_breaks:
+#! param minor_breaks:
+#! param date_minor_breaks:
+#! param labels:
+#! param date_labels:
+#! param limits:
+#! param expand:
+#! param oob:
+#! param na.value:
+#! param guide:
+#! param position:
+#! param sec.axis:
+@scale_y_time: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param plot:
+#! param i:
+#! param j:
+@get_panel_scales: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@`is.theme`: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param df:
+#! param na.rm:
+#! param vars:
+#! param name:
+#! param finite:
+@remove_missing: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param type:
+#! param palette:
+#! param direction:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_colour_fermenter: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param palette:
+#! param aesthetics:
+#! param na.value:
+#! param type:
+#! param ...:
+@scale_color_discrete: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@stat_spoke: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param yintercept:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_hline: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param lineend:
+#! param linejoin:
+#! param linemitre:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_hex: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_dotplot: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param minor_breaks:
+#! param n.breaks:
+#! param labels:
+#! param limits:
+#! param expand:
+#! param oob:
+#! param na.value:
+#! param transform:
+#! param trans:
+#! param guide:
+#! param position:
+#! param sec.axis:
+@scale_x_continuous: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param label:
+@xlab: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param geom:
+#! param theme:
+@get_geom_defaults: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param label:
+@ylab: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param contour_var:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_density_2d_filled: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param bins:
+#! param binwidth:
+#! param breaks:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_contour_filled: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param guide:
+#! param coord:
+#! param panel_params:
+@guide_transform: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param start:
+#! param end:
+#! param na.value:
+#! param aesthetics:
+#! param ...:
+@scale_colour_grey: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param type:
+#! param ...:
+@scale_fill_ordinal: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param range:
+#! param aesthetics:
+#! param ...:
+@scale_size_date: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param table:
+@panel_cols: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param theme:
+#! param nbin:
+#! param display:
+#! param raster:
+#! param alpha:
+#! param draw.ulim:
+#! param draw.llim:
+#! param angle:
+#! param position:
+#! param direction:
+#! param reverse:
+#! param order:
+#! param available_aes:
+#! param ...:
+@guide_colorbar: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param ...:
+@median_hilow: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param p:
+@summarise_coord: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param lineend:
+#! param linejoin:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_bin_2d: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@coord_trans: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param base:
+#! param sides:
+#! param outside:
+#! param scaled:
+#! param short:
+#! param mid:
+#! param long:
+#! param colour:
+#! param linewidth:
+#! param linetype:
+#! param alpha:
+#! param color:
+#! param size:
+#! param ...:
+@annotation_logticks: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param distribution:
+#! param dparams:
+#! param line.p:
+#! param fullrange:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_qq_line: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param lineend:
+#! param linejoin:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_rect: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param start:
+#! param end:
+#! param na.value:
+#! param aesthetics:
+#! param ...:
+@scale_color_grey: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param plot:
+#! param i:
+@layer_grob: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@lims: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param fun.geometry:
+#! param ...:
+@stat_sf_coordinates: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param main_is_orthogonal:
+#! param range_is_orthogonal:
+#! param group_has_equal:
+#! param ambiguous:
+#! param main_is_continuous:
+#! param main_is_optional:
+#! param default:
+@has_flipped_aes: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param stat:
+#! param new:
+@update_stat_defaults: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param max_size:
+#! param aesthetics:
+#! param ...:
+@scale_size_area: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_waiver: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param aesthetics:
+#! param ...:
+@scale_linetype: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param base_size:
+#! param base_family:
+#! param header_family:
+#! param base_line_size:
+#! param base_rect_size:
+#! param ink:
+#! param paper:
+#! param accent:
+@theme_light: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@syms: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param element:
+#! param ...:
+@element_grob: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param background:
+#! param background.x:
+#! param background.y:
+#! param clip:
+#! param placement:
+#! param text:
+#! param text.x:
+#! param text.x.bottom:
+#! param text.x.top:
+#! param text.y:
+#! param text.y.left:
+#! param text.y.right:
+#! param switch.pad.grid:
+#! param switch.pad.wrap:
+#! param ...:
+@theme_sub_strip: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param values:
+#! param breaks:
+#! param na.value:
+#! param aesthetics:
+#! param ...:
+@scale_linewidth_manual: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+#! param option:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_color_viridis_b: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+#! param option:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_color_viridis_c: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param text:
+#! param ticks:
+#! param ticks.length:
+#! param line:
+#! param minor.ticks:
+#! param minor.ticks.length:
+#! param ...:
+@theme_sub_axis_left: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+#! param option:
+#! param aesthetics:
+#! param ...:
+@scale_color_viridis_d: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param _class:
+#! param _inherit:
+#! param ...:
+@ggproto: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param range:
+#! param aesthetics:
+#! param ...:
+@scale_alpha_date: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param background:
+#! param title:
+#! param title.position:
+#! param subtitle:
+#! param caption:
+#! param caption.position:
+#! param tag:
+#! param tag.position:
+#! param tag.location:
+#! param margin:
+#! param ...:
+@theme_sub_plot: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param base_size:
+#! param base_family:
+#! param header_family:
+#! param base_line_size:
+#! param base_rect_size:
+#! param ink:
+#! param paper:
+#! param accent:
+@theme_bw: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@scale_y_sqrt: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param table:
+@panel_rows: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param p:
+#! param labels:
+@update_labels: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param orientation:
+#! param coef:
+#! param quantile.type:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_boxplot: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param theta:
+#! param start:
+#! param end:
+#! param thetalim:
+#! param rlim:
+#! param expand:
+#! param direction:
+#! param clip:
+#! param r.axis.inside:
+#! param rotate.angle:
+#! param inner.radius:
+#! param reverse:
+#! param r_axis_inside:
+#! param rotate_angle:
+@coord_radial: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param y:
+#! param coord:
+#! param theme:
+#! param transpose:
+@render_axes: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param binwidth:
+#! param bins:
+#! param breaks:
+#! param drop:
+#! param fun:
+#! param fun.args:
+#! param boundary:
+#! param closed:
+#! param center:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_summary_2d: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param type:
+#! param palette:
+#! param direction:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_color_distiller: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_linewidth_identity: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param label:
+#! param subtitle:
+@ggtitle: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param object:
+#! param plot:
+#! param ...:
+@ggplot_add: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_guide: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param theme:
+#! param angle:
+#! param position:
+#! param direction:
+#! param override.aes:
+#! param reverse:
+#! param order:
+#! param show.limits:
+#! param ...:
+@guide_bins: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param guide:
+#! param new_guide:
+@guide_merge: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@`is.ggplot`: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param flip:
+@flipped_names: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param family:
+#! param face:
+#! param colour:
+#! param size:
+#! param hjust:
+#! param vjust:
+#! param angle:
+#! param lineheight:
+#! param color:
+#! param margin:
+#! param debug:
+#! param inherit.blank:
+#! param ...:
+@element_text: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_scale: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param default:
+#! param multi_line:
+@as_labeller: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@scale_alpha_discrete: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param units:
+#! param data:
+@unit: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param orientation:
+#! param fatten:
+#! param lineend:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_pointrange: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@aes: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param target_crs:
+#! param source_crs:
+#! param authority_compliant:
+@sf_transform_xy: (Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param database:
+#! param regions:
+#! param fill:
+#! param colour:
+#! param xlim:
+#! param ylim:
+#! param ...:
+@annotation_borders: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_blank: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_linetype_identity: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param fill:
+#! param colour:
+#! param linewidth:
+#! param linetype:
+#! param color:
+#! param linejoin:
+#! param inherit.blank:
+#! param size:
+#! param ...:
+@element_rect: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@scale_size_discrete: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param .rows:
+#! param .cols:
+#! param keep.as.numeric:
+#! param .multi_line:
+#! param .default:
+#! param ...:
+@labeller: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@from_theme: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_geom: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_fill_identity: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@scale_linewidth_discrete: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param fun:
+#! param xlim:
+#! param n:
+#! param args:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_function: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param palette:
+#! param expand:
+#! param guide:
+#! param position:
+#! param sec.axis:
+#! param continuous.limits:
+#! param ...:
+@scale_y_discrete: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param h:
+#! param c:
+#! param l:
+#! param h.start:
+#! param direction:
+#! param na.value:
+#! param aesthetics:
+#! param ...:
+@scale_color_hue: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param text:
+#! param ticks:
+#! param ticks.length:
+#! param line:
+#! param minor.ticks.length:
+#! param ...:
+@theme_sub_axis: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param layout:
+#! param plot:
+#! param ...:
+@class_ggplot_built: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+@ggplot_gtable: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_crossbar: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_margin: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param binwidth:
+#! param bins:
+#! param breaks:
+#! param drop:
+#! param boundary:
+#! param closed:
+#! param center:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_bin2d: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param labels:
+#! param limits:
+#! param range:
+#! param transform:
+#! param trans:
+#! param guide:
+#! param aesthetics:
+@scale_size: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@benchplot: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param distribution:
+#! param dparams:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_qq: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param labels:
+#! param limits:
+#! param range:
+#! param n.breaks:
+#! param nice.breaks:
+#! param transform:
+#! param trans:
+#! param guide:
+#! param aesthetics:
+@scale_linewidth_binned: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param palette:
+#! param expand:
+#! param guide:
+#! param position:
+#! param sec.axis:
+#! param continuous.limits:
+#! param ...:
+@scale_x_discrete: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param p:
+@summarise_layout: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param high:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_colour_date: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_label: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param theme:
+#! param angle:
+#! param minor.ticks:
+#! param cap:
+#! param order:
+#! param position:
+@guide_axis_theta: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param colours:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param colors:
+#! param ...:
+@scale_color_stepsn: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_point: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param labels:
+#! param multi_line:
+#! param sep:
+@label_both: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param lineend:
+#! param sides:
+#! param outside:
+#! param length:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_rug: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param y:
+#! param labeller:
+#! param theme:
+@render_strips: (Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param plot:
+#! param i:
+@get_layer_grob: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_sf: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param fun.data:
+#! param fun:
+#! param fun.max:
+#! param fun.min:
+#! param fun.args:
+#! param na.rm:
+#! param orientation:
+#! param show.legend:
+#! param inherit.aes:
+#! param fun.y:
+#! param fun.ymin:
+#! param fun.ymax:
+#! param ...:
+@stat_summary: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param jitter.width:
+#! param jitter.height:
+#! param dodge.width:
+#! param reverse:
+#! param seed:
+@position_jitterdodge: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@expand_limits: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param type:
+#! param palette:
+#! param direction:
+#! param aesthetics:
+#! param ...:
+@scale_colour_brewer: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param subtitle:
+#! param caption:
+#! param tag:
+#! param dictionary:
+#! param alt:
+#! param alt_insight:
+#! param ...:
+@labs: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_point: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param n:
+#! param ...:
+@cut_number: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param grob:
+#! param xmin:
+#! param xmax:
+#! param ymin:
+#! param ymax:
+@annotation_custom: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_identity: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_rect: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param base_size:
+#! param base_family:
+#! param header_family:
+#! param base_line_size:
+#! param base_rect_size:
+#! param ink:
+#! param paper:
+#! param accent:
+@theme_grey: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@xlim: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param orientation:
+#! param binwidth:
+#! param bins:
+#! param center:
+#! param boundary:
+#! param closed:
+#! param pad:
+#! param breaks:
+#! param drop:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_bin: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@ylim: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param .named:
+#! param .ignore_empty:
+#! param .ignore_null:
+#! param .unquote_names:
+#! param .homonyms:
+#! param .check_assign:
+#! param ...:
+@ensyms: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param shrink:
+@facet_null: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param middle.colour:
+#! param middle.color:
+#! param middle.linetype:
+#! param middle.linewidth:
+#! param box.colour:
+#! param box.color:
+#! param box.linetype:
+#! param box.linewidth:
+#! param fatten:
+#! param na.rm:
+#! param orientation:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_crossbar: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_size_identity: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param contour:
+#! param contour_var:
+#! param h:
+#! param adjust:
+#! param n:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_density2d_filled: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_sum: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param contour_var:
+#! param lineend:
+#! param linejoin:
+#! param linemitre:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_density2d: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_layer: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@borders: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param plot:
+#! param ...:
+@ggplot_build: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param t:
+#! param r:
+#! param b:
+#! param l:
+#! param unit:
+@margin_part: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param orientation:
+#! param ...:
+@geom_errorbarh: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param base_size:
+#! param base_family:
+#! param header_family:
+#! param base_line_size:
+#! param base_rect_size:
+#! param ink:
+#! param paper:
+#! param accent:
+@theme_linedraw: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param colours:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param colors:
+#! param ...:
+@scale_colour_stepsn: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param theme:
+#! param position:
+#! param direction:
+#! param override.aes:
+#! param nrow:
+#! param ncol:
+#! param reverse:
+#! param order:
+#! param ...:
+@guide_legend: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param arrow:
+#! param arrow.fill:
+#! param lineend:
+#! param linejoin:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_spoke: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@`is.facet`: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param binwidth:
+#! param bins:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_binhex: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param element_tree:
+#! param complete:
+#! param ...:
+@register_theme_elements: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param geom:
+#! param x:
+#! param y:
+#! param xmin:
+#! param xmax:
+#! param ymin:
+#! param ymax:
+#! param xend:
+#! param yend:
+#! param na.rm:
+#! param ...:
+@annotate: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param type:
+#! param palette:
+#! param direction:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_colour_distiller: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@scale_shape_ordinal: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param orientation:
+#! param lineend:
+#! param linejoin:
+#! param linemitre:
+#! param arrow:
+#! param arrow.fill:
+#! param direction:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_step: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@`is.ggproto`: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param mapping:
+#! param environment:
+#! param ...:
+@ggplot: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param first:
+#! param title:
+#! param theme:
+#! param spacing:
+#! param order:
+#! param position:
+#! param ...:
+@guide_axis_stack: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param colours:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param colors:
+#! param ...:
+@scale_fill_stepsn: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@scale_x_log10: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param solid:
+#! param aesthetics:
+#! param ...:
+@scale_shape: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param grobs:
+#! param value_only:
+@max_width: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param trim:
+#! param bounds:
+#! param quantile.colour:
+#! param quantile.color:
+#! param quantile.linetype:
+#! param quantile.linewidth:
+#! param draw_quantiles:
+#! param scale:
+#! param na.rm:
+#! param orientation:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_violin: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param object:
+#! param ...:
+@autoplot: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@scale_y_log10: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_align: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param shape_string:
+@translate_shape_string: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param n:
+#! param length:
+#! param ...:
+@cut_interval: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param date_breaks:
+#! param labels:
+#! param date_labels:
+#! param minor_breaks:
+#! param date_minor_breaks:
+#! param timezone:
+#! param limits:
+#! param expand:
+#! param oob:
+#! param guide:
+#! param position:
+#! param sec.axis:
+@scale_y_datetime: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param available_aes:
+#! param super:
+#! param ...:
+@new_guide: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param xlim:
+#! param ylim:
+#! param expand:
+#! param default:
+#! param clip:
+#! param reverse:
+#! param ratio:
+@coord_cartesian: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param .named:
+#! param .ignore_empty:
+#! param .ignore_null:
+#! param .unquote_names:
+#! param .homonyms:
+#! param .check_assign:
+#! param ...:
+@enexprs: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param labels:
+#! param multi_line:
+@label_parsed: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param width:
+#! param preserve:
+#! param orientation:
+#! param reverse:
+@position_dodge: (Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param map:
+#! param region:
+#! param exact:
+#! param ...:
+@map_data: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param p:
+#! param ...:
+@get_alt_text: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param map:
+#! param ...:
+@annotation_map: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param binwidth:
+#! param bins:
+#! param orientation:
+#! param lineend:
+#! param linejoin:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_histogram: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param high:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_color_gradient: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param type:
+#! param ...:
+@scale_color_ordinal: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param base_size:
+#! param base_family:
+#! param header_family:
+#! param base_line_size:
+#! param base_rect_size:
+#! param ink:
+#! param paper:
+#! param accent:
+@theme_classic: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param type:
+@is_theme_element: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param contour:
+#! param contour_var:
+#! param h:
+#! param adjust:
+#! param n:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_density_2d_filled: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@scale_shape_continuous: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_pointrange: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param xlim:
+#! param ylim:
+#! param expand:
+#! param clip:
+@coord_quickmap: (Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param date_breaks:
+#! param labels:
+#! param date_labels:
+#! param minor_breaks:
+#! param date_minor_breaks:
+#! param timezone:
+#! param limits:
+#! param expand:
+#! param oob:
+#! param guide:
+#! param position:
+#! param sec.axis:
+@scale_x_datetime: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param .named:
+#! param .ignore_empty:
+#! param .unquote_names:
+#! param ...:
+@quos: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param base_size:
+#! param base_family:
+#! param header_family:
+#! param base_line_size:
+#! param base_rect_size:
+#! param ink:
+#! param paper:
+#! param accent:
+@theme_dark: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@stat_summary2d: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param width:
+#! param center:
+#! param boundary:
+#! param closed:
+#! param ...:
+@cut_width: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param base_size:
+#! param base_family:
+#! param header_family:
+#! param base_line_size:
+#! param base_rect_size:
+#! param ink:
+#! param paper:
+#! param accent:
+@theme_gray: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param type:
+#! param palette:
+#! param direction:
+#! param aesthetics:
+#! param ...:
+@scale_color_brewer: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param theme:
+#! param alpha:
+#! param angle:
+#! param even.steps:
+#! param show.limits:
+#! param direction:
+#! param position:
+#! param reverse:
+#! param order:
+#! param available_aes:
+#! param ...:
+@guide_coloursteps: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param y:
+#! param data:
+#! param facets:
+#! param margins:
+#! param geom:
+#! param xlim:
+#! param ylim:
+#! param log:
+#! param main:
+#! param xlab:
+#! param ylab:
+#! param asp:
+#! param stat:
+#! param position:
+#! param ...:
+@quickplot: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_timeseries: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ratio:
+#! param ...:
+@coord_equal: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param mid:
+#! param high:
+#! param midpoint:
+#! param space:
+#! param na.value:
+#! param transform:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_color_steps2: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param binwidth:
+#! param bins:
+#! param drop:
+#! param fun:
+#! param fun.args:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_summary_hex: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param df:
+#! param trans_x:
+#! param trans_y:
+#! param ...:
+@transform_position: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_mapping: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_sf: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param values:
+#! param aesthetics:
+#! param breaks:
+#! param na.value:
+#! param ...:
+@scale_fill_manual: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param palette:
+#! param aesthetics:
+#! param na.value:
+#! param type:
+#! param ...:
+@scale_colour_discrete: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param guide:
+#! param layers:
+#! param default_mapping:
+@guide_geom: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param value:
+@set_last_plot: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param mid:
+#! param high:
+#! param midpoint:
+#! param space:
+#! param na.value:
+#! param transform:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_color_gradient2: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@theme_replace: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param lineend:
+#! param linejoin:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_bin2d: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param new:
+@set_theme: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param aesthetics:
+#! param name:
+#! param guide:
+#! param ...:
+@scale_continuous_identity: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param distribution:
+#! param dparams:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_qq: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@after_stat: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param guide:
+#! param theme:
+@guide_gengrob: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param geom:
+#! param stat:
+#! param data:
+#! param mapping:
+#! param position:
+#! param params:
+#! param inherit.aes:
+#! param check.aes:
+#! param check.param:
+#! param show.legend:
+@layer_sf: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@aes_: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param bins:
+#! param binwidth:
+#! param breaks:
+#! param arrow:
+#! param arrow.fill:
+#! param lineend:
+#! param linejoin:
+#! param linemitre:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_contour: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param type:
+#! param ...:
+@scale_colour_ordinal: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param t:
+#! param r:
+#! param b:
+#! param l:
+#! param unit:
+#! param ...:
+@margin: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param theme:
+#! param nbin:
+#! param display:
+#! param raster:
+#! param alpha:
+#! param draw.ulim:
+#! param draw.llim:
+#! param angle:
+#! param position:
+#! param direction:
+#! param reverse:
+#! param order:
+#! param available_aes:
+#! param ...:
+@guide_colourbar: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param ...:
+@mean_cl_boot: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param type:
+#! param palette:
+#! param direction:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_color_fermenter: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param palette:
+#! param aesthetics:
+#! param guide:
+#! param na.value:
+#! param type:
+#! param ...:
+@scale_fill_binned: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param fun.data:
+#! param fun:
+#! param fun.max:
+#! param fun.min:
+#! param fun.args:
+#! param bins:
+#! param binwidth:
+#! param breaks:
+#! param na.rm:
+#! param orientation:
+#! param show.legend:
+#! param inherit.aes:
+#! param fun.y:
+#! param fun.ymin:
+#! param fun.ymax:
+#! param ...:
+@stat_summary_bin: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param method:
+#! param formula:
+#! param se:
+#! param na.rm:
+#! param orientation:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_smooth: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param labels:
+#! param limits:
+#! param range:
+#! param transform:
+#! param trans:
+#! param guide:
+#! param aesthetics:
+@scale_linewidth: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param line:
+#! param rect:
+#! param text:
+#! param title:
+#! param point:
+#! param polygon:
+#! param geom:
+#! param spacing:
+#! param margins:
+#! param aspect.ratio:
+#! param axis.title:
+#! param axis.title.x:
+#! param axis.title.x.top:
+#! param axis.title.x.bottom:
+#! param axis.title.y:
+#! param axis.title.y.left:
+#! param axis.title.y.right:
+#! param axis.text:
+#! param axis.text.x:
+#! param axis.text.x.top:
+#! param axis.text.x.bottom:
+#! param axis.text.y:
+#! param axis.text.y.left:
+#! param axis.text.y.right:
+#! param axis.text.theta:
+#! param axis.text.r:
+#! param axis.ticks:
+#! param axis.ticks.x:
+#! param axis.ticks.x.top:
+#! param axis.ticks.x.bottom:
+#! param axis.ticks.y:
+#! param axis.ticks.y.left:
+#! param axis.ticks.y.right:
+#! param axis.ticks.theta:
+#! param axis.ticks.r:
+#! param axis.minor.ticks.x.top:
+#! param axis.minor.ticks.x.bottom:
+#! param axis.minor.ticks.y.left:
+#! param axis.minor.ticks.y.right:
+#! param axis.minor.ticks.theta:
+#! param axis.minor.ticks.r:
+#! param axis.ticks.length:
+#! param axis.ticks.length.x:
+#! param axis.ticks.length.x.top:
+#! param axis.ticks.length.x.bottom:
+#! param axis.ticks.length.y:
+#! param axis.ticks.length.y.left:
+#! param axis.ticks.length.y.right:
+#! param axis.ticks.length.theta:
+#! param axis.ticks.length.r:
+#! param axis.minor.ticks.length:
+#! param axis.minor.ticks.length.x:
+#! param axis.minor.ticks.length.x.top:
+#! param axis.minor.ticks.length.x.bottom:
+#! param axis.minor.ticks.length.y:
+#! param axis.minor.ticks.length.y.left:
+#! param axis.minor.ticks.length.y.right:
+#! param axis.minor.ticks.length.theta:
+#! param axis.minor.ticks.length.r:
+#! param axis.line:
+#! param axis.line.x:
+#! param axis.line.x.top:
+#! param axis.line.x.bottom:
+#! param axis.line.y:
+#! param axis.line.y.left:
+#! param axis.line.y.right:
+#! param axis.line.theta:
+#! param axis.line.r:
+#! param legend.background:
+#! param legend.margin:
+#! param legend.spacing:
+#! param legend.spacing.x:
+#! param legend.spacing.y:
+#! param legend.key:
+#! param legend.key.size:
+#! param legend.key.height:
+#! param legend.key.width:
+#! param legend.key.spacing:
+#! param legend.key.spacing.x:
+#! param legend.key.spacing.y:
+#! param legend.key.justification:
+#! param legend.frame:
+#! param legend.ticks:
+#! param legend.ticks.length:
+#! param legend.axis.line:
+#! param legend.text:
+#! param legend.text.position:
+#! param legend.title:
+#! param legend.title.position:
+#! param legend.position:
+#! param legend.position.inside:
+#! param legend.direction:
+#! param legend.byrow:
+#! param legend.justification:
+#! param legend.justification.top:
+#! param legend.justification.bottom:
+#! param legend.justification.left:
+#! param legend.justification.right:
+#! param legend.justification.inside:
+#! param legend.location:
+#! param legend.box:
+#! param legend.box.just:
+#! param legend.box.margin:
+#! param legend.box.background:
+#! param legend.box.spacing:
+#! param panel.background:
+#! param panel.border:
+#! param panel.spacing:
+#! param panel.spacing.x:
+#! param panel.spacing.y:
+#! param panel.grid:
+#! param panel.grid.major:
+#! param panel.grid.minor:
+#! param panel.grid.major.x:
+#! param panel.grid.major.y:
+#! param panel.grid.minor.x:
+#! param panel.grid.minor.y:
+#! param panel.ontop:
+#! param panel.widths:
+#! param panel.heights:
+#! param plot.background:
+#! param plot.title:
+#! param plot.title.position:
+#! param plot.subtitle:
+#! param plot.caption:
+#! param plot.caption.position:
+#! param plot.tag:
+#! param plot.tag.position:
+#! param plot.tag.location:
+#! param plot.margin:
+#! param strip.background:
+#! param strip.background.x:
+#! param strip.background.y:
+#! param strip.clip:
+#! param strip.placement:
+#! param strip.text:
+#! param strip.text.x:
+#! param strip.text.x.bottom:
+#! param strip.text.x.top:
+#! param strip.text.y:
+#! param strip.text.y.left:
+#! param strip.text.y.right:
+#! param strip.switch.pad.grid:
+#! param strip.switch.pad.wrap:
+#! param complete:
+#! param validate:
+#! param ...:
+@theme: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@theme_update: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param grobs:
+#! param value_only:
+@max_height: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_color_identity: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param mid:
+#! param high:
+#! param midpoint:
+#! param space:
+#! param na.value:
+#! param transform:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_colour_gradient2: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param n.breaks:
+#! param nice.breaks:
+#! param breaks:
+#! param labels:
+#! param limits:
+#! param expand:
+#! param oob:
+#! param na.value:
+#! param right:
+#! param show.limits:
+#! param transform:
+#! param trans:
+#! param guide:
+#! param position:
+@scale_y_binned: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param theme:
+#! param alpha:
+#! param angle:
+#! param even.steps:
+#! param show.limits:
+#! param direction:
+#! param position:
+#! param reverse:
+#! param order:
+#! param available_aes:
+#! param ...:
+@guide_colorsteps: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param labels:
+#! param limits:
+#! param range:
+#! param n.breaks:
+#! param nice.breaks:
+#! param transform:
+#! param trans:
+#! param guide:
+#! param aesthetics:
+@scale_size_binned: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+#! param option:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_fill_viridis_b: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+#! param option:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_fill_viridis_c: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+#! param option:
+#! param aesthetics:
+#! param ...:
+@scale_fill_viridis_d: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_theme: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mult:
+#! param add:
+@expansion: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param plot:
+#! param i:
+@layer_data: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param background:
+#! param border:
+#! param widths:
+#! param heights:
+#! param spacing:
+#! param spacing.x:
+#! param spacing.y:
+#! param grid:
+#! param grid.major:
+#! param grid.minor:
+#! param grid.major.x:
+#! param grid.major.y:
+#! param grid.minor.x:
+#! param grid.minor.y:
+#! param ontop:
+#! param ...:
+@theme_sub_panel: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+@`.expose_data`: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param long:
+#! param mid:
+#! param short:
+#! param prescale.base:
+#! param negative.small:
+#! param short.theme:
+#! param expanded:
+#! param cap:
+#! param theme:
+#! param prescale_base:
+#! param negative_small:
+#! param short_theme:
+#! param ...:
+@guide_axis_logticks: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param transform:
+#! param name:
+#! param breaks:
+#! param labels:
+#! param guide:
+#! param trans:
+@sec_axis: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param aesthetics:
+#! param scale_name:
+#! param palette:
+#! param name:
+#! param breaks:
+#! param minor_breaks:
+#! param n.breaks:
+#! param labels:
+#! param limits:
+#! param rescaler:
+#! param oob:
+#! param expand:
+#! param na.value:
+#! param transform:
+#! param trans:
+#! param guide:
+#! param position:
+#! param fallback.palette:
+#! param call:
+#! param super:
+@continuous_scale: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param contour_var:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_density2d_filled: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@update_theme: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param arrow:
+#! param arrow.fill:
+#! param lineend:
+#! param linejoin:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_segment: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param palette:
+#! param aesthetics:
+#! param guide:
+#! param na.value:
+#! param type:
+#! param ...:
+@scale_colour_continuous: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@standardise_aes_names: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param base_size:
+#! param base_family:
+#! param header_family:
+#! param base_line_size:
+#! param base_rect_size:
+#! param ink:
+#! param paper:
+#! param accent:
+@theme_void: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param parse:
+#! param label.padding:
+#! param label.r:
+#! param label.size:
+#! param border.colour:
+#! param border.color:
+#! param text.colour:
+#! param text.color:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param fun.geometry:
+#! param ...:
+@geom_sf_label: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param base_size:
+#! param base_family:
+#! param header_family:
+#! param base_line_size:
+#! param base_rect_size:
+#! param ink:
+#! param paper:
+#! param accent:
+@theme_minimal: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@scale_x_reverse: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param version:
+#! param msg:
+@gg_dep: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mult:
+#! param add:
+@expand_scale: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param width:
+#! param preserve:
+#! param padding:
+#! param reverse:
+@position_dodge2: (Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param range:
+#! param aesthetics:
+#! param ...:
+@scale_alpha_continuous: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param xintercept:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_vline: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param arg:
+@ensym: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param labels:
+#! param limits:
+#! param range:
+#! param transform:
+#! param trans:
+#! param guide:
+#! param aesthetics:
+@scale_size_continuous: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param high:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_colour_steps: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param guide:
+@old_guide: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param layers:
+#! param scales:
+#! param guides:
+#! param mapping:
+#! param theme:
+#! param coordinates:
+#! param facet:
+#! param layout:
+#! param labels:
+#! param meta:
+#! param plot_env:
+#! param ...:
+@class_ggplot: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param width:
+#! param multi_line:
+@label_wrap_gen: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param range:
+#! param aesthetics:
+#! param ...:
+@scale_alpha: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param y:
+#! param data:
+#! param facets:
+#! param margins:
+#! param geom:
+#! param xlim:
+#! param ylim:
+#! param log:
+#! param main:
+#! param xlab:
+#! param ylab:
+#! param asp:
+#! param stat:
+#! param position:
+#! param ...:
+@qplot: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param start:
+#! param after_stat:
+#! param after_scale:
+@stage: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param object:
+#! param ...:
+@autolayer: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param colour:
+#! param linewidth:
+#! param linetype:
+#! param lineend:
+#! param color:
+#! param linejoin:
+#! param arrow:
+#! param arrow.fill:
+#! param inherit.blank:
+#! param size:
+#! param ...:
+@element_line: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param arg:
+@enquo: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param text:
+#! param ticks:
+#! param ticks.length:
+#! param line:
+#! param minor.ticks:
+#! param minor.ticks.length:
+#! param ...:
+@theme_sub_axis_bottom: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param values:
+#! param aesthetics:
+#! param breaks:
+#! param na.value:
+#! param ...:
+@scale_colour_manual: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param model:
+#! param data:
+#! param ...:
+@fortify: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param labels:
+#! param ...:
+@class_labels: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param grob:
+#! param width:
+#! param height:
+#! param title:
+#! param theme:
+#! param position:
+#! param order:
+@guide_custom: (Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param feature:
+#! param action:
+#! param op:
+#! param maybe:
+#! param call:
+@check_device: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param values:
+#! param breaks:
+#! param na.value:
+#! param aesthetics:
+#! param ...:
+@scale_linetype_manual: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@stat: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@replace_theme: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param zero:
+#! param discrete:
+@resolution: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@scale_linetype_continuous: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_ggplot: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param range:
+#! param aesthetics:
+#! param ...:
+@scale_alpha_ordinal: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param fill:
+#! param colour:
+#! param linewidth:
+#! param linetype:
+#! param color:
+#! param linejoin:
+#! param inherit.blank:
+#! param ...:
+@element_polygon: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@sym: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param guide:
+#! param scale:
+#! param aesthetic:
+@guide_train: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param high:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_colour_datetime: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param position:
+@guide_none: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param .named:
+#! param .ignore_empty:
+#! param .ignore_null:
+#! param .unquote_names:
+#! param .homonyms:
+#! param .check_assign:
+#! param ...:
+@enquos: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@`is.Coord`: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param aesthetics:
+#! param transform:
+#! param trans:
+#! param palette:
+#! param breaks:
+#! param minor_breaks:
+#! param labels:
+#! param date_breaks:
+#! param date_labels:
+#! param date_minor_breaks:
+#! param timezone:
+#! param guide:
+#! param call:
+#! param ...:
+@datetime_scale: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param values:
+#! param breaks:
+#! param na.value:
+#! param aesthetics:
+#! param ...:
+@scale_size_manual: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@rel: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param xlim:
+#! param ylim:
+#! param expand:
+#! param clip:
+@coord_flip: (Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param rows:
+#! param cols:
+#! param default:
+@label_bquote: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param labels:
+#! param multi_line:
+@label_value: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param expr:
+@quo: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param table:
+@find_panel: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param high:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_color_datetime: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_abline: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param arrow:
+#! param arrow.fill:
+#! param lineend:
+#! param linejoin:
+#! param linemitre:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_path: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param y:
+@position_nudge: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param fun:
+#! param args:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_manual: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param distribution:
+#! param dparams:
+#! param line.p:
+#! param fullrange:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_qq_line: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param colour:
+#! param alpha:
+@alpha: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param high:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_colour_gradient: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param plot:
+#! param aesthetic:
+#! param panel:
+@get_guide_data: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param colours:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param colors:
+#! param ...:
+@scale_colour_gradientn: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param orientation:
+#! param outline.type:
+#! param lineend:
+#! param linejoin:
+#! param linemitre:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_area: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param ...:
+@aes_auto: (Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param n:
+#! param pad:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_ecdf: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param range:
+#! param aesthetics:
+#! param ...:
+@scale_alpha_datetime: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param type:
+#! param palette:
+#! param direction:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_fill_distiller: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param orientation:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_count: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param type:
+#! param palette:
+#! param direction:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_fill_fermenter: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+@`.ignore_data`: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param parse:
+#! param label.padding:
+#! param label.r:
+#! param label.size:
+#! param border.colour:
+#! param border.color:
+#! param text.colour:
+#! param text.color:
+#! param size.unit:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_label: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param aesthetics:
+#! param scale_name:
+#! param palette:
+#! param name:
+#! param breaks:
+#! param minor_breaks:
+#! param labels:
+#! param limits:
+#! param expand:
+#! param na.translate:
+#! param na.value:
+#! param drop:
+#! param guide:
+#! param position:
+#! param fallback.palette:
+#! param call:
+#! param super:
+@discrete_scale: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@aes_string: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param outliers:
+#! param outlier.colour:
+#! param outlier.color:
+#! param outlier.fill:
+#! param outlier.shape:
+#! param outlier.size:
+#! param outlier.stroke:
+#! param outlier.alpha:
+#! param whisker.colour:
+#! param whisker.color:
+#! param whisker.linetype:
+#! param whisker.linewidth:
+#! param staple.colour:
+#! param staple.color:
+#! param staple.linetype:
+#! param staple.linewidth:
+#! param median.colour:
+#! param median.color:
+#! param median.linetype:
+#! param median.linewidth:
+#! param box.colour:
+#! param box.color:
+#! param box.linetype:
+#! param box.linewidth:
+#! param notch:
+#! param notchwidth:
+#! param staplewidth:
+#! param varwidth:
+#! param na.rm:
+#! param orientation:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_boxplot: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param solid:
+#! param aesthetics:
+#! param ...:
+@scale_shape_discrete: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param base_size:
+#! param base_family:
+#! param header_family:
+#! param base_line_size:
+#! param base_rect_size:
+#! param ink:
+#! param paper:
+#! param accent:
+@theme_test: (Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param range:
+#! param aesthetics:
+#! param ...:
+@scale_size_ordinal: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param bins:
+#! param binwidth:
+#! param breaks:
+#! param rule:
+#! param lineend:
+#! param linejoin:
+#! param linemitre:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_contour_filled: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param env:
+#! param ...:
+@class_mapping: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param labels:
+#! param limits:
+#! param range:
+#! param transform:
+#! param trans:
+#! param guide:
+#! param aesthetics:
+@scale_radius: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param colours:
+#! param values:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param colors:
+#! param ...:
+@scale_fill_gradientn: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param range:
+#! param aesthetics:
+#! param ...:
+@scale_alpha_binned: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param labels:
+#! param limits:
+#! param range:
+#! param transform:
+#! param trans:
+#! param guide:
+#! param aesthetics:
+@scale_linewidth_continuous: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param text:
+#! param ticks:
+#! param ticks.length:
+#! param line:
+#! param minor.ticks:
+#! param minor.ticks.length:
+#! param ...:
+@theme_sub_axis_right: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param new:
+#! param old:
+#! param ...:
+@merge_element: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param stroke:
+#! param pointsize:
+#! param ...:
+@gg_par: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_stat: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param contour:
+#! param contour_var:
+#! param h:
+#! param adjust:
+#! param n:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_density2d: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param e1:
+#! param e2:
+@add_gg: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@after_scale: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param date_breaks:
+#! param labels:
+#! param date_labels:
+#! param minor_breaks:
+#! param date_minor_breaks:
+#! param limits:
+#! param expand:
+#! param oob:
+#! param guide:
+#! param position:
+#! param sec.axis:
+@scale_x_date: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param filename:
+#! param plot:
+#! param device:
+#! param path:
+#! param scale:
+#! param width:
+#! param height:
+#! param units:
+#! param dpi:
+#! param limitsize:
+#! param bg:
+#! param create.dir:
+#! param ...:
+@ggsave: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@as_label: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+#! param y:
+#! param ...:
+@aes_q: (Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param expr:
+@expr: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param bins:
+#! param binwidth:
+#! param breaks:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_contour: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param high:
+#! param space:
+#! param na.value:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_fill_gradient: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param interpolate:
+#! param hjust:
+#! param vjust:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_raster: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param expr:
+@should_stop: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@scale_y_reverse: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param orientation:
+#! param lineend:
+#! param linejoin:
+#! param linemitre:
+#! param outline.type:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_ribbon: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param contour_var:
+#! param lineend:
+#! param linejoin:
+#! param linemitre:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_density_2d: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param vjust:
+#! param reverse:
+@position_stack: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_blank: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param plot:
+@get_strip_labels: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param date_breaks:
+#! param minor_breaks:
+#! param date_minor_breaks:
+#! param labels:
+#! param date_labels:
+#! param limits:
+#! param expand:
+#! param oob:
+#! param na.value:
+#! param guide:
+#! param position:
+#! param sec.axis:
+@scale_x_time: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param width:
+#! param height:
+#! param seed:
+@position_jitter: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param binwidth:
+#! param bins:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_bin_hex: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param orientation:
+#! param lineend:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_errorbar: (Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param orientation:
+#! param bw:
+#! param adjust:
+#! param kernel:
+#! param trim:
+#! param scale:
+#! param drop:
+#! param bounds:
+#! param quantiles:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_ydensity: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param ...:
+@vars: (...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param low:
+#! param mid:
+#! param high:
+#! param midpoint:
+#! param space:
+#! param na.value:
+#! param transform:
+#! param guide:
+#! param aesthetics:
+#! param ...:
+@scale_fill_gradient2: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param title:
+#! param theme:
+#! param check.overlap:
+#! param angle:
+#! param n.dodge:
+#! param minor.ticks:
+#! param cap:
+#! param order:
+#! param position:
+@guide_axis: (Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param xlim:
+#! param ylim:
+#! param expand:
+#! param crs:
+#! param default_crs:
+#! param datum:
+#! param label_graticule:
+#! param label_axes:
+#! param lims_method:
+#! param ndiscr:
+#! param default:
+#! param clip:
+#! param reverse:
+@coord_sf: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param x:
+@is_guides: (Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param geom:
+#! param position:
+#! param contour:
+#! param contour_var:
+#! param h:
+#! param adjust:
+#! param n:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@stat_density_2d: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param breaks:
+#! param minor_breaks:
+#! param n.breaks:
+#! param labels:
+#! param limits:
+#! param expand:
+#! param oob:
+#! param na.value:
+#! param transform:
+#! param trans:
+#! param guide:
+#! param position:
+#! param sec.axis:
+@scale_y_continuous: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param aesthetics:
+#! param scale_name:
+#! param palette:
+#! param name:
+#! param breaks:
+#! param labels:
+#! param limits:
+#! param rescaler:
+#! param oob:
+#! param expand:
+#! param na.value:
+#! param n.breaks:
+#! param nice.breaks:
+#! param right:
+#! param transform:
+#! param trans:
+#! param show.limits:
+#! param guide:
+#! param position:
+#! param fallback.palette:
+#! param call:
+#! param super:
+@binned_scale: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param data:
+#! param params:
+#! param size:
+@draw_key_path: (Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param angle:
+#! param length:
+#! param ends:
+#! param type:
+@arrow: (Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param name:
+#! param range:
+#! param aesthetics:
+#! param ...:
+@scale_linewidth_ordinal: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param just:
+#! param lineend:
+#! param linejoin:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_col: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param parent:
+#! param self:
+@ggproto_parent: (Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param facets:
+#! param nrow:
+#! param ncol:
+#! param scales:
+#! param space:
+#! param shrink:
+#! param labeller:
+#! param as.table:
+#! param switch:
+#! param drop:
+#! param dir:
+#! param strip.position:
+#! param axes:
+#! param axis.labels:
+@facet_wrap: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param position:
+#! param binwidth:
+#! param binaxis:
+#! param method:
+#! param binpositions:
+#! param stackdir:
+#! param stackratio:
+#! param dotsize:
+#! param stackgroups:
+#! param origin:
+#! param right:
+#! param width:
+#! param drop:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_dotplot: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param colour:
+#! param shape:
+#! param size:
+#! param fill:
+#! param stroke:
+#! param color:
+#! param inherit.blank:
+#! param ...:
+@element_point: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param mapping:
+#! param data:
+#! param stat:
+#! param position:
+#! param curvature:
+#! param angle:
+#! param ncp:
+#! param arrow:
+#! param arrow.fill:
+#! param lineend:
+#! param na.rm:
+#! param show.legend:
+#! param inherit.aes:
+#! param ...:
+@geom_curve: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: ggplot2
+#! tier: T3
+#! generated-from: ggplot2 4.0.3, R 4.6.1
+#! param values:
+#! param breaks:
+#! param na.value:
+#! param aesthetics:
+#! param ...:
+@scale_alpha_manual: (Any, Any, Any, Any, ...Any) -> Any;
+

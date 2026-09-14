@@ -1,0 +1,385 @@
+@importFrom pillar squeeze tbl_nrow expect_known_display tbl_format_body set_char_opts pillar_shaft ctl_new_rowid_pillar char glimpse scale_x_num extra_cols new_pillar_title is_vector_s3 obj_sum tbl_format_header style_bold style_subtle_num colonnade new_pillar_component size_sum tbl_format_footer ctl_new_pillar tbl_sum scale_y_num new_pillar_shaft new_pillar_type ctl_new_pillar_list align set_num_opts get_max_extent new_pillar tbl_format_setup type_sum format_type_sum pillar style_subtle format_glimpse dim_desc style_na get_extent new_pillar_shaft_simple style_neg new_ornament num pillar_component style_num;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param width:
+#! param ...:
+@squeeze: (Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param ...:
+@tbl_nrow: (Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param object:
+#! param file:
+#! param width:
+#! param crayon:
+#! param ...:
+@expect_known_display: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param setup:
+#! param ...:
+@tbl_format_body: (Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param min_chars:
+#! param shorten:
+#! param ...:
+@set_char_opts: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param ...:
+@pillar_shaft: (Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param controller:
+#! param x:
+#! param width:
+#! param title:
+#! param type:
+#! param ...:
+@ctl_new_rowid_pillar: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param min_chars:
+#! param shorten:
+#! param ...:
+@char: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param width:
+#! param ...:
+@glimpse: (Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param position:
+#! param guide:
+#! param rescaler:
+#! param super:
+#! param ...:
+@scale_x_num: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param ...:
+@extra_cols: (Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param ...:
+@new_pillar_title: (Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+@is_vector_s3: (Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+@obj_sum: (Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param setup:
+#! param ...:
+@tbl_format_header: (Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+@style_bold: (Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param negative:
+@style_subtle_num: (Any, Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param has_row_id:
+#! param width:
+#! param ...:
+@colonnade: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param width:
+#! param min_width:
+#! param ...:
+@new_pillar_component: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+@size_sum: (Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param setup:
+#! param ...:
+@tbl_format_footer: (Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param controller:
+#! param x:
+#! param width:
+#! param title:
+#! param ...:
+@ctl_new_pillar: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+@tbl_sum: (Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param guide:
+#! param rescaler:
+#! param super:
+#! param ...:
+@scale_y_num: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param width:
+#! param min_width:
+#! param type_sum:
+#! param class:
+#! param subclass:
+#! param ...:
+@new_pillar_shaft: (Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param ...:
+@new_pillar_type: (Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param controller:
+#! param x:
+#! param width:
+#! param title:
+#! param first_pillar:
+#! param ...:
+@ctl_new_pillar_list: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param width:
+#! param align:
+#! param space:
+@align: (Any, Any, Any, Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param sigfig:
+#! param digits:
+#! param label:
+#! param scale:
+#! param notation:
+#! param fixed_exponent:
+#! param extra_sigfig:
+#! param ...:
+@set_num_opts: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+@get_max_extent: (Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param components:
+#! param width:
+#! param class:
+#! param extra:
+#! param ...:
+@new_pillar: (Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param width:
+#! param setup:
+#! param n:
+#! param max_extra_cols:
+#! param max_footer_lines:
+#! param focus:
+#! param ...:
+@tbl_format_setup: (Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+@type_sum: (Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param width:
+#! param ...:
+@format_type_sum: (Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param title:
+#! param width:
+#! param ...:
+@pillar: (Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+@style_subtle: (Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param ...:
+@format_glimpse: (Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+@dim_desc: (Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+@style_na: (Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+@get_extent: (Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param formatted:
+#! param width:
+#! param align:
+#! param min_width:
+#! param na:
+#! param na_indent:
+#! param shorten:
+#! param short_formatted:
+#! param ...:
+@new_pillar_shaft_simple: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+@style_neg: (Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param width:
+#! param align:
+@new_ornament: (Any, Any, Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param sigfig:
+#! param digits:
+#! param label:
+#! param scale:
+#! param notation:
+#! param fixed_exponent:
+#! param extra_sigfig:
+#! param ...:
+@num: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+@pillar_component: (Any) -> Any;
+
+#! pkg: pillar
+#! tier: T3
+#! generated-from: pillar 1.11.1, R 4.6.1
+#! param x:
+#! param negative:
+#! param significant:
+@style_num: (Any, Any, Any) -> Any;
+

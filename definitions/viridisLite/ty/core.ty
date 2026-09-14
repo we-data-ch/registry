@@ -1,0 +1,94 @@
+@importFrom viridisLite plasma inferno magma viridisMap rocket cividis mako turbo viridis;
+
+#! pkg: viridisLite
+#! tier: T3
+#! generated-from: viridisLite 0.4.3, R 4.6.1
+#! param n:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+@plasma: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: viridisLite
+#! tier: T3
+#! generated-from: viridisLite 0.4.3, R 4.6.1
+#! param n:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+@inferno: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: viridisLite
+#! tier: T3
+#! generated-from: viridisLite 0.4.3, R 4.6.1
+#! param n:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+@magma: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: viridisLite
+#! tier: T3
+#! generated-from: viridisLite 0.4.3, R 4.6.1
+#! param n:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+#! param option:
+@viridisMap: (Any, Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: viridisLite
+#! tier: T3
+#! generated-from: viridisLite 0.4.3, R 4.6.1
+#! param n:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+@rocket: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: viridisLite
+#! tier: T3
+#! generated-from: viridisLite 0.4.3, R 4.6.1
+#! param n:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+@cividis: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: viridisLite
+#! tier: T3
+#! generated-from: viridisLite 0.4.3, R 4.6.1
+#! param n:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+@mako: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: viridisLite
+#! tier: T3
+#! generated-from: viridisLite 0.4.3, R 4.6.1
+#! param n:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+@turbo: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: viridisLite
+#! tier: T3
+#! generated-from: viridisLite 0.4.3, R 4.6.1
+#! param n:
+#! param alpha:
+#! param begin:
+#! param end:
+#! param direction:
+#! param option:
+@viridis: (Any, Any, Any, Any, Any, Any) -> Any;
+

@@ -1,0 +1,269 @@
+@importFrom callr r_process_options rscript rcmd r_session_options rcmd_process_options rcmd_copycat r r_vanilla rscript_process_options run poll r_safe add_hook rcmd_bg r_bg r_copycat rcmd_safe;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param ...:
+@r_process_options: (...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param script:
+#! param cmdargs:
+#! param libpath:
+#! param repos:
+#! param stdout:
+#! param stderr:
+#! param poll_connection:
+#! param echo:
+#! param show:
+#! param callback:
+#! param block_callback:
+#! param spinner:
+#! param system_profile:
+#! param user_profile:
+#! param env:
+#! param timeout:
+#! param wd:
+#! param fail_on_status:
+#! param color:
+#! param ...:
+@rscript: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param cmd:
+#! param cmdargs:
+#! param libpath:
+#! param repos:
+#! param stdout:
+#! param stderr:
+#! param poll_connection:
+#! param echo:
+#! param show:
+#! param callback:
+#! param block_callback:
+#! param spinner:
+#! param system_profile:
+#! param user_profile:
+#! param env:
+#! param timeout:
+#! param wd:
+#! param fail_on_status:
+#! param ...:
+@rcmd: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param ...:
+@r_session_options: (...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param ...:
+@rcmd_process_options: (...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param cmd:
+#! param cmdargs:
+#! param libpath:
+#! param repos:
+#! param env:
+#! param ...:
+@rcmd_copycat: (Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param func:
+#! param args:
+#! param libpath:
+#! param repos:
+#! param stdout:
+#! param stderr:
+#! param poll_connection:
+#! param error:
+#! param cmdargs:
+#! param show:
+#! param callback:
+#! param block_callback:
+#! param spinner:
+#! param system_profile:
+#! param user_profile:
+#! param env:
+#! param timeout:
+#! param package:
+#! param arch:
+#! param ...:
+@r: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param func:
+#! param args:
+#! param libpath:
+#! param repos:
+#! param cmdargs:
+#! param system_profile:
+#! param user_profile:
+#! param env:
+#! param ...:
+@r_vanilla: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param ...:
+@rscript_process_options: (...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param command:
+#! param args:
+#! param error_on_status:
+#! param wd:
+#! param echo_cmd:
+#! param echo:
+#! param spinner:
+#! param timeout:
+#! param stdout:
+#! param stderr:
+#! param stdout_line_callback:
+#! param stdout_callback:
+#! param stderr_line_callback:
+#! param stderr_callback:
+#! param stderr_to_stdout:
+#! param stdin:
+#! param env:
+#! param windows_verbatim_args:
+#! param windows_hide_window:
+#! param encoding:
+#! param cleanup_tree:
+#! param pty:
+#! param pty_options:
+#! param ...:
+@run: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param processes:
+#! param ms:
+@poll: (Any, Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param func:
+#! param args:
+#! param libpath:
+#! param repos:
+#! param stdout:
+#! param stderr:
+#! param poll_connection:
+#! param error:
+#! param cmdargs:
+#! param show:
+#! param callback:
+#! param block_callback:
+#! param spinner:
+#! param system_profile:
+#! param user_profile:
+#! param env:
+#! param timeout:
+#! param package:
+#! param arch:
+#! param ...:
+@r_safe: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param ...:
+@add_hook: (...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param cmd:
+#! param cmdargs:
+#! param libpath:
+#! param stdout:
+#! param stderr:
+#! param poll_connection:
+#! param repos:
+#! param system_profile:
+#! param user_profile:
+#! param env:
+#! param wd:
+#! param supervise:
+#! param ...:
+@rcmd_bg: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param func:
+#! param args:
+#! param libpath:
+#! param repos:
+#! param stdout:
+#! param stderr:
+#! param poll_connection:
+#! param error:
+#! param cmdargs:
+#! param system_profile:
+#! param user_profile:
+#! param env:
+#! param supervise:
+#! param package:
+#! param arch:
+#! param ...:
+@r_bg: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param func:
+#! param args:
+#! param libpath:
+#! param repos:
+#! param cmdargs:
+#! param system_profile:
+#! param user_profile:
+#! param env:
+#! param ...:
+@r_copycat: (Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+
+#! pkg: callr
+#! tier: T3
+#! generated-from: callr 3.7.6, R 4.6.1
+#! param cmd:
+#! param cmdargs:
+#! param libpath:
+#! param repos:
+#! param stdout:
+#! param stderr:
+#! param poll_connection:
+#! param echo:
+#! param show:
+#! param callback:
+#! param block_callback:
+#! param spinner:
+#! param system_profile:
+#! param user_profile:
+#! param env:
+#! param timeout:
+#! param wd:
+#! param fail_on_status:
+#! param ...:
+@rcmd_safe: (Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, ...Any) -> Any;
+

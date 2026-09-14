@@ -1,0 +1,26 @@
+@importFrom RColorBrewer brewer.pal display.brewer.all display.brewer.pal;
+
+#! pkg: RColorBrewer
+#! tier: T3
+#! generated-from: RColorBrewer 1.1.3, R 4.6.1
+#! param n:
+#! param name:
+@`brewer.pal`: (Any, Any) -> Any;
+
+#! pkg: RColorBrewer
+#! tier: T3
+#! generated-from: RColorBrewer 1.1.3, R 4.6.1
+#! param n:
+#! param type:
+#! param select:
+#! param exact.n:
+#! param colorblindFriendly:
+@`display.brewer.all`: (Any, Any, Any, Any, Any) -> Any;
+
+#! pkg: RColorBrewer
+#! tier: T3
+#! generated-from: RColorBrewer 1.1.3, R 4.6.1
+#! param n:
+#! param name:
+@`display.brewer.pal`: (Any, Any) -> Any;
+
