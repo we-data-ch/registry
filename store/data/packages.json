@@ -1,0 +1,563 @@
+{
+  "generated_at": "2026-09-14T12:24:03.521Z",
+  "packages": [
+    {
+      "name": "bslib",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/bslib",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "0.12.0",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "callr",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/callr",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "3.7.6",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "cli",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/cli",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "3.6.6",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "curl",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/curl",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "7.1.0",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "dplyr",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/dplyr",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "1.2.1",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "fs",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/fs",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "2.1.0",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "generics",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/generics",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "0.1.4",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "ggplot2",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/ggplot2",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "4.0.3",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "glue",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/glue",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "1.8.1",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "httr",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/httr",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "1.4.9",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "jsonlite",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/jsonlite",
+          "version": "0.2.0",
+          "rev": "5f9f5e8435cb0b71c36810290fb8f44481e8a3d7",
+          "since": "2.0.0",
+          "source": "community",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "lifecycle",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/lifecycle",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "1.0.5",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "magrittr",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/magrittr",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "2.0.5",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "pillar",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/pillar",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "1.11.1",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "pkgconfig",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/pkgconfig",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "2.0.3",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "processx",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/processx",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "3.9.0",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "purrr",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/purrr",
+          "version": "0.2.0",
+          "rev": "5f9f5e8435cb0b71c36810290fb8f44481e8a3d7",
+          "since": "1.2.2",
+          "source": "community",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "R6",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/R6",
+          "version": "0.2.0",
+          "rev": "5f9f5e8435cb0b71c36810290fb8f44481e8a3d7",
+          "since": "2.6.1",
+          "source": "community",
+          "tier": "T1",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "RColorBrewer",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/RColorBrewer",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "1.1.3",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "Rcpp",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/Rcpp",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "1.1.1.1.1",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "rlang",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/rlang",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "1.3.0",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "rmarkdown",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/rmarkdown",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "2.31",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "S7",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/S7",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "0.2.2",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "sass",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/sass",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "0.4.10",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "scales",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/scales",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "1.4.0",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "tibble",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/tibble",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "3.3.1",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "utf8",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/utf8",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "1.2.6",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "vctrs",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/vctrs",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "0.7.3",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "viridisLite",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/viridisLite",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "0.4.3",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "withr",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/withr",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "3.0.2",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    },
+    {
+      "name": "xfun",
+      "definitions": [
+        {
+          "repository": "we-data-ch/registry/definitions/xfun",
+          "version": "0.1.0",
+          "rev": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+          "since": "0.57",
+          "source": "generated",
+          "tier": "T3",
+          "capabilities": {
+            "r_shims": false,
+            "extern_raw": false
+          },
+          "validation": null
+        }
+      ]
+    }
+  ]
+}

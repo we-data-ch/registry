@@ -1,0 +1,43 @@
+name: Store data freshness
+
+# store/data/packages.json is generated from packages/*.json (typR/registry.md §13 J6, item 1) —
+# this job fails if someone edits packages/*.json without regenerating it, or hand-edits the
+# generated file directly. Same contract as `typr syntax --check` in the compiler repo.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "packages/**"
+      - "status/validation.json"
+      - "scripts/gen-store-data.mjs"
+      - "store/data/packages.json"
+  pull_request:
+    paths:
+      - "packages/**"
+      - "status/validation.json"
+      - "scripts/gen-store-data.mjs"
+      - "store/data/packages.json"
+  workflow_dispatch: {}
+
+jobs:
+  check:
+    name: store/data/packages.json is up to date
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Regenerate and diff
+        run: |
+          git show HEAD:store/data/packages.json | jq 'del(.generated_at)' > /tmp/old.json
+          node scripts/gen-store-data.mjs
+          jq 'del(.generated_at)' store/data/packages.json > /tmp/new.json
+          # generated_at always changes; ignore it for the drift check and diff the rest.
+          if ! diff -u /tmp/old.json /tmp/new.json; then
+            echo "::error::store/data/packages.json is stale — run 'node scripts/gen-store-data.mjs' and commit the result."
+            exit 1
+          fi

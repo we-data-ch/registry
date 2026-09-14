@@ -30,6 +30,8 @@ definitions/
   ```
 - **`packages/`** — see [`packages/README.md`](packages/README.md).
 - **`definitions/`** — see [`definitions/README.md`](definitions/README.md).
+- **`store/`** — a static, read-only search/browse page over `packages/*.json`, no account or
+  backend. See [`store/README.md`](store/README.md).
 
 ## Adding a definition
 
@@ -63,9 +65,14 @@ CRAN packages (per `cranlogs.r-pkg.org`, minus a handful of header-only/build-sc
 packages with no real R-level API), generated at `T3` by `typr gen-types` and verified end-to-end
 with `typr types validate` against this repo's own commits — plus `jsonlite`, `purrr`, and `R6`
 carrying a small hand-verified `T1` core (real functions, real types, actually executed against R
-via `typr run`, not just type-checked). Not yet done:
+via `typr run`, not just type-checked). It also covers the first half of **J6** *(optional)*: a
+static [`store/`](store/) page (search, package sheets, provenance, tier, capability flags),
+generated from `packages/*.json` and, when available, `status/validation.json` — no account, no
+backend. Not yet done:
 
-- **J6** *(optional)* — a Store: search UI, package pages, "Add to Registry" via automated PR.
+- **J6, second half** *(optional)* — "Add to Registry" via automated PR (needs a GitHub App,
+  auth, and anti-spam moderation — a project of comparable size to the rest of this repo, per
+  `registry.md` §12/D6). `store/` is not yet published (GitHub Pages is not enabled on this repo).
 
 Full design and rationale: `typR/registry.md` (in the `TypR` workspace, alongside the compiler,
 playground and docs-site repos).

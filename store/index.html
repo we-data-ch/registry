@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TypR Registry — Store</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --bg-alt: #f5f6f8;
+    --fg: #1a1d21;
+    --fg-muted: #5b6572;
+    --border: #dde1e6;
+    --accent: #2b5fd9;
+    --accent-bg: #eaf0ff;
+    --ok: #1a7f37;
+    --ok-bg: #e6f6ea;
+    --warn: #9a6700;
+    --warn-bg: #fff6dc;
+    --fail: #b3261e;
+    --fail-bg: #fdeceb;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --bg-alt: #1c1f24;
+      --fg: #e6e8eb;
+      --fg-muted: #97a1ad;
+      --border: #2c3138;
+      --accent: #7ea3ff;
+      --accent-bg: #1c2740;
+      --ok: #6fd68a;
+      --ok-bg: #10281a;
+      --warn: #e0b350;
+      --warn-bg: #332705;
+      --fail: #ff8a80;
+      --fail-bg: #3a1310;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 20px 64px;
+  }
+  header h1 {
+    font-size: 22px;
+    margin: 0 0 4px;
+  }
+  header p {
+    margin: 0 0 20px;
+    color: var(--fg-muted);
+    font-size: 14px;
+  }
+  header p code { font-family: var(--mono); font-size: 13px; }
+  .search {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-alt);
+    color: var(--fg);
+    margin-bottom: 8px;
+  }
+  .search:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .meta-line {
+    color: var(--fg-muted);
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+  }
+  .card {
+    display: block;
+    text-align: left;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    background: var(--bg-alt);
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+  }
+  .card:hover { border-color: var(--accent); }
+  .card .name { font-weight: 600; font-size: 15px; }
+  .card .badges { margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 999px;
+    letter-spacing: 0.02em;
+  }
+  .badge.tier-T1 { background: var(--ok-bg); color: var(--ok); }
+  .badge.tier-T2 { background: var(--warn-bg); color: var(--warn); }
+  .badge.tier-T3 { background: var(--border); color: var(--fg-muted); }
+  .badge.src { background: var(--accent-bg); color: var(--accent); }
+  .badge.cap-warn { background: var(--warn-bg); color: var(--warn); }
+  .empty { color: var(--fg-muted); padding: 40px 0; text-align: center; }
+
+  .backlink {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .backlink:hover { text-decoration: underline; }
+  .detail h2 { margin: 0 0 4px; font-size: 20px; }
+  .detail .sub { color: var(--fg-muted); font-size: 13px; margin-bottom: 18px; }
+  .def-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    background: var(--bg-alt);
+  }
+  .def-card .repo {
+    font-family: var(--mono);
+    font-size: 13.5px;
+    margin-bottom: 10px;
+    word-break: break-all;
+  }
+  .def-card .repo a { color: var(--accent); text-decoration: none; }
+  .def-card .repo a:hover { text-decoration: underline; }
+  dl.fields {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 4px 14px;
+    margin: 0 0 10px;
+    font-size: 13.5px;
+  }
+  dl.fields dt { color: var(--fg-muted); }
+  dl.fields dd { margin: 0; font-family: var(--mono); }
+  .checks {
+    margin-top: 10px;
+    border-top: 1px dashed var(--border);
+    padding-top: 10px;
+  }
+  .checks .checked-at { color: var(--fg-muted); font-size: 12px; margin-bottom: 6px; }
+  .check-row {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    font-size: 13px;
+    padding: 2px 0;
+  }
+  .check-row .status { font-weight: 700; width: 16px; flex: none; }
+  .check-row .status.ok { color: var(--ok); }
+  .check-row .status.warn { color: var(--warn); }
+  .check-row .status.fail { color: var(--fail); }
+  .check-row .status.skipped { color: var(--fg-muted); }
+  .check-row .cname { font-weight: 600; }
+  .check-row .cdetail { color: var(--fg-muted); }
+  .no-validation {
+    color: var(--fg-muted);
+    font-size: 12.5px;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    color: var(--fg-muted);
+    font-size: 12.5px;
+  }
+  footer a { color: var(--accent); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>TypR Registry</h1>
+    <p>
+      A read-only index of community <a href="https://github.com/we-data-ch/typr" style="color:var(--accent)">TypR</a>
+      Type Definitions for R packages. This page only reads <code>packages/*.json</code> from this
+      repository — no account, no upload, nothing runs server-side. To add a definition, open a PR
+      (see the repo <a href="../" style="color:var(--accent)">README</a>).
+    </p>
+  </header>
+
+  <section id="view-list">
+    <input id="search" class="search" type="search" placeholder="Search a package… (e.g. dplyr, jsonlite)" autofocus />
+    <div id="meta-line" class="meta-line"></div>
+    <div id="grid" class="grid"></div>
+    <div id="empty" class="empty" hidden>No package matches your search.</div>
+  </section>
+
+  <section id="view-detail" hidden>
+    <a href="#" id="back-link" class="backlink">← All packages</a>
+    <div id="detail" class="detail"></div>
+  </section>
+
+  <footer>
+    Generated from <code>packages/*.json</code> by <code>scripts/gen-store-data.mjs</code>. Tier:
+    <strong>T1</strong> verified, <strong>T2</strong> declared, <strong>T3</strong> generated — see
+    <code>registry.md</code> §5.4/§9 for what each verification check does and does not prove.
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var state = { packages: [], generatedAt: null };
+
+  var el = {
+    search: document.getElementById("search"),
+    grid: document.getElementById("grid"),
+    empty: document.getElementById("empty"),
+    metaLine: document.getElementById("meta-line"),
+    viewList: document.getElementById("view-list"),
+    viewDetail: document.getElementById("view-detail"),
+    detail: document.getElementById("detail"),
+    backLink: document.getElementById("back-link"),
+  };
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function bestTier(pkg) {
+    var order = { T1: 3, T2: 2, T3: 1 };
+    var best = null;
+    pkg.definitions.forEach(function (d) {
+      if (!best || (order[d.tier] || 0) > (order[best] || 0)) best = d.tier;
+    });
+    return best;
+  }
+
+  function bestSource(pkg) {
+    var order = { official: 4, community: 3, generated: 2, local: 1 };
+    var best = null;
+    pkg.definitions.forEach(function (d) {
+      if (!best || (order[d.source] || 0) > (order[best] || 0)) best = d.source;
+    });
+    return best;
+  }
+
+  function anyRExecutable(pkg) {
+    return pkg.definitions.some(function (d) {
+      return d.capabilities && (d.capabilities.r_shims || d.capabilities.extern_raw);
+    });
+  }
+
+  function githubTreeUrl(repository, rev) {
+    // repository is "owner/repo" or "owner/repo/sub/dir"; rev is a pinned commit SHA.
+    var parts = repository.split("/");
+    var owner = parts[0], repo = parts[1];
+    var subdir = parts.slice(2).join("/");
+    var base = "https://github.com/" + owner + "/" + repo;
+    if (subdir) return base + "/tree/" + rev + "/" + subdir;
+    return base + "/tree/" + rev;
+  }
+
+  function renderList(filterText) {
+    var q = (filterText || "").trim().toLowerCase();
+    var pkgs = state.packages.filter(function (p) {
+      return !q || p.name.toLowerCase().indexOf(q) !== -1;
+    });
+
+    el.metaLine.textContent = state.packages.length
+      ? pkgs.length + " of " + state.packages.length + " package" + (state.packages.length === 1 ? "" : "s") +
+        (state.generatedAt ? " — index generated " + state.generatedAt.slice(0, 10) : "")
+      : "";
+
+    el.grid.innerHTML = "";
+    el.empty.hidden = pkgs.length !== 0 || state.packages.length === 0;
+
+    pkgs.forEach(function (pkg) {
+      var tier = bestTier(pkg);
+      var source = bestSource(pkg);
+      var card = document.createElement("button");
+      card.className = "card";
+      card.type = "button";
+      card.innerHTML =
+        '<div class="name">' + escapeHtml(pkg.name) + "</div>" +
+        '<div class="badges">' +
+          (tier ? '<span class="badge tier-' + tier + '">' + tier + "</span>" : "") +
+          (source ? '<span class="badge src">' + escapeHtml(source) + "</span>" : "") +
+          (pkg.definitions.length > 1 ? '<span class="badge src">' + pkg.definitions.length + " definitions</span>" : "") +
+          (anyRExecutable(pkg) ? '<span class="badge cap-warn">ships R</span>' : "") +
+        "</div>";
+      card.addEventListener("click", function () {
+        location.hash = "#pkg=" + encodeURIComponent(pkg.name);
+      });
+      el.grid.appendChild(card);
+    });
+  }
+
+  function checkStatusClass(status) {
+    if (status === "ok") return "ok";
+    if (status === "warn") return "warn";
+    if (status === "fail") return "fail";
+    return "skipped";
+  }
+
+  function checkStatusGlyph(status) {
+    if (status === "ok") return "✓";
+    if (status === "warn") return "!";
+    if (status === "fail") return "✗";
+    return "–";
+  }
+
+  function renderValidation(validation) {
+    if (!validation) {
+      return '<div class="no-validation">Not yet revalidated — no mechanical check has run against this definition (§9). Absence of a check is not a claim it is correct.</div>';
+    }
+    var rows = (validation.checks || []).map(function (c) {
+      return (
+        '<div class="check-row">' +
+        '<span class="status ' + checkStatusClass(c.status) + '">' + checkStatusGlyph(c.status) + "</span>" +
+        '<span class="cname">' + escapeHtml(c.name) + "</span>" +
+        (c.detail ? '<span class="cdetail">' + escapeHtml(c.detail) + "</span>" : "") +
+        "</div>"
+      );
+    }).join("");
+    return (
+      '<div class="checks">' +
+      '<div class="checked-at">Last checked ' + escapeHtml(validation.checked_at || "unknown") + "</div>" +
+      rows +
+      "</div>"
+    );
+  }
+
+  function renderDetail(name) {
+    var pkg = state.packages.find(function (p) { return p.name === name; });
+    if (!pkg) {
+      el.detail.innerHTML = '<p class="empty">No definitions indexed for “' + escapeHtml(name) + '”.</p>';
+      return;
+    }
+    var html = "<h2>" + escapeHtml(pkg.name) + "</h2>";
+    html += '<div class="sub">' + pkg.definitions.length + " definition" + (pkg.definitions.length === 1 ? "" : "s") + " indexed</div>";
+
+    pkg.definitions.forEach(function (d) {
+      var caps = [];
+      if (d.capabilities) {
+        if (d.capabilities.r_shims) caps.push("r_shims");
+        if (d.capabilities.extern_raw) caps.push("extern_raw");
+      }
+      var capsText = caps.length ? caps.join(", ") + " — ships executable R, review before trusting" : "none — no executable R";
+
+      html +=
+        '<div class="def-card">' +
+        '<div class="repo"><a href="' + githubTreeUrl(d.repository, d.rev) + '" target="_blank" rel="noopener">github:' + escapeHtml(d.repository) + (d.rev ? "@" + escapeHtml(d.rev.slice(0, 12)) : "") + "</a></div>" +
+        '<dl class="fields">' +
+          "<dt>version</dt><dd>" + escapeHtml(d.version || "—") + "</dd>" +
+          "<dt>tier</dt><dd><span class=\"badge tier-" + d.tier + "\">" + escapeHtml(d.tier) + "</span></dd>" +
+          "<dt>provenance</dt><dd>" + escapeHtml(d.source || "—") + "</dd>" +
+          "<dt>since</dt><dd>" + escapeHtml(d.since || "—") + (d.until ? " (until " + escapeHtml(d.until) + ")" : "") + "</dd>" +
+          "<dt>capabilities</dt><dd>" + escapeHtml(capsText) + "</dd>" +
+        "</dl>" +
+        renderValidation(d.validation) +
+        "</div>";
+    });
+
+    el.detail.innerHTML = html;
+  }
+
+  function route() {
+    var hash = location.hash;
+    var m = /^#pkg=(.+)$/.exec(hash);
+    if (m) {
+      renderDetail(decodeURIComponent(m[1]));
+      el.viewList.hidden = true;
+      el.viewDetail.hidden = false;
+    } else {
+      el.viewList.hidden = false;
+      el.viewDetail.hidden = true;
+      renderList(el.search.value);
+    }
+  }
+
+  el.search.addEventListener("input", function () { renderList(el.search.value); });
+  el.backLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    location.hash = "";
+  });
+  window.addEventListener("hashchange", route);
+
+  fetch("data/packages.json")
+    .then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    })
+    .then(function (data) {
+      state.packages = data.packages || [];
+      state.generatedAt = data.generated_at || null;
+      route();
+    })
+    .catch(function (err) {
+      el.metaLine.textContent = "Could not load data/packages.json (" + err.message + "). Run scripts/gen-store-data.mjs.";
+    });
+})();
+</script>
+</body>
+</html>
