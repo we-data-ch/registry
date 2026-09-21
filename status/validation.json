@@ -1,0 +1,1988 @@
+{
+  "definitions": [
+    {
+      "package": "R6",
+      "repository": "github:we-data-ch/registry/definitions/R6@5f9f5e8435cb0b71c36810290fb8f44481e8a3d7",
+      "definition_version": "0.2.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ 5f9f5e8435cb"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "5f9f5e8435cb0b71c36810290fb8f44481e8a3d7"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:158802ef0cfbbf5fa7d02c69e018ae949db81af2fa9cfed2c4b2b668be53fc0c"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "3 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "RColorBrewer",
+      "repository": "github:we-data-ch/registry/definitions/RColorBrewer@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:ab37f2fc06696bc53a6d4024bdcb22196a7d208c166024beb22419745d6fdbd4"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "Rcpp",
+      "repository": "github:we-data-ch/registry/definitions/Rcpp@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:f669b36f14103389decd7c3cdca701a05d6f628bed867133f1b0d14622ae1fd7"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "S7",
+      "repository": "github:we-data-ch/registry/definitions/S7@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:b28a4cbfdc2b8e0729fdc315f677e9d5d440307bc84737e813d22a685ed85c21"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "bslib",
+      "repository": "github:we-data-ch/registry/definitions/bslib@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:fcfa4b7d0b5b279a601e8799551ab85e7fcf76eedb2ec784e9cd4c02efe75ac1"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "callr",
+      "repository": "github:we-data-ch/registry/definitions/callr@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:7038610fdea2526524a93c44a8c98a666e0967537614a257434d9cfc71da2c4f"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "cli",
+      "repository": "github:we-data-ch/registry/definitions/cli@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:4f5512f56f27b639b967da1f0f4955c3c4a487fc5256c538f4d09b36fc1dad71"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "curl",
+      "repository": "github:we-data-ch/registry/definitions/curl@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:440c6472858c362499ae886791fb062683c997382c47c6ac9b61cdd2b09b0ff6"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "dplyr",
+      "repository": "github:we-data-ch/registry/definitions/dplyr@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:9666397e4adbbed89b3a0be51c43a05efcd58f310dd6d1f1a838b82e418d8e04"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "fs",
+      "repository": "github:we-data-ch/registry/definitions/fs@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:1f48f9123ac72d7defe38f1dc047e30ca3c7a6a2dbcab3f49241c769d85fcb43"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "generics",
+      "repository": "github:we-data-ch/registry/definitions/generics@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:4aafb41fad33da9fc69868895c28d2aa6314ce93ce2c89d0f7b4c4242751a1aa"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "ggplot2",
+      "repository": "github:we-data-ch/registry/definitions/ggplot2@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:a6888cb626dbc14933b4538ada73d6d2b60adce2d1ef08c56b20279183101d33"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "glue",
+      "repository": "github:we-data-ch/registry/definitions/glue@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:3bb391382a5385c6a44ef0e621470043aa0439d9bc4b0a6cf74b920839158ac3"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "httr",
+      "repository": "github:we-data-ch/registry/definitions/httr@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:fc690ab47849d8ff20813698e47bbbb2afdf85b1f039a9ef9189a26d33c72e10"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "jsonlite",
+      "repository": "github:we-data-ch/registry/definitions/jsonlite@5f9f5e8435cb0b71c36810290fb8f44481e8a3d7",
+      "definition_version": "0.2.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ 5f9f5e8435cb"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "5f9f5e8435cb0b71c36810290fb8f44481e8a3d7"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:d531010ecda9c3856aa08643c957fa620a4de638cb22e6d2f656f2ca86ba56d3"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "3 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "3 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "lifecycle",
+      "repository": "github:we-data-ch/registry/definitions/lifecycle@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:486da832683a5b0c08b1be567b839eda74db9b64aead616cc53fca2375148144"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "magrittr",
+      "repository": "github:we-data-ch/registry/definitions/magrittr@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:0b91029d86ed248605b56a7de9110832c4c851485710849f119d3390276f4fd1"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "pillar",
+      "repository": "github:we-data-ch/registry/definitions/pillar@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:afd0ea7feec675fd1c634123e92c0f3fbf0fefe4f42dbfa38c5f3dbf276f8085"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "pkgconfig",
+      "repository": "github:we-data-ch/registry/definitions/pkgconfig@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:9399ad3d04ae9ea86f3943e435d7364c40fcd39cc66c815e471d1745ac0b6739"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "processx",
+      "repository": "github:we-data-ch/registry/definitions/processx@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:dfafc297aec2c464ee70a900d446486cf8260714499345fc937e8d0ef92ce0d5"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "purrr",
+      "repository": "github:we-data-ch/registry/definitions/purrr@5f9f5e8435cb0b71c36810290fb8f44481e8a3d7",
+      "definition_version": "0.2.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ 5f9f5e8435cb"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "5f9f5e8435cb0b71c36810290fb8f44481e8a3d7"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:87c5f8b04956f24aee8e0290c5b950c4c67c06c9de5661ff431e972f9cb27430"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "3 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "2 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "rlang",
+      "repository": "github:we-data-ch/registry/definitions/rlang@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:10d0bd7c56791a79226d83abe4ecae773ced5ae189db34a182f03d9fb366312b"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "rmarkdown",
+      "repository": "github:we-data-ch/registry/definitions/rmarkdown@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:eff27fddfe0f71d6c328780640c0397fa79ed1c0b31f549821d7dba447aca1f5"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "sass",
+      "repository": "github:we-data-ch/registry/definitions/sass@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:0d619b8f7c123330e925f21b8ef14bc94571f2071f6f6eb77fa10c4e69d35460"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "scales",
+      "repository": "github:we-data-ch/registry/definitions/scales@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:e7e8224e72d281876cd05baafef34bd8ae108a4044d061d1c2e87d10df148618"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "tibble",
+      "repository": "github:we-data-ch/registry/definitions/tibble@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:bc5c7e55818628576c1e60d2c064d35968d454054eeab11ba5030f0c4d773839"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "utf8",
+      "repository": "github:we-data-ch/registry/definitions/utf8@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:c87189e1d4a0d6e0da2424f137aca9a4a5ac3489d8fffc070b537d86a131e0de"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "vctrs",
+      "repository": "github:we-data-ch/registry/definitions/vctrs@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:aaee351bfb1cf9a18f41be1caba3d33f502d4be36b5244f18d0287dbce0b6826"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "viridisLite",
+      "repository": "github:we-data-ch/registry/definitions/viridisLite@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:63065c7e8e3b8f2b729806a09f193493af3a7e4b7dd02ec7f370143c1a9fea07"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "withr",
+      "repository": "github:we-data-ch/registry/definitions/withr@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:86098414ac2296b38da1f2f7bd5698290fd0422962e2f222967a8384f9795945"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    },
+    {
+      "package": "xfun",
+      "repository": "github:we-data-ch/registry/definitions/xfun@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
+      "definition_version": "0.1.0",
+      "checked_at": "2026-09-21",
+      "ok": true,
+      "checks": [
+        {
+          "name": "format_version",
+          "status": "ok",
+          "detail": "1"
+        },
+        {
+          "name": "repository accessible",
+          "status": "ok",
+          "detail": "cloned @ d447cc134c0f"
+        },
+        {
+          "name": "rev pinned",
+          "status": "ok",
+          "detail": "d447cc134c0fa8b7d3eacf3eeee99f864f72286c"
+        },
+        {
+          "name": "digest",
+          "status": "ok",
+          "detail": "sha256:74479934160df564e82cfe90db3b663c07c6f2f7f36c58df8c84d55b09e72d4c"
+        },
+        {
+          "name": "capabilities",
+          "status": "ok",
+          "detail": "no undeclared R; r_shims/extern_raw not declared"
+        },
+        {
+          "name": ".ty parse/type-check",
+          "status": "ok",
+          "detail": "2 file(s) OK"
+        },
+        {
+          "name": "tests/smoke.ty",
+          "status": "ok",
+          "detail": "compiles"
+        },
+        {
+          "name": "T1 promotion gate",
+          "status": "ok",
+          "detail": "0 T1 entrie(s), none with an unconstrained `...`"
+        },
+        {
+          "name": "exports vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "arity vs formals()",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        },
+        {
+          "name": "package on CRAN",
+          "status": "not checked",
+          "detail": "Rscript not on PATH"
+        }
+      ]
+    }
+  ]
+}
