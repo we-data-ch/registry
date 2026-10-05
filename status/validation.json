@@ -4,7 +4,7 @@
       "package": "R6",
       "repository": "github:we-data-ch/registry/definitions/R6@5f9f5e8435cb0b71c36810290fb8f44481e8a3d7",
       "definition_version": "0.2.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -68,7 +68,7 @@
       "package": "RColorBrewer",
       "repository": "github:we-data-ch/registry/definitions/RColorBrewer@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -132,7 +132,7 @@
       "package": "Rcpp",
       "repository": "github:we-data-ch/registry/definitions/Rcpp@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -196,7 +196,7 @@
       "package": "S7",
       "repository": "github:we-data-ch/registry/definitions/S7@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -260,7 +260,7 @@
       "package": "bslib",
       "repository": "github:we-data-ch/registry/definitions/bslib@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -324,7 +324,7 @@
       "package": "callr",
       "repository": "github:we-data-ch/registry/definitions/callr@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -388,7 +388,7 @@
       "package": "cli",
       "repository": "github:we-data-ch/registry/definitions/cli@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -452,7 +452,7 @@
       "package": "curl",
       "repository": "github:we-data-ch/registry/definitions/curl@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -516,7 +516,7 @@
       "package": "dplyr",
       "repository": "github:we-data-ch/registry/definitions/dplyr@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -580,7 +580,7 @@
       "package": "fs",
       "repository": "github:we-data-ch/registry/definitions/fs@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -644,7 +644,7 @@
       "package": "generics",
       "repository": "github:we-data-ch/registry/definitions/generics@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -708,7 +708,7 @@
       "package": "ggplot2",
       "repository": "github:we-data-ch/registry/definitions/ggplot2@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -772,7 +772,7 @@
       "package": "glue",
       "repository": "github:we-data-ch/registry/definitions/glue@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -836,7 +836,7 @@
       "package": "httr",
       "repository": "github:we-data-ch/registry/definitions/httr@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -900,7 +900,7 @@
       "package": "jsonlite",
       "repository": "github:we-data-ch/registry/definitions/jsonlite@5f9f5e8435cb0b71c36810290fb8f44481e8a3d7",
       "definition_version": "0.2.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -964,7 +964,7 @@
       "package": "lifecycle",
       "repository": "github:we-data-ch/registry/definitions/lifecycle@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1028,7 +1028,7 @@
       "package": "magrittr",
       "repository": "github:we-data-ch/registry/definitions/magrittr@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1092,7 +1092,7 @@
       "package": "pillar",
       "repository": "github:we-data-ch/registry/definitions/pillar@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1156,7 +1156,7 @@
       "package": "pkgconfig",
       "repository": "github:we-data-ch/registry/definitions/pkgconfig@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1220,7 +1220,7 @@
       "package": "processx",
       "repository": "github:we-data-ch/registry/definitions/processx@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1284,7 +1284,7 @@
       "package": "purrr",
       "repository": "github:we-data-ch/registry/definitions/purrr@5f9f5e8435cb0b71c36810290fb8f44481e8a3d7",
       "definition_version": "0.2.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1348,7 +1348,7 @@
       "package": "rlang",
       "repository": "github:we-data-ch/registry/definitions/rlang@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1412,7 +1412,7 @@
       "package": "rmarkdown",
       "repository": "github:we-data-ch/registry/definitions/rmarkdown@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1476,7 +1476,7 @@
       "package": "sass",
       "repository": "github:we-data-ch/registry/definitions/sass@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1540,7 +1540,7 @@
       "package": "scales",
       "repository": "github:we-data-ch/registry/definitions/scales@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1604,7 +1604,7 @@
       "package": "tibble",
       "repository": "github:we-data-ch/registry/definitions/tibble@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1668,7 +1668,7 @@
       "package": "utf8",
       "repository": "github:we-data-ch/registry/definitions/utf8@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1732,7 +1732,7 @@
       "package": "vctrs",
       "repository": "github:we-data-ch/registry/definitions/vctrs@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1796,7 +1796,7 @@
       "package": "viridisLite",
       "repository": "github:we-data-ch/registry/definitions/viridisLite@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1860,7 +1860,7 @@
       "package": "withr",
       "repository": "github:we-data-ch/registry/definitions/withr@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
@@ -1924,7 +1924,7 @@
       "package": "xfun",
       "repository": "github:we-data-ch/registry/definitions/xfun@d447cc134c0fa8b7d3eacf3eeee99f864f72286c",
       "definition_version": "0.1.0",
-      "checked_at": "2026-09-28",
+      "checked_at": "2026-10-05",
       "ok": true,
       "checks": [
         {
