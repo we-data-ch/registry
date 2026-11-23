@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-16T13:25:57.220Z",
+  "generated_at": "2026-11-23T15:46:02.041Z",
   "source": "https://cran.r-project.org/src/contrib/PACKAGES",
   "titles_source": "https://cran.r-project.org/web/packages/available_packages_by_name.html",
   "downloads_source": "https://cranlogs.r-pkg.org/top/last-month/100",
   "downloads_window": {
-    "start": "2026-10-16T00:00:00.000Z",
-    "end": "2026-11-14T00:00:00.000Z"
+    "start": "2026-10-23T00:00:00.000Z",
+    "end": "2026-11-21T00:00:00.000Z"
   },
-  "total_packages": 25769,
+  "total_packages": 25831,
   "packages": [
     {
       "name": "a11yShiny",
@@ -199,7 +199,7 @@
       "name": "abind",
       "version": "1.4-8",
       "title": "Combine Multidimensional Arrays",
-      "downloads_last_month": 787838
+      "downloads_last_month": 784052
     },
     {
       "name": "abjData",
@@ -701,7 +701,7 @@
     },
     {
       "name": "actibase",
-      "version": "0.8.0",
+      "version": "0.9.0",
       "title": "Baseline Functions for Actigraphy and Activity Processing and Analysis",
       "downloads_last_month": null
     },
@@ -787,6 +787,12 @@
       "name": "ActiveDriverWGS",
       "version": "1.2.1",
       "title": "A Driver Discovery Tool for Cancer Whole Genomes",
+      "downloads_last_month": null
+    },
+    {
+      "name": "activegp",
+      "version": "1.1.2",
+      "title": "Gaussian Process Based Design and Analysis for the Active Subspace Method",
       "downloads_last_month": null
     },
     {
@@ -905,7 +911,7 @@
     },
     {
       "name": "ACWR",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "title": "Acute Chronic Workload Ratio Calculation",
       "downloads_last_month": null
     },
@@ -1469,7 +1475,7 @@
     },
     {
       "name": "admisc",
-      "version": "0.41",
+      "version": "0.42",
       "title": "Adrian Dusa's Miscellaneous",
       "downloads_last_month": null
     },
@@ -1499,7 +1505,7 @@
     },
     {
       "name": "admixr2",
-      "version": "0.4.1",
+      "version": "0.4.2",
       "title": "Aggregate Data Modelling",
       "downloads_last_month": null
     },
@@ -1876,6 +1882,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "AFTMicroMed",
+      "version": "0.0.2",
+      "title": "Microbiome Mediation Analysis with Accelerated Failure Time Model",
+      "downloads_last_month": null
+    },
+    {
       "name": "aftPenCDA",
       "version": "0.1.1",
       "title": "Estimating Penalized AFT Models via Coordinate Descent",
@@ -2075,7 +2087,7 @@
     },
     {
       "name": "agricolae",
-      "version": "1.3-7",
+      "version": "1.3-8",
       "title": "Statistical Procedures for Agricultural Research",
       "downloads_last_month": null
     },
@@ -2369,7 +2381,7 @@
     },
     {
       "name": "aidR",
-      "version": "0.2.4",
+      "version": "0.2.5",
       "title": "Reading and Standardizing Automated Insulin Delivery Data",
       "downloads_last_month": null
     },
@@ -2455,6 +2467,12 @@
       "name": "aire.zmvm",
       "version": "1.0.2",
       "title": "Download Mexico City Pollution, Wind, and Temperature Data",
+      "downloads_last_month": null
+    },
+    {
+      "name": "AIRes",
+      "version": "0.1.0",
+      "title": "Declared Use of Artificial Intelligence in Research Publications and Policies",
       "downloads_last_month": null
     },
     {
@@ -2735,7 +2753,7 @@
     },
     {
       "name": "ale",
-      "version": "0.5.3",
+      "version": "0.6.0",
       "title": "Interpretable Machine Learning and Statistical Inference with Accumulated Local Effects (ALE)",
       "downloads_last_month": null
     },
@@ -3736,6 +3754,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "anovakun",
+      "version": "1.1.0",
+      "title": "Analysis of Variance for Factorial Designs ('ANOVA-kun')",
+      "downloads_last_month": null
+    },
+    {
       "name": "anovapowersim",
       "version": "1.2.0",
       "title": "Simple Power Simulations for ANOVAs",
@@ -3899,7 +3923,7 @@
     },
     {
       "name": "ao",
-      "version": "1.2.3",
+      "version": "1.3.0",
       "title": "Alternating Optimization",
       "downloads_last_month": null
     },
@@ -3983,8 +4007,8 @@
     },
     {
       "name": "apa7",
-      "version": "0.1.3",
-      "title": "Facilitate Writing Documents in American Psychological Association Style, Seventh Edition",
+      "version": "0.2.0",
+      "title": "Writing Documents in American Psychological Association Style, Seventh Edition",
       "downloads_last_month": null
     },
     {
@@ -4373,7 +4397,7 @@
     },
     {
       "name": "APRScenario",
-      "version": "0.0.4.2",
+      "version": "0.0.5.0",
       "title": "Structural Scenario Analysis for Bayesian Structural Vector Autoregression Models",
       "downloads_last_month": null
     },
@@ -4733,7 +4757,7 @@
     },
     {
       "name": "ArctosR",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "title": "An Interface to the 'Arctos' Database",
       "downloads_last_month": null
     },
@@ -5021,7 +5045,7 @@
     },
     {
       "name": "arm",
-      "version": "1.15-3",
+      "version": "1.15-4",
       "title": "Data Analysis Using Regression and Multilevel/Hierarchical Models",
       "downloads_last_month": null
     },
@@ -5129,7 +5153,7 @@
     },
     {
       "name": "arrow",
-      "version": "26.0.1",
+      "version": "26.0.1.1",
       "title": "Integration to 'Apache' 'Arrow'",
       "downloads_last_month": null
     },
@@ -5383,7 +5407,7 @@
       "name": "askpass",
       "version": "1.2.1",
       "title": "Password Entry Utilities for R, Git, and SSH",
-      "downloads_last_month": 677615
+      "downloads_last_month": 662827
     },
     {
       "name": "asleep",
@@ -5926,6 +5950,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "aucnull",
+      "version": "0.2.2",
+      "title": "Heller Test of Equal AUCs for a New Marker in Nested Models",
+      "downloads_last_month": null
+    },
+    {
       "name": "audio",
       "version": "0.1-12",
       "title": "Audio Interface for R",
@@ -5987,7 +6017,7 @@
     },
     {
       "name": "auk",
-      "version": "0.9.1",
+      "version": "0.10.0",
       "title": "eBird Data Extraction and Processing in R",
       "downloads_last_month": null
     },
@@ -6179,7 +6209,7 @@
     },
     {
       "name": "autoharp",
-      "version": "0.3.2",
+      "version": "0.4.0",
       "title": "Semi-Automatic Grading of R and Rmd Scripts",
       "downloads_last_month": null
     },
@@ -6919,7 +6949,7 @@
       "name": "backports",
       "version": "1.5.1",
       "title": "Reimplementations of Functions Introduced Since R-3.0.0",
-      "downloads_last_month": 949336
+      "downloads_last_month": 935474
     },
     {
       "name": "backtest",
@@ -7417,7 +7447,7 @@
       "name": "base64enc",
       "version": "0.1-6",
       "title": "Tools for 'base64' Encoding",
-      "downloads_last_month": 1010117
+      "downloads_last_month": 1027337
     },
     {
       "name": "base64url",
@@ -8182,6 +8212,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "BayesianTrial",
+      "version": "0.1.0",
+      "title": "Bayesian Decision-Making for Clinical Trials",
+      "downloads_last_month": null
+    },
+    {
       "name": "bayesianVARs",
       "version": "0.1.8",
       "title": "MCMC Estimation of Bayesian Vectorautoregressions",
@@ -8189,7 +8225,7 @@
     },
     {
       "name": "bayesics",
-      "version": "3.1.0",
+      "version": "3.1.2",
       "title": "Bayesian Analyses for One- and Two-Sample Inference and Regression Methods",
       "downloads_last_month": null
     },
@@ -8393,7 +8429,7 @@
     },
     {
       "name": "bayesplot",
-      "version": "1.16.0",
+      "version": "1.17.0",
       "title": "Plotting for Bayesian Models",
       "downloads_last_month": null
     },
@@ -8734,6 +8770,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "BayGMST",
+      "version": "0.1.0",
+      "title": "Bayesian Reconstruction of Global Mean Surface Temperature",
+      "downloads_last_month": null
+    },
+    {
       "name": "BayLum",
       "version": "0.3.3",
       "title": "Chronological Bayesian Models Integrating Optically Stimulated Luminescence and Radiocarbon Age Dating",
@@ -8747,7 +8789,7 @@
     },
     {
       "name": "baymedr",
-      "version": "0.2",
+      "version": "0.2.1",
       "title": "Computation of Bayes Factors for Common Biomedical Designs",
       "downloads_last_month": null
     },
@@ -8837,8 +8879,8 @@
     },
     {
       "name": "BBMBC",
-      "version": "1.0.1",
-      "title": "Beta-Binomial Models for Immune Cell Frequencies and Power Calculations",
+      "version": "1.0.3",
+      "title": "Beta-Binomial Models for Evaluating Overdispersed B-Cell Phenotyping Data",
       "downloads_last_month": null
     },
     {
@@ -8963,7 +9005,7 @@
     },
     {
       "name": "bcdata",
-      "version": "0.5.3",
+      "version": "0.5.4",
       "title": "Search and Retrieve Data from the BC Data Catalogue",
       "downloads_last_month": null
     },
@@ -9659,7 +9701,7 @@
     },
     {
       "name": "BET",
-      "version": "0.6.0",
+      "version": "0.6.1",
       "title": "Binary Expansion Testing",
       "downloads_last_month": null
     },
@@ -10007,7 +10049,7 @@
     },
     {
       "name": "bGMYC4",
-      "version": "4.1.6",
+      "version": "4.3.1",
       "title": "Bayesian General Mixed Yule-Coalescent Model for Species Delimitation",
       "downloads_last_month": null
     },
@@ -10045,7 +10087,7 @@
       "name": "BH",
       "version": "1.90.0-1",
       "title": "Boost C++ Header Files",
-      "downloads_last_month": 695305
+      "downloads_last_month": 685108
     },
     {
       "name": "BHAI",
@@ -10120,6 +10162,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "biasProxyR",
+      "version": "0.1.0",
+      "title": "Sampling Effort Proxies for Species Distribution Models",
+      "downloads_last_month": null
+    },
+    {
       "name": "bib2df",
       "version": "1.1.2.0",
       "title": "Parse a BibTeX File to a Data Frame",
@@ -10163,7 +10211,7 @@
     },
     {
       "name": "bibnets",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "title": "Importing, Constructing, and Exporting Bibliometric Networks",
       "downloads_last_month": null
     },
@@ -10313,7 +10361,7 @@
     },
     {
       "name": "bigbang",
-      "version": "0.6.0",
+      "version": "0.6.1",
       "title": "Build 'Tidyverse'-Style Meta-Packages from Local Package Files",
       "downloads_last_month": null
     },
@@ -10505,7 +10553,7 @@
     },
     {
       "name": "bigrquerystorage",
-      "version": "1.2.3",
+      "version": "1.3.0",
       "title": "An Interface to Google's 'BigQuery Storage' API",
       "downloads_last_month": null
     },
@@ -11333,14 +11381,8 @@
     },
     {
       "name": "BioTooltipR",
-      "version": "0.1.2",
+      "version": "0.2.0",
       "title": "Add Bio Tooltips to HTML Reports",
-      "downloads_last_month": null
-    },
-    {
-      "name": "BioTrajectory",
-      "version": "1.1.0",
-      "title": "Image Processing Tools for Barnes Maze Experiments",
       "downloads_last_month": null
     },
     {
@@ -11465,7 +11507,7 @@
     },
     {
       "name": "birp",
-      "version": "0.9.2",
+      "version": "0.9.3",
       "title": "Testing for Population Trends Using Low-Cost Ecological Count Data",
       "downloads_last_month": null
     },
@@ -11509,13 +11551,13 @@
       "name": "bit",
       "version": "4.6.0",
       "title": "Classes and Methods for Fast Memory-Efficient Boolean Selections",
-      "downloads_last_month": 632244
+      "downloads_last_month": 621311
     },
     {
       "name": "bit64",
       "version": "4.8.6",
       "title": "A S3 Class for Vectors of 64bit Integers",
-      "downloads_last_month": 689262
+      "downloads_last_month": 675126
     },
     {
       "name": "bitfield",
@@ -12287,7 +12329,7 @@
     },
     {
       "name": "BMisc",
-      "version": "1.4.10",
+      "version": "1.4.11",
       "title": "Miscellaneous Functions for Panel Data, Quantiles, and Printing Results",
       "downloads_last_month": null
     },
@@ -13169,7 +13211,7 @@
     },
     {
       "name": "bpDir",
-      "version": "0.2.6",
+      "version": "0.2.7",
       "title": "Boxplots for Directional Data",
       "downloads_last_month": null
     },
@@ -13525,12 +13567,6 @@
       "name": "bregr",
       "version": "1.5.0",
       "title": "Easy and Efficient Batch Processing of Regression Models",
-      "downloads_last_month": null
-    },
-    {
-      "name": "BRETIGEA",
-      "version": "1.0.3",
-      "title": "Brain Cell Type Specific Gene Expression Analysis",
       "downloads_last_month": null
     },
     {
@@ -13957,7 +13993,7 @@
       "name": "bslib",
       "version": "0.12.0",
       "title": "Custom 'Bootstrap' 'Sass' Themes for 'shiny' and 'rmarkdown'",
-      "downloads_last_month": 1391010
+      "downloads_last_month": 1401348
     },
     {
       "name": "bslibdash",
@@ -14519,7 +14555,7 @@
     },
     {
       "name": "bvarnet",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "title": "Bayesian Estimation of Dynamic VAR Models using Stan",
       "downloads_last_month": null
     },
@@ -14693,7 +14729,7 @@
     },
     {
       "name": "C50",
-      "version": "0.2.0",
+      "version": "1.0.1",
       "title": "C5.0 Decision Trees and Rule-Based Models",
       "downloads_last_month": null
     },
@@ -14749,7 +14785,7 @@
       "name": "cachem",
       "version": "1.1.0",
       "title": "Cache R Objects with Automatic Pruning",
-      "downloads_last_month": 984914
+      "downloads_last_month": 997776
     },
     {
       "name": "cacIRT",
@@ -14995,7 +15031,7 @@
       "name": "callr",
       "version": "3.8.0",
       "title": "Call R from R",
-      "downloads_last_month": 1050389
+      "downloads_last_month": 1034579
     },
     {
       "name": "callsync",
@@ -15119,7 +15155,7 @@
     },
     {
       "name": "camtrapR",
-      "version": "3.1.0",
+      "version": "3.1.1",
       "title": "Camera Trap Data Management and Analysis Framework",
       "downloads_last_month": null
     },
@@ -15143,7 +15179,7 @@
     },
     {
       "name": "cancensus",
-      "version": "0.6.1",
+      "version": "0.6.2",
       "title": "Access, Retrieve, and Work with Canadian Census Data and Geography",
       "downloads_last_month": null
     },
@@ -15179,7 +15215,7 @@
     },
     {
       "name": "CANE",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "title": "Comprehensive Groups of Experiments Analysis for Numerous Environments",
       "downloads_last_month": null
     },
@@ -15227,7 +15263,7 @@
     },
     {
       "name": "canvasXpress",
-      "version": "1.70.3",
+      "version": "1.74.3",
       "title": "Visualization Package for CanvasXpress in R",
       "downloads_last_month": null
     },
@@ -15301,6 +15337,12 @@
       "name": "capn",
       "version": "2.0.0",
       "title": "Capital Asset Pricing for Nature",
+      "downloads_last_month": null
+    },
+    {
+      "name": "capnet",
+      "version": "0.4.1",
+      "title": "Contribution-Capped Elastic Net Regularization",
       "downloads_last_month": null
     },
     {
@@ -15749,7 +15791,7 @@
     },
     {
       "name": "CaseBasedReasoning",
-      "version": "0.4.1",
+      "version": "0.5.0",
       "title": "Case Based Reasoning",
       "downloads_last_month": null
     },
@@ -15821,7 +15863,7 @@
     },
     {
       "name": "castor",
-      "version": "1.8.7",
+      "version": "1.8.8",
       "title": "Efficient Phylogenetics on Large Trees",
       "downloads_last_month": null
     },
@@ -15863,7 +15905,7 @@
     },
     {
       "name": "cataScience",
-      "version": "2.2.0",
+      "version": "3.0.0",
       "title": "Interactive Training App for Data Science and AI Skills",
       "downloads_last_month": null
     },
@@ -16055,7 +16097,7 @@
     },
     {
       "name": "cauchypca",
-      "version": "1.4",
+      "version": "1.5",
       "title": "Robust Principal Component Analysis Using the Cauchy Distribution",
       "downloads_last_month": null
     },
@@ -16121,7 +16163,7 @@
     },
     {
       "name": "causalDisco",
-      "version": "1.2.1",
+      "version": "1.3.0",
       "title": "Tools for Causal Discovery on Observational Data",
       "downloads_last_month": null
     },
@@ -16247,7 +16289,7 @@
     },
     {
       "name": "CausalQueries",
-      "version": "1.4.6",
+      "version": "1.4.7",
       "title": "Make, Update, and Query Binary Causal Models",
       "downloads_last_month": null
     },
@@ -16805,13 +16847,13 @@
     },
     {
       "name": "CDGHMM",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "title": "Hidden Markov Models for Multivariate Panel Data",
       "downloads_last_month": null
     },
     {
       "name": "cdid",
-      "version": "1.2.0.1",
+      "version": "1.3.0.1",
       "title": "The Chained Difference-in-Differences",
       "downloads_last_month": null
     },
@@ -16943,7 +16985,7 @@
     },
     {
       "name": "cdtr",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "title": "Constrained Delaunay Triangulation with Refinement",
       "downloads_last_month": null
     },
@@ -17579,7 +17621,7 @@
     },
     {
       "name": "cg",
-      "version": "1.0-4",
+      "version": "1.0-5",
       "title": "Compare Groups, Analytically and Graphically",
       "downloads_last_month": null
     },
@@ -17896,6 +17938,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "chatcache",
+      "version": "0.1.0",
+      "title": "Persistent Cache for 'ellmer' and 'shinychat' Large Language Model Interactions",
+      "downloads_last_month": null
+    },
+    {
       "name": "chatgpt",
       "version": "0.2.3",
       "title": "Interface to 'ChatGPT' from R",
@@ -18007,7 +18055,7 @@
       "name": "checkmate",
       "version": "2.3.4",
       "title": "Fast and Versatile Argument Checks",
-      "downloads_last_month": 686422
+      "downloads_last_month": 676388
     },
     {
       "name": "checkstring",
@@ -18317,7 +18365,7 @@
     },
     {
       "name": "chms",
-      "version": "7.2",
+      "version": "7.3",
       "title": "Accelerometer Processing Methods for Cycle 7 of the CHMS",
       "downloads_last_month": null
     },
@@ -18389,7 +18437,7 @@
     },
     {
       "name": "chomper",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "title": "A Comprehensive Hit or Miss Probabilistic Entity Resolution Model",
       "downloads_last_month": null
     },
@@ -18670,12 +18718,6 @@
       "downloads_last_month": null
     },
     {
-      "name": "CIMEHR",
-      "version": "0.2.0",
-      "title": "Longitudinal EHR Analysis with Informative Visits and Recording",
-      "downloads_last_month": null
-    },
-    {
       "name": "cimir",
       "version": "0.4-1",
       "title": "Interface to the CIMIS Web API",
@@ -18731,7 +18773,7 @@
     },
     {
       "name": "CINNA",
-      "version": "1.2.2",
+      "version": "1.2.3",
       "title": "Deciphering Central Informative Nodes in Network Analysis",
       "downloads_last_month": null
     },
@@ -18785,7 +18827,7 @@
     },
     {
       "name": "circda",
-      "version": "1.1",
+      "version": "1.2",
       "title": "Circular Data Analysis",
       "downloads_last_month": null
     },
@@ -19049,7 +19091,7 @@
     },
     {
       "name": "cito",
-      "version": "1.1",
+      "version": "1.2.1",
       "title": "Building and Training Neural Networks",
       "downloads_last_month": null
     },
@@ -19477,7 +19519,7 @@
       "name": "cli",
       "version": "3.6.6",
       "title": "Helpers for Developing Command Line Interfaces",
-      "downloads_last_month": 2005312
+      "downloads_last_month": 2000238
     },
     {
       "name": "cliapp",
@@ -19577,7 +19619,7 @@
     },
     {
       "name": "ClimaRep",
-      "version": "1.1",
+      "version": "1.2",
       "title": "Estimating Climate Analogue Areas",
       "downloads_last_month": null
     },
@@ -19847,7 +19889,7 @@
     },
     {
       "name": "clipp",
-      "version": "1.2.0",
+      "version": "2.0.0",
       "title": "Calculating Likelihoods by Pedigree Paring",
       "downloads_last_month": null
     },
@@ -20429,7 +20471,7 @@
     },
     {
       "name": "clustur",
-      "version": "0.1.4",
+      "version": "0.2.1",
       "title": "Clustering",
       "downloads_last_month": null
     },
@@ -20855,7 +20897,7 @@
     },
     {
       "name": "CNVScope",
-      "version": "3.7.7",
+      "version": "3.7.10",
       "title": "A Versatile Toolkit for Copy Number Variation Relationship Data Analysis and Visualization",
       "downloads_last_month": null
     },
@@ -21055,12 +21097,6 @@
       "name": "codalm",
       "version": "0.1.3",
       "title": "Transformation-Free Linear Regression for Compositional Outcomes and Predictors",
-      "downloads_last_month": null
-    },
-    {
-      "name": "CoDaLoMic",
-      "version": "0.1.1",
-      "title": "Compositional Models to Longitudinal Microbiome Data",
       "downloads_last_month": null
     },
     {
@@ -21287,7 +21323,7 @@
     },
     {
       "name": "CoFM",
-      "version": "1.1.4",
+      "version": "1.2.6",
       "title": "Copula Factor Models",
       "downloads_last_month": null
     },
@@ -21329,7 +21365,7 @@
     },
     {
       "name": "cograph",
-      "version": "2.7.2",
+      "version": "2.7.17",
       "title": "Analysis and Visualization of Complex Networks",
       "downloads_last_month": null
     },
@@ -21346,8 +21382,14 @@
       "downloads_last_month": null
     },
     {
+      "name": "cohortBuilder.db",
+      "version": "1.0.0",
+      "title": "Database Source Layer for 'cohortBuilder'",
+      "downloads_last_month": null
+    },
+    {
       "name": "CohortCharacteristics",
-      "version": "1.1.3",
+      "version": "1.1.4",
       "title": "Summarise and Visualise Characteristics of Patients in the OMOP CDM",
       "downloads_last_month": null
     },
@@ -21587,7 +21629,7 @@
     },
     {
       "name": "collinear",
-      "version": "3.0.2",
+      "version": "3.0.3",
       "title": "Automated Multicollinearity Management",
       "downloads_last_month": null
     },
@@ -22069,7 +22111,7 @@
       "name": "commonmark",
       "version": "2.0.0",
       "title": "High Performance CommonMark and Github Markdown Rendering in R",
-      "downloads_last_month": 628560
+      "downloads_last_month": 623891
     },
     {
       "name": "CommonMean.Copula",
@@ -22079,7 +22121,7 @@
     },
     {
       "name": "commons",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "title": "AI Agents for Data Analysis",
       "downloads_last_month": null
     },
@@ -22235,7 +22277,7 @@
     },
     {
       "name": "Compind",
-      "version": "3.7",
+      "version": "3.8",
       "title": "Composite Indicators Functions",
       "downloads_last_month": null
     },
@@ -22373,7 +22415,7 @@
     },
     {
       "name": "CompositionalLASSO",
-      "version": "1.0",
+      "version": "1.1",
       "title": "LASSO Compositional Data Regression",
       "downloads_last_month": null
     },
@@ -22871,13 +22913,13 @@
     },
     {
       "name": "confoundvis",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "title": "A Common Interface for Visualizing and Reporting Sensitivity Analyses for Unmeasured Confounding",
       "downloads_last_month": null
     },
     {
       "name": "confreq",
-      "version": "1.6.1-3",
+      "version": "1.7.0-7",
       "title": "Configural Frequencies Analysis Using Log-Linear Modeling",
       "downloads_last_month": null
     },
@@ -23519,7 +23561,7 @@
     },
     {
       "name": "cooccure",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "title": "Co-Occurrence Network Construction and Manipulation",
       "downloads_last_month": null
     },
@@ -23635,12 +23677,6 @@
       "name": "CopernicusDEM",
       "version": "1.0.5",
       "title": "Copernicus Digital Elevation Models",
-      "downloads_last_month": null
-    },
-    {
-      "name": "CopernicusMarine",
-      "version": "0.5.0",
-      "title": "Search Download and Handle Data from Copernicus Marine Service Information",
       "downloads_last_month": null
     },
     {
@@ -23879,7 +23915,7 @@
     },
     {
       "name": "coresynth",
-      "version": "1.0.1",
+      "version": "1.2.0",
       "title": "Fast and Unified Synthetic Control Methods",
       "downloads_last_month": null
     },
@@ -24025,6 +24061,12 @@
       "name": "CorrectedFDR",
       "version": "1.1",
       "title": "Correcting False Discovery Rates",
+      "downloads_last_month": null
+    },
+    {
+      "name": "correctedWS",
+      "version": "0.1.0",
+      "title": "Corrected Welch-Satterthwaite Degrees of Freedom",
       "downloads_last_month": null
     },
     {
@@ -24767,7 +24809,7 @@
     },
     {
       "name": "CoxBoost",
-      "version": "1.5.2",
+      "version": "1.5.3",
       "title": "Cox Models by Likelihood Based Boosting for a Single Survival Endpoint or Competing Risks",
       "downloads_last_month": null
     },
@@ -25051,7 +25093,7 @@
       "name": "cpp11",
       "version": "0.5.5",
       "title": "A C++11 Interface for R's C Interface",
-      "downloads_last_month": 1575197
+      "downloads_last_month": 1550187
     },
     {
       "name": "cpp11armadillo",
@@ -25303,7 +25345,7 @@
       "name": "crayon",
       "version": "1.5.3",
       "title": "Colored Terminal Output",
-      "downloads_last_month": 989726
+      "downloads_last_month": 982725
     },
     {
       "name": "crayons",
@@ -26549,7 +26591,7 @@
     },
     {
       "name": "Cubist",
-      "version": "0.6.0",
+      "version": "1.0.0",
       "title": "Rule- And Instance-Based Regression Modeling",
       "downloads_last_month": null
     },
@@ -26584,6 +26626,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "cumba",
+      "version": "0.1.0",
+      "title": "Carbon Use Model for Yield and Brix Assessment in Processing Tomato",
+      "downloads_last_month": null
+    },
+    {
       "name": "CUMP",
       "version": "2.0",
       "title": "Analyze Multivariate Phenotypes by Combining Univariate Results",
@@ -26603,7 +26651,7 @@
     },
     {
       "name": "CUNYsports",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "title": "Accessible Collegiate Athletics Data from the City University of New York (CUNY)",
       "downloads_last_month": null
     },
@@ -26653,7 +26701,7 @@
       "name": "curl",
       "version": "8.1.0",
       "title": "A Modern and Flexible Web Client for R",
-      "downloads_last_month": 1260616
+      "downloads_last_month": 1229580
     },
     {
       "name": "currencyapi",
@@ -26977,6 +27025,12 @@
       "name": "cvTools",
       "version": "0.3.3",
       "title": "Cross-Validation Tools for Regression Models",
+      "downloads_last_month": null
+    },
+    {
+      "name": "cvxoptdes",
+      "version": "1.0.1",
+      "title": "Convex Optimal Experiment Design",
       "downloads_last_month": null
     },
     {
@@ -27419,7 +27473,7 @@
     },
     {
       "name": "daltoolbox",
-      "version": "1.3.787",
+      "version": "1.4.707",
       "title": "Leveraging Experiment Lines to Data Analytics",
       "downloads_last_month": null
     },
@@ -27569,13 +27623,13 @@
     },
     {
       "name": "dartR.base",
-      "version": "1.2.3",
+      "version": "1.3.0",
       "title": "Analysing 'SNP' and 'Silicodart' Data - Basic Functions",
       "downloads_last_month": null
     },
     {
       "name": "dartR.captive",
-      "version": "1.2.2",
+      "version": "1.3.1",
       "title": "Analysing 'SNP' Data to Support Captive Breeding",
       "downloads_last_month": null
     },
@@ -27587,31 +27641,31 @@
     },
     {
       "name": "dartR.popgen",
-      "version": "1.2.2",
+      "version": "1.3.0",
       "title": "Analysing 'SNP' and 'Silicodart' Data Generated by Genome-Wide Restriction Fragment Analysis",
       "downloads_last_month": null
     },
     {
       "name": "dartR.sexlinked",
-      "version": "1.2.2",
+      "version": "1.3.0",
       "title": "Analysing SNP Data to Identify Sex-Linked Markers",
       "downloads_last_month": null
     },
     {
       "name": "dartR.sim",
-      "version": "1.2.2",
+      "version": "1.3.0",
       "title": "Computer Simulations of 'SNP' Data",
       "downloads_last_month": null
     },
     {
       "name": "dartR.spatial",
-      "version": "1.2.2",
+      "version": "1.3.0",
       "title": "Applying Landscape Genomic Methods on 'SNP' and 'Silicodart' Data",
       "downloads_last_month": null
     },
     {
       "name": "dartRverse",
-      "version": "1.0.6",
+      "version": "1.3.0",
       "title": "Install and Load the 'dartRverse' Suits of Packages",
       "downloads_last_month": null
     },
@@ -27665,7 +27719,7 @@
     },
     {
       "name": "data.sketches",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "title": "Probabilistic Streaming Data Sketches",
       "downloads_last_month": null
     },
@@ -27673,7 +27727,7 @@
       "name": "data.table",
       "version": "1.18.6.1",
       "title": "Extension of 'data.frame'",
-      "downloads_last_month": 790905
+      "downloads_last_month": 781599
     },
     {
       "name": "data.table.threads",
@@ -27953,7 +28007,7 @@
     },
     {
       "name": "datapond",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "title": "Query Curated 'DuckDB' Databases Built from Public Data",
       "downloads_last_month": null
     },
@@ -28145,7 +28199,7 @@
     },
     {
       "name": "datasusr",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "title": "Fast Access to Brazilian Public Health Data from 'DATASUS'",
       "downloads_last_month": null
     },
@@ -28379,7 +28433,7 @@
     },
     {
       "name": "dbcturbo",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "title": "High-Performance Streaming Reader for 'DATASUS' DBC Files",
       "downloads_last_month": null
     },
@@ -28541,7 +28595,7 @@
     },
     {
       "name": "dbscan",
-      "version": "1.2.7",
+      "version": "1.3.0",
       "title": "Density-Based Spatial Clustering of Applications with Noise (DBSCAN) and Related Algorithms",
       "downloads_last_month": null
     },
@@ -29783,7 +29837,7 @@
     },
     {
       "name": "dendroTools",
-      "version": "1.2.16",
+      "version": "2.0.0",
       "title": "Linear and Nonlinear Methods for Analyzing Daily and Monthly Dendroclimatological Data",
       "downloads_last_month": null
     },
@@ -29975,7 +30029,7 @@
     },
     {
       "name": "depictr",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "title": "A Unified Toolkit for Visualising Statistical Models and Data",
       "downloads_last_month": null
     },
@@ -30115,7 +30169,7 @@
       "name": "desc",
       "version": "1.4.3",
       "title": "Manipulate DESCRIPTION Files",
-      "downloads_last_month": 797577
+      "downloads_last_month": 793542
     },
     {
       "name": "DeSciDe",
@@ -30247,6 +30301,12 @@
       "name": "Design.parameters",
       "version": "0.1.0",
       "title": "Parameters of the Experimental Designs",
+      "downloads_last_month": null
+    },
+    {
+      "name": "DesignComplexSurvival",
+      "version": "0.4.0",
+      "title": "Simulation-Free Design of Complex Time-to-Event Trials",
       "downloads_last_month": null
     },
     {
@@ -30767,7 +30827,7 @@
     },
     {
       "name": "dgtf",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "title": "Variational and Monte Carlo Inference for Bayesian State-Space Models of Count Data",
       "downloads_last_month": null
     },
@@ -31175,7 +31235,7 @@
     },
     {
       "name": "diffdriver",
-      "version": "0.1.7",
+      "version": "0.1.8",
       "title": "Identify Differential Selection",
       "downloads_last_month": null
     },
@@ -31327,7 +31387,7 @@
       "name": "digest",
       "version": "0.6.39",
       "title": "Create Compact Hash Digests of R Objects",
-      "downloads_last_month": 1127578
+      "downloads_last_month": 1135316
     },
     {
       "name": "DigestiveDataSets",
@@ -31865,7 +31925,7 @@
     },
     {
       "name": "diseasystore",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "title": "Feature Stores for the 'diseasy' Framework",
       "downloads_last_month": null
     },
@@ -32333,13 +32393,13 @@
     },
     {
       "name": "divest",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "title": "Get Images Out of DICOM Format Quickly",
       "downloads_last_month": null
     },
     {
       "name": "DIVINE",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "title": "Curated Datasets and Tools for Epidemiological Data Analysis",
       "downloads_last_month": null
     },
@@ -33397,7 +33457,7 @@
       "name": "dplyr",
       "version": "1.2.1",
       "title": "A Grammar of Data Manipulation",
-      "downloads_last_month": 1720830
+      "downloads_last_month": 1710756
     },
     {
       "name": "dplyrAssist",
@@ -33791,7 +33851,7 @@
     },
     {
       "name": "DrivePlotR",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "title": "Linked Plot Maps for Multivariate High-Resolution Spatio-Temporal Data",
       "downloads_last_month": null
     },
@@ -34109,7 +34169,7 @@
     },
     {
       "name": "dsFedAteClient",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "title": "Federated Average Treatment Effect Estimation Across Studies",
       "downloads_last_month": null
     },
@@ -34145,7 +34205,7 @@
     },
     {
       "name": "DSIR",
-      "version": "0.13.0",
+      "version": "0.15.0",
       "title": "Data Science Infrastructure for Global Health",
       "downloads_last_month": null
     },
@@ -34199,7 +34259,7 @@
     },
     {
       "name": "DSMolgenisArmadillo",
-      "version": "4.0.1",
+      "version": "4.0.3",
       "title": "'DataSHIELD' Client for 'MOLGENIS Armadillo'",
       "downloads_last_month": null
     },
@@ -34643,7 +34703,7 @@
     },
     {
       "name": "duckdb",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "title": "DBI Package for the DuckDB Database Management System",
       "downloads_last_month": null
     },
@@ -34685,7 +34745,7 @@
     },
     {
       "name": "duckspatial",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "title": "R Interface to 'DuckDB' Database with Spatial Extension",
       "downloads_last_month": null
     },
@@ -34931,7 +34991,7 @@
     },
     {
       "name": "Dyn4cast",
-      "version": "11.11.28",
+      "version": "11.11.28-1",
       "title": "Dynamic Modeling and Machine Learning Environment",
       "downloads_last_month": null
     },
@@ -35249,7 +35309,7 @@
     },
     {
       "name": "earthdatalogin",
-      "version": "0.0.5",
+      "version": "0.0.6",
       "title": "NASA 'EarthData' Access Utilities",
       "downloads_last_month": null
     },
@@ -35795,7 +35855,7 @@
     },
     {
       "name": "eCerto",
-      "version": "0.8.11",
+      "version": "0.8.30",
       "title": "Statistical Tests for the Production of Reference Materials",
       "downloads_last_month": null
     },
@@ -36371,7 +36431,7 @@
     },
     {
       "name": "EDE",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "title": "Extinction Date Estimation from Sighting Records",
       "downloads_last_month": null
     },
@@ -36431,7 +36491,7 @@
     },
     {
       "name": "edgebundle",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "title": "Algorithms for Bundling Edges in Networks and Visualizing Flow and Metro Maps",
       "downloads_last_month": null
     },
@@ -36455,7 +36515,7 @@
     },
     {
       "name": "edgemodelr",
-      "version": "0.4.5",
+      "version": "0.7.0",
       "title": "Local Large Language Model Inference Engine",
       "downloads_last_month": null
     },
@@ -37445,13 +37505,13 @@
     },
     {
       "name": "EloRating",
-      "version": "0.46.18",
+      "version": "0.46.20",
       "title": "Animal Dominance Hierarchies by Elo Rating",
       "downloads_last_month": null
     },
     {
       "name": "EloSteepness",
-      "version": "0.5.0",
+      "version": "0.5.2",
       "title": "Bayesian Dominance Hierarchy Steepness via Elo Rating and David's Scores",
       "downloads_last_month": null
     },
@@ -37720,6 +37780,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "EMLMLasso",
+      "version": "0.1.0",
+      "title": "EM Algorithm for Lasso-Penalized Linear Mixed Models",
+      "downloads_last_month": null
+    },
+    {
       "name": "emln",
       "version": "1.2.0",
       "title": "Organize, Handle, and Explore Ecological Multilayer Networks",
@@ -37733,7 +37799,7 @@
     },
     {
       "name": "emmeans",
-      "version": "2.0.4",
+      "version": "2.0.5",
       "title": "Estimated Marginal Means, aka Least-Squares Means",
       "downloads_last_month": null
     },
@@ -37822,6 +37888,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "emphasis",
+      "version": "1.1.0",
+      "title": "Monte Carlo Inference for Phylogenetic Diversification Models",
+      "downloads_last_month": null
+    },
+    {
       "name": "emphatic",
       "version": "0.1.8",
       "title": "Exploratory Analysis of Tabular Data using Colour Highlighting",
@@ -37867,6 +37939,12 @@
       "name": "emplikCS",
       "version": "0.4",
       "title": "Empirical Likelihood with Current Status Data for Mean, Probability, Hazard",
+      "downloads_last_month": null
+    },
+    {
+      "name": "emplikDTA",
+      "version": "0.1.0",
+      "title": "Empirical Likelihood Inference for Diagnostic Test Accuracy",
       "downloads_last_month": null
     },
     {
@@ -38033,8 +38111,8 @@
     },
     {
       "name": "enetLTS",
-      "version": "1.1.0",
-      "title": "Robust and Sparse Methods for High Dimensional Linear and Binary and Multinomial Regression",
+      "version": "1.2.0",
+      "title": "Robust and Sparse Methods for High Dimensional Linear, Binary and Multinomial Regression",
       "downloads_last_month": null
     },
     {
@@ -38585,7 +38663,7 @@
     },
     {
       "name": "epigrowthfit",
-      "version": "0.15.4",
+      "version": "0.16.1",
       "title": "Nonlinear Mixed Effects Models of Epidemic Growth",
       "downloads_last_month": null
     },
@@ -38969,7 +39047,7 @@
     },
     {
       "name": "eq5d",
-      "version": "0.17.0",
+      "version": "0.17.1",
       "title": "Methods for Analysing 'EQ-5D' Data and Calculating 'EQ-5D' Index Scores",
       "downloads_last_month": null
     },
@@ -39533,7 +39611,7 @@
     },
     {
       "name": "essential8",
-      "version": "0.9.0",
+      "version": "0.9.1",
       "title": "Reproducible Cardiovascular Health Metric Scoring",
       "downloads_last_month": null
     },
@@ -39719,7 +39797,7 @@
     },
     {
       "name": "etasFLP",
-      "version": "2.3.0",
+      "version": "2.4.0",
       "title": "Mixed FLP and ML Estimation of ETAS Space-Time Point Processes for Earthquake Description",
       "downloads_last_month": null
     },
@@ -39857,7 +39935,7 @@
     },
     {
       "name": "eulerr",
-      "version": "8.3.1",
+      "version": "8.4.3",
       "title": "Area-Proportional Euler and Venn Diagrams",
       "downloads_last_month": null
     },
@@ -39967,7 +40045,7 @@
       "name": "evaluate",
       "version": "1.0.5",
       "title": "Parsing and Evaluation Tools that Provide More Details than the Default",
-      "downloads_last_month": 919451
+      "downloads_last_month": 913704
     },
     {
       "name": "EvaluateCore",
@@ -40355,7 +40433,7 @@
     },
     {
       "name": "EWSmethods",
-      "version": "1.3.3",
+      "version": "1.3.4",
       "title": "Forecasting Tipping Points at the Community Level",
       "downloads_last_month": null
     },
@@ -40463,7 +40541,7 @@
     },
     {
       "name": "examly",
-      "version": "0.3",
+      "version": "0.5",
       "title": "Statistical Metrics and Reporting Tool",
       "downloads_last_month": null
     },
@@ -40925,7 +41003,7 @@
     },
     {
       "name": "expsmooth",
-      "version": "2.3",
+      "version": "2.4.0",
       "title": "Data Sets from \"Forecasting with Exponential Smoothing\"",
       "downloads_last_month": null
     },
@@ -41495,7 +41573,7 @@
     },
     {
       "name": "facomplex",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "title": "Methods for Assessing Factor Complexity and Simplicity in Factor Analysis Solutions",
       "downloads_last_month": null
     },
@@ -41608,6 +41686,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "FactorialSurvey",
+      "version": "0.3.0",
+      "title": "Design and Analysis of Factorial Survey (Vignette) Experiments",
+      "downloads_last_month": null
+    },
+    {
       "name": "factormodel",
       "version": "1.0",
       "title": "Factor Model Estimation Using Proxy Variables",
@@ -41645,7 +41729,7 @@
     },
     {
       "name": "factree",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "title": "Factor-Augmented Clustering Tree",
       "downloads_last_month": null
     },
@@ -42037,7 +42121,7 @@
       "name": "farver",
       "version": "2.1.2",
       "title": "High Performance Colour Space Manipulation",
-      "downloads_last_month": 1215840
+      "downloads_last_month": 1194333
     },
     {
       "name": "FAS",
@@ -42185,7 +42269,7 @@
     },
     {
       "name": "fasterRaster",
-      "version": "8.4.1.2",
+      "version": "8.4.1.3",
       "title": "Faster Raster and Spatial Vector Processing Using 'GRASS'",
       "downloads_last_month": null
     },
@@ -42367,7 +42451,7 @@
       "name": "fastmap",
       "version": "1.2.0",
       "title": "Fast Data Structures",
-      "downloads_last_month": 994947
+      "downloads_last_month": 1008174
     },
     {
       "name": "fastmatch",
@@ -42473,7 +42557,7 @@
     },
     {
       "name": "fastQR",
-      "version": "1.1.5",
+      "version": "1.2.0",
       "title": "Fast QR Decomposition and Update",
       "downloads_last_month": null
     },
@@ -42503,7 +42587,7 @@
     },
     {
       "name": "fastrda",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "title": "Fast Redundancy Analysis (RDA) with High-Performance 'C++' Backend",
       "downloads_last_month": null
     },
@@ -42725,7 +42809,7 @@
     },
     {
       "name": "favr",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "title": "Function Argument Validation",
       "downloads_last_month": null
     },
@@ -42773,7 +42857,7 @@
     },
     {
       "name": "FBMS",
-      "version": "1.4",
+      "version": "1.4.1",
       "title": "Flexible Bayesian Model Selection and Model Averaging",
       "downloads_last_month": null
     },
@@ -42803,7 +42887,7 @@
     },
     {
       "name": "fbrglm",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "title": "Safe Formula-Based Regularized Generalized Linear Models",
       "downloads_last_month": null
     },
@@ -43019,7 +43103,7 @@
     },
     {
       "name": "fdaMocca",
-      "version": "0.1-2",
+      "version": "1.1-0",
       "title": "Model-Based Clustering for Functional Data with Covariates",
       "downloads_last_month": null
     },
@@ -43067,13 +43151,13 @@
     },
     {
       "name": "fdaSP",
-      "version": "1.1.3",
+      "version": "1.1.4",
       "title": "Sparse Functional Data Analysis Methods",
       "downloads_last_month": null
     },
     {
       "name": "fdasrvf",
-      "version": "2.5.1",
+      "version": "2.6.0",
       "title": "Elastic Functional Data Analysis",
       "downloads_last_month": null
     },
@@ -43228,6 +43312,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "feasiblesize",
+      "version": "0.1.0",
+      "title": "Feasible Sample Sizes from Incomplete Design Information",
+      "downloads_last_month": null
+    },
+    {
       "name": "feasts",
       "version": "0.5.0",
       "title": "Feature Extraction and Statistics for Time Series",
@@ -43373,7 +43463,7 @@
     },
     {
       "name": "fEGarch",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "title": "SM/LM EGARCH & GARCH, VaR/ES Backtesting & Dual LM Extensions",
       "downloads_last_month": null
     },
@@ -43493,7 +43583,7 @@
     },
     {
       "name": "fetwfe",
-      "version": "1.10.0",
+      "version": "1.10.1",
       "title": "Fused Extended Two-Way Fixed Effects",
       "downloads_last_month": null
     },
@@ -43511,7 +43601,7 @@
     },
     {
       "name": "ffaframework",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "title": "Flood Frequency Analysis Framework",
       "downloads_last_month": null
     },
@@ -43913,7 +44003,7 @@
     },
     {
       "name": "fillpattern",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "title": "Patterned Fills for 'ggplot2' and 'grid' Graphics",
       "downloads_last_month": null
     },
@@ -44075,7 +44165,7 @@
     },
     {
       "name": "findSVI",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "title": "Calculate Social Vulnerability Index for Communities",
       "downloads_last_month": null
     },
@@ -44141,7 +44231,7 @@
     },
     {
       "name": "FINN",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "title": "Forest Informed Neural Networks",
       "downloads_last_month": null
     },
@@ -44567,7 +44657,7 @@
     },
     {
       "name": "FitVerse",
-      "version": "1.0-3",
+      "version": "1.0-4",
       "title": "Parametric Distribution Fitting and Analysis",
       "downloads_last_month": null
     },
@@ -44782,6 +44872,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "flatratemath",
+      "version": "0.2.0",
+      "title": "Benchmark Math for Flat-Rate Software Subscriptions",
+      "downloads_last_month": null
+    },
+    {
       "name": "flattabler",
       "version": "2.1.2",
       "title": "Obtaining a Flat Table from Pivot Tables",
@@ -44897,7 +44993,7 @@
     },
     {
       "name": "flexlsx",
-      "version": "1.0.0",
+      "version": "1.1.1",
       "title": "Exporting 'flextable' to 'xlsx' Files",
       "downloads_last_month": null
     },
@@ -45017,7 +45113,7 @@
     },
     {
       "name": "flextable",
-      "version": "0.10.4",
+      "version": "0.10.5",
       "title": "Functions for Tabular Reporting",
       "downloads_last_month": null
     },
@@ -45047,7 +45143,7 @@
     },
     {
       "name": "flightsbr",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "title": "Download Flight and Airport Data from Brazil",
       "downloads_last_month": null
     },
@@ -45181,6 +45277,12 @@
       "name": "flourishcharts",
       "version": "1.0.0.3",
       "title": "'Flourish' for 'R' and 'Python'",
+      "downloads_last_month": null
+    },
+    {
+      "name": "flourishR",
+      "version": "0.1.0",
+      "title": "Tools for Reproducible Wellbeing and Survey Data Analysis",
       "downloads_last_month": null
     },
     {
@@ -45661,7 +45763,7 @@
       "name": "fontawesome",
       "version": "0.5.3",
       "title": "Easily Work with 'Font Awesome' Icons",
-      "downloads_last_month": 951916
+      "downloads_last_month": 964543
     },
     {
       "name": "fontBitstreamVera",
@@ -47053,7 +47155,7 @@
       "name": "fs",
       "version": "2.1.0",
       "title": "Cross-Platform File System Operations Based on 'libuv'",
-      "downloads_last_month": 1668958
+      "downloads_last_month": 1668301
     },
     {
       "name": "FSA",
@@ -47081,7 +47183,7 @@
     },
     {
       "name": "fscontext",
-      "version": "0.2.1",
+      "version": "0.2.3",
       "title": "File System Contextualisation and Record Set Reconstruction",
       "downloads_last_month": null
     },
@@ -47447,7 +47549,7 @@
     },
     {
       "name": "funData",
-      "version": "1.3-9",
+      "version": "1.3-10",
       "title": "An S4 Class for Functional Data",
       "downloads_last_month": null
     },
@@ -47747,14 +47849,14 @@
     },
     {
       "name": "future.batchtools",
-      "version": "0.31.0",
-      "title": "A Future API for Parallel and Distributed Processing using 'batchtools'",
+      "version": "0.32.0",
+      "title": "Parallel Future Backend for HPC Schedulers using 'batchtools'",
       "downloads_last_month": null
     },
     {
       "name": "future.callr",
-      "version": "1.0.1",
-      "title": "A Future API for Parallel Processing using 'callr'",
+      "version": "1.0.2",
+      "title": "Parallel Future Backend using 'callr'",
       "downloads_last_month": null
     },
     {
@@ -47777,7 +47879,7 @@
     },
     {
       "name": "futurize",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "title": "Parallelize Common Functions via One Magic Function",
       "downloads_last_month": null
     },
@@ -48065,7 +48167,7 @@
     },
     {
       "name": "gadget3",
-      "version": "1.0-0",
+      "version": "1.1-0",
       "title": "Globally-Applicable Area Disaggregated General Ecosystem Toolbox V3",
       "downloads_last_month": null
     },
@@ -48101,7 +48203,7 @@
     },
     {
       "name": "galah",
-      "version": "2.3.0",
+      "version": "2.4.0",
       "title": "Biodiversity Data from the GBIF Node Network",
       "downloads_last_month": null
     },
@@ -48217,6 +48319,12 @@
       "name": "GameTheory",
       "version": "2.7.1",
       "title": "Cooperative Game Theory",
+      "downloads_last_month": null
+    },
+    {
+      "name": "gamfluence",
+      "version": "0.1.1",
+      "title": "Deletion Influence Diagnostics for 'mgcv' Additive Models",
       "downloads_last_month": null
     },
     {
@@ -49651,7 +49759,7 @@
       "name": "generics",
       "version": "0.1.4",
       "title": "Common S3 Generics not Provided by Base R Methods Related to Model Fitting",
-      "downloads_last_month": 1245180
+      "downloads_last_month": 1231542
     },
     {
       "name": "GeneScape",
@@ -49823,7 +49931,7 @@
     },
     {
       "name": "GenomeAdmixR",
-      "version": "2.1.13.2",
+      "version": "2.1.15",
       "title": "Simulate Admixture of Genomes",
       "downloads_last_month": null
     },
@@ -49901,7 +50009,7 @@
     },
     {
       "name": "genridge",
-      "version": "0.8.0",
+      "version": "0.8.1",
       "title": "Generalized Ridge Trace Plots for Ridge Regression",
       "downloads_last_month": null
     },
@@ -50081,7 +50189,7 @@
     },
     {
       "name": "GeoDensityR",
-      "version": "0.2.0",
+      "version": "0.2.2",
       "title": "Generate Density Rasters from Polygon and Census Data",
       "downloads_last_month": null
     },
@@ -50110,6 +50218,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "geodl",
+      "version": "0.4.0",
+      "title": "Geospatial Semantic Segmentation with Torch and Terra",
+      "downloads_last_month": null
+    },
+    {
       "name": "geodrawr",
       "version": "2.0.0",
       "title": "Making Geospatial Objects",
@@ -50131,6 +50245,12 @@
       "name": "geoelectrics",
       "version": "0.2.2",
       "title": "3D-Visualization of Geoelectric Resistivity Measurement Profiles",
+      "downloads_last_month": null
+    },
+    {
+      "name": "GeoEpiAI",
+      "version": "0.1.0",
+      "title": "GeoAI and Digital Epidemiology Tools for Disease Surveillance",
       "downloads_last_month": null
     },
     {
@@ -50597,7 +50717,7 @@
     },
     {
       "name": "geozarr",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "title": "GeoZarr Conventions for Geospatial Data in Zarr Stores",
       "downloads_last_month": null
     },
@@ -51713,7 +51833,7 @@
     },
     {
       "name": "ggInterval",
-      "version": "0.2.5",
+      "version": "0.2.6",
       "title": "Visualizing Interval-Valued Data Using 'ggplot2'",
       "downloads_last_month": null
     },
@@ -51731,7 +51851,7 @@
     },
     {
       "name": "ggiraph",
-      "version": "0.9.6",
+      "version": "0.9.7",
       "title": "Make 'ggplot2' Graphics Interactive",
       "downloads_last_month": null
     },
@@ -51875,7 +51995,7 @@
     },
     {
       "name": "ggmlR",
-      "version": "0.8.8.1",
+      "version": "0.9.0",
       "title": "'GGML' Tensor Operations for Machine Learning",
       "downloads_last_month": null
     },
@@ -52075,7 +52195,7 @@
       "name": "ggplot2",
       "version": "4.0.4",
       "title": "Create Elegant Data Visualisations Using the Grammar of Graphics",
-      "downloads_last_month": 2059379
+      "downloads_last_month": 2076524
     },
     {
       "name": "ggplot2.utils",
@@ -52121,7 +52241,7 @@
     },
     {
       "name": "ggPMX",
-      "version": "1.3.2",
+      "version": "1.3.3",
       "title": "'ggplot2' Based Tool to Facilitate Diagnostic Plots for NLME Models",
       "downloads_last_month": null
     },
@@ -52835,7 +52955,7 @@
     },
     {
       "name": "ghql",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "title": "General Purpose 'GraphQL' Client",
       "downloads_last_month": null
     },
@@ -52847,7 +52967,7 @@
     },
     {
       "name": "GHRmodel",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "title": "Bayesian Hierarchical Modelling of Spatio-Temporal Health Data",
       "downloads_last_month": null
     },
@@ -53065,6 +53185,12 @@
       "name": "gipsDA",
       "version": "1.0.0",
       "title": "Discriminant Analysis with Permutation-Invariant Covariance Models",
+      "downloads_last_month": null
+    },
+    {
+      "name": "GIR",
+      "version": "0.2.1",
+      "title": "Gini Index Regression with Bayesian Bootstrap Inference",
       "downloads_last_month": null
     },
     {
@@ -53537,7 +53663,7 @@
     },
     {
       "name": "GLMMadaptive",
-      "version": "0.9-7",
+      "version": "0.9-9",
       "title": "Generalized Linear Mixed Models using Adaptive Gaussian Quadrature",
       "downloads_last_month": null
     },
@@ -53899,7 +54025,7 @@
       "name": "glue",
       "version": "1.8.1",
       "title": "Interpreted String Literals",
-      "downloads_last_month": 1715438
+      "downloads_last_month": 1716828
     },
     {
       "name": "glueDo",
@@ -54209,7 +54335,7 @@
     },
     {
       "name": "GMTM",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "title": "Gaussian Mixture Topic Models",
       "downloads_last_month": null
     },
@@ -54743,7 +54869,7 @@
     },
     {
       "name": "gosset",
-      "version": "1.5.1",
+      "version": "2.0.0",
       "title": "Tools for Data Analysis in Experimental Agriculture",
       "downloads_last_month": null
     },
@@ -54833,7 +54959,7 @@
     },
     {
       "name": "GPAbin",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "title": "Unifying Multiple Biplot Visualisations into a Single Display",
       "downloads_last_month": null
     },
@@ -55079,7 +55205,7 @@
     },
     {
       "name": "gpmapr",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "title": "Query the 'OpenGWAS' Genotype-Phenotype Map",
       "downloads_last_month": null
     },
@@ -55163,7 +55289,7 @@
     },
     {
       "name": "gptr",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "title": "Language Model Agents in Live 'R' Sessions",
       "downloads_last_month": null
     },
@@ -55511,7 +55637,7 @@
     },
     {
       "name": "gratia",
-      "version": "0.11.2",
+      "version": "0.12.1",
       "title": "Graceful 'ggplot'-Based Graphics and Other Functions for GAMs Fitted Using 'mgcv'",
       "downloads_last_month": null
     },
@@ -55855,7 +55981,7 @@
       "name": "gridExtra",
       "version": "2.3.1",
       "title": "Miscellaneous Functions for \"Grid\" Graphics",
-      "downloads_last_month": 824977
+      "downloads_last_month": 808598
     },
     {
       "name": "gridGeometry",
@@ -56057,7 +56183,7 @@
     },
     {
       "name": "groupedHyperframe.random",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "title": "Simulated Point-Pattern via Vectorized Parameterization",
       "downloads_last_month": null
     },
@@ -56255,7 +56381,7 @@
     },
     {
       "name": "grumpy",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "title": "Read 'NumPy' '.npy' and '.npz' Files",
       "downloads_last_month": null
     },
@@ -56599,7 +56725,7 @@
       "name": "gtable",
       "version": "0.3.6",
       "title": "Arrange 'Grobs' in Tables",
-      "downloads_last_month": 1293620
+      "downloads_last_month": 1263115
     },
     {
       "name": "gtakeout",
@@ -56723,7 +56849,7 @@
     },
     {
       "name": "GTFSwizard",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "title": "Creating, Exploring, and Manipulating GTFS Files",
       "downloads_last_month": null
     },
@@ -57239,7 +57365,7 @@
     },
     {
       "name": "h3sdm",
-      "version": "0.1.7",
+      "version": "0.1.9",
       "title": "Species Distribution Modeling with H3 Grids",
       "downloads_last_month": null
     },
@@ -57395,7 +57521,7 @@
     },
     {
       "name": "handwriter",
-      "version": "3.2.4",
+      "version": "3.3.0",
       "title": "Handwriting Analysis in R",
       "downloads_last_month": null
     },
@@ -57887,7 +58013,7 @@
     },
     {
       "name": "HDANOVA",
-      "version": "0.8.5",
+      "version": "0.8.6",
       "title": "High-Dimensional Analysis of Variance",
       "downloads_last_month": null
     },
@@ -58253,7 +58379,7 @@
     },
     {
       "name": "healthiar",
-      "version": "0.2.7",
+      "version": "0.3.0",
       "title": "Quantifying and Monetizing Health Impacts Attributable to Exposure",
       "downloads_last_month": null
     },
@@ -58387,6 +58513,12 @@
       "name": "heatwaveR",
       "version": "0.5.5",
       "title": "Detect Heatwaves and Cold-Spells",
+      "downloads_last_month": null
+    },
+    {
+      "name": "heaven",
+      "version": "2026.10.30",
+      "title": "Fast Data Preparation for Danish Registry Data",
       "downloads_last_month": null
     },
     {
@@ -58651,12 +58783,6 @@
       "name": "heterogen",
       "version": "1.2.33",
       "title": "Spatial Functions for Heterogeneity and Climate Variability",
-      "downloads_last_month": null
-    },
-    {
-      "name": "heterogeneouspeereffects",
-      "version": "0.1.0",
-      "title": "Heterogeneous Peer Effect",
       "downloads_last_month": null
     },
     {
@@ -59137,7 +59263,7 @@
       "name": "highr",
       "version": "0.12",
       "title": "Syntax Highlighting for R Source Code",
-      "downloads_last_month": 928847
+      "downloads_last_month": 925746
     },
     {
       "name": "highriskzone",
@@ -59569,7 +59695,7 @@
       "name": "hms",
       "version": "1.1.4",
       "title": "Pretty Time of Day",
-      "downloads_last_month": 734678
+      "downloads_last_month": 720533
     },
     {
       "name": "Hmsc",
@@ -60253,7 +60379,7 @@
       "name": "htmltools",
       "version": "0.5.9",
       "title": "Tools for HTML",
-      "downloads_last_month": 1049736
+      "downloads_last_month": 1057982
     },
     {
       "name": "HTMLUtils",
@@ -60265,7 +60391,7 @@
       "name": "htmlwidgets",
       "version": "1.6.4",
       "title": "HTML Widgets for R",
-      "downloads_last_month": 695220
+      "downloads_last_month": 700627
     },
     {
       "name": "htmxr",
@@ -60275,7 +60401,7 @@
     },
     {
       "name": "htna",
-      "version": "0.3.1",
+      "version": "0.3.7",
       "title": "Heterogeneous Transition Network Analysis",
       "downloads_last_month": null
     },
@@ -60391,13 +60517,13 @@
       "name": "httpuv",
       "version": "1.6.17",
       "title": "HTTP and WebSocket Server Library",
-      "downloads_last_month": 630504
+      "downloads_last_month": 647918
     },
     {
       "name": "httr",
       "version": "1.4.9",
       "title": "Tools for Working with URLs and HTTP",
-      "downloads_last_month": 1017558
+      "downloads_last_month": 998689
     },
     {
       "name": "httr2",
@@ -62086,6 +62212,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "IFANN",
+      "version": "0.1.0",
+      "title": "Intuitionistic Fuzzy Artificial Neural Network for Time Series",
+      "downloads_last_month": null
+    },
+    {
       "name": "IFARIMA",
       "version": "0.1.0",
       "title": "Intuitionistic Fuzzy Autoregressive Integrated Moving Average Model",
@@ -62141,7 +62273,7 @@
     },
     {
       "name": "ifo",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "title": "Client for the Ifo Institute Time Series",
       "downloads_last_month": null
     },
@@ -62783,7 +62915,7 @@
     },
     {
       "name": "impala",
-      "version": "0.1.4",
+      "version": "0.2.0",
       "title": "Bayesian Model Calibration",
       "downloads_last_month": null
     },
@@ -62831,7 +62963,7 @@
     },
     {
       "name": "imply",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "title": "Efficiently Apply Functions to Images",
       "downloads_last_month": null
     },
@@ -63136,6 +63268,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "incubate",
+      "version": "1.4.2",
+      "title": "Parametric Time-to-Event Analysis with Variable Incubation Phases",
+      "downloads_last_month": null
+    },
+    {
       "name": "INCVCommunityDetection",
       "version": "0.1.0",
       "title": "Inductive Node-Splitting Cross-Validation for Community Detection",
@@ -63413,7 +63551,7 @@
     },
     {
       "name": "inferMM",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "title": "Variance-Aware Michaelis-Menten Estimation and Inference",
       "downloads_last_month": null
     },
@@ -64067,7 +64205,7 @@
     },
     {
       "name": "interfacer",
-      "version": "0.4.0",
+      "version": "0.4.2",
       "title": "Define and Enforce Contracts for Dataframes as Function Parameters",
       "downloads_last_month": null
     },
@@ -65365,7 +65503,7 @@
       "name": "isoband",
       "version": "0.3.0",
       "title": "Generate Isolines and Isobands from Regularly Spaced Elevation Grids",
-      "downloads_last_month": 1255550
+      "downloads_last_month": 1234664
     },
     {
       "name": "isoboost",
@@ -65477,13 +65615,13 @@
     },
     {
       "name": "IsoplotR",
-      "version": "7.1",
+      "version": "7.2",
       "title": "Statistical Toolbox for Radiometric Geochronology",
       "downloads_last_month": null
     },
     {
       "name": "IsoplotRgui",
-      "version": "7.1",
+      "version": "7.2",
       "title": "Web Interface to 'IsoplotR'",
       "downloads_last_month": null
     },
@@ -66413,7 +66551,7 @@
     },
     {
       "name": "JMbayes2",
-      "version": "0.6-5",
+      "version": "0.6-6",
       "title": "Extended Joint Models for Longitudinal and Time-to-Event Data",
       "downloads_last_month": null
     },
@@ -66475,6 +66613,12 @@
       "name": "jmotif",
       "version": "1.3.2",
       "title": "Time Series Analysis Toolkit Based on Symbolic Aggregate Discretization, i.e. SAX",
+      "downloads_last_month": null
+    },
+    {
+      "name": "jmpread",
+      "version": "0.1.0",
+      "title": "Read 'JMP' Binary Data Tables in Native R",
       "downloads_last_month": null
     },
     {
@@ -66551,7 +66695,7 @@
     },
     {
       "name": "joinery",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "title": "Heuristic Index-Based Record Linkage",
       "downloads_last_month": null
     },
@@ -66701,7 +66845,7 @@
     },
     {
       "name": "jose",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "title": "JavaScript Object Signing and Encryption",
       "downloads_last_month": null
     },
@@ -66805,7 +66949,7 @@
       "name": "jquerylib",
       "version": "0.1.4",
       "title": "Obtain 'jQuery' as an HTML Dependency Object",
-      "downloads_last_month": 938085
+      "downloads_last_month": 929916
     },
     {
       "name": "jrc",
@@ -66931,7 +67075,7 @@
       "name": "jsonlite",
       "version": "2.0.0",
       "title": "A Simple and Robust JSON Parser and Generator for R",
-      "downloads_last_month": 1462589
+      "downloads_last_month": 1474817
     },
     {
       "name": "jsonNormalize",
@@ -67103,7 +67247,7 @@
     },
     {
       "name": "junctions",
-      "version": "2.1.4",
+      "version": "2.2.0",
       "title": "The Breakdown of Genomic Ancestry Blocks in Hybrid Lineages",
       "downloads_last_month": null
     },
@@ -67427,7 +67571,7 @@
     },
     {
       "name": "kedd",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "title": "Kernel Estimator and Bandwidth Selection for Density and Its Derivatives",
       "downloads_last_month": null
     },
@@ -67523,7 +67667,7 @@
     },
     {
       "name": "kernda",
-      "version": "1.0",
+      "version": "1.1",
       "title": "Kernel Discriminant Analysis",
       "downloads_last_month": null
     },
@@ -67543,12 +67687,6 @@
       "name": "Kernelheaping",
       "version": "2.3.0",
       "title": "Kernel Density Estimation for Heaped and Rounded Data",
-      "downloads_last_month": null
-    },
-    {
-      "name": "KernelICA",
-      "version": "2.0.0",
-      "title": "Kernel Independent Component Analysis",
       "downloads_last_month": null
     },
     {
@@ -67936,6 +68074,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "kir",
+      "version": "0.3.0",
+      "title": "Knowledge Integration Regression for Mean and Quantile Models",
+      "downloads_last_month": null
+    },
+    {
       "name": "Kira",
       "version": "1.1.0",
       "title": "Machine Learning",
@@ -68191,7 +68335,7 @@
       "name": "knitr",
       "version": "1.52",
       "title": "A General-Purpose Package for Dynamic Report Generation in R",
-      "downloads_last_month": 1092457
+      "downloads_last_month": 1082226
     },
     {
       "name": "knitrBootstrap",
@@ -68923,7 +69067,7 @@
       "name": "labeling",
       "version": "0.4.3",
       "title": "Axis Labeling",
-      "downloads_last_month": 1151556
+      "downloads_last_month": 1130932
     },
     {
       "name": "labelled",
@@ -69077,7 +69221,7 @@
     },
     {
       "name": "lagdynamics",
-      "version": "0.32",
+      "version": "0.35.0",
       "title": "Lag Sequential Analysis, Dynamics, and Lag Transition Networks",
       "downloads_last_month": null
     },
@@ -69197,7 +69341,7 @@
     },
     {
       "name": "lame",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "title": "Longitudinal Additive and Multiplicative Effects Models for Networks",
       "downloads_last_month": null
     },
@@ -69559,7 +69703,7 @@
       "name": "later",
       "version": "1.4.8",
       "title": "Utilities for Scheduling Functions to Execute Later with Event Loops",
-      "downloads_last_month": 691503
+      "downloads_last_month": 709912
     },
     {
       "name": "Laterality",
@@ -70003,12 +70147,6 @@
       "name": "LDAandLDAS",
       "version": "1.1.3",
       "title": "Linkage Disequilibrium of Ancestry (LDA) and LDA Score (LDAS)",
-      "downloads_last_month": null
-    },
-    {
-      "name": "LDAcoop",
-      "version": "0.1.2",
-      "title": "Analysis of Data from Limiting Dilution Assay (LDA) with or without Cellular Cooperation",
       "downloads_last_month": null
     },
     {
@@ -70691,7 +70829,7 @@
     },
     {
       "name": "lexsync",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "title": "Lexical Optimisation and Hardware-Timed Experiment Generation",
       "downloads_last_month": null
     },
@@ -70787,7 +70925,7 @@
     },
     {
       "name": "lgcp",
-      "version": "2.0-1",
+      "version": "2.0-2",
       "title": "Log-Gaussian Cox Process",
       "downloads_last_month": null
     },
@@ -70991,7 +71129,7 @@
     },
     {
       "name": "lifecontingencies",
-      "version": "1.6.3",
+      "version": "1.6.4",
       "title": "Financial and Actuarial Mathematics for Life Contingencies",
       "downloads_last_month": null
     },
@@ -71005,7 +71143,7 @@
       "name": "lifecycle",
       "version": "1.0.5",
       "title": "Manage the Life Cycle of your Package Functions",
-      "downloads_last_month": 1865399
+      "downloads_last_month": 1864735
     },
     {
       "name": "LifeHist",
@@ -71759,13 +71897,13 @@
     },
     {
       "name": "litterfitter",
-      "version": "0.1.4",
+      "version": "0.3.0",
       "title": "Fits a Collection of Curves to Single-Cohort Decomposition Data",
       "downloads_last_month": null
     },
     {
       "name": "littler",
-      "version": "0.3.23",
+      "version": "0.3.24",
       "title": "R at the Command-Line via 'r'",
       "downloads_last_month": null
     },
@@ -71995,7 +72133,7 @@
       "name": "lme4",
       "version": "2.1-0",
       "title": "Linear Mixed-Effects Models using 'Eigen' and S4",
-      "downloads_last_month": 1098221
+      "downloads_last_month": 1089859
     },
     {
       "name": "lme4breeding",
@@ -72011,7 +72149,7 @@
     },
     {
       "name": "lmeInfo",
-      "version": "0.3.3",
+      "version": "0.3.4",
       "title": "Information Matrices for 'lmeStruct' and 'glsStruct' Objects",
       "downloads_last_month": null
     },
@@ -72115,6 +72253,12 @@
       "name": "lmmprobe",
       "version": "0.1.0",
       "title": "Sparse High-Dimensional Linear Mixed Modeling with a Partitioned Empirical Bayes ECM Algorithm",
+      "downloads_last_month": null
+    },
+    {
+      "name": "lmmresample",
+      "version": "0.1.0",
+      "title": "Resampling Inference for Mixed Models of Densely Sampled Time Series",
       "downloads_last_month": null
     },
     {
@@ -72467,7 +72611,7 @@
     },
     {
       "name": "loclm",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "title": "Local Linear Regression",
       "downloads_last_month": null
     },
@@ -73625,7 +73769,7 @@
     },
     {
       "name": "LTFGRS",
-      "version": "1.0.1",
+      "version": "1.2.0",
       "title": "Implementation of Several Phenotype-Based Family Genetic Risk Scores",
       "downloads_last_month": null
     },
@@ -73793,8 +73937,8 @@
     },
     {
       "name": "lupa",
-      "version": "0.1.1",
-      "title": "Data Profiling and Quality Measurement",
+      "version": "0.1.2",
+      "title": "Data Profiling and Quality Measurement for Tables and Databases",
       "downloads_last_month": null
     },
     {
@@ -74257,7 +74401,7 @@
       "name": "magrittr",
       "version": "2.0.5",
       "title": "A Forward-Pipe Operator for R",
-      "downloads_last_month": 1654823
+      "downloads_last_month": 1659948
     },
     {
       "name": "maGUI",
@@ -74291,7 +74435,7 @@
     },
     {
       "name": "MAIHDA",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "title": "Multilevel Analysis of Individual Heterogeneity and Discriminatory Accuracy",
       "downloads_last_month": null
     },
@@ -74554,9 +74698,9 @@
       "downloads_last_month": null
     },
     {
-      "name": "ManifoldOptim",
-      "version": "1.0.3",
-      "title": "An R Interface to the 'ROPTLIB' Library for Riemannian Manifold Optimization",
+      "name": "manifoldsR",
+      "version": "0.5.0",
+      "title": "Fast Low-Dimensional Embeddings and Clustering via 'Rust'",
       "downloads_last_month": null
     },
     {
@@ -74951,7 +75095,7 @@
     },
     {
       "name": "mapSpain",
-      "version": "1.2.1",
+      "version": "1.3.0",
       "title": "Administrative Boundaries and Static Map Tiles for Spain",
       "downloads_last_month": null
     },
@@ -75149,8 +75293,8 @@
     },
     {
       "name": "MariNET",
-      "version": "1.0.0",
-      "title": "Build Network Based on Linear Mixed Models from EHRs",
+      "version": "2.0.0",
+      "title": "Build Networks from EHRs and Omics Data Using Linear Mixed Models",
       "downloads_last_month": null
     },
     {
@@ -75215,7 +75359,7 @@
     },
     {
       "name": "markovchain",
-      "version": "1.2",
+      "version": "1.2.1",
       "title": "Easy Handling Discrete Time Markov Chains",
       "downloads_last_month": null
     },
@@ -75415,6 +75559,12 @@
       "name": "maskRangeR",
       "version": "1.1",
       "title": "Mask Species Geographic Ranges",
+      "downloads_last_month": null
+    },
+    {
+      "name": "masque",
+      "version": "0.16.0",
+      "title": "Structurally Faithful Development Surrogates for Tabular Data",
       "downloads_last_month": null
     },
     {
@@ -75799,7 +75949,7 @@
       "name": "matrixStats",
       "version": "1.5.0",
       "title": "Functions that Apply to Rows and Columns of Matrices (and to Vectors)",
-      "downloads_last_month": 623282
+      "downloads_last_month": 617406
     },
     {
       "name": "matrixTests",
@@ -75833,7 +75983,7 @@
     },
     {
       "name": "matSPACE",
-      "version": "0.2.1",
+      "version": "0.3.0",
       "title": "Sparse Partial Correlation Estimation for Matrix-Variate Data",
       "downloads_last_month": null
     },
@@ -76415,7 +76565,7 @@
     },
     {
       "name": "mclust",
-      "version": "6.1.3",
+      "version": "6.1.4",
       "title": "Gaussian Mixture Modelling for Model-Based Clustering, Classification, and Density Estimation",
       "downloads_last_month": null
     },
@@ -76481,7 +76631,7 @@
     },
     {
       "name": "MCMCpack",
-      "version": "1.7-1",
+      "version": "1.7-2",
       "title": "Markov Chain Monte Carlo (MCMC) Package",
       "downloads_last_month": null
     },
@@ -76553,7 +76703,7 @@
     },
     {
       "name": "mcODE",
-      "version": "1.1",
+      "version": "1.2",
       "title": "Monte Carlo Solution of First Order Differential Equations",
       "downloads_last_month": null
     },
@@ -76631,7 +76781,7 @@
     },
     {
       "name": "mcprofile",
-      "version": "1.0-1",
+      "version": "1.1-0",
       "title": "Testing Generalized Linear Hypotheses for Generalized Linear Model Parameters by Profile Deviance",
       "downloads_last_month": null
     },
@@ -77443,7 +77593,7 @@
       "name": "memoise",
       "version": "2.0.1",
       "title": "'Memoisation' of Functions",
-      "downloads_last_month": 887393
+      "downloads_last_month": 883545
     },
     {
       "name": "memor",
@@ -78053,7 +78203,7 @@
     },
     {
       "name": "metamorphr",
-      "version": "0.4.1",
+      "version": "0.5.0",
       "title": "Tidy and Streamlined Metabolomics Data Workflows",
       "downloads_last_month": null
     },
@@ -78172,6 +78322,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "metascience",
+      "version": "0.1.0",
+      "title": "Catalogue and Shared Infrastructure for Open Metascience Tools",
+      "downloads_last_month": null
+    },
+    {
       "name": "metaSDTreg",
       "version": "0.2.2",
       "title": "Regression Models for Meta Signal Detection Theory",
@@ -78185,7 +78341,7 @@
     },
     {
       "name": "metaSEM",
-      "version": "1.5.0",
+      "version": "2.0",
       "title": "Meta-Analysis using Structural Equation Modeling",
       "downloads_last_month": null
     },
@@ -78611,8 +78767,8 @@
     },
     {
       "name": "MFF",
-      "version": "0.2.5",
-      "title": "Meta Fuzzy Functions",
+      "version": "1.0.0",
+      "title": "Meta Fuzzy Functions for Aggregating Prediction Pools",
       "downloads_last_month": null
     },
     {
@@ -79543,7 +79699,7 @@
       "name": "mime",
       "version": "0.13",
       "title": "Map Filenames to MIME Types",
-      "downloads_last_month": 1026406
+      "downloads_last_month": 1029966
     },
     {
       "name": "MIMER",
@@ -79727,7 +79883,7 @@
     },
     {
       "name": "miniMeta",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "title": "Web Application to Run Meta-Analyses",
       "downloads_last_month": null
     },
@@ -79979,7 +80135,7 @@
     },
     {
       "name": "MiscMetabar",
-      "version": "0.16.8",
+      "version": "0.18.0",
       "title": "Miscellaneous Functions for Metabarcoding Analysis",
       "downloads_last_month": null
     },
@@ -80101,6 +80257,12 @@
       "name": "MissingPlotRBD",
       "version": "1.1.0",
       "title": "Missing Plot in RBD",
+      "downloads_last_month": null
+    },
+    {
+      "name": "misskappa",
+      "version": "3.0.0",
+      "title": "Agreement Coefficients with Missing Ratings",
       "downloads_last_month": null
     },
     {
@@ -80573,7 +80735,7 @@
     },
     {
       "name": "mixtime",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "title": "Mixed Temporal Vectors and Operations",
       "downloads_last_month": null
     },
@@ -81191,7 +81353,7 @@
     },
     {
       "name": "mlr3mbo",
-      "version": "1.2.1",
+      "version": "1.3.0",
       "title": "Flexible Bayesian Optimization",
       "downloads_last_month": null
     },
@@ -81203,7 +81365,7 @@
     },
     {
       "name": "mlr3misc",
-      "version": "0.23.0",
+      "version": "0.24.0",
       "title": "Helper Functions for 'mlr3'",
       "downloads_last_month": null
     },
@@ -81361,6 +81523,12 @@
       "name": "mlstrOpalr",
       "version": "1.0.3",
       "title": "Support Compatibility Between 'Maelstrom' R Packages and 'Opal' Environment",
+      "downloads_last_month": null
+    },
+    {
+      "name": "MLSurvey",
+      "version": "1.0.2",
+      "title": "Machine Learning for Complex Survey Data",
       "downloads_last_month": null
     },
     {
@@ -81583,12 +81751,6 @@
       "name": "MMeM",
       "version": "0.1.1",
       "title": "Multivariate Mixed Effects Model",
-      "downloads_last_month": null
-    },
-    {
-      "name": "mmequiv",
-      "version": "1.0.0",
-      "title": "Calculate Standardized Morphine Milligram Equivalent Doses",
       "downloads_last_month": null
     },
     {
@@ -81965,7 +82127,7 @@
     },
     {
       "name": "modelbased",
-      "version": "0.18.0",
+      "version": "0.19.0",
       "title": "Estimation of Model-Based Predictions, Contrasts and Means",
       "downloads_last_month": null
     },
@@ -82397,7 +82559,7 @@
     },
     {
       "name": "MolgenisArmadillo",
-      "version": "3.0.0",
+      "version": "3.0.1",
       "title": "Armadillo Client for the Armadillo Service",
       "downloads_last_month": null
     },
@@ -82924,6 +83086,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "mosaicresid",
+      "version": "0.1.1",
+      "title": "Residual-Shaded Mosaic Plots for 'ggplot2'",
+      "downloads_last_month": null
+    },
+    {
       "name": "MOSAlloc",
       "version": "1.2.6",
       "title": "Constraint Multiobjective Sample Allocation",
@@ -82945,6 +83113,12 @@
       "name": "mospiR",
       "version": "0.1.0",
       "title": "Client for the 'MoSPI' Microdata Portal",
+      "downloads_last_month": null
+    },
+    {
+      "name": "mossyforest",
+      "version": "0.1.0",
+      "title": "Network Aware Stability Selection with Random Forests",
       "downloads_last_month": null
     },
     {
@@ -83201,7 +83375,7 @@
     },
     {
       "name": "MplusAutomation",
-      "version": "1.3",
+      "version": "1.4",
       "title": "An R Package for Facilitating Large-Scale Latent Variable Analyses in Mplus",
       "downloads_last_month": null
     },
@@ -84185,7 +84359,7 @@
     },
     {
       "name": "mtarm",
-      "version": "0.1.9",
+      "version": "0.1.10",
       "title": "Bayesian Estimation of Multivariate Threshold Autoregressive Models",
       "downloads_last_month": null
     },
@@ -84953,7 +85127,7 @@
     },
     {
       "name": "multiobjectiveMDP",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "title": "Solution Methods for Multi-Objective Markov Decision Processes",
       "downloads_last_month": null
     },
@@ -85127,8 +85301,8 @@
     },
     {
       "name": "multiScaleR",
-      "version": "0.7.2",
-      "title": "Methods for Optimizing Scales of Effect",
+      "version": "1.0.1",
+      "title": "Estimate Scales of Effect for Spatial Ecological Models",
       "downloads_last_month": null
     },
     {
@@ -85385,7 +85559,7 @@
     },
     {
       "name": "munch",
-      "version": "0.0.3",
+      "version": "0.0.4",
       "title": "Rich Inline Text for 'grid' Graphics and 'flextable'",
       "downloads_last_month": null
     },
@@ -85499,7 +85673,7 @@
     },
     {
       "name": "mutator",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "title": "Mutation Testing",
       "downloads_last_month": null
     },
@@ -86189,7 +86363,7 @@
     },
     {
       "name": "myTAI",
-      "version": "2.3.7",
+      "version": "2.3.8",
       "title": "Evolutionary Transcriptomics",
       "downloads_last_month": null
     },
@@ -86261,7 +86435,7 @@
     },
     {
       "name": "NACHO",
-      "version": "3.0.1",
+      "version": "3.0.2",
       "title": "NanoString Quality Control Dashboard",
       "downloads_last_month": null
     },
@@ -86783,7 +86957,7 @@
     },
     {
       "name": "NCA",
-      "version": "5.0.2",
+      "version": "5.1.0",
       "title": "Necessary Condition Analysis",
       "downloads_last_month": null
     },
@@ -86875,6 +87049,12 @@
       "name": "NCSCopula",
       "version": "1.0.1",
       "title": "Non-Central Squared Copula Models Estimation",
+      "downloads_last_month": null
+    },
+    {
+      "name": "nctools",
+      "version": "0.2.0",
+      "title": "Tools for Manipulating netCDF Files",
       "downloads_last_month": null
     },
     {
@@ -87131,7 +87311,7 @@
     },
     {
       "name": "neonUtilities",
-      "version": "4.0.2",
+      "version": "4.1.0",
       "title": "Utilities for Working with NEON Data",
       "downloads_last_month": null
     },
@@ -87215,7 +87395,7 @@
     },
     {
       "name": "nestedscales",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "title": "Nested Scales and Multi-Dimensional Indexes for Modeling",
       "downloads_last_month": null
     },
@@ -87341,7 +87521,7 @@
     },
     {
       "name": "nethist",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "title": "Network Histograms",
       "downloads_last_month": null
     },
@@ -87838,6 +88018,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "NeutroDOE",
+      "version": "0.1.0",
+      "title": "Neutrosophic Analysis of Experimental Designs",
+      "downloads_last_month": null
+    },
+    {
       "name": "NeutroIBDAnalysis",
       "version": "0.1.2",
       "title": "Neutrosophic Analysis of Incomplete Block Designs",
@@ -88001,7 +88187,7 @@
     },
     {
       "name": "nflplotR",
-      "version": "1.7.1",
+      "version": "1.7.2",
       "title": "NFL Logo Plots in 'ggplot2' and 'gt'",
       "downloads_last_month": null
     },
@@ -88099,6 +88285,12 @@
       "name": "NGSToolKit",
       "version": "0.1.4",
       "title": "RNA-Seq Analysis and Genome Visualization 'Shiny' Platform",
+      "downloads_last_month": null
+    },
+    {
+      "name": "ngvb",
+      "version": "0.2.1",
+      "title": "Latent Non-Gaussian Modelling with 'INLA' and Variational Bayes",
       "downloads_last_month": null
     },
     {
@@ -89158,6 +89350,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "noctua",
+      "version": "2.7.0",
+      "title": "Connect to 'AWS Athena' using R 'AWS SDK' 'paws' ('DBI' Interface)",
+      "downloads_last_month": null
+    },
+    {
       "name": "nocturn",
       "version": "1.2.1",
       "title": "Sleep Data Filtering and Visualisation",
@@ -89591,7 +89789,7 @@
     },
     {
       "name": "normref",
-      "version": "0.1.2",
+      "version": "1.0.0",
       "title": "Continuous Norming",
       "downloads_last_month": null
     },
@@ -89705,13 +89903,13 @@
     },
     {
       "name": "NoviceDeveloperResources",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "title": "Resources to Assist Novice Developers",
       "downloads_last_month": null
     },
     {
       "name": "NoviceDeveloperResources2",
-      "version": "1.1.0",
+      "version": "1.2",
       "title": "Further Resources to Assist Novice Developers",
       "downloads_last_month": null
     },
@@ -89825,7 +90023,7 @@
     },
     {
       "name": "NPCDTools",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "title": "The Nonparametric Classification Methods for Cognitive Diagnosis",
       "downloads_last_month": null
     },
@@ -90457,7 +90655,7 @@
       "name": "numDeriv",
       "version": "2016.8-1.1",
       "title": "Accurate Numerical Derivatives",
-      "downloads_last_month": 845276
+      "downloads_last_month": 842150
     },
     {
       "name": "NumericEnsembles",
@@ -90965,7 +91163,7 @@
     },
     {
       "name": "octawave",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "title": "Spatial Octahedral Quantum Wave Functions",
       "downloads_last_month": null
     },
@@ -91259,7 +91457,7 @@
     },
     {
       "name": "officer",
-      "version": "0.7.8",
+      "version": "0.7.9",
       "title": "Manipulation of Microsoft Word, PowerPoint and Excel Documents",
       "downloads_last_month": null
     },
@@ -91481,7 +91679,7 @@
     },
     {
       "name": "olsrr",
-      "version": "0.7.0",
+      "version": "0.7.1",
       "title": "Tools for Building OLS Regression Models",
       "downloads_last_month": null
     },
@@ -92045,7 +92243,7 @@
     },
     {
       "name": "oosse",
-      "version": "1.0.12",
+      "version": "1.0.13",
       "title": "Out-of-Sample R² with Standard Error Estimation",
       "downloads_last_month": null
     },
@@ -92111,13 +92309,13 @@
     },
     {
       "name": "openair",
-      "version": "3.1.0",
+      "version": "3.2.0",
       "title": "Tools for the Analysis of Air Pollution Data",
       "downloads_last_month": null
     },
     {
       "name": "openairmaps",
-      "version": "0.10.1",
+      "version": "0.11.0",
       "title": "Create Maps of Air Pollution Data",
       "downloads_last_month": null
     },
@@ -92309,7 +92507,7 @@
     },
     {
       "name": "openlineage",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "title": "Create and Emit 'OpenLineage' Events",
       "downloads_last_month": null
     },
@@ -92429,9 +92627,9 @@
     },
     {
       "name": "openssl",
-      "version": "2.5.0",
+      "version": "2.6.0",
       "title": "Toolkit for Encryption, Signatures and Certificates Based on OpenSSL",
-      "downloads_last_month": 880746
+      "downloads_last_month": 892920
     },
     {
       "name": "OpenStreetMap",
@@ -92527,12 +92725,6 @@
       "name": "oppr",
       "version": "1.1.0",
       "title": "Optimal Project Prioritization",
-      "downloads_last_month": null
-    },
-    {
-      "name": "OPSR",
-      "version": "1.0.1",
-      "title": "Ordered Probit Switching Regression",
       "downloads_last_month": null
     },
     {
@@ -92657,7 +92849,7 @@
     },
     {
       "name": "OptimalBinningWoE",
-      "version": "1.14.0",
+      "version": "1.14.1",
       "title": "Optimal Binning and Weight of Evidence Framework for Modeling",
       "downloads_last_month": null
     },
@@ -92675,7 +92867,7 @@
     },
     {
       "name": "OptimalFactor",
-      "version": "1.5.0",
+      "version": "1.8.0",
       "title": "Item Selection in Factor Analysis by Boosting and Specification Search",
       "downloads_last_month": null
     },
@@ -92747,7 +92939,7 @@
     },
     {
       "name": "optimizeR",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "title": "Unified Framework for Numerical Optimizers",
       "downloads_last_month": null
     },
@@ -92891,7 +93083,7 @@
     },
     {
       "name": "optree",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "title": "Hierarchical Runtime Configuration Management",
       "downloads_last_month": null
     },
@@ -93083,7 +93275,7 @@
     },
     {
       "name": "ordered",
-      "version": "0.1.0",
+      "version": "0.2.1",
       "title": "'parsnip' Engines and Wrappers for Ordinal Classification Models",
       "downloads_last_month": null
     },
@@ -93491,7 +93683,7 @@
     },
     {
       "name": "OSCARS",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "title": "Global Bounded Optimization by the OSCARS-II Algorithm",
       "downloads_last_month": null
     },
@@ -93703,7 +93895,7 @@
       "name": "otel",
       "version": "0.3.0",
       "title": "OpenTelemetry R API",
-      "downloads_last_month": 1142256
+      "downloads_last_month": 1144605
     },
     {
       "name": "otelsdk",
@@ -93863,7 +94055,7 @@
     },
     {
       "name": "outlierMBC",
-      "version": "0.0.1",
+      "version": "0.0.2",
       "title": "Sequential Outlier Identification for Model-Based Clustering",
       "downloads_last_month": null
     },
@@ -94187,7 +94379,7 @@
     },
     {
       "name": "packageRank",
-      "version": "0.9.9",
+      "version": "0.10.0",
       "title": "Computation and Visualization of Package Download Counts and Percentile Ranks",
       "downloads_last_month": null
     },
@@ -94247,7 +94439,7 @@
     },
     {
       "name": "pacs",
-      "version": "0.6.0",
+      "version": "0.7.1",
       "title": "Supplementary Tools for R Packages Developers",
       "downloads_last_month": null
     },
@@ -94720,12 +94912,6 @@
       "downloads_last_month": null
     },
     {
-      "name": "PAMpal",
-      "version": "1.6.1",
-      "title": "Load and Process Passive Acoustic Data",
-      "downloads_last_month": null
-    },
-    {
       "name": "pamr",
       "version": "1.57",
       "title": "Pam: Prediction Analysis for Microarrays",
@@ -94948,6 +95134,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "par2circadian",
+      "version": "0.1.1",
+      "title": "AR(2) Eigenvalue Persistence Analysis of Circadian Time Series",
+      "downloads_last_month": null
+    },
+    {
       "name": "parabar",
       "version": "1.4.2",
       "title": "Progress Bar for Parallel Tasks",
@@ -95105,7 +95297,7 @@
     },
     {
       "name": "ParBayesianOptimization",
-      "version": "1.4.2",
+      "version": "1.5.0",
       "title": "Parallel Bayesian Optimization of Hyperparameters",
       "downloads_last_month": null
     },
@@ -95609,7 +95801,7 @@
     },
     {
       "name": "PatientLevelPrediction",
-      "version": "6.7.0",
+      "version": "6.7.1",
       "title": "Develop Clinical Prediction Models Using the Common Data Model",
       "downloads_last_month": null
     },
@@ -96329,7 +96521,7 @@
     },
     {
       "name": "pctax",
-      "version": "0.1.7",
+      "version": "0.1.8",
       "title": "Professional Comprehensive Omics Data Analysis",
       "downloads_last_month": null
     },
@@ -97121,7 +97313,7 @@
     },
     {
       "name": "performance",
-      "version": "0.19.0",
+      "version": "0.20.0",
       "title": "Assessment of Regression Models Performance",
       "downloads_last_month": null
     },
@@ -97175,7 +97367,7 @@
     },
     {
       "name": "PERMANOVA",
-      "version": "0.2.0",
+      "version": "16.11.26",
       "title": "Multivariate Analysis of Variance Based on Distances and Permutations",
       "downloads_last_month": null
     },
@@ -97241,7 +97433,7 @@
     },
     {
       "name": "permute",
-      "version": "0.10-0",
+      "version": "0.10-1",
       "title": "Functions for Generating Restricted Permutations of Data",
       "downloads_last_month": null
     },
@@ -97612,12 +97804,6 @@
       "downloads_last_month": null
     },
     {
-      "name": "PGRdup",
-      "version": "0.3.0",
-      "title": "Discover Probable Duplicates in Plant Genetic Resources Collections",
-      "downloads_last_month": null
-    },
-    {
       "name": "pGRN",
       "version": "0.3.5",
       "title": "Single-Cell RNA Sequencing Pseudo-Time Based Gene Regulatory Network Inference",
@@ -97967,7 +98153,7 @@
     },
     {
       "name": "philentropy",
-      "version": "0.10.0",
+      "version": "0.10.1",
       "title": "Similarity and Distance Quantification Between Probability Functions",
       "downloads_last_month": null
     },
@@ -98153,7 +98339,7 @@
     },
     {
       "name": "phscs",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "title": "Philippine Statistical Classification Systems",
       "downloads_last_month": null
     },
@@ -98339,7 +98525,7 @@
     },
     {
       "name": "phylospatial",
-      "version": "1.6.0",
+      "version": "1.7.0",
       "title": "Spatial Phylogenetic Analysis",
       "downloads_last_month": null
     },
@@ -98623,11 +98809,11 @@
       "name": "pillar",
       "version": "1.11.1",
       "title": "Coloured Formatting for Columns",
-      "downloads_last_month": 1438339
+      "downloads_last_month": 1423437
     },
     {
       "name": "pilotr",
-      "version": "0.3.1",
+      "version": "0.4.0",
       "title": "Simulate Experimental and Behavioural Data from a Portable Design Specification",
       "downloads_last_month": null
     },
@@ -98705,7 +98891,7 @@
     },
     {
       "name": "pinsearch",
-      "version": "0.1.6",
+      "version": "0.1.7",
       "title": "Specification Search for Partial Factorial Invariance",
       "downloads_last_month": null
     },
@@ -98953,7 +99139,7 @@
       "name": "pkgbuild",
       "version": "1.4.8",
       "title": "Find Tools Needed to Build R Packages",
-      "downloads_last_month": 835560
+      "downloads_last_month": 828268
     },
     {
       "name": "pkgcache",
@@ -98977,7 +99163,7 @@
       "name": "pkgconfig",
       "version": "2.0.3",
       "title": "Private Configuration for 'R' Packages",
-      "downloads_last_month": 1285955
+      "downloads_last_month": 1271348
     },
     {
       "name": "pkgdepends",
@@ -99043,7 +99229,7 @@
       "name": "pkgload",
       "version": "1.5.3",
       "title": "Simulate Package Installation and Attach",
-      "downloads_last_month": 792774
+      "downloads_last_month": 790700
     },
     {
       "name": "pkgmatch",
@@ -99169,6 +99355,12 @@
       "name": "pksensi",
       "version": "1.2.3",
       "title": "Global Sensitivity Analysis in Physiologically Based Kinetic Modeling",
+      "downloads_last_month": null
+    },
+    {
+      "name": "pksR",
+      "version": "0.1.0",
+      "title": "District-Level German Police Crime Statistics",
       "downloads_last_month": null
     },
     {
@@ -100073,7 +100265,7 @@
     },
     {
       "name": "PMwR",
-      "version": "1.3-0",
+      "version": "1.3-1",
       "title": "Portfolio Management with R",
       "downloads_last_month": null
     },
@@ -100133,7 +100325,7 @@
     },
     {
       "name": "pnd",
-      "version": "0.1.3",
+      "version": "0.2.0",
       "title": "Parallel Numerical Derivatives, Gradients, Jacobians, and Hessians of Arbitrary Accuracy Order",
       "downloads_last_month": null
     },
@@ -100171,6 +100363,12 @@
       "name": "PNWColors",
       "version": "0.1.0",
       "title": "Color Palettes Inspired by Nature in the US Pacific Northwest",
+      "downloads_last_month": null
+    },
+    {
+      "name": "pob2ef",
+      "version": "0.1.0",
+      "title": "Partially Optimized Bayesian Phase II Efficacy and Futility Design",
       "downloads_last_month": null
     },
     {
@@ -100453,6 +100651,12 @@
       "name": "poldis",
       "version": "0.2.0",
       "title": "Analyse Political Texts",
+      "downloads_last_month": null
+    },
+    {
+      "name": "polecon",
+      "version": "0.1.1",
+      "title": "Quantitative Methods for Political Economy",
       "downloads_last_month": null
     },
     {
@@ -101249,7 +101453,7 @@
     },
     {
       "name": "posterior",
-      "version": "1.7.0",
+      "version": "1.8.0",
       "title": "Tools for Working with Posterior Distributions",
       "downloads_last_month": null
     },
@@ -101735,7 +101939,7 @@
     },
     {
       "name": "PPMiss",
-      "version": "0.1.2",
+      "version": "0.2.0",
       "title": "Copula-Based Estimator for Long-Range Dependent Processes under Missing Data",
       "downloads_last_month": null
     },
@@ -101983,6 +102187,12 @@
       "name": "prcbench",
       "version": "1.1.16",
       "title": "Testing Workbench for Precision-Recall Curves",
+      "downloads_last_month": null
+    },
+    {
+      "name": "prCGGM",
+      "version": "0.1.0",
+      "title": "Prior-Informed Conditional Gaussian Graphical Models",
       "downloads_last_month": null
     },
     {
@@ -102487,7 +102697,7 @@
       "name": "prettyunits",
       "version": "1.2.0",
       "title": "Pretty, Human Readable Formatting of Quantities",
-      "downloads_last_month": 687897
+      "downloads_last_month": 677238
     },
     {
       "name": "prevalence",
@@ -102983,9 +103193,9 @@
     },
     {
       "name": "processx",
-      "version": "3.9.0",
+      "version": "3.10.0",
       "title": "Execute and Control System Processes",
-      "downloads_last_month": 1072540
+      "downloads_last_month": 1069888
     },
     {
       "name": "proclhmm",
@@ -103171,11 +103381,11 @@
       "name": "progress",
       "version": "1.2.3",
       "title": "Terminal Progress Bars",
-      "downloads_last_month": 659681
+      "downloads_last_month": 648227
     },
     {
       "name": "progressify",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "title": "Progress Reporting of Common Functions via One Magic Function",
       "downloads_last_month": null
     },
@@ -103259,7 +103469,7 @@
     },
     {
       "name": "projpred",
-      "version": "2.11.0",
+      "version": "3.0.0",
       "title": "Projection Predictive Feature Selection",
       "downloads_last_month": null
     },
@@ -103315,7 +103525,7 @@
       "name": "promises",
       "version": "1.5.0",
       "title": "Abstractions for Promise-Based Asynchronous Programming",
-      "downloads_last_month": 649109
+      "downloads_last_month": 667142
     },
     {
       "name": "promor",
@@ -103409,7 +103619,7 @@
     },
     {
       "name": "propop",
-      "version": "2.2.1",
+      "version": "2.2.2",
       "title": "Project Population Growth in Switzerland Using the Cohort Component Method",
       "downloads_last_month": null
     },
@@ -103763,7 +103973,7 @@
     },
     {
       "name": "PRTree",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "title": "Probabilistic Regression Trees",
       "downloads_last_month": null
     },
@@ -103783,7 +103993,7 @@
       "name": "ps",
       "version": "1.9.3",
       "title": "List, Query, Manipulate System Processes",
-      "downloads_last_month": 1043871
+      "downloads_last_month": 1024585
     },
     {
       "name": "PSAboot",
@@ -103825,12 +104035,6 @@
       "name": "psbcSpeedUp",
       "version": "2.1.0",
       "title": "Penalized Semiparametric Bayesian Cox Models",
-      "downloads_last_month": null
-    },
-    {
-      "name": "psborrow",
-      "version": "0.2.4",
-      "title": "Bayesian Dynamic Borrowing with Propensity Score",
       "downloads_last_month": null
     },
     {
@@ -103955,7 +104159,7 @@
     },
     {
       "name": "psgc",
-      "version": "0.1.2",
+      "version": "0.2.0",
       "title": "Philippine Standard Geographic Code",
       "downloads_last_month": null
     },
@@ -104267,7 +104471,7 @@
     },
     {
       "name": "psychnets",
-      "version": "0.5.2",
+      "version": "0.8.2",
       "title": "Tidy Clean-Room Psychological Network Modeling",
       "downloads_last_month": null
     },
@@ -104401,6 +104605,12 @@
       "name": "PTAk",
       "version": "2.0.0",
       "title": "Principal Tensor Analysis on k Modes",
+      "downloads_last_month": null
+    },
+    {
+      "name": "ptcompare",
+      "version": "0.1.0",
+      "title": "Bayesian Multiscale Two-Sample Comparison",
       "downloads_last_month": null
     },
     {
@@ -104621,7 +104831,7 @@
     },
     {
       "name": "pubmedR",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "title": "Gathering Metadata About Publications, Grants, Clinical Trials from 'PubMed' Database",
       "downloads_last_month": null
     },
@@ -104803,7 +105013,7 @@
       "name": "purrr",
       "version": "1.2.2",
       "title": "Functional Programming Tools",
-      "downloads_last_month": 1189644
+      "downloads_last_month": 1177291
     },
     {
       "name": "purrrlyr",
@@ -104873,7 +105083,7 @@
     },
     {
       "name": "pvars",
-      "version": "1.1.1",
+      "version": "1.2.1",
       "title": "VAR Modeling for Heterogeneous Panels",
       "downloads_last_month": null
     },
@@ -104923,6 +105133,12 @@
       "name": "pvLRT",
       "version": "0.5.1",
       "title": "Likelihood Ratio Test-Based Approaches to Pharmacovigilance",
+      "downloads_last_month": null
+    },
+    {
+      "name": "PVomega",
+      "version": "1.0.0",
+      "title": "Omega Shrinkage Measure for Drug-Drug Interaction Signal Detection",
       "downloads_last_month": null
     },
     {
@@ -105287,7 +105503,7 @@
     },
     {
       "name": "qcaERT",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "title": "Enhanced Robustness Tests for Qualitative Comparative Analysis",
       "downloads_last_month": null
     },
@@ -105959,7 +106175,7 @@
     },
     {
       "name": "qshap",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "title": "Fast Calculation of Feature Contributions in Boosting Trees",
       "downloads_last_month": null
     },
@@ -105979,6 +106195,12 @@
       "name": "qsplines",
       "version": "1.0.1",
       "title": "Quaternions Splines",
+      "downloads_last_month": null
+    },
+    {
+      "name": "qspquest",
+      "version": "0.1.0",
+      "title": "Pharmacology Model Simulation and Bounded Estimation",
       "downloads_last_month": null
     },
     {
@@ -106499,7 +106721,7 @@
     },
     {
       "name": "quartabs",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "title": "Dynamically Generate Tabset Panels in 'Quarto' HTML Documents",
       "downloads_last_month": null
     },
@@ -107117,7 +107339,7 @@
     },
     {
       "name": "R2sample",
-      "version": "5.1.0",
+      "version": "5.1.1",
       "title": "Various Methods for the Two Sample Problem",
       "downloads_last_month": null
     },
@@ -107323,7 +107545,7 @@
       "name": "R6",
       "version": "2.6.1",
       "title": "Encapsulated Classes with Reference Semantics",
-      "downloads_last_month": 1771802
+      "downloads_last_month": 1777919
     },
     {
       "name": "R62S3",
@@ -107635,7 +107857,7 @@
       "name": "ragg",
       "version": "1.5.2",
       "title": "Graphic Devices Based on AGG",
-      "downloads_last_month": 615515
+      "downloads_last_month": 602939
     },
     {
       "name": "RagGrid",
@@ -107710,6 +107932,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "rairai",
+      "version": "0.2.7",
+      "title": "Model Context Protocol Server for Package Intelligence",
+      "downloads_last_month": null
+    },
+    {
       "name": "rairtable",
       "version": "0.1.2",
       "title": "Efficient Wrapper for the 'Airtable' API",
@@ -107747,7 +107975,7 @@
     },
     {
       "name": "RALSA",
-      "version": "1.7.2",
+      "version": "1.7.3",
       "title": "R Analyzer for Large-Scale Assessments",
       "downloads_last_month": null
     },
@@ -107927,7 +108155,7 @@
     },
     {
       "name": "randomForestSGT",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "title": "Random Forest Super Greedy Trees",
       "downloads_last_month": null
     },
@@ -108385,7 +108613,7 @@
       "name": "rappdirs",
       "version": "0.3.4",
       "title": "Application Directories: Determine Where to Save Data, Caches, and Logs",
-      "downloads_last_month": 965649
+      "downloads_last_month": 978990
     },
     {
       "name": "rappleads",
@@ -108436,26 +108664,32 @@
       "downloads_last_month": null
     },
     {
+      "name": "rapsimng.decide",
+      "version": "0.1.2",
+      "title": "Decision-Oriented Analysis Interface for APSIM Next Generation Outputs",
+      "downloads_last_month": null
+    },
+    {
       "name": "rapsimng.decide.core",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "title": "Decision-Oriented Analysis Core for APSIM Next Generation Outputs",
       "downloads_last_month": null
     },
     {
       "name": "rapsimng.decide.cultivar",
-      "version": "0.1.0",
+      "version": "0.1.2",
       "title": "Analyse APSIM Next Generation Simulation Outputs for Cultivar Comparison",
       "downloads_last_month": null
     },
     {
       "name": "rapsimng.decide.nitrogen",
-      "version": "0.1.0",
+      "version": "0.1.2",
       "title": "Analyse APSIM Next Generation Simulation Outputs for Nitrogen Decision",
       "downloads_last_month": null
     },
     {
       "name": "rapsimng.decide.sowing",
-      "version": "0.1.0",
+      "version": "0.1.2",
       "title": "Analyse APSIM Next Generation Simulation Outputs for Sowing Decision",
       "downloads_last_month": null
     },
@@ -109115,7 +109349,7 @@
     },
     {
       "name": "rbin",
-      "version": "0.2.1",
+      "version": "0.3.0",
       "title": "Tools for Binning Data",
       "downloads_last_month": null
     },
@@ -109456,14 +109690,8 @@
       "downloads_last_month": null
     },
     {
-      "name": "rcDEA",
-      "version": "1.0",
-      "title": "Robust and Conditional Data Envelopment Analysis (DEA)",
-      "downloads_last_month": null
-    },
-    {
       "name": "rcdf",
-      "version": "0.1.6",
+      "version": "0.2.1",
       "title": "A Comprehensive Toolkit for Working with Encrypted Parquet Files",
       "downloads_last_month": null
     },
@@ -109909,7 +110137,7 @@
       "name": "RColorBrewer",
       "version": "1.1-3",
       "title": "ColorBrewer Palettes",
-      "downloads_last_month": 1191503
+      "downloads_last_month": 1169142
     },
     {
       "name": "RColorConesa",
@@ -110029,7 +110257,7 @@
       "name": "Rcpp",
       "version": "1.1.2",
       "title": "Seamless R and C++ Integration",
-      "downloads_last_month": 1838298
+      "downloads_last_month": 1838291
     },
     {
       "name": "RCppAD",
@@ -110039,7 +110267,7 @@
     },
     {
       "name": "RcppAlgos",
-      "version": "2.10.2",
+      "version": "2.10.4",
       "title": "High Performance Tools for Combinatorics and Computational Mathematics",
       "downloads_last_month": null
     },
@@ -110057,9 +110285,9 @@
     },
     {
       "name": "RcppArmadillo",
-      "version": "15.6.2-1",
+      "version": "15.8.0-1",
       "title": "'Rcpp' Integration for the 'Armadillo' Templated Linear Algebra Library",
-      "downloads_last_month": 655044
+      "downloads_last_month": 648808
     },
     {
       "name": "RcppArray",
@@ -110179,7 +110407,7 @@
       "name": "RcppEigen",
       "version": "0.3.4.0.2",
       "title": "'Rcpp' Integration for the 'Eigen' Templated Linear Algebra Library",
-      "downloads_last_month": 1555422
+      "downloads_last_month": 1543258
     },
     {
       "name": "RcppEnsmallen",
@@ -110305,7 +110533,7 @@
       "name": "RcppParallel",
       "version": "6.2.1",
       "title": "Parallel Programming Tools for 'Rcpp'",
-      "downloads_last_month": 1139400
+      "downloads_last_month": 1114343
     },
     {
       "name": "RcppPlanc",
@@ -110927,7 +111155,7 @@
     },
     {
       "name": "rdrobust",
-      "version": "4.1.1",
+      "version": "4.1.2",
       "title": "Robust Data-Driven Statistical Inference in Regression-Discontinuity Designs",
       "downloads_last_month": null
     },
@@ -111319,7 +111547,7 @@
       "name": "readr",
       "version": "2.2.0",
       "title": "Read Rectangular Text Data",
-      "downloads_last_month": 733195
+      "downloads_last_month": 723005
     },
     {
       "name": "readrba",
@@ -111379,7 +111607,7 @@
       "name": "readxl",
       "version": "1.6.0",
       "title": "Read Excel Files",
-      "downloads_last_month": 942389
+      "downloads_last_month": 919096
     },
     {
       "name": "ready4",
@@ -112103,7 +112331,7 @@
     },
     {
       "name": "refugees",
-      "version": "2025.12.2",
+      "version": "2026.6.1",
       "title": "UNHCR Refugee Population Statistics Database",
       "downloads_last_month": null
     },
@@ -112373,7 +112601,7 @@
     },
     {
       "name": "regsensitivity",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "title": "Regression Sensitivity Analysis for Omitted Variable Bias",
       "downloads_last_month": null
     },
@@ -112447,6 +112675,12 @@
       "name": "reinstallr",
       "version": "0.1.5",
       "title": "Search and Install Missing Packages",
+      "downloads_last_month": null
+    },
+    {
+      "name": "reintervals",
+      "version": "0.2.0",
+      "title": "Confidence, Prediction, Tolerance, and New-Group-Mean Intervals for Linear Mixed Models",
       "downloads_last_month": null
     },
     {
@@ -112529,7 +112763,7 @@
     },
     {
       "name": "ReliaGrowR",
-      "version": "0.7",
+      "version": "0.8",
       "title": "Reliability Growth Analysis and Repairable Systems Modeling",
       "downloads_last_month": null
     },
@@ -112882,6 +113116,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "replayr",
+      "version": "0.4.0",
+      "title": "Read Input Recordings of Video Games",
+      "downloads_last_month": null
+    },
+    {
       "name": "REPLesentR",
       "version": "0.4.1",
       "title": "Presentations in the REPL",
@@ -113195,7 +113435,7 @@
     },
     {
       "name": "rerddapXtracto",
-      "version": "1.2.5",
+      "version": "1.3.0",
       "title": "Extracts Environmental Data from 'ERDDAP™' Web Services",
       "downloads_last_month": null
     },
@@ -114173,7 +114413,7 @@
     },
     {
       "name": "rGEDI",
-      "version": "0.6.0",
+      "version": "0.6.1",
       "title": "NASA's Global Ecosystem Dynamics Investigation (GEDI) Data Visualization and Processing",
       "downloads_last_month": null
     },
@@ -114359,7 +114599,7 @@
     },
     {
       "name": "Rgof",
-      "version": "4.1.0",
+      "version": "4.1.1",
       "title": "1d Goodness of Fit Tests",
       "downloads_last_month": null
     },
@@ -114683,7 +114923,7 @@
     },
     {
       "name": "ria.test",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "title": "Testing Equality of Natural Mediation Effects and Their Randomized Interventional Analogues",
       "downloads_last_month": null
     },
@@ -115373,7 +115613,7 @@
     },
     {
       "name": "rjags",
-      "version": "4-18",
+      "version": "5-5",
       "title": "Bayesian Graphical Models using MCMC",
       "downloads_last_month": null
     },
@@ -115649,7 +115889,7 @@
     },
     {
       "name": "RKorAPClient",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "title": "'KorAP' Web Service Client Package",
       "downloads_last_month": null
     },
@@ -115717,7 +115957,7 @@
       "name": "rlang",
       "version": "1.3.0",
       "title": "Functions for Base Types and Core R and 'Tidyverse' Features",
-      "downloads_last_month": 2361198
+      "downloads_last_month": 2342360
     },
     {
       "name": "rlas",
@@ -115853,7 +116093,7 @@
     },
     {
       "name": "rlmstudio",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "title": "Access and Control LM Studio",
       "downloads_last_month": null
     },
@@ -116023,7 +116263,7 @@
       "name": "rmarkdown",
       "version": "2.32",
       "title": "Dynamic Documents for R",
-      "downloads_last_month": 1360365
+      "downloads_last_month": 1349987
     },
     {
       "name": "rmass2",
@@ -116381,14 +116621,14 @@
     },
     {
       "name": "rmoriebricklayer",
-      "version": "1.1.0",
-      "title": "Reproducible Data Capsules with Provenance and Fallback",
+      "version": "1.1.1",
+      "title": "Reproducible Data Capsules with Provenance",
       "downloads_last_month": null
     },
     {
       "name": "rmoriedata",
-      "version": "0.4.2",
-      "title": "Integrated Datasets for the 'rmorie' Package",
+      "version": "0.4.3",
+      "title": "Disclosure Control for Aggregate Releases with Open Datasets",
       "downloads_last_month": null
     },
     {
@@ -116527,6 +116767,12 @@
       "name": "RMThreshold",
       "version": "1.1",
       "title": "Signal-Noise Separation in Random Matrices by using Eigenvalue Spectrum Analysis",
+      "downloads_last_month": null
+    },
+    {
+      "name": "RMTIF",
+      "version": "0.3.1",
+      "title": "Restricted Mean Time in Favor of Treatment",
       "downloads_last_month": null
     },
     {
@@ -116963,7 +117209,7 @@
     },
     {
       "name": "robin",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "title": "ROBustness in Network",
       "downloads_last_month": null
     },
@@ -117617,7 +117863,7 @@
     },
     {
       "name": "ROCsurvcomp",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "title": "ROC-Based Methods for Comparing Survival Distributions with Right, Left, and Doubly Censored Data",
       "downloads_last_month": null
     },
@@ -117677,7 +117923,7 @@
     },
     {
       "name": "roger",
-      "version": "1.6-0",
+      "version": "1.6-1",
       "title": "Automated Grading of R Scripts",
       "downloads_last_month": null
     },
@@ -118415,7 +118661,7 @@
     },
     {
       "name": "rpact",
-      "version": "4.4.0",
+      "version": "5.0.0",
       "title": "Confirmatory Adaptive Clinical Trial Design and Analysis",
       "downloads_last_month": null
     },
@@ -118445,7 +118691,7 @@
     },
     {
       "name": "rpanel",
-      "version": "1.1-6.3",
+      "version": "1.1-6.3.1",
       "title": "Simple Interactive Controls for R using the 'tcltk' Package",
       "downloads_last_month": null
     },
@@ -118861,7 +119107,7 @@
       "name": "rprojroot",
       "version": "2.1.1",
       "title": "Finding Files in Project Subdirectories",
-      "downloads_last_month": null
+      "downloads_last_month": 607001
     },
     {
       "name": "rprojtree",
@@ -118907,7 +119153,7 @@
     },
     {
       "name": "rptR",
-      "version": "0.9.23",
+      "version": "0.9.24",
       "title": "Repeatability Estimation for Gaussian and Non-Gaussian Data",
       "downloads_last_month": null
     },
@@ -119009,7 +119255,7 @@
     },
     {
       "name": "rqti",
-      "version": "1.3.1",
+      "version": "1.4.0",
       "title": "Create Tests According to QTI 2.1 Standard",
       "downloads_last_month": null
     },
@@ -119045,7 +119291,7 @@
     },
     {
       "name": "rquest",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "title": "Hypothesis Tests for Quantiles and Quantile-Based Measures",
       "downloads_last_month": null
     },
@@ -119095,6 +119341,12 @@
       "name": "Rraven",
       "version": "1.0.16",
       "title": "Connecting R and 'Raven' Sound Analysis Software",
+      "downloads_last_month": null
+    },
+    {
+      "name": "rray",
+      "version": "0.2.0",
+      "title": "Array Helpers",
       "downloads_last_month": null
     },
     {
@@ -119261,7 +119513,7 @@
     },
     {
       "name": "RRPP",
-      "version": "2.2.5",
+      "version": "2.2.6",
       "title": "Linear Model Evaluation with Randomized Residuals in a Permutation Procedure",
       "downloads_last_month": null
     },
@@ -119423,7 +119675,7 @@
     },
     {
       "name": "rsconnect",
-      "version": "1.11.2",
+      "version": "1.12.0",
       "title": "Deploy Docs, Apps, and APIs to 'Posit Connect', 'shinyapps.io', and 'RPubs'",
       "downloads_last_month": null
     },
@@ -119497,12 +119749,6 @@
       "name": "rsdNE",
       "version": "1.3.0",
       "title": "Response Surface Designs with Neighbour Effects (rsdNE)",
-      "downloads_last_month": null
-    },
-    {
-      "name": "rSDR",
-      "version": "1.0.3.0",
-      "title": "Robust Sufficient Dimension Reduction",
       "downloads_last_month": null
     },
     {
@@ -119651,7 +119897,7 @@
     },
     {
       "name": "rsinaica",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "title": "Download Data from Mexico's Air Quality Information System",
       "downloads_last_month": null
     },
@@ -119933,7 +120179,7 @@
     },
     {
       "name": "RSquaredMI",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "title": "R-Squared with Multiply Imputed Data",
       "downloads_last_month": null
     },
@@ -120019,7 +120265,7 @@
       "name": "rstan",
       "version": "2.32.7",
       "title": "R Interface to Stan",
-      "downloads_last_month": 974295
+      "downloads_last_month": 963525
     },
     {
       "name": "rstanarm",
@@ -120115,7 +120361,7 @@
       "name": "rstudioapi",
       "version": "0.19.0",
       "title": "Safely Access the RStudio API",
-      "downloads_last_month": 715908
+      "downloads_last_month": 702431
     },
     {
       "name": "rstudiothemes",
@@ -120725,7 +120971,7 @@
     },
     {
       "name": "Rtwalk",
-      "version": "2.2.0",
+      "version": "2.3.0",
       "title": "An MCMC Sampler Using the t-Walk Algorithm",
       "downloads_last_month": null
     },
@@ -120869,7 +121115,7 @@
     },
     {
       "name": "runjags",
-      "version": "2.2.2-5",
+      "version": "2.3.1-1",
       "title": "Interface Utilities, Model Templates, Parallel Computing Methods and Additional Distributions for MCMC Models in JAGS",
       "downloads_last_month": null
     },
@@ -120917,7 +121163,7 @@
     },
     {
       "name": "rush",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "title": "Rapid Asynchronous and Distributed Computing",
       "downloads_last_month": null
     },
@@ -121103,7 +121349,7 @@
     },
     {
       "name": "rvtk",
-      "version": "0.1.3",
+      "version": "0.2.0",
       "title": "Bindings for the Visualization Toolkit ('VTK')",
       "downloads_last_month": null
     },
@@ -121330,6 +121576,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "rxeval",
+      "version": "0.1.3",
+      "title": "Evaluate 'ODK'/'OpenRosa' 'XForms' Logic",
+      "downloads_last_month": null
+    },
+    {
       "name": "RXKCD",
       "version": "2.0.2",
       "title": "Get XKCD Comic from R",
@@ -121367,8 +121619,8 @@
     },
     {
       "name": "rxref",
-      "version": "0.4.0",
-      "title": "Tidy Utilities for RxNorm and NDC Resolution",
+      "version": "0.5.1",
+      "title": "Tidy Utilities for 'RxNorm' and NDC Resolution",
       "downloads_last_month": null
     },
     {
@@ -121511,9 +121763,9 @@
     },
     {
       "name": "S7",
-      "version": "0.2.2",
+      "version": "1.0.0",
       "title": "An Object Oriented System Meant to Become a Successor to S3 and S4",
-      "downloads_last_month": 1307196
+      "downloads_last_month": 1295528
     },
     {
       "name": "s7contract",
@@ -121714,12 +121966,6 @@
       "downloads_last_month": null
     },
     {
-      "name": "saeHB.ZIB",
-      "version": "0.1.1",
-      "title": "Small Area Estimation using Hierarchical Bayesian under Zero Inflated Binomial Distribution",
-      "downloads_last_month": null
-    },
-    {
       "name": "saekernel",
       "version": "0.1.1",
       "title": "Small Area Estimation Non-Parametric Based Nadaraya-Watson Kernel",
@@ -121795,6 +122041,12 @@
       "name": "SAFD",
       "version": "2.1",
       "title": "Statistical Analysis of Fuzzy Data",
+      "downloads_last_month": null
+    },
+    {
+      "name": "safeconduct",
+      "version": "0.1.0",
+      "title": "Fetch Files Through a Real Browser When a Plain Request is Refused",
       "downloads_last_month": null
     },
     {
@@ -122236,8 +122488,14 @@
       "downloads_last_month": null
     },
     {
+      "name": "SamsaRaLight",
+      "version": "1.1.0",
+      "title": "Simulate Tree Light Transmission Using Ray-Tracing",
+      "downloads_last_month": null
+    },
+    {
       "name": "SAMtool",
-      "version": "1.9.2",
+      "version": "1.10.0",
       "title": "Stock Assessment Methods Toolkit",
       "downloads_last_month": null
     },
@@ -122428,6 +122686,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "SARIMAInfoRF",
+      "version": "0.1.0",
+      "title": "SARIMA-Informed Random Forest for Time Series Forecasting",
+      "downloads_last_month": null
+    },
+    {
       "name": "saros",
       "version": "1.6.2",
       "title": "Semi-Automatic Reporting of Ordinary Surveys",
@@ -122543,9 +122807,9 @@
     },
     {
       "name": "sass",
-      "version": "0.4.10",
+      "version": "0.5.0",
       "title": "Syntactically Awesome Style Sheets ('Sass')",
-      "downloads_last_month": 1222167
+      "downloads_last_month": 1246335
     },
     {
       "name": "sassy",
@@ -122693,7 +122957,7 @@
     },
     {
       "name": "sbert",
-      "version": "0.5.8",
+      "version": "0.6.0",
       "title": "Topic Modeling with 'Sentence-BERT' Embeddings",
       "downloads_last_month": null
     },
@@ -122863,7 +123127,7 @@
       "name": "scales",
       "version": "1.4.0",
       "title": "Scale Functions for Visualization",
-      "downloads_last_month": 1455870
+      "downloads_last_month": 1433384
     },
     {
       "name": "ScaleSpikeSlab",
@@ -123113,7 +123377,7 @@
     },
     {
       "name": "scdhlm",
-      "version": "0.7.4",
+      "version": "0.8.0",
       "title": "Estimating Hierarchical Linear Models for Single-Case Designs",
       "downloads_last_month": null
     },
@@ -123551,7 +123815,7 @@
     },
     {
       "name": "scopusflow",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "title": "A Reproducible Workflow Layer for 'Scopus' Bibliographic Searches",
       "downloads_last_month": null
     },
@@ -124063,6 +124327,12 @@
       "name": "sdcTable",
       "version": "0.34.1",
       "title": "Methods for Statistical Disclosure Control in Tabular Data",
+      "downloads_last_month": null
+    },
+    {
+      "name": "sddinf",
+      "version": "0.1.0",
+      "title": "Direct Estimation and Inference for Spectral Differential Networks",
       "downloads_last_month": null
     },
     {
@@ -124979,7 +125249,7 @@
     },
     {
       "name": "semFromKeys",
-      "version": "0.5.6",
+      "version": "0.6.0",
       "title": "Run 'lavaan' Models from Keys Lists",
       "downloads_last_month": null
     },
@@ -125603,7 +125873,7 @@
     },
     {
       "name": "Sequential",
-      "version": "4.6.3",
+      "version": "4.6.4",
       "title": "Exact Sequential Analysis for Poisson and Binomial Data",
       "downloads_last_month": null
     },
@@ -126581,9 +126851,9 @@
     },
     {
       "name": "shiny",
-      "version": "1.14.0",
+      "version": "1.15.0",
       "title": "Web Application Framework for R",
-      "downloads_last_month": 893472
+      "downloads_last_month": 916819
     },
     {
       "name": "shiny.blueprint",
@@ -126857,7 +127127,7 @@
     },
     {
       "name": "shinyds",
-      "version": "0.7.2",
+      "version": "0.7.3",
       "title": "'Shiny' Bindings for 'Designsystemet' Components",
       "downloads_last_month": null
     },
@@ -127157,7 +127427,7 @@
     },
     {
       "name": "shinyOAuth",
-      "version": "0.7.0",
+      "version": "0.8.0",
       "title": "OIDC Authentication and OAuth Authorization for 'shiny' Applications",
       "downloads_last_month": null
     },
@@ -127181,7 +127451,7 @@
     },
     {
       "name": "shinyphaser",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "title": "An Interface to the 'Phaser.js' Game Framework",
       "downloads_last_month": null
     },
@@ -127343,7 +127613,7 @@
     },
     {
       "name": "shinyTempSignal",
-      "version": "0.0.8",
+      "version": "0.0.9",
       "title": "Explore Temporal and Other Phylogenetic Signals",
       "downloads_last_month": null
     },
@@ -127553,7 +127823,7 @@
     },
     {
       "name": "ShrinkageTrees",
-      "version": "2.1.0",
+      "version": "2.1.1",
       "title": "Bayesian Tree Ensembles for Survival Analysis and Causal Inference",
       "downloads_last_month": null
     },
@@ -128201,8 +128471,8 @@
     },
     {
       "name": "simFastBOIN",
-      "version": "2.1.0",
-      "title": "Fast Simulation of Bayesian Optimal Interval Designs for Phase I Trials",
+      "version": "2.2.0",
+      "title": "Fast Simulation of Bayesian Optimal Interval Designs for Phase I and Phase I/II Trials",
       "downloads_last_month": null
     },
     {
@@ -128273,7 +128543,7 @@
     },
     {
       "name": "SimInf",
-      "version": "11.1.0",
+      "version": "11.2.0",
       "title": "A Framework for Data-Driven Stochastic Disease Spread Simulations",
       "downloads_last_month": null
     },
@@ -128639,7 +128909,7 @@
     },
     {
       "name": "simRestore",
-      "version": "1.1.5",
+      "version": "1.1.6",
       "title": "Simulate the Effect of Management Policies on Restoration Efforts",
       "downloads_last_month": null
     },
@@ -128713,12 +128983,6 @@
       "name": "SimSurvey",
       "version": "0.1.8",
       "title": "Test Surveys by Simulating Spatially-Correlated Populations",
-      "downloads_last_month": null
-    },
-    {
-      "name": "SimtablR",
-      "version": "3.1.1",
-      "title": "Easy Publication-Ready Tables and Regression Analysis",
       "downloads_last_month": null
     },
     {
@@ -129011,7 +129275,7 @@
     },
     {
       "name": "sisireg",
-      "version": "1.2.1",
+      "version": "2.0.0",
       "title": "Sign-Simplicity-Regression-Solver",
       "downloads_last_month": null
     },
@@ -129173,7 +129437,7 @@
     },
     {
       "name": "sjSDM",
-      "version": "1.0.7",
+      "version": "1.1.0",
       "title": "Scalable Joint Species Distribution Modeling",
       "downloads_last_month": null
     },
@@ -129557,7 +129821,7 @@
     },
     {
       "name": "slideimp",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "title": "Numeric Matrices K-NN and PCA Imputation",
       "downloads_last_month": null
     },
@@ -129629,7 +129893,7 @@
     },
     {
       "name": "SLOS",
-      "version": "1.0.1",
+      "version": "2.0.0",
       "title": "ICU Length of Stay Prediction and Efficiency Evaluation",
       "downloads_last_month": null
     },
@@ -129673,6 +129937,12 @@
       "name": "SLSEdesign",
       "version": "0.1.0",
       "title": "Optimal Regression Design under the Second-Order Least Squares Estimator",
+      "downloads_last_month": null
+    },
+    {
+      "name": "SLspatial",
+      "version": "1.0.0",
+      "title": "Spatial Data for Sri Lanka",
       "downloads_last_month": null
     },
     {
@@ -129737,7 +130007,7 @@
     },
     {
       "name": "SmallCountRounding",
-      "version": "1.2.5",
+      "version": "1.2.7",
       "title": "Small Count Rounding of Tabular Data",
       "downloads_last_month": null
     },
@@ -129875,7 +130145,7 @@
     },
     {
       "name": "smcfcs",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "title": "Multiple Imputation of Covariates by Substantive Model Compatible Fully Conditional Specification",
       "downloads_last_month": null
     },
@@ -129899,7 +130169,7 @@
     },
     {
       "name": "smdi",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "title": "Perform Structural Missing Data Investigations",
       "downloads_last_month": null
     },
@@ -130355,7 +130625,7 @@
     },
     {
       "name": "snakeplot",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "title": "Serpentine Plots for Long Timeline, Sequential and Survey Data",
       "downloads_last_month": null
     },
@@ -130391,7 +130661,7 @@
     },
     {
       "name": "snazzieR",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "title": "Chic and Sleek Functions for Beautiful Statisticians",
       "downloads_last_month": null
     },
@@ -130739,7 +131009,7 @@
     },
     {
       "name": "socviz",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "title": "Utilities and Data Sets for Data Visualization",
       "downloads_last_month": null
     },
@@ -130877,7 +131147,7 @@
     },
     {
       "name": "SoilManageR",
-      "version": "1.1.0",
+      "version": "1.2.1",
       "title": "Calculate Soil Management Indicators for Agricultural Practice Assessment",
       "downloads_last_month": null
     },
@@ -132083,8 +132353,8 @@
     },
     {
       "name": "spatialkit",
-      "version": "2.0.0",
-      "title": "Spatial Tessellation, Modeling, and Cross-Validation Toolkit",
+      "version": "3.0.0",
+      "title": "Spatial Tessellation, Modelling, and Cross-Validation Toolkit",
       "downloads_last_month": null
     },
     {
@@ -132437,7 +132707,7 @@
     },
     {
       "name": "SPCompute",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "title": "Compute Power or Sample Size for GWAS with Covariate Effect",
       "downloads_last_month": null
     },
@@ -132503,7 +132773,7 @@
     },
     {
       "name": "spdep",
-      "version": "1.4-2",
+      "version": "1.4-3",
       "title": "Spatial Dependence: Weighting Schemes, Statistics",
       "downloads_last_month": null
     },
@@ -132623,8 +132893,8 @@
     },
     {
       "name": "specProc",
-      "version": "0.8.3",
-      "title": "Preprocessing Tools for Laser-Induced Breakdown Spectroscopy",
+      "version": "0.9.0",
+      "title": "Analysis of Laser-Induced Breakdown Spectroscopy Data",
       "downloads_last_month": null
     },
     {
@@ -132934,6 +133204,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "spherDir",
+      "version": "1.0",
+      "title": "Spherical Dirichlet Distribution",
+      "downloads_last_month": null
+    },
+    {
       "name": "sphereclust",
       "version": "1.2",
       "title": "Model Based Clustering for Spherical Data Using Elliptically Symmetric Distributions",
@@ -133049,7 +133325,7 @@
     },
     {
       "name": "spikeSlabGAM",
-      "version": "1.1-20",
+      "version": "1.1-21",
       "title": "Bayesian Variable Selection and Model Choice for Generalized Additive Mixed Models",
       "downloads_last_month": null
     },
@@ -133153,6 +133429,12 @@
       "name": "splineCox",
       "version": "0.0.9",
       "title": "A Two-Stage Estimation Approach to Cox Regression Using M-Spline Function",
+      "downloads_last_month": null
+    },
+    {
+      "name": "splineKANr",
+      "version": "0.5.1",
+      "title": "B-Spline Kolmogorov-Arnold Networks in Native R 'torch'",
       "downloads_last_month": null
     },
     {
@@ -133667,7 +133949,7 @@
     },
     {
       "name": "spscsfa",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "title": "Semiparametric Smooth-Coefficient Stochastic Frontier Analysis",
       "downloads_last_month": null
     },
@@ -133703,7 +133985,7 @@
     },
     {
       "name": "spsurv",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "title": "Bernstein Polynomial Based Semiparametric Survival Analysis",
       "downloads_last_month": null
     },
@@ -134357,7 +134639,7 @@
     },
     {
       "name": "SSN2",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "title": "Spatial Modeling on Stream Networks",
       "downloads_last_month": null
     },
@@ -134431,6 +134713,12 @@
       "name": "SSReliabilityClaytonMWD",
       "version": "1.0.2",
       "title": "Stress-Strength Reliability Model with MWD Marginals via Clayton Copula",
+      "downloads_last_month": null
+    },
+    {
+      "name": "ssrfr",
+      "version": "1.0.0",
+      "title": "Server-Side Request Forgery Guard for Outbound Requests",
       "downloads_last_month": null
     },
     {
@@ -134765,7 +135053,7 @@
     },
     {
       "name": "standby",
-      "version": "0.2.0",
+      "version": "0.2.2",
       "title": "Alerts, Notifications and Loading Screen in 'Shiny'",
       "downloads_last_month": null
     },
@@ -134779,7 +135067,7 @@
       "name": "StanHeaders",
       "version": "2.39.1.1",
       "title": "C++ Header Files for Stan",
-      "downloads_last_month": 1040971
+      "downloads_last_month": 1023529
     },
     {
       "name": "staninside",
@@ -134959,6 +135247,12 @@
       "name": "Stat2Data",
       "version": "2.0.1",
       "title": "Datasets for Stat2",
+      "downloads_last_month": null
+    },
+    {
+      "name": "statacompat",
+      "version": "1.0",
+      "title": "Reproduce Selected 'Stata' Expression and Missing-Value Semantics",
       "downloads_last_month": null
     },
     {
@@ -135173,7 +135467,7 @@
     },
     {
       "name": "statioVAR",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "title": "Trend Removal for Vector Autoregressive Workflows",
       "downloads_last_month": null
     },
@@ -135508,6 +135802,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "Stem",
+      "version": "2.0.0",
+      "title": "Spatio-Temporal Expectation-Maximization Models",
+      "downloads_last_month": null
+    },
+    {
       "name": "StemAnalysis",
       "version": "0.1.0",
       "title": "Reconstructing Tree Growth and Carbon Accumulation with Stem Analysis Data",
@@ -135689,7 +135989,7 @@
     },
     {
       "name": "stevemisc",
-      "version": "1.9.0",
+      "version": "2.0.0",
       "title": "Steve's Miscellaneous Functions",
       "downloads_last_month": null
     },
@@ -135707,7 +136007,7 @@
     },
     {
       "name": "stevethemes",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "title": "Steve's 'ggplot2' Themes and Related Theme Elements",
       "downloads_last_month": null
     },
@@ -136453,7 +136753,7 @@
       "name": "stringi",
       "version": "1.8.9",
       "title": "Fast and Portable Character String Processing Facilities",
-      "downloads_last_month": 1077974
+      "downloads_last_month": 1072794
     },
     {
       "name": "stringmagic",
@@ -136465,7 +136765,7 @@
       "name": "stringr",
       "version": "1.6.0",
       "title": "Simple, Consistent Wrappers for Common String Operations",
-      "downloads_last_month": 1166747
+      "downloads_last_month": 1163215
     },
     {
       "name": "stringstatic",
@@ -136901,7 +137201,7 @@
     },
     {
       "name": "summata",
-      "version": "0.13.0",
+      "version": "0.13.1",
       "title": "Publication-Ready Summary Tables and Forest Plots",
       "downloads_last_month": null
     },
@@ -136967,7 +137267,7 @@
     },
     {
       "name": "sundialr",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "title": "An Interface to 'SUNDIALS' Ordinary Differential Equation (ODE) Solvers",
       "downloads_last_month": null
     },
@@ -137200,6 +137500,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "SurfaceMesh",
+      "version": "0.1.2",
+      "title": "3D Surface Meshes Based on 'CGAL'",
+      "downloads_last_month": null
+    },
+    {
       "name": "SurfaceTortoise",
       "version": "2.0.1",
       "title": "Find Optimal Sampling Locations Based on Spatial Covariate(s)",
@@ -137225,7 +137531,7 @@
     },
     {
       "name": "Surrogate",
-      "version": "3.4.3",
+      "version": "3.4.4",
       "title": "Evaluation of Surrogate Endpoints in Clinical Trials",
       "downloads_last_month": null
     },
@@ -137297,7 +137603,7 @@
     },
     {
       "name": "survAH",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "title": "Survival Data Analysis using Average Hazard",
       "downloads_last_month": null
     },
@@ -137573,7 +137879,7 @@
     },
     {
       "name": "survHE",
-      "version": "2.0.51",
+      "version": "2.0.52",
       "title": "Survival Analysis in Health Economic Evaluation",
       "downloads_last_month": null
     },
@@ -137629,6 +137935,12 @@
       "name": "SurvivalClusteringTree",
       "version": "1.1.3",
       "title": "Clustering Analysis Using Survival Tree and Forest Algorithms",
+      "downloads_last_month": null
+    },
+    {
+      "name": "survivalGPU",
+      "version": "0.1.0",
+      "title": "Fast and Scalable Implementations for Survival Models",
       "downloads_last_month": null
     },
     {
@@ -137788,6 +138100,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "survPhenoStab",
+      "version": "0.1.0",
+      "title": "Stability-Driven Hierarchical Clustering for Multi-Endpoint Survival Phenotyping",
+      "downloads_last_month": null
+    },
+    {
       "name": "survPresmooth",
       "version": "1.1-12",
       "title": "Presmoothed Estimation in Survival Analysis",
@@ -137813,7 +138131,7 @@
     },
     {
       "name": "survRM2",
-      "version": "1.0-4",
+      "version": "1.0-5",
       "title": "Comparing Restricted Mean Survival Time",
       "downloads_last_month": null
     },
@@ -138101,7 +138419,7 @@
     },
     {
       "name": "svpChange",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "title": "Smallest Valid Partitioning for Change-Point Detection",
       "downloads_last_month": null
     },
@@ -138781,7 +139099,7 @@
       "name": "sys",
       "version": "3.4.3",
       "title": "Powerful and Reliable Tools for Running System Commands in R",
-      "downloads_last_month": 673041
+      "downloads_last_month": 658892
     },
     {
       "name": "sysAgNPs",
@@ -138839,7 +139157,7 @@
     },
     {
       "name": "systemfonts",
-      "version": "1.3.3",
+      "version": "1.3.4",
       "title": "System Native Font Finding",
       "downloads_last_month": null
     },
@@ -139427,7 +139745,7 @@
     },
     {
       "name": "tarchetypes",
-      "version": "0.14.1",
+      "version": "0.14.2",
       "title": "Archetypes for Targets",
       "downloads_last_month": null
     },
@@ -139451,7 +139769,7 @@
     },
     {
       "name": "targets",
-      "version": "1.12.0",
+      "version": "1.12.1",
       "title": "Dynamic Function-Oriented 'Make'-Like Declarative Pipelines",
       "downloads_last_month": null
     },
@@ -139463,8 +139781,8 @@
     },
     {
       "name": "tarpolyglot",
-      "version": "0.2.1",
-      "title": "Run Python, Julia, and Rust Inside 'targets' Pipeline Steps",
+      "version": "0.3.0",
+      "title": "Run 'Python', 'Julia', 'Rust', and 'C++' Inside 'targets' Pipeline Steps",
       "downloads_last_month": null
     },
     {
@@ -140117,7 +140435,7 @@
     },
     {
       "name": "teems",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "title": "Trade and Environment Equilibrium Modeling System",
       "downloads_last_month": null
     },
@@ -140477,9 +140795,9 @@
     },
     {
       "name": "terra",
-      "version": "1.9-50",
+      "version": "1.9-60",
       "title": "Spatial Data Analysis",
-      "downloads_last_month": 643113
+      "downloads_last_month": 631454
     },
     {
       "name": "terrainmeshr",
@@ -140701,7 +141019,7 @@
       "name": "testthat",
       "version": "3.3.2",
       "title": "Unit Testing for R",
-      "downloads_last_month": 694188
+      "downloads_last_month": 695713
     },
     {
       "name": "testthatdocs",
@@ -140993,7 +141311,7 @@
     },
     {
       "name": "textshaping",
-      "version": "1.0.5",
+      "version": "1.1.0",
       "title": "Bindings to the 'HarfBuzz' and 'Fribidi' Libraries for Text Shaping",
       "downloads_last_month": null
     },
@@ -141262,6 +141580,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "thangldKANr",
+      "version": "0.1.0",
+      "title": "Kolmogorov-Arnold Networks with Interchangeable Edge Bases Using 'torch'",
+      "downloads_last_month": null
+    },
+    {
       "name": "theaitetos",
       "version": "0.1.0",
       "title": "Ancient Intelligence Geometric Superposition Field Calculations",
@@ -141323,7 +141647,7 @@
     },
     {
       "name": "theoryforge",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "title": "Systematic Theory Development",
       "downloads_last_month": null
     },
@@ -141589,7 +141913,7 @@
       "name": "tibble",
       "version": "3.3.1",
       "title": "Simple Data Frames",
-      "downloads_last_month": 1609369
+      "downloads_last_month": 1595148
     },
     {
       "name": "tibbletime",
@@ -142031,7 +142355,7 @@
     },
     {
       "name": "tidyllm",
-      "version": "0.7.1",
+      "version": "0.8.0",
       "title": "Tidy Integration of Large Language Models",
       "downloads_last_month": null
     },
@@ -142189,7 +142513,7 @@
       "name": "tidyr",
       "version": "1.3.2",
       "title": "Tidy Messy Data",
-      "downloads_last_month": 1083491
+      "downloads_last_month": 1080799
     },
     {
       "name": "tidyrates",
@@ -142243,11 +142567,11 @@
       "name": "tidyselect",
       "version": "1.2.1",
       "title": "Select from a Set of Strings",
-      "downloads_last_month": 1053322
+      "downloads_last_month": 1045105
     },
     {
       "name": "tidySEM",
-      "version": "0.2.12",
+      "version": "0.3.0",
       "title": "Tidy Structural Equation Modeling",
       "downloads_last_month": null
     },
@@ -142387,7 +142711,7 @@
       "name": "tidyverse",
       "version": "2.0.0",
       "title": "Easily Install and Load the 'Tidyverse'",
-      "downloads_last_month": 846501
+      "downloads_last_month": 838449
     },
     {
       "name": "tidyvpc",
@@ -142720,6 +143044,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "timss8reg",
+      "version": "0.1.0",
+      "title": "Helper Functions for Regression Analysis of TIMSS Grade 8 Student Data",
+      "downloads_last_month": null
+    },
+    {
       "name": "tind",
       "version": "0.2.4",
       "title": "A Common Representation of Time Indices of Different Types",
@@ -142879,7 +143209,7 @@
       "name": "tinytex",
       "version": "0.61",
       "title": "Helper Functions to Install and Maintain TeX Live, and Compile LaTeX Documents",
-      "downloads_last_month": 964377
+      "downloads_last_month": 953029
     },
     {
       "name": "tinythemes",
@@ -142901,7 +143231,7 @@
     },
     {
       "name": "tinyVAST",
-      "version": "1.6.3",
+      "version": "1.6.4",
       "title": "Multivariate Spatio-Temporal Models using Structural Equations",
       "downloads_last_month": null
     },
@@ -143152,6 +143482,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "tm.hyslaw",
+      "version": "0.2.0",
+      "title": "'teal' Modules for Hy's Law Monitoring and Evaluation of Drug-Induced Serious Hepatotoxicity (eDISH) Plots",
+      "downloads_last_month": null
+    },
+    {
       "name": "tm.plugin.alceste",
       "version": "1.1.2",
       "title": "Import Texts from Files in the 'Alceste' Format Using the 'tm' Text Mining Framework",
@@ -143191,6 +143527,12 @@
       "name": "tm.plugin.mail",
       "version": "0.3-2",
       "title": "Text Mining E-Mail Plug-in",
+      "downloads_last_month": null
+    },
+    {
+      "name": "tm.ttni",
+      "version": "0.1.0",
+      "title": "'teal' Module for Time-to-Next-Intervention and Time-to-Event Tables",
       "downloads_last_month": null
     },
     {
@@ -143363,7 +143705,7 @@
     },
     {
       "name": "tna",
-      "version": "1.3.1",
+      "version": "1.5.8",
       "title": "Transition Network Analysis (TNA)",
       "downloads_last_month": null
     },
@@ -143452,6 +143794,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "tokenusagedata",
+      "version": "0.1.0",
+      "title": "AI Token Prices, Context Windows and Model Sizes",
+      "downloads_last_month": null
+    },
+    {
       "name": "tolerance",
       "version": "3.0.0",
       "title": "Statistical Tolerance Intervals and Regions",
@@ -143477,7 +143825,7 @@
     },
     {
       "name": "tongfen",
-      "version": "0.3.9",
+      "version": "0.4.0",
       "title": "Make Data Based on Different Geographies Comparable",
       "downloads_last_month": null
     },
@@ -144239,7 +144587,7 @@
     },
     {
       "name": "trajmsm",
-      "version": "0.1.5",
+      "version": "0.1.7",
       "title": "Marginal Structural Models with Latent Class Growth Analysis of Treatment Trajectories",
       "downloads_last_month": null
     },
@@ -144257,7 +144605,7 @@
     },
     {
       "name": "tram",
-      "version": "1.4-7",
+      "version": "1.4-8",
       "title": "Transformation Models",
       "downloads_last_month": null
     },
@@ -144401,7 +144749,7 @@
     },
     {
       "name": "transitiontrees",
-      "version": "0.1.2",
+      "version": "0.2.0",
       "title": "Transition Trajectories and Dynamics of Variable-Length Pathways or Sequences",
       "downloads_last_month": null
     },
@@ -144671,7 +145019,7 @@
     },
     {
       "name": "treediff",
-      "version": "0.2.3",
+      "version": "0.3.0",
       "title": "Testing Differences Between Families of Trees",
       "downloads_last_month": null
     },
@@ -144941,7 +145289,7 @@
     },
     {
       "name": "TRexSelector",
-      "version": "2.0.1",
+      "version": "2.0.3",
       "title": "T-Rex Selector: High-Dimensional Variable Selection and FDR Control",
       "downloads_last_month": null
     },
@@ -145691,7 +146039,7 @@
     },
     {
       "name": "tsg",
-      "version": "0.1.4",
+      "version": "0.2.0",
       "title": "Generate Publication-Ready Statistical Tables",
       "downloads_last_month": null
     },
@@ -146465,7 +146813,7 @@
     },
     {
       "name": "twdtw",
-      "version": "1.0-1",
+      "version": "1.1-0",
       "title": "Time-Weighted Dynamic Time Warping",
       "downloads_last_month": null
     },
@@ -146741,7 +147089,7 @@
     },
     {
       "name": "typedjson",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "title": "Type-Faithful and Human-Readable JSON for R Values",
       "downloads_last_month": null
     },
@@ -146785,7 +147133,7 @@
       "name": "tzdb",
       "version": "0.5.0",
       "title": "Time Zone Database Information",
-      "downloads_last_month": 606340
+      "downloads_last_month": null
     },
     {
       "name": "tzupdater",
@@ -147245,7 +147593,7 @@
     },
     {
       "name": "undidR",
-      "version": "3.0.2",
+      "version": "3.0.3",
       "title": "Difference-in-Differences with Unpoolable Data",
       "downloads_last_month": null
     },
@@ -147427,6 +147775,12 @@
       "name": "UniLindleyApprox",
       "version": "0.1.0",
       "title": "Bayesian Point Estimation Using Lindley's Approximation Under Censoring Schemes",
+      "downloads_last_month": null
+    },
+    {
+      "name": "uniml",
+      "version": "0.5.1",
+      "title": "Unified Predictive Modeling Toolkit",
       "downloads_last_month": null
     },
     {
@@ -148099,7 +148453,7 @@
       "name": "utf8",
       "version": "1.2.6",
       "title": "Unicode Text Processing",
-      "downloads_last_month": 1287382
+      "downloads_last_month": 1273036
     },
     {
       "name": "utf8ify",
@@ -148193,7 +148547,7 @@
     },
     {
       "name": "V8",
-      "version": "8.2.1",
+      "version": "8.3.0",
       "title": "Embedded JavaScript and WebAssembly Engine for R",
       "downloads_last_month": null
     },
@@ -148631,7 +148985,7 @@
     },
     {
       "name": "varmapack",
-      "version": "0.1.2",
+      "version": "0.2.0",
       "title": "Burn-in-Free Simulation and Analysis of Gaussian VARMA Models",
       "downloads_last_month": null
     },
@@ -148889,7 +149243,7 @@
     },
     {
       "name": "vcdExtra",
-      "version": "0.9.8",
+      "version": "0.9.9",
       "title": "'vcd' Extensions and Additions",
       "downloads_last_month": null
     },
@@ -148931,7 +149285,7 @@
     },
     {
       "name": "VCMoE",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "title": "Varying-Coefficient Mixture-of-Experts Models",
       "downloads_last_month": null
     },
@@ -148963,7 +149317,7 @@
       "name": "vctrs",
       "version": "0.7.3",
       "title": "Vector Helpers",
-      "downloads_last_month": 1871797
+      "downloads_last_month": 1841594
     },
     {
       "name": "vctsfr",
@@ -149033,7 +149387,7 @@
     },
     {
       "name": "VeccTMVN",
-      "version": "1.3.2",
+      "version": "1.3.3",
       "title": "Multivariate Normal Probabilities using Vecchia Approximation",
       "downloads_last_month": null
     },
@@ -149045,7 +149399,7 @@
     },
     {
       "name": "vecmatch",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "title": "Generalized Propensity Score Estimation and Matching for Multiple Groups",
       "downloads_last_month": null
     },
@@ -149111,7 +149465,7 @@
     },
     {
       "name": "vecvec",
-      "version": "1.4.0",
+      "version": "1.5.0",
       "title": "Construct Mixed Type Data Structures with Vectors of Vectors",
       "downloads_last_month": null
     },
@@ -149135,7 +149489,7 @@
     },
     {
       "name": "vegan",
-      "version": "2.7-6",
+      "version": "2.7-8",
       "title": "Community Ecology Package",
       "downloads_last_month": null
     },
@@ -149665,7 +150019,7 @@
       "name": "viridisLite",
       "version": "0.4.3",
       "title": "Colorblind-Friendly Color Maps (Lite Version)",
-      "downloads_last_month": 1221935
+      "downloads_last_month": 1200355
     },
     {
       "name": "ViroReportR",
@@ -149843,7 +150197,7 @@
     },
     {
       "name": "vistributions",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "title": "Visualize Probability Distributions",
       "downloads_last_month": null
     },
@@ -150307,7 +150661,7 @@
       "name": "vroom",
       "version": "1.7.1",
       "title": "Read and Write Rectangular Text Data Quickly",
-      "downloads_last_month": 640867
+      "downloads_last_month": 631781
     },
     {
       "name": "vrpr",
@@ -150583,6 +150937,12 @@
       "name": "waldo",
       "version": "0.6.2",
       "title": "Find Differences Between R Objects",
+      "downloads_last_month": null
+    },
+    {
+      "name": "walkability",
+      "version": "0.1.0",
+      "title": "Urban Walkability and Active Transit Network Analysis",
       "downloads_last_month": null
     },
     {
@@ -151127,7 +151487,7 @@
     },
     {
       "name": "wcvpmatch",
-      "version": "0.0.2",
+      "version": "0.0.3",
       "title": "Taxonomic Name Reconciliation Against the 'WCVP' Backbone",
       "downloads_last_month": null
     },
@@ -151372,6 +151732,12 @@
       "downloads_last_month": null
     },
     {
+      "name": "webserver",
+      "version": "1.0-1",
+      "title": "Web/HTTP Server for R",
+      "downloads_last_month": null
+    },
+    {
       "name": "webshot",
       "version": "0.5.5",
       "title": "Take Screenshots of Web Pages",
@@ -151529,7 +151895,7 @@
     },
     {
       "name": "weightedsurv",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "title": "Survival Analysis with Subject-Specific (Case Weights) and Time-Dependent Weighting",
       "downloads_last_month": null
     },
@@ -151589,7 +151955,7 @@
     },
     {
       "name": "weird",
-      "version": "3.1.0",
+      "version": "3.2.0",
       "title": "Functions and Data Sets for \"That's Weird: Anomaly Detection Using R\" by Rob J Hyndman",
       "downloads_last_month": null
     },
@@ -152173,7 +152539,7 @@
       "name": "withr",
       "version": "3.0.3",
       "title": "Run Code 'With' Temporarily Modified Global State",
-      "downloads_last_month": 1675228
+      "downloads_last_month": 1673852
     },
     {
       "name": "wizaRdry",
@@ -152507,7 +152873,7 @@
     },
     {
       "name": "worldbank",
-      "version": "0.11.0",
+      "version": "0.11.1",
       "title": "Client for the 'World Bank' APIs",
       "downloads_last_month": null
     },
@@ -152729,7 +153095,7 @@
     },
     {
       "name": "wrGraph",
-      "version": "1.3.18",
+      "version": "1.3.19.1",
       "title": "Graphics in the Context of Analyzing High-Throughput Data",
       "downloads_last_month": null
     },
@@ -152783,7 +153149,7 @@
     },
     {
       "name": "wrMisc",
-      "version": "2.1.1",
+      "version": "2.2.0",
       "title": "Analyze Experimental High-Throughput (Omics) Data",
       "downloads_last_month": null
     },
@@ -152843,8 +153209,8 @@
     },
     {
       "name": "wsgnstat",
-      "version": "0.1.0",
-      "title": "The Wrapped Skew Generalised Normal Distribution",
+      "version": "0.1.1",
+      "title": "The Wrapped Two-Piece Exponential Power Distribution",
       "downloads_last_month": null
     },
     {
@@ -153005,7 +153371,7 @@
     },
     {
       "name": "xaci",
-      "version": "0.1.0",
+      "version": "1.1.0",
       "title": "Actuarial Climate Index",
       "downloads_last_month": null
     },
@@ -153169,7 +153535,7 @@
       "name": "xfun",
       "version": "0.62",
       "title": "Supporting Functions for Packages Maintained by 'Yihui Xie'",
-      "downloads_last_month": 1203351
+      "downloads_last_month": 1175747
     },
     {
       "name": "xgb2sql",
@@ -153343,7 +153709,7 @@
       "name": "xml2",
       "version": "1.6.0",
       "title": "Parse XML",
-      "downloads_last_month": 797914
+      "downloads_last_month": 784245
     },
     {
       "name": "XML2R",
@@ -153761,7 +154127,7 @@
     },
     {
       "name": "yahoofinancer",
-      "version": "0.6.1",
+      "version": "0.6.2",
       "title": "Fetch Data from Yahoo Finance API",
       "downloads_last_month": null
     },
@@ -153784,10 +154150,16 @@
       "downloads_last_month": null
     },
     {
+      "name": "yamaa",
+      "version": "0.6.2",
+      "title": "Clinical Data Standardization Using 'YAML' Specifications",
+      "downloads_last_month": null
+    },
+    {
       "name": "yaml",
       "version": "2.3.12",
       "title": "Methods to Convert R Data to YAML and Back",
-      "downloads_last_month": 971328
+      "downloads_last_month": 965543
     },
     {
       "name": "yaml12",
@@ -153815,7 +154187,7 @@
     },
     {
       "name": "yardstick",
-      "version": "1.4.0",
+      "version": "1.5.0",
       "title": "Tidy Characterizations of Model Performance",
       "downloads_last_month": null
     },
@@ -154019,7 +154391,7 @@
     },
     {
       "name": "yulab.utils",
-      "version": "0.2.5",
+      "version": "0.2.6",
       "title": "Supporting Functions for Packages Maintained by 'YuLab-SMU'",
       "downloads_last_month": null
     },
@@ -154055,7 +154427,7 @@
     },
     {
       "name": "zarr",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "title": "Native and Extensible R Driver for 'Zarr'",
       "downloads_last_month": null
     },
@@ -154399,7 +154771,7 @@
       "name": "zoo",
       "version": "1.9-1",
       "title": "S3 Infrastructure for Regular and Irregular Time Series (Z's Ordered Observations)",
-      "downloads_last_month": 739401
+      "downloads_last_month": 737462
     },
     {
       "name": "ZooID",
@@ -154565,8 +154937,8 @@
     },
     {
       "name": "zuhtml",
-      "version": "0.1.0",
-      "title": "Parse 'HTML' with a Bundled 'Gumbo' Parser",
+      "version": "0.1.1",
+      "title": "Parse HTML with a Bundled 'Gumbo' Parser",
       "downloads_last_month": null
     },
     {
@@ -154601,8 +154973,8 @@
     },
     {
       "name": "zuyaml",
-      "version": "0.1.0",
-      "title": "Parse and Emit 'YAML' 1.2",
+      "version": "0.1.1",
+      "title": "Parse and Emit YAML 1.2",
       "downloads_last_month": null
     },
     {
